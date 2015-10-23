@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>es.upm.oeg.lab</groupId>
+    <artifactId>drinventor-textmining</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+    <properties>
+        <encoding>UTF-8</encoding>
+        <java.version>1.8</java.version>
+        <math3.version>3.5</math3.version>
+        <maven.dependency.version>2.5.1</maven.dependency.version>
+        <maven.deploy.version>2.8.1</maven.deploy.version>
+        <maven.jar.version>2.5</maven.jar.version>
+        <maven.scala.version>2.15.2</maven.scala.version>
+        <maven.site.version>0.10</maven.site.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.dependency.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>edu.upf.taln.dri</groupId>
+            <artifactId>lib</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>2.3</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>backingdata-repo</id>
+            <name>Backingdata repository</name>
+            <url>http://backingdata.org/dri/library/mavenRepo/</url>
+        </repository>
+    </repositories>
+</project>
