@@ -3,8 +3,12 @@ package es.upm.oeg.lab.harvester;
 import edu.upf.taln.dri.lib.exception.InternalProcessingException;
 import edu.upf.taln.dri.lib.model.ext.Sentence;
 import edu.upf.taln.dri.lib.model.ext.SentenceSelectorENUM;
+import es.cbadenes.lab.test.IntegrationTest;
 import es.upm.oeg.lab.hoarder.AnnotatedDocHoarder;
 import es.upm.oeg.lab.upf.AnnotatedDoc;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import java.io.File;
 import java.util.HashMap;
@@ -14,14 +18,17 @@ import java.util.Map;
 /**
  * Created by cbadenes on 26/10/15.
  */
+@Category(IntegrationTest.class)
 public class SectionTest {
 
     private AnnotatedDocHoarder handler;
 
+    @Before
     public void setup(){
 
     }
 
+    @Test
     public void checkSections(){
 
         this.handler = new AnnotatedDocHoarder("src/test/resources/acm-siggraph-2006-2014-upf");
@@ -36,6 +43,7 @@ public class SectionTest {
     }
 
 
+    @Test
     public void printIntroductions(){
 
         this.handler = new AnnotatedDocHoarder("src/test/resources/acm-siggraph-2006-2014-upf");
@@ -43,7 +51,7 @@ public class SectionTest {
 
     }
 
-
+    @Test
     public void printHierarchicalIntroduction(){
 
         AnnotatedDoc doc = new AnnotatedDoc(new File("src/test/resources/acm-siggraph-2006-2014-upf/sig2006/p519-weiss_PROC.xml").toPath());
@@ -52,6 +60,7 @@ public class SectionTest {
 
     }
 
+    @Test
     public void printMultipleIntroduction() throws InternalProcessingException {
 
         AnnotatedDoc doc = new AnnotatedDoc(new File("src/test/resources/acm-siggraph-2006-2014-upf/sig2008a/a108-tan_PROC.xml").toPath());

@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * Created by cbadenes on 26/10/15.
- */
+ */@Category(IntegrationTest.class)
 public class UPFAnalyzer {
 
     private static final String DRI_RESOURCE_DIR_PATH = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/resources/upf/DRIresources-1.0.4";
@@ -30,6 +30,7 @@ public class UPFAnalyzer {
      *  -DDRIpropertyFile=src/main/resources/DRIconfig.properties   ( or by Factory.setDRIPropertyFilePath)
      *
      */
+    @Test
     public void analyze() throws DRIexception {
 
         // Set property file path

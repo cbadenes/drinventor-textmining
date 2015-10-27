@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 /**
  * Created by cbadenes on 26/10/15.
  */
+@Category(IntegrationTest.class)
 public class NLPTest {
 
     private static final String inputText    = "Some houses have many mice.  Our house only has one mouse.";
@@ -32,6 +33,7 @@ public class NLPTest {
         this.openHelper.destroy();
     }
 
+    @Test
     public void lemmasInOpenNLP(){
 
         String outputText   = this.openHelper.parse(inputText).stream().collect(Collectors.joining(" "));
@@ -43,6 +45,7 @@ public class NLPTest {
         Assert.assertEquals(targetText,outputText);
     }
 
+    @Test
     public void lemmasInStanfordNLP(){
 
         String outputText   = this.stanfordHelper.lemmatize(inputText).stream().collect(Collectors.joining(" "));

@@ -1,6 +1,7 @@
 package es.upm.oeg.lab.utils;
 
 import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -29,7 +30,7 @@ public class SectionHelperTest {
             "5 Results and discussion"
     });
 
-
+    @Test
     public void testIntroduction(){
 
         List<String> expressions = Arrays.asList(new String[]{"introduction", "related work", "previous work", "background"});
@@ -38,6 +39,7 @@ public class SectionHelperTest {
         conclusionSections.stream().forEach(s -> Assert.assertFalse("Checking if false  '" + s +"'", SectionHelper.match(s, expressions)));
     }
 
+    @Test
     public void testConclusion(){
         List<String> expressions = Arrays.asList(new String[]{"results", "conclusion", "future work"});
 
