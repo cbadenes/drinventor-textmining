@@ -42,9 +42,9 @@ public class TopicModeler {
 
         // Initialize Spark Context
         SparkConf conf = new SparkConf().
-                setMaster("local").
+                setMaster("local[*]").
                 setAppName("DrInventor").
-                set("spark.executor.memory", "2g").
+                set("spark.executor.memory", "12g").
                 set("spark.driver.maxResultSize","0");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
