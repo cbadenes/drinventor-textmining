@@ -270,6 +270,16 @@
             <url>http://backingdata.org/dri/library/mavenRepo/</url>
         </repository>
 
+        <!-- External Repository -->
+        <repository>
+            <id>external-libs</id>
+            <url>https://raw.github.com/epnoi/external-libs/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+
         <!-- Test Utils Repository -->
         <repository>
             <id>test-utils</id>
