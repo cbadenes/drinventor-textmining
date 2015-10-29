@@ -279,6 +279,22 @@
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
+        <repository>
+            <id>matching-metrics-mvn-repo</id>
+            <url>https://raw.github.com/cbadenes/epnoi-matching-metrics/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>harvester-mvn-repo</id>
+            <url>https://raw.github.com/cbadenes/epnoi-harvester/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
 
         <!-- Test Utils Repository -->
         <repository>
