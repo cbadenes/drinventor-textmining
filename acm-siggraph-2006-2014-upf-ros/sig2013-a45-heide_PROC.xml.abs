@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2013-a45-heide_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013/a45-heide_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Low-budget Transient Imaging using Photonic Mixer Devices",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Felix-Heide",
+      "name" : "Felix",
+      "surname" : "Heide"
+    }, {
+      "uri" : "http://drinventor/Matthias B.-Hullin",
+      "name" : "Matthias B.",
+      "surname" : "Hullin"
+    }, {
+      "uri" : "http://drinventor/James-Gregson",
+      "name" : "James",
+      "surname" : "Gregson"
+    }, {
+      "uri" : "http://drinventor/Wolfgang-Heidrich",
+      "name" : "Wolfgang",
+      "surname" : "Heidrich"
+    } ]
+  },
+  "bagOfWords" : [ "transient", "imaging", "exciting", "new", "imaging", "modality", "can", "use", "understand", "light", "propagation", "complex", "environment", "capture", "analyze", "scene", "property", "shape", "hidden", "object", "reflectance", "property", "surface", "unfortunately", "research", "transient", "imaging", "have", "so", "far", "be", "hinder", "high", "cost", "require", "instrumentation", "well", "fragility", "difficulty", "operate", "calibrate", "device", "femtosecond", "laser", "streak", "camera", "paper", "we", "explore", "use", "photonic", "mixer", "device", "-lrb-", "pmd", "-rrb-", "commonly", "use", "inexpensive", "time-of-flight", "camera", "alternative", "instrumentation", "transient", "imaging", "we", "obtain", "sequence", "differently", "modulate", "image", "PMD", "sensor", "impose", "model", "local", "light/object", "interaction", "use", "optimization", "procedure", "infer", "transient", "image", "give", "measurement", "model", "result", "method", "produce", "transient", "image", "cost", "several", "order", "magnitude", "below", "exist", "method", "while", "simultaneously", "simplify", "speed", "up", "capture", "process", "cr", "category", "i.", "3.3", "-lsb-", "Computer", "Graphics", "-rsb-", "generation?digitizing", "scanning", "keyword", "computational", "photography", "transient", "imaging" ],
+  "content" : "Transient imaging is an exciting a new imaging modality that can be used to understand light propagation in complex environments, and to capture and analyze scene properties such as the shape of hidden objects or the reflectance properties of surfaces. Unfortunately, research in transient imaging has so far been hindered by the high cost of the required instrumentation, as well as the fragility and difficulty to operate and calibrate devices such as femtosecond lasers and streak cameras. In this paper, we explore the use of photonic mixer devices (PMD), commonly used in inexpensive time-of-flight cameras, as alternative instrumentation for transient imaging. We obtain a sequence of differently modulated images with a PMD sensor, impose a model for local light/object interaction, and use an optimization procedure to infer transient images given the measurements and model. The resulting method produces transient images at a cost several orders of magnitude below existing methods, while simultaneously simplifying and speeding up the capture process. CR Categories: I.3.3 [Computer Graphics]: Generation?Digitizing and scanning Keywords: computational photography, transient imaging",
+  "resources" : [ ]
+}

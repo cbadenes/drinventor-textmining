@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2014-a37-su_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a37-su_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Estimating Image Depth Using Shape Collections",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Hao-Su",
+      "name" : "Hao",
+      "surname" : "Su"
+    }, {
+      "uri" : "http://drinventor/Qixing-Huang",
+      "name" : "Qixing",
+      "surname" : "Huang"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    }, {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Leonidas J.-Guibas",
+      "name" : "Leonidas J.",
+      "surname" : "Guibas"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

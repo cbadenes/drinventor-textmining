@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2011-a69-gastal_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a69-gastal_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Domain Transform for Edge-Aware Image and Video Processing",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Eduardo S. L.-Gastal",
+      "name" : "Eduardo S. L.",
+      "surname" : "Gastal"
+    }, {
+      "uri" : "http://drinventor/Manuel M.-Oliveira",
+      "name" : "Manuel M.",
+      "surname" : "Oliveira"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "new", "approach", "perform", "high-quality", "edgepreserving", "filter", "image", "video", "real", "time", "we", "solution", "base", "transform", "define", "isometry", "between", "curve", "2d", "image", "manifold", "5d", "real", "line", "transform", "preserve", "geodesic", "distance", "between", "point", "curve", "adaptively", "warp", "input", "signal", "so", "1d", "edge-preserving", "filter", "can", "efficiently", "perform", "linear", "time", "we", "demonstrate", "three", "realization", "1d", "edge-preserving", "filter", "show", "how", "produce", "high-quality", "2d", "edge-preserving", "filter", "iterate", "1d-filtering", "operation", "empirically", "analyze", "convergence", "process", "we", "approach", "have", "several", "desirable", "feature", "use", "1d", "operation", "lead", "considerable", "speedup", "over", "exist", "technique", "potential", "memory", "savings", "its", "computational", "cost", "affect", "choice", "filter", "parameter", "first", "edge-preserving", "filter", "work", "color", "image", "arbitrary", "scale", "real", "time", "without", "resort", "subsampling", "quantization", "we", "demonstrate", "versatility", "we", "domain", "transform", "edge-preserving", "filter", "several", "real-time", "image", "video", "processing", "task", "include", "edgepreserve", "filter", "depth-of-field", "effect", "stylization", "recoloring", "colorization", "detail", "enhancement", "tone", "mapping", "cr", "category", "i.", "4.3", "-lsb-", "image", "processing", "computer", "Vision", "-rsb-", "enhancement?filtering", "eslgastal@inf.ufrgs.br", "oliveira@inf.ufrgs.br" ],
+  "content" : "We present a new approach for performing high-quality edgepreserving filtering of images and videos in real time. Our solution is based on a transform that defines an isometry between curves on the 2D image manifold in 5D and the real line. This transform preserves the geodesic distance between points on these curves, adaptively warping the input signal so that 1D edge-preserving filtering can be efficiently performed in linear time. We demonstrate three realizations of 1D edge-preserving filters, show how to produce high-quality 2D edge-preserving filters by iterating 1D-filtering operations, and empirically analyze the convergence of this process. Our approach has several desirable features: the use of 1D operations leads to considerable speedups over existing techniques and potential memory savings; its computational cost is not affected by the choice of the filter parameters; and it is the first edge-preserving filter to work on color images at arbitrary scales in real time, without resorting to subsampling or quantization. We demonstrate the versatility of our domain transform and edge-preserving filters on several real-time image and video processing tasks including edgepreserving filtering, depth-of-field effects, stylization, recoloring, colorization, detail enhancement, and tone mapping. CR Categories: I.4.3 [Image Processing and Computer Vision]: Enhancement?Filtering ? eslgastal@inf.ufrgs.br ? oliveira@inf.ufrgs.br",
+  "resources" : [ ]
+}

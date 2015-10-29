@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2008a-a112-ye_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a112-ye_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Animating Responsive Characters with Dynamic Constraints in Near-Unactuated Coordinates",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yuting-Ye",
+      "name" : "Yuting",
+      "surname" : "Ye"
+    }, {
+      "uri" : "http://drinventor/C. Karen-Liu",
+      "name" : "C. Karen",
+      "surname" : "Liu"
+    } ]
+  },
+  "bagOfWords" : [ "one", "possibility", "estimate", "ground", "contact", "force", "from", "motion", "capture", "datum", "use", "method", "describe", "Liu", "et", "al.", "-lsb-", "2005", "-rsb-", "another", "promising", "future", "direction", "combine", "we", "technique", "sophisticated", "balance", "controller", "determine", "lower", "body", "root", "movement", "-lsb-", "da", "Silva", "et", "al.", "2008", "Yin", "et", "al.", "2007", "-rsb-" ],
+  "content" : "One possibility is to estimate the ground contact forces from motion capture data using the method described by Liu et al. [2005]. Another promising future direction is to combine our technique with sophisticated balance controllers that determine the lower body and root movements [da Silva et al. 2008; Yin et al. 2007].",
+  "resources" : [ ]
+}

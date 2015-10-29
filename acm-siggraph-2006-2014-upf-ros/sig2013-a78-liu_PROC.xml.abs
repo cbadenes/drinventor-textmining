@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2013-a78-liu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013/a78-liu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Bundled Camera Paths for Video Stabilization",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Shuaicheng-Liu",
+      "name" : "Shuaicheng",
+      "surname" : "Liu"
+    }, {
+      "uri" : "http://drinventor/Lu-Yuan",
+      "name" : "Lu",
+      "surname" : "Yuan"
+    }, {
+      "uri" : "http://drinventor/Ping-Tan",
+      "name" : "Ping",
+      "surname" : "Tan"
+    }, {
+      "uri" : "http://drinventor/Jian Sun-null",
+      "name" : "Jian Sun",
+      "surname" : null
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "novel", "video", "stabilization", "method", "which", "model", "camera", "motion", "bundle", "-lrb-", "multiple", "-rrb-", "camera", "path", "propose", "model", "base", "mesh-based", "spatially-variant", "motion", "representation", "adaptive", "space-time", "path", "optimization", "we", "motion", "representation", "allow", "we", "fundamentally", "handle", "parallax", "roll", "shutter", "effect", "while", "do", "require", "long", "feature", "trajectory", "sparse", "3d", "reconstruction", "we", "introduce", "as-similaras-possible", "idea", "make", "motion", "estimation", "more", "robust", "we", "space-time", "path", "smoothing", "adaptively", "adjust", "smoothness", "strength", "consider", "discontinuity", "crop", "size", "geometrical", "distortion", "unify", "optimization", "framework", "evaluation", "large", "variety", "consumer", "video", "demonstrate", "merit", "we", "method", "cr", "category", "i.", "4.3", "-lsb-", "image", "processing", "computer", "Vision", "-rsb-", "enhancement?registration", "keyword", "video", "stabilization", "image", "warping", "camera", "path", "Links", "dl", "pdf" ],
+  "content" : "We present a novel video stabilization method which models camera motion with a bundle of (multiple) camera paths. The proposed model is based on a mesh-based, spatially-variant motion representation and an adaptive, space-time path optimization. Our motion representation allows us to fundamentally handle parallax and rolling shutter effects while it does not require long feature trajectories or sparse 3D reconstruction. We introduce the ?as-similaras-possible? idea to make motion estimation more robust. Our space-time path smoothing adaptively adjusts smoothness strength by considering discontinuities, cropping size and geometrical distortion in a unified optimization framework. The evaluation on a large variety of consumer videos demonstrates the merits of our method. CR Categories: I.4.3 [Image Processing and Computer Vision]: Enhancement?Registration Keywords: video stabilization, image warping, camera paths\n      Links: DL PDF",
+  "resources" : [ ]
+}

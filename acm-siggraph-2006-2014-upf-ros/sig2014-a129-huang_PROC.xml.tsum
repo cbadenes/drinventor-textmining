@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2014-a129-huang_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a129-huang_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Image Completion using Planar Structure Guidance",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jia-Bin-Huang",
+      "name" : "Jia-Bin",
+      "surname" : "Huang"
+    }, {
+      "uri" : "http://drinventor/Sing Bing-Kang",
+      "name" : "Sing Bing",
+      "surname" : "Kang"
+    }, {
+      "uri" : "http://drinventor/Narendra-Ahuja",
+      "name" : "Narendra",
+      "surname" : "Ahuja"
+    }, {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    } ]
+  },
+  "bagOfWords" : [ "notion", "automatic", "guidance", "map", "image", "completion", "have", "be", "use", "number", "approach", "we", "augment", "image", "completion", "objective", "function", "two", "way", "First", "we", "augment", "patch", "distance", "-lrb-", "call", "coherence", "measure", "original", "paper", "-lsb-", "2007", "-rsb-", "-rrb-", "include", "guidance", "term", "section", "we", "describe", "how", "detect", "plane", "extract", "regularity", "from", "previous", "section", "use", "guide", "low-level", "image", "completion", "algorithm", "from", "example", "realistic", "scene", "we", "can", "see", "we", "image", "completion", "algorithm", "robust", "deviation", "from", "perfectly", "textured", "planar", "surface", "while", "much", "progress", "have", "be", "make", "image", "completion", "remain", "challenging", "problem", "regularity", "guide", "sampling", "scheme", "greatly", "improve", "completion", "quality", "when", "repetitive", "structure", "exist", "regularity", "detection", "step", "provide", "positional", "guidance", "i.e.", "where", "source", "patch", "should", "copy", "from", "we", "use", "detect", "perspective", "plane", "translational", "regularity", "within", "each", "plane", "soft", "constraint", "guide", "low-level", "image", "completion", "-lrb-", "section", "-rrb-", "section", "we", "review", "representative", "technique", "image", "completion", "section", "we", "describe", "we", "analysis", "known", "image", "region", "detect", "planar", "surface", "-lrb-", "section", "4.1", "-rrb-", "translational", "regularity", "within", "plane", "-lrb-", "section", "4.2", "-rrb-" ],
+  "content" : "The notion of automatic guidance maps for image completion has been used in a number of approaches. We augment the image completion objective function in two ways: First, we augment the patch distance (called ?coherence measure? in the original paper [2007]) by including a guidance term. In this section, we describe how the detected planes and extracted regularity from the previous section are used to guide the low-level image completion algorithm. From these examples of realistic scenes, we can see that our image completion algorithm is robust to deviations from perfectly textured planar surfaces. While much progress has been made, image completion remains a challenging problem. This regularity guided sampling scheme greatly improves the completion quality when repetitive structures exist. The regularity detection step provides ?positional? guidance, i.e., where the source patch should be copied from. We use the detected perspective planes and the translational regularity within each plane as soft constraints to guide the low-level image completion (Section 5). In this section, we review representative techniques for image completion. In this section, we describe our analysis of the known image region to detect planar surfaces (Section 4.1) and translational regularity within these planes (Section 4.2).",
+  "resources" : [ ]
+}

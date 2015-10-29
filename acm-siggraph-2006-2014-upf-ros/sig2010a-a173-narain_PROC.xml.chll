@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2010a-a173-narain_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a173-narain_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Free-Flowing Granular Materials with Two-Way Solid Coupling",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Rahul-Narain",
+      "name" : "Rahul",
+      "surname" : "Narain"
+    }, {
+      "uri" : "http://drinventor/Abhinav-Golas",
+      "name" : "Abhinav",
+      "surname" : "Golas"
+    }, {
+      "uri" : "http://drinventor/Ming C.-Lin",
+      "name" : "Ming C.",
+      "surname" : "Lin"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

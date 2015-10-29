@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2006-p805-irving_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p805-irving_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Efficient Simulation of Large Bodies of Water by Coupling Two and Three Dimensional Techniques",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Geoffrey-Irving",
+      "name" : "Geoffrey",
+      "surname" : "Irving"
+    }, {
+      "uri" : "http://drinventor/Eran-Guendelman",
+      "name" : "Eran",
+      "surname" : "Guendelman"
+    }, {
+      "uri" : "http://drinventor/Frank-Losasso",
+      "name" : "Frank",
+      "surname" : "Losasso"
+    }, {
+      "uri" : "http://drinventor/Ronald-Fedkiw",
+      "name" : "Ronald",
+      "surname" : "Fedkiw"
+    } ]
+  },
+  "bagOfWords" : [ "after", "advection", "we", "solve", "pressure", "make", "velocity", "divergence", "free", "via", "-lrb-", "-rrb-", "+1", "t?p", "entire", "collection", "uniform", "tall", "cell", "once", "since", "variable", "density", "flow", "do", "have", "approximately", "linear", "vertical", "pressure", "profile", "we", "assume", "density", "spatially", "constant", "can", "move", "right", "hand", "side", "i.e.", "??", "we", "begin", "put", "velocity", "term", "conservation", "form", "use", "transform", "equation", "-lrb-", "uu", "-rrb-", "g.", "where", "-lrb-", "-rrb-", "velocity", "pressure", "density", "acceleration", "due", "gravity", "Research", "support", "part", "ONR", "YIP", "award", "pecase", "award", "-lrb-", "onr", "n00014-01-1-0620", "-rrb-", "Packard", "Foundation", "Fellowship", "Sloan", "Research", "Fellowship", "ONR", "n00014-03-1-0071", "onr", "n00014-02-1-0720", "onr", "n00014-05-1-0479", "-lrb-", "SUN", "computing", "cluster", "-rrb-", "aro", "daad19-03-1-0331", "nsf", "iis-0326388", "nsf", "itr-0205671", "nsf", "itr-0121288", "nsf", "aci-0323866", "NIH", "u54-gm072970", "contrast", "method", "base", "height", "field", "-lrb-", "shallow", "water", "equation", "-lsb-", "Kass", "Miller", "1990", "O?Brien", "Hodgins", "1995", "-rsb-", "-rrb-", "use", "tall", "cell", "detailed", "refinement", "horizontal", "direction", "thus", "capture", "effect", "complex", "bottom", "topography", "rather", "well", "other", "work", "water", "liquid", "include", "viscoelastic", "fluid", "-lsb-", "Goktekin", "et", "al.", "2004", "-rsb-", "solid", "fluid", "coupling", "-lsb-", "Carlson", "et", "al.", "2004", "Guendelman", "et", "al.", "2005", "-rsb-", "control", "-lsb-", "McNamara", "et", "al.", "2004", "Shi", "Yu", "2005", "-rsb-", "contact", "angle", "-lsb-", "Wang", "et", "al.", "2005", "-rsb-", "sand", "-lsb-", "Zhu", "Bridson", "2005", "-rsb-", "two", "phase", "flow", "-lsb-", "Hong", "Kim", "2005", "-rsb-", "we", "present", "new", "method", "efficient", "simulation", "large", "body", "water", "especially", "effective", "when", "three-dimensional", "surface", "effect", "important", "fluid", "simulator", "solve", "level", "set", "narrow", "band", "near", "interface", "use", "uniform", "MAC", "discretization", "inside", "liquid", "fluid", "solver", "long", "cell", "allow", "only", "air", "course", "can", "fix", "coarsen", "octree", "away", "from", "interface", "otherwise", "apply", "standard", "MAC", "solver", "uniform", "cell", "near", "water", "surface" ],
+  "content" : "After advection, we solve for the pressure and make the velocities divergence free via ? ? (?p/?) = ? ? u ? /?t u n+1 = u ? ? ?t?p/? for the entire collection of uniform and tall cells at once. Since variable density flows do not have approximately linear vertical pressure profiles, we assume that the density is spatially constant and can be moved to the right hand side, i.e. ? ? ?p = ?? ? u ? /?t. We begin by putting the velocity terms into conservation form using ? ? u = 0 to transform equation 2 into u t + ? ? (uu T ) + ?p/? = g. where u = (u, v, w) is the velocity, p is the pressure, ? is the density, and g is the acceleration due to gravity. Research supported in part by an ONR YIP award and a PECASE award (ONR N00014-01-1-0620), a Packard Foundation Fellowship, a Sloan Research Fellowship, ONR N00014-03-1-0071, ONR N00014-02-1-0720, ONR N00014-05-1-0479 (for a SUN computing cluster), ARO DAAD19-03-1-0331, NSF IIS-0326388, NSF  ITR-0205671, NSF ITR-0121288, NSF ACI-0323866 and NIH U54-GM072970. In contrast, methods based on height fields (such as the shallow water equations [Kass and Miller 1990; O?Brien and Hodgins 1995]) use tall cells with detailed refinement in the horizontal directions, thus capturing the effects of complex bottom topography rather well. Other work on water and liquids includes viscoelastic fluids [Goktekin et al. 2004], solid fluid coupling [Carlson et al. 2004; Guendelman et al. 2005], control [McNamara et al. 2004; Shi and Yu 2005], contact angles [Wang et al. 2005], sand [Zhu and Bridson 2005], and two phase flow [Hong and Kim 2005]. We present a new method for the efficient simulation of large bodies of water, especially effective when three-dimensional surface effects are important. Their fluid simulator solves the level set on a narrow band near the interface, but uses a uniform MAC discretization inside the liquid for the fluid solver with long cells allowed only in the air. Of course, this can be fixed by coarsening the octree away from the interface, and otherwise applying a standard MAC solver in the uniform cells near the water surface.",
+  "resources" : [ ]
+}

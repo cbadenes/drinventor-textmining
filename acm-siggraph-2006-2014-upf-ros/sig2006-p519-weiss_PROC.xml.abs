@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2006-p519-weiss_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p519-weiss_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast Median and Bilateral Filtering",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ben-Weiss",
+      "name" : "Ben",
+      "surname" : "Weiss"
+    } ]
+  },
+  "bagOfWords" : [ "median", "filter", "cornerstone", "modern", "image", "processing", "use", "extensively", "smoothing", "de-noising", "application", "fastest", "commercial", "implementation", "-lrb-", "e.g.", "Adobe", "Photoshop", "cs2", "-rrb-", "exhibit", "-lrb-", "-rrb-", "runtime", "radius", "filter", "which", "limit", "usefulness", "realtime", "resolution-independent", "context", "we", "introduce", "cpu-based", "vectorizable", "-lrb-", "log", "-rrb-", "algorithm", "median", "filter", "we", "knowledge", "most", "efficient", "yet", "develop", "we", "algorithm", "extend", "image", "any", "bit-depth", "can", "also", "adapt", "perform", "bilateral", "filter", "8-bit", "datum", "we", "median", "filter", "outperform", "photoshop?s", "implementation", "up", "factor", "fifty", "cr", "category", "F.", "2.2", "-lsb-", "analysis", "algorithm", "Problem", "Complexity", "-rsb-", "nonnumerical", "algorithm", "problem", "sort", "searching", "i.", "4.3", "-lsb-", "image", "processing", "computer", "Vision", "-rsb-", "enhancement", "filter", "D.", "2.8", "-lsb-", "Software", "Engineering", "-rsb-", "metric", "Complexity", "measure", "E.", "-lsb-", "datum", "structure", "-rsb-", "array", "keyword", "median", "filter", "bilateral", "filter", "rank-order", "filter", "sort", "image", "processing", "algorithm", "histogram", "datum", "structure", "complexity", "simd", "vector", "processing" ],
+  "content" : "Median filtering is a cornerstone of modern image processing and is used extensively in smoothing and de-noising applications. The fastest commercial implementations (e.g. in Adobe ? Photoshop ? CS2) exhibit O(r) runtime in the radius of the filter, which limits their usefulness in realtime or resolution-independent contexts. We introduce a CPU-based, vectorizable O(log r) algorithm for median filtering, to our knowledge the most efficient yet developed. Our algorithm extends to images of any bit-depth, and can also be adapted to perform bilateral filtering. On 8-bit data our median filter outperforms Photoshop?s implementation by up to a factor of fifty. CR Categories: F.2.2 [Analysis of Algorithms and Problem Complexity]: Nonnumerical Algorithms and Problems ? Sorting and Searching; I.4.3 [Image Processing and Computer Vision]: Enhancement ? Filtering ; D.2.8 [Software Engineering]: Metrics ? Complexity Measures; E.1 [Data Structures]: Arrays Keywords: median filtering, bilateral filtering, rank-order filtering, sorting, image processing, algorithms, histograms, data structures, complexity, SIMD, vector processing",
+  "resources" : [ ]
+}

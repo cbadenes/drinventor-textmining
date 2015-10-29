@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2006-p519-weiss_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p519-weiss_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast Median and Bilateral Filtering",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ben-Weiss",
+      "name" : "Ben",
+      "surname" : "Weiss"
+    } ]
+  },
+  "bagOfWords" : [ "we", "have", "present", "logarithmic-time", "median", "filter", "algorithm", "scalable", "arbitrary", "radius", "adaptable", "image", "any", "bitdepth", "we", "believe", "most", "efficient", "median", "algorithm", "yet", "develop", "both", "term", "theoretical", "complexity", "real-world", "performance", "we", "algorithm", "can", "extend", "perform", "general", "rank-order", "filter", "flexible", "enough", "accomplish", "wide", "variety", "practical", "creative", "task", "significantly", "we", "have", "show", "we", "algorithm", "can", "adapt", "perform", "bilateral", "filter", "where", "become", "highly", "effective", "noise-removal", "tool", "we", "algorithm", "provide", "high-precision", "translation-invariant", "realtime", "implementation", "bilateral", "filter", "support", "nonlinear", "intensity", "scaling", "which", "greatly", "enhance", "quality", "result", "we", "algorithm", "have", "show", "advantage", "only", "high", "radius", "across", "spectrum", "time", "take", "Photoshop", "cs2", "process", "5x5", "median", "bilateral", "filter", "we", "implementation", "can", "process", "any", "kernel", "up", "255x255", "we", "have", "adapt", "we", "algorithm", "multiple", "processor", "near-linear", "performance", "gain", "up", "3.2", "faster", "four-processor", "system", "versus", "single", "processor", "accompany", "video", "demonstrate", "realtime", "performance", "we", "median", "bilateral", "filter", "now", "speed", "median", "filter", "have", "be", "bring", "onto", "par", "workhorse", "filter", "image-processing", "-lrb-", "e.g.", "gaussian", "blur", "fft", "-rrb-", "we", "anticipate", "median", "filter", "its", "derivative", "become", "more", "widely", "use", "part", "standard", "imageprocessing", "repertoire", "we", "hope", "we", "algorithm", "spark", "renew", "interest", "line", "research", "we", "confident", "new", "application", "discovery", "lie", "just", "around", "corner" ],
+  "content" : "We have presented a logarithmic-time median filter algorithm, scalable to arbitrary radius and adaptable to images of any bitdepth. We believe this is the most efficient median algorithm yet developed, both in terms of theoretical complexity and real-world performance. Our algorithm can be extended to perform general rank-order filtering, and it is flexible enough to accomplish a wide variety of practical and creative tasks. Significantly, we have shown that our algorithm can be adapted to perform bilateral filtering, where it becomes a highly effective noise-removal tool. Our algorithm provides a high-precision, translation-invariant, realtime implementation of the bilateral filter, and supports nonlinear intensity scaling, which greatly enhances the quality of the result. Our algorithms have shown their advantage not only at high radii but across the spectrum. In the time it takes Photoshop ? CS2 to process a 5x5 median or bilateral filter, our implementation can process any kernel up to 255x255. We have adapted our algorithm to multiple processors with near-linear performance gains, up to 3.2x faster on a four-processor system versus a single processor. The accompanying videos demonstrate the realtime performance of our median and bilateral filters. Now that the speed of the median filter has been brought onto par with the workhorse filters of image-processing (e.g. Gaussian blur and FFT), we anticipate that the median filter and its derivatives will become a more widely used part of the standard imageprocessing repertoire. It is our hope that our algorithms spark renewed interest in this line of research, and we are confident that new applications and discoveries lie just around the corner.",
+  "resources" : [ ]
+}

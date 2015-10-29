@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2008a-a139-ghosh_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a139-ghosh_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Practical Modeling and Acquisition of Layered Facial Reflectance",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Abhijeet-Ghosh",
+      "name" : "Abhijeet",
+      "surname" : "Ghosh"
+    }, {
+      "uri" : "http://drinventor/Tim-Hawkins",
+      "name" : "Tim",
+      "surname" : "Hawkins"
+    }, {
+      "uri" : "http://drinventor/Pieter-Peers",
+      "name" : "Pieter",
+      "surname" : "Peers"
+    }, {
+      "uri" : "http://drinventor/Sune-Frederiksen",
+      "name" : "Sune",
+      "surname" : "Frederiksen"
+    }, {
+      "uri" : "http://drinventor/Paul E.-Debevec",
+      "name" : "Paul E.",
+      "surname" : "Debevec"
+    } ]
+  },
+  "bagOfWords" : [ "future", "work", "we", "would", "like", "investigate", "other", "method", "than", "-lsb-", "Nayar", "et", "al.", "2006", "-rsb-", "separate", "subsurface", "scattering", "layer", "skin", "color", "space", "separation", "from", "different", "color", "channel", "we", "image", "furthermore", "relate", "separated", "layer", "more", "precisely", "multi-layer", "model", "Donner", "Jensen", "-lsb-", "2005", "-rsb-", "another", "interesting", "avenue", "future", "work" ],
+  "content" : "For future work, we would like to investigate other methods than [Nayar et al. 2006] for separating the subsurface scattering layers of skin such as color space separation from the different color channels of our images. Furthermore, relating these separated layers more precisely to the multi-layer model of Donner and Jensen [2005] is another interesting avenue for future work.",
+  "resources" : [ ]
+}

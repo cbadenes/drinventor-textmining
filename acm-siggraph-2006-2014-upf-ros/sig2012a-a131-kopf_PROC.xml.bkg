@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012a-a131-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a131-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Quality Prediction for Image Completion",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Wolf-Kienzle",
+      "name" : "Wolf",
+      "surname" : "Kienzle"
+    }, {
+      "uri" : "http://drinventor/Steven M.-Drucker",
+      "name" : "Steven M.",
+      "surname" : "Drucker"
+    }, {
+      "uri" : "http://drinventor/Sing Bing-Kang",
+      "name" : "Sing Bing",
+      "surname" : "Kang"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

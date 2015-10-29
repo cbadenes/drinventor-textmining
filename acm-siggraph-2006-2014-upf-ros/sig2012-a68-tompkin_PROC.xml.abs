@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012-a68-tompkin_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a68-tompkin_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Videoscapes: Exploring Sparse, Unstructured Video Collections",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/James-Tompkin",
+      "name" : "James",
+      "surname" : "Tompkin"
+    }, {
+      "uri" : "http://drinventor/Kwang In-Kim",
+      "name" : "Kwang In",
+      "surname" : "Kim"
+    }, {
+      "uri" : "http://drinventor/Jan-Kautz",
+      "name" : "Jan",
+      "surname" : "Kautz"
+    }, {
+      "uri" : "http://drinventor/Christian-Theobalt",
+      "name" : "Christian",
+      "surname" : "Theobalt"
+    } ]
+  },
+  "bagOfWords" : [ "abundance", "mobile", "device", "digital", "camera", "video", "capture", "make", "easy", "obtain", "large", "collection", "video", "clip", "contain", "same", "location", "environment", "event", "however", "unstructured", "collection", "difficult", "comprehend", "explore", "we", "propose", "system", "analyze", "collection", "unstructured", "related", "video", "datum", "create", "Videoscape", "datum", "structure", "enable", "interactive", "exploration", "video", "collection", "visually", "navigate", "spatially", "and/or", "temporally", "between", "different", "clip", "we", "automatically", "identify", "transition", "opportunity", "portal", "from", "portal", "we", "construct", "Videoscape", "graph", "whose", "edge", "video", "clip", "whose", "node", "portal", "between", "clip", "now", "structure", "video", "can", "interactively", "explore", "walk", "graph", "geographic", "map", "give", "system", "we", "gauge", "preference", "different", "video", "transition", "style", "user", "study", "generate", "heuristic", "automatically", "choose", "appropriate", "transition", "style", "we", "evaluate", "we", "system", "use", "three", "further", "user", "study", "which", "allow", "we", "conclude", "Videoscapes", "provide", "significant", "benefit", "over", "related", "method", "we", "system", "lead", "previously", "unseen", "way", "interactive", "spatio-temporal", "exploration", "casually", "capture", "video", "we", "demonstrate", "several", "video", "collection", "cr", "category", "i.", "4.8", "-lsb-", "Computer", "Graphics", "-rsb-", "scene", "analysis", "time-varying", "imagery", "Keywords", "video", "collection", "spatio-temporal", "exploration" ],
+  "content" : "The abundance of mobile devices and digital cameras with video capture makes it easy to obtain large collections of video clips that contain the same location, environment, or event. However, such an unstructured collection is difficult to comprehend and explore. We propose a system that analyzes collections of unstructured but related video data to create a Videoscape: a data structure that enables interactive exploration of video collections by visually navigating ? spatially and/or temporally ? between different clips. We automatically identify transition opportunities, or portals. From these portals, we construct the Videoscape, a graph whose edges are video clips and whose nodes are portals between clips. Now structured, the videos can be interactively explored by walking the graph or by geographic map. Given this system, we gauge preference for different video transition styles in a user study, and generate heuristics that automatically choose an appropriate transition style. We evaluate our system using three further user studies, which allows us to conclude that Videoscapes provides significant benefits over related methods. Our system leads to previously unseen ways of interactive spatio-temporal exploration of casually captured videos, and we demonstrate this on several video collections. CR Categories: I.4.8 [Computer Graphics]: Scene Analysis? Time-varying imagery; Keywords: video collections, spatio-temporal exploration.",
+  "resources" : [ ]
+}

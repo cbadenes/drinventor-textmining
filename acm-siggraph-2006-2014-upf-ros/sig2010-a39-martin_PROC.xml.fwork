@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2010-a39-martin_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010/a39-martin_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Unified Simulation of Elastic Rods, Shells, and Solids",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Sebastian-Martin",
+      "name" : "Sebastian",
+      "surname" : "Martin"
+    }, {
+      "uri" : "http://drinventor/Peter-Kaufmann",
+      "name" : "Peter",
+      "surname" : "Kaufmann"
+    }, {
+      "uri" : "http://drinventor/Mario-Botsch",
+      "name" : "Mario",
+      "surname" : "Botsch"
+    }, {
+      "uri" : "http://drinventor/Eitan-Grinspun",
+      "name" : "Eitan",
+      "surname" : "Grinspun"
+    }, {
+      "uri" : "http://drinventor/Markus H.-Gross",
+      "name" : "Markus H.",
+      "surname" : "Gross"
+    } ]
+  },
+  "bagOfWords" : [ "over", "past", "decade", "specialize", "method", "have", "emerge", "efficient", "compelling", "simulation", "each", "form", "alternative", "specialize", "model", "Terzopoulos", "et", "al.", "-lsb-", "1987", "-rsb-", "argue", "differential", "geometry", "provide", "natural", "language", "describe", "physics", "curve", "surface", "volumetric", "body", "naturally", "establish", "trichotomy", "geometric", "form", "whose", "strain", "give", "torsion", "curvature", "metric", "tensor", "glue", "technique", "attractive", "when", "need", "quickly", "combine", "number", "distinct", "exist", "codebase", "keep", "code", "manageable", "extendable", "various", "researcher", "advocate", "sacrifice", "some", "benefit", "specialization", "simplicity", "ultimately", "scalability", "unified", "treatment", "elastica", "many", "work", "graphic", "use", "network", "point", "mass", "because", "can", "connect", "any", "combination", "stretch", "bend", "-lsb-", "Baraff", "Witkin", "1998", "Bridson", "et", "al.", "2003", "-rsb-", "altitude", "spring", "-lsb-", "Selle", "et", "al.", "2008", "-rsb-", "constraint", "can", "replace", "stiff", "spring", "stabler", "integration", "can", "also", "allow", "unilateral", "action", "-lsb-", "Provot", "1995", "M?ller", "et", "al.", "2007", "-rsb-", "some", "work", "attempt", "approach", "continuum", "result", "careful", "choice", "mass", "spring", "coefficient", "-lsb-", "Etzmuss", "et", "al.", "2003", "Zerbato", "et", "al.", "2007", "-rsb-", "use", "prestressed", "configuration", "-lsb-", "Wang", "Devarajan", "2005", "Lloyd", "et", "al.", "2007", "-rsb-", "biquadratic", "spring", "-lsb-", "Delingette", "2008", "-rsb-", "factor", "approximate", "fe", "-lsb-", "Kikuuwe", "et", "al.", "2009", "-rsb-", "application", "cloth", "simulation", "-lsb-", "Volino", "et", "al.", "2009", "-rsb-", "however", "researcher", "agree", "Van", "Gelder?s", "claim", "-lsb-", "1998", "-rsb-", "impossible", "expect", "mass-spring", "network", "converge", "continuum", "model", "general", "setting", "arbitrary", "material", "parameter", "network", "topology", "while", "mass-spring", "network", "attempt", "resolve", "thin", "feature", "other", "method", "compute", "dynamics", "volumetric", "deformation", "field", "embed", "arbitrary", "-lrb-", "thin", "degenerate", "non-manifold", "-rrb-", "geometry", "field", "Strain", "when", "material", "undergo", "deformation", "undeformed", "point", "-lrb-", "-rrb-", "displace", "new", "position", "assume", "hookean", "material", "yield", "linear", "relation", "between", "stress", "strain", "where", "4-tensor", "contain", "elastic", "coefficient", "-lrb-", "young?s", "modulus", "poisson?s", "ratio", "-rrb-", "material", "store", "elastic", "energy", "integral", "volumetric", "energy", "density", "over", "material", "domain", "bend", "strain", "related", "direction", "relative", "length", "cuboid", "side", "give", "absolute", "value", "choose", "elaston?s", "volume", "match", "Voronoi", "region", "i.e.", "exact", "volume", "approximate", "elaston", "ensure", "exact", "representation", "total", "mass", "independent", "sampling", "pattern" ],
+  "content" : "Over the past decades specialized methods have emerged for the efficient and compelling simulation of each of these forms. Is there an alternative to the specialized models? Terzopoulos et al. [1987] argue that differential geometry provides a natural language for describing the physics of curves, surfaces, and volumetric bodies, naturally establishing a trichotomy of geometric forms whose strains are given by torsion, curvature, and the metric tensor. Glue techniques are attractive when there is a need to quickly combine a number of distinct existing codebases. To keep code manageable and extendable, various researchers advocate sacrificing some benefits of specialization for the simplicity and ultimately scalability of a unified treatment of elastica. Many works in graphics use networks of point masses because they can be connected by any combination of stretching, bending [Baraff and Witkin 1998; Bridson et al. 2003], and altitude springs [Selle et al. 2008]; constraints can replace stiff springs for stabler integration and can also allow for unilateral action [Provot 1995; M?ller et al. 2007]. Some works attempt to approach a continuum result by careful choice of masses and spring coefficients [Etzmuss et al. 2003; Zerbato et al. 2007] using prestressed configurations [Wang and Devarajan 2005; Lloyd et al. 2007] or biquadratic springs [Delingette 2008], or by factoring and approximating FEs [Kikuuwe et al. 2009], with applications to cloth simulation [Volino et al. 2009], however researchers agree with Van Gelder?s claim [1998] that it is impossible to expect mass-spring networks to converge to continuum models for the general setting of arbitrary material parameters and network topology. While mass-spring networks attempt to resolve thin features, other methods compute the dynamics of a volumetric deformation field, embedding arbitrary (thin, degenerate, non-manifold) geometries in the field. Strain When the material undergoes a deformation, an undeformed point x(?) is displaced to the new position Assuming a Hookean material yields a linear relation between stress and strain where the 4-tensor C contains the elastic coefficients (Young?s modulus, Poisson?s ratio) of the material. The stored elastic energy W is the integral of volumetric energy density, : ?, over the material domain: and the bending strain related to direction ? k The relative lengths of ? the cuboid ? sides ? are given by ? 1 : ? 2 : ? 3 and their absolute value is chosen such that the elaston?s volume matches that of the Voronoi region M i , i.e., the exact volume to be approximated by the elaston, ensuring exact representation of total mass independent of the sampling pattern.",
+  "resources" : [ ]
+}

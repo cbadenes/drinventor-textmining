@@ -1,0 +1,54 @@
+{
+  "uri" : "sig2008a-a116-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a116-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Deep Photo: Model-Based Photograph Enhancement and Viewing",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Boris-Neubert",
+      "name" : "Boris",
+      "surname" : "Neubert"
+    }, {
+      "uri" : "http://drinventor/Billy-Chen",
+      "name" : "Billy",
+      "surname" : "Chen"
+    }, {
+      "uri" : "http://drinventor/Michael F.-Cohen",
+      "name" : "Michael F.",
+      "surname" : "Cohen"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Oliver-Deussen",
+      "name" : "Oliver",
+      "surname" : "Deussen"
+    }, {
+      "uri" : "http://drinventor/Matthew-Uyttendaele",
+      "name" : "Matthew",
+      "surname" : "Uyttendaele"
+    }, {
+      "uri" : "http://drinventor/Dani-Lischinski",
+      "name" : "Dani",
+      "surname" : "Lischinski"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "Deep", "Photo", "novel", "system", "editing", "browse", "outdoor", "photograph", "leverage", "high", "quality", "3d", "model", "earth", "now", "become", "widely", "available", "we", "have", "demonstrate", "once", "simple", "geo-registration", "photo", "perform", "model", "can", "use", "many", "interesting", "photo", "manipulation", "range", "from", "deand", "rehazing", "relighting", "integrate", "gi", "information", "application", "we", "show", "vary", "haze", "removal", "challenging", "problem", "due", "fact", "haze", "function", "depth", "we", "have", "show", "now", "depth", "available", "geo-registered", "photograph", "excellent", "haze", "editing", "can", "achieve", "similarly", "have", "underlie", "geometric", "model", "make", "possible", "generate", "convincing", "relighted", "photograph", "dynamically", "change", "view", "finally", "we", "demonstrate", "enormous", "wealth", "information", "available", "online", "can", "now", "use", "annotate", "help", "browse", "photograph", "within", "we", "framework", "we", "use", "model", "obtain", "from", "virtual", "Earth", "manual", "registration", "do", "within", "minute", "mat", "out", "-lrb-", "-rrb-", "-lrb-", "-rrb-", "-lrb-", "-rrb-", "foreground", "also", "easy", "task", "use", "state-of-the-art", "technique", "Soft", "Scissors", "-lsb-", "Wang", "et", "al.", "2007", "-rsb-", "all", "other", "operation", "dehazing", "relighting", "run", "interactive", "speed", "however", "compute", "very", "detailed", "shadow", "map", "relighting", "can", "time", "consuming", "can", "expect", "always", "some", "difference", "misalignment", "between", "photograph", "model", "may", "arise", "due", "insufficiently", "accurate", "model", "also", "due", "fact", "photograph", "be", "capture", "ideal", "pinhole", "camera", "although", "can", "lead", "some", "artifact", "-lrb-", "see", "Figure", "-rrb-", "we", "find", "many", "case", "difference", "less", "problematic", "than", "one", "might", "fear", "however", "automatically", "resolve", "difference", "certainly", "challenging", "interesting", "topic", "future", "work", "we", "believe", "application", "present", "here", "represent", "just", "small", "fraction", "possible", "geo-photo", "editing", "operation", "many", "exist", "digital", "photography", "product", "could", "greatly", "enhance", "use", "geo", "information", "Operations", "could", "encompass", "noise-reduction", "image", "sharpen", "3d", "model", "prior", "postcapture", "refocussing", "object", "recovery", "under", "over-exposed", "area", "well", "illumination", "transfer", "between", "photograph", "gi", "database", "contain", "wealth", "information", "which", "we", "have", "just", "use", "small", "amount", "water", "grass", "pavement", "build", "material", "etc", "can", "all", "potentially", "automatically", "label", "use", "improve", "photo", "tone", "adjustment", "label", "can", "transfer", "automatically", "from", "one", "image", "other", "again", "have", "single", "consistent", "3d", "model", "we", "photograph", "provide", "much", "more", "than", "just", "depth", "value", "per", "pixel", "paper", "we", "mostly", "deal", "single", "image", "most", "application", "we", "demonstrate", "become", "even", "stronger", "when", "combine", "multiple", "input", "photo", "particularly", "interesting", "direction", "might", "combine", "Deep", "Photo", "Photo", "Tourism", "system", "once", "Photo", "Tour", "geo-registered", "coarse", "3d", "information", "generate", "Photo", "Tourism", "could", "use", "enhance", "online", "3d", "datum", "vice-versa", "information", "visualization", "novel", "view", "synthesis", "application", "we", "demonstrate", "here", "could", "combine", "Photo", "Tourism", "viewer", "idea", "fuse", "multiple", "image", "could", "even", "extend", "video", "could", "register", "model" ],
+  "content" : "We presented Deep Photo, a novel system for editing and browsing outdoor photographs. It leverages the high quality 3D models of the earth that are now becoming widely available. We have demonstrated that once a simple geo-registration of a photo is performed, the models can be used for many interesting photo manipulations that range from deand rehazing and relighting to integrating GIS information. The applications we show are varied. Haze removal is a challenging problem due to the fact that haze is a function of depth. We have shown that now that depth is available in a geo-registered photograph, excellent ?haze editing? can be achieved. Similarly, having an underlying geometric model makes it possible to generate convincing relighted photographs, and dynamically change the view. Finally, we demonstrate that the enormous wealth of information available online can now be used to annotate and help browse photographs. Within our framework we used models obtained from Virtual Earth. The manual registration is done within a minute, matting out the\n        (c) (d) (e) foreground is also an easy task using state-of-the-art techniques such as Soft Scissors [Wang et al. 2007]. All other operations such as dehazing and relighting run at interactive speeds; however, computing very detailed shadow maps for the relighting can be time consuming. As can be expected, there are always some differences and misalignments between the photograph and the model. The may arise due to insufficiently accurate models, and also due to the fact that the photographs were not captured with an ideal pinhole camera. Although they can lead to some artifacts (see Figure 9 ), we found that in many cases these differences are less problematic than one might fear. However, automatically resolving such differences is certainly a challenging and interesting topic for future work. We believe that the applications presented here represent just a small fraction of possible geo-photo editing operations. Many of the existing digital photography products could be greatly enhanced with the use of geo information. Operations could encompass noise-reduction and image sharpening with 3D model priors, postcapture refocussing, object recovery in under or over-exposed areas as well as illumination transfer between photographs. GIS databases contain a wealth of information, of which we have just used a small amount. Water, grass, pavement, building materials, etc, can all potentially be automatically labeled and used to improve photo tone adjustment. Labels can be transferred automatically from one image to others. Again, having a single consistent 3D model for our photographs provides much more than just a depth value per pixel. In this paper we mostly dealt with single images. Most of the applications that we demonstrated become even stronger when combining multiple input photos. A particularly interesting direction might be to combine Deep Photo with the Photo Tourism system. Once a Photo Tour is geo-registered, the coarse 3D information generated by Photo Tourism could be used to enhance online 3D data and vice-versa. The information visualization and novel view synthesis applications we demonstrate here could be combined with the Photo Tourism viewer. This idea of fusing multiple images could even be extended to video that could be registered to the models.",
+  "resources" : [ ]
+}

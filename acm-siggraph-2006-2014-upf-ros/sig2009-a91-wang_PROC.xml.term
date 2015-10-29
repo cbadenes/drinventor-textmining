@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2009-a91-wang_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a91-wang_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "An Efficient GPU-based Approach for Interactive Global Illumination",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Rui Wang-null",
+      "name" : "Rui Wang",
+      "surname" : null
+    }, {
+      "uri" : "http://drinventor/Rui Wang-null",
+      "name" : "Rui Wang",
+      "surname" : null
+    }, {
+      "uri" : "http://drinventor/Kun-Zhou",
+      "name" : "Kun",
+      "surname" : "Zhou"
+    }, {
+      "uri" : "http://drinventor/Minghao-Pan",
+      "name" : "Minghao",
+      "surname" : "Pan"
+    }, {
+      "uri" : "http://drinventor/Hujun-Bao",
+      "name" : "Hujun",
+      "surname" : "Bao"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

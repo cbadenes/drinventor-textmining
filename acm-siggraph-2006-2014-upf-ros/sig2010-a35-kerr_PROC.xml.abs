@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2010-a35-kerr_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010/a35-kerr_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Toward Evaluating Material Design Interface Paradigms for Novice Users",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/William B.-Kerr",
+      "name" : "William B.",
+      "surname" : "Kerr"
+    }, {
+      "uri" : "http://drinventor/Fabio-Pellacini",
+      "name" : "Fabio",
+      "surname" : "Pellacini"
+    } ]
+  },
+  "bagOfWords" : [ "material", "design", "process", "which", "artist", "specify", "reflectance", "property", "surface", "its", "diffuse", "color", "specular", "roughness", "we", "present", "user", "study", "evaluate", "relative", "benefit", "different", "material", "design", "interface", "focus", "novice", "user", "since", "stand", "gain", "most", "from", "intuitive", "interface", "specifically", "we", "investigate", "editing", "parameter", "analytic", "bidirectional", "distribution", "function", "-lrb-", "brdf", "-rrb-", "use", "three", "interface", "paradigm", "physical", "slider", "which", "user", "set", "parameter", "analytic", "brdf", "model", "diffuse", "albedo", "specular", "roughness", "perceptual", "slider", "which", "user", "set", "perceptually-inspired", "parameter", "diffuse", "luminance", "gloss", "contrast", "image", "navigation", "which", "material", "variation", "display", "array", "image", "thumbnail", "user", "make", "edit", "select", "they", "we", "investigate", "two", "design", "task", "precise", "adjustment", "artistic", "exploration", "we", "collect", "objective", "subjective", "datum", "find", "subject", "can", "perform", "equally", "well", "physical", "perceptual", "slider", "long", "interface", "respond", "interactively", "image", "navigation", "perform", "worse", "than", "other", "interface", "precise", "adjustment", "task", "excel", "aid", "artistic", "exploration", "we", "find", "give", "enough", "time", "novice", "can", "perform", "relatively", "complex", "material", "editing", "task", "little", "training", "most", "novice", "work", "similarly", "one", "another" ],
+  "content" : "Material design is the process by which artists specify the reflectance properties of a surface, such as its diffuse color and specular roughness. We present a user study to evaluate the relative benefits of different material design interfaces, focusing on novice users since they stand to gain the most from intuitive interfaces. Specifically, we investigate the editing of the parameters of analytic bidirectional distribution functions (BRDFs) using three interface paradigms: physical sliders by which users set the parameters of analytic BRDF models, such as diffuse albedo and specular roughness; perceptual sliders by which users set perceptually-inspired parameters, such as diffuse luminance and gloss contrast; and image navigation by which material variations are displayed in arrays of image thumbnails and users make edits by selecting them. We investigate two design tasks: precise adjustment and artistic exploration. We collect objective and subjective data, finding that subjects can perform equally well with physical and perceptual sliders as long as the interface responds interactively. Image navigation performs worse than the other interfaces on precise adjustment tasks, but excels at aiding in artistic exploration. We find that given enough time, novices can perform relatively complex material editing tasks with little training, and most novices work similarly to one another.",
+  "resources" : [ ]
+}

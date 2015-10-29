@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2011-a52-li_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a52-li_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "GlobFit: Consistently Fitting Primitives by Discovering Global Relations",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Xiaokun-Wu",
+      "name" : "Xiaokun",
+      "surname" : "Wu"
+    }, {
+      "uri" : "http://drinventor/Yiorgos-Chrysanthou",
+      "name" : "Yiorgos",
+      "surname" : "Chrysanthou"
+    }, {
+      "uri" : "http://drinventor/Andrei-Sharf",
+      "name" : "Andrei",
+      "surname" : "Sharf"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    } ]
+  },
+  "bagOfWords" : [ "give", "noisy", "incomplete", "point", "set", "we", "introduce", "method", "simultaneously", "recover", "set", "locally", "fit", "primitive", "along", "global", "mutual", "relation", "we", "operate", "under", "assumption", "datum", "correspond", "man-made", "engineering", "object", "consist", "basic", "primitive", "possibly", "repeat", "globally", "align", "under", "common", "relation", "we", "introduce", "algorithm", "directly", "couple", "local", "global", "aspect", "problem", "local", "fit", "model", "determine", "how", "well", "infer", "model", "agree", "observe", "datum", "while", "global", "relation", "iteratively", "learn", "enforce", "through", "constrain", "optimization", "start", "set", "initial", "ransac", "base", "locally", "fit", "primitive", "relation", "across", "primitive", "orientation", "placement", "equality", "progressively", "learn", "conform", "each", "stage", "set", "feasible", "relation", "extract", "among", "candidate", "relation", "align", "while", "best", "fitting", "input", "datum", "global", "coupling", "correct", "primitive", "obtain", "local", "ransac", "stage", "bring", "they", "precise", "global", "alignment", "we", "test", "robustness", "we", "algorithm", "range", "synthesize", "scan", "datum", "vary", "amount", "noise", "outlier", "non-uniform", "sampling", "validate", "result", "against", "ground", "truth", "where", "available", "keyword", "3d", "scanning", "ransac", "global", "relation", "datum", "fitting", "symmetry", "relation" ],
+  "content" : "Given a noisy and incomplete point set, we introduce a method that simultaneously recovers a set of locally fitted primitives along with their global mutual relations. We operate under the assumption that the data corresponds to a man-made engineering object consisting of basic primitives, possibly repeated and globally aligned under common relations. We introduce an algorithm to directly couple the local and global aspects of the problem. The local fit of the model is determined by how well the inferred model agrees to the observed data, while the global relations are iteratively learned and enforced through a constrained optimization. Starting with a set of initial RANSAC based locally fitted primitives, relations across the primitives such as orientation, placement, and equality are progressively learned and conformed to. In each stage, a set of feasible relations are extracted among the candidate relations, and then aligned to, while best fitting to the input data. The global coupling corrects the primitives obtained in the local RANSAC stage, and brings them to precise global alignment. We test the robustness of our algorithm on a range of synthesized and scanned data, with varying amounts of noise, outliers, and non-uniform sampling, and validate the results against ground truth, where available. Keywords: 3D scanning, RANSAC, global relations, data fitting, symmetry relations.",
+  "resources" : [ ]
+}

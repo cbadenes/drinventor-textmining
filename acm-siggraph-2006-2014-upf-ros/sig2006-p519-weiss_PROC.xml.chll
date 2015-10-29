@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2006-p519-weiss_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p519-weiss_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast Median and Bilateral Filtering",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ben-Weiss",
+      "name" : "Ben",
+      "surname" : "Weiss"
+    } ]
+  },
+  "bagOfWords" : [ "we", "have", "fully", "explore", "property", "suggest", "possible", "direction", "future", "research" ],
+  "content" : "We have not fully explored these properties, but they suggest possible directions for future research.",
+  "resources" : [ ]
+}

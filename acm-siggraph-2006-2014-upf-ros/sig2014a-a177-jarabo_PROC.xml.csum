@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014a-a177-jarabo_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a177-jarabo_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Framework for Transient Rendering",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Adrian-Jarabo",
+      "name" : "Adrian",
+      "surname" : "Jarabo"
+    }, {
+      "uri" : "http://drinventor/Julio-Marco",
+      "name" : "Julio",
+      "surname" : "Marco"
+    }, {
+      "uri" : "http://drinventor/Adolfo-Mu?oz",
+      "name" : "Adolfo",
+      "surname" : "Mu?oz"
+    }, {
+      "uri" : "http://drinventor/Raul-Buisan",
+      "name" : "Raul",
+      "surname" : "Buisan"
+    }, {
+      "uri" : "http://drinventor/Wojciech-Jarosz",
+      "name" : "Wojciech",
+      "surname" : "Jarosz"
+    }, {
+      "uri" : "http://drinventor/Diego-Gutierrez",
+      "name" : "Diego",
+      "surname" : "Gutierrez"
+    } ]
+  },
+  "bagOfWords" : [ "J.", "Biomed", "review", "Monte", "Carlo", "modeling", "light", "transport", "tissue", "hu", "C.", "iu", "Q.", "2013", "Optics", "Express", "21", "21", "one-dimensional", "transient", "radiative", "transfer", "lattice", "Boltzmann", "method", "hang", "Y.", "H.", "H.", "2013", "time-resolved", "coherent", "incoherent", "component", "forward", "light", "scattering", "random", "media", "oo", "K.", "M.", "LFANO", "R.", "R.", "1990", "International", "Journal", "Computer", "Vision", "105", "decompose", "global", "light", "transport", "use", "time", "flight", "imaging" ],
+  "content" : "J. Biomed. Review of Monte Carlo modeling of light transport in tissues. Z HU , C., AND L IU , Q. 2013. Optics Express 21, 21. One-dimensional transient radiative transfer by lattice Boltzmann method. Z HANG , Y., Y I , H., AND T AN , H. 2013. Time-resolved coherent and incoherent components of forward light scattering in random media. Y OO , K. M., AND A LFANO , R. R. 1990. International Journal of Computer Vision 105, 3. Decomposing global light transport using time of flight imaging.",
+  "resources" : [ ]
+}

@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2013-a58-vangorp_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013/a58-vangorp_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Perception of Perspective Distortions in Image-Based Rendering",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Peter-Vangorp",
+      "name" : "Peter",
+      "surname" : "Vangorp"
+    }, {
+      "uri" : "http://drinventor/Christian-Richardt",
+      "name" : "Christian",
+      "surname" : "Richardt"
+    }, {
+      "uri" : "http://drinventor/Emily A.-Cooper",
+      "name" : "Emily A.",
+      "surname" : "Cooper"
+    }, {
+      "uri" : "http://drinventor/Gaurav-Chaurasia",
+      "name" : "Gaurav",
+      "surname" : "Chaurasia"
+    }, {
+      "uri" : "http://drinventor/Martin S.-Banks",
+      "name" : "Martin S.",
+      "surname" : "Banks"
+    }, {
+      "uri" : "http://drinventor/George-Drettakis",
+      "name" : "George",
+      "surname" : "Drettakis"
+    } ]
+  },
+  "bagOfWords" : [ "future", "work", "we", "wish", "extend", "we", "approach", "more", "sophisticated", "ibr", "algorithm", "e.g.", "evaluate", "usefulness", "use", "more", "complex", "proxy", "scene", "geometry" ],
+  "content" : "In future work, we wish to extend our approach to more sophisticated IBR algorithms, e.g., to evaluate the usefulness of using more complex proxies for scene geometry.",
+  "resources" : [ ]
+}

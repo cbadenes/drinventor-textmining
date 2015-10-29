@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2012-a84-xue_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a84-xue_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Understanding and Improving the Realism of Image Composites",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "practice", "we", "search", "-lsb-", "0.4", "0.6", "-rsb-", "find", "best", "curve", "match", "local", "contrast", "between", "foreground", "background", "0.5", "degrade", "straight", "line", "0.5", "curve", "increase", "local", "contrast", "0.5", "inverse", "curve", "decrease", "local", "contrast", "degree", "transformation", "control", "where", "11", "-lrb-", "12", "11", "-rrb-", "01", "-lrb-", "02", "01", "-rrb-", "upper", "curve", "control", "lower", "curve", "each", "sub-curve", "Bezier", "curve", "three", "anchor", "turn", "point", "curve", "average", "luminance", "which", "curve", "divide", "upper", "lower", "sub-curve", "transformation", "luminance", "define", "-lrb-", "-rrb-", "xyy", "space", "-lrb-", "log", "domain", "-rrb-", "input", "-lrb-", "0,0", "-rrb-", "01", "-lrb-", "0,0", "-rrb-", "01", "S?curve", "0.5", "inverse", "s?curve", "0.5", "luminance", "value", "re-mapped", "new", "output", "value", "out", "along", "curve", "same", "curve", "use", "across", "image", "we", "increase", "local", "11", "-lrb-", "1,1", "-rrb-", "11", "-lrb-", "1,1", "-rrb-", "contrast", "global", "out", "out", "pixel-wise", "luminance", "transformation", "use", "shape", "curve", "inP", "02", "12", "02", "12", "verse", "curve", "decrease", "local", "contrast", "show", "inset" ],
+  "content" : "In practice, we search ? ? [0.4, 0.6] to find the best curve that matches H of local contrasts between foreground and background. If ? = 0.5, it degrades to a straight line. If ? < 0.5, it is an S curve that increases local contrast; if ? > 0.5, it is an inverse S curve that decreases local contrast. The degree of transformation is controlled by p U and p L , where p U = p 11 + ?(p 12 ? p 11 ) and p L = p 01 + ?(p 02 ? p 01 ). The upper curve is controlled by p m , p U , p 1 , and the lower curve by p m , p L , p 0 . Each sub-curve is a Bezier curve with three anchors. The turning point p m of S curve is the average luminance, by which the curve is divided into an upper and a lower sub-curve. In this transformation, luminance is defined by Y (0 ? 1) of xyY space (not in log domain). The input P 0  =(0,0) P 01 L in P 0  =(0,0) P 01 L in S?curve, ?<0.5 Inverse S?curve, ?>0.5 luminance value L in is re-mapped to a new output value L out along the curve; the same curve is used across the image. We increase local P 11 P 1 =(1,1) P 11 P 1 =(1,1) contrast by a global L out P U L out pixel-wise luminance P? 1 P? 1 transformation using an P U S shape curve; the inP 02 P m P 12 P 02 P L P m P 12 verse S curve decreases P? 0 P? 0 local contrast, as shown P L in the inset.",
+  "resources" : [ ]
+}

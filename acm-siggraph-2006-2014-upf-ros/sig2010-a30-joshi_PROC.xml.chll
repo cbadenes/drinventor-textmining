@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2010-a30-joshi_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010/a30-joshi_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Image Deblurring using Inertial Measurement Sensors",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ondrej-Sindelar",
+      "name" : "Ondrej",
+      "surname" : "Sindelar"
+    }, {
+      "uri" : "http://drinventor/Filip-Sroubek",
+      "name" : "Filip",
+      "surname" : "Sroubek"
+    } ]
+  },
+  "bagOfWords" : [ "thus", "additional", "step", "need", "deblur", "image", "use", "inertial", "datum", "many", "challenge", "use", "datum", "properly", "many", "which", "we", "have", "address", "however", "we", "result", "also", "suggest", "several", "area", "future", "work", "handle", "-lrb-", "-rrb-", "we", "interested", "use", "more", "sensor", "-lrb-", "-rrb-", "one", "could", "consider", "add", "other", "sensor", "magnetometer", "get", "another", "measure", "orientation", "already", "common", "approach", "IMU", "base", "navigation", "system", "thus", "one", "way", "address", "issue", "try", "identify", "stationary", "before", "camera", "exposure", "track", "from", "get", "more", "accurate", "initial", "velocity", "estimate", "would", "interesting", "combine", "we", "hardware", "Raskar", "et", "al.", "-lsb-", "2006", "-rsb-", "flutter", "shutter", "hardware", "reduce", "frequency", "loss", "during", "image", "capture" ],
+  "content" : "Thus additional steps are needed to deblur an image using the inertial data. There are many challenges to using this data properly, many of which we have addressed; however, our results also suggest several areas for future work. To handle (1), we are interested in using more sensors. For (2) one could consider adding other sensors, such as a magnetometer, to get another measure of orientation ? this is already a common approach in IMU based navigation systems. Thus one way to address this issue is to try to identify a stationary period before the camera exposure and track from there to get a more accurate initial velocity estimate. It would be interesting to combine our hardware with the Raskar et al. [2006] flutter shutter hardware to reduce frequency loss during image capture.",
+  "resources" : [ ]
+}

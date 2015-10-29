@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011-p71-wang-fixed_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/p71-wang-fixed_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Data-Driven Elastic Models for Cloth: Modeling and Measurement",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Huamin-Wang",
+      "name" : "Huamin",
+      "surname" : "Wang"
+    }, {
+      "uri" : "http://drinventor/James F.-O'Brien",
+      "name" : "James F.",
+      "surname" : "O'Brien"
+    }, {
+      "uri" : "http://drinventor/Ravi-Ramamoorthi",
+      "name" : "Ravi",
+      "surname" : "Ramamoorthi"
+    } ]
+  },
+  "bagOfWords" : [ "cloth", "often", "have", "complicate", "nonlinear", "anisotropic", "elastic", "behavior", "due", "its", "weave", "pattern", "fiber", "property", "however", "most", "current", "cloth", "simulation", "technique", "simply", "use", "linear", "isotropic", "elastic", "model", "manually", "select", "stiffness", "parameter", "simple", "simulation", "do", "allow", "differentiate", "behavior", "distinct", "cloth", "material", "silk", "denim", "can", "model", "most", "material", "fidelity", "real-world", "counterpart", "paper", "we", "present", "data-driven", "technique", "more", "realistically", "animate", "cloth", "we", "propose", "piecewise", "linear", "elastic", "model", "good", "approximation", "nonlinear", "anisotropic", "stretch", "bend", "behavior", "various", "material", "we", "develop", "new", "measurement", "technique", "study", "elastic", "deformation", "both", "stretch", "bend", "real", "cloth", "sample", "we", "setup", "easy", "inexpensive", "construct", "parameter", "we", "model", "can", "fit", "observe", "datum", "well-posed", "optimization", "procedure", "we", "have", "measure", "database", "ten", "different", "cloth", "material", "each", "which", "exhibit", "distinctive", "elastic", "behavior", "measurement", "can", "use", "most", "cloth", "simulation", "system", "create", "natural", "realistic", "clothing", "wrinkle", "shape", "range", "different", "material", "keyword", "nonlinear", "elasticity", "anisotropy", "data-driven", "model", "cloth", "simulation", "parameter", "estimation" ],
+  "content" : "Cloth often has complicated nonlinear, anisotropic elastic behavior due to its woven pattern and fiber properties. However, most current cloth simulation techniques simply use linear and isotropic elastic models with manually selected stiffness parameters. Such simple simulations do not allow differentiating the behavior of distinct cloth materials such as silk or denim, and they cannot model most materials with fidelity to their real-world counterparts. In this paper, we present a data-driven technique to more realistically animate cloth. We propose a piecewise linear elastic model that is a good approximation to nonlinear, anisotropic stretching and bending behaviors of various materials. We develop new measurement techniques for studying the elastic deformations for both stretching and bending in real cloth samples. Our setup is easy and inexpensive to construct, and the parameters of our model can be fit to observed data with a well-posed optimization procedure. We have measured a database of ten different cloth materials, each of which exhibits distinctive elastic behaviors. These measurements can be used in most cloth simulation systems to create natural and realistic clothing wrinkles and shapes, for a range of different materials. Keywords: Nonlinear elasticity, anisotropy, data-driven model, cloth simulation, parameter estimation.",
+  "resources" : [ ]
+}

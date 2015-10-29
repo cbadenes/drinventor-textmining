@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2009-a37-zheng_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a37-zheng_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Harmonic fluids",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Changxi-Zheng",
+      "name" : "Changxi",
+      "surname" : "Zheng"
+    }, {
+      "uri" : "http://drinventor/Doug L.-James",
+      "name" : "Doug L.",
+      "surname" : "James"
+    } ]
+  },
+  "bagOfWords" : [ "any", "opinion", "finding", "conclusion", "recommendation", "express", "material", "those", "author", "do", "necessarily", "reflect", "view", "National", "Science", "Foundation", "work", "support", "part", "National", "Science", "Foundation", "-lrb-", "CAREER-0430528", "hcc0905506", "-rrb-", "Alfred", "P.", "Sloan", "Foundation", "Pixar", "Intel", "Autodesk", "acknowledgement", "we", "would", "like", "thank", "anonymous", "reviewer", "helpful", "feedback", "follow", "give", "-lrb-", "10", "-rrb-", "divergence", "theorem", "rate", "fluid", "expulsion", "from", "volume", "due", "amplitude", "pulsation", "i?t", "yield", "give", "we", "divergence", "singularity", "form", "-lrb-", "-rrb-", "we", "can", "estimate", "integrate", "over", "small", "domain", "contain", "tiny", "bubble", "-lrb-", "so", "-lrb-", "-rrb-", "-rrb-", "First", "we", "take", "divergence", "relationship", "between", "harmonic", "acoustic", "pressure", "-lrb-", "-rrb-", "acoustic", "velocity", "-lrb-", "-rrb-", "-lsb-", "Kim", "et", "al.", "2007", "-rsb-", "-rrb-", "we", "estimate", "delta-function", "source", "strength", "point-like", "bubble", "from", "its", "divergence", "source", "strength", "-lrb-", "c.f.", "second", "pass", "we", "can", "adjust", "-lrb-", "gaussian", "-rrb-", "distribution", "bubble", "radius", "-lrb-", "thus", "frequency", "-rrb-", "e.g.", "approximate", "spectrum", "record", "fluid", "sound" ],
+  "content" : "Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation. This work was supported in part by the National Science Foundation (CAREER-0430528, HCC0905506), the Alfred P. Sloan Foundation, Pixar, Intel and Autodesk. Acknowledgements: We would like to thank the anonymous reviewers for helpful feedback. It follows that S b is given by (10). ? b The divergence theorem, and the rate of fluid expulsion from the volume ? b due to ?-amplitude pulsations, r = r 0 + ?e +i?t , yields Given our divergence singularity of the form, 2 p = S b ?(x ? x b ), we can estimate S b by integrating over a small domain ? b containing the tiny bubble (so that R ? b ?(x ? x b )d? = 1): Z First, we take the divergence of the relationship between harmonic acoustic pressure p(x) and acoustic velocity v(x), [Kim et al. 2007]). We estimate the delta-function source strength, S b , of a point-like bubble from its ?divergence sourcing? strength (c.f. In the second pass, we can adjust the (Gaussian) distribution for the bubbles? radius (and thus frequency), e.g., to approximate spectra of recorded fluid sounds.",
+  "resources" : [ ]
+}

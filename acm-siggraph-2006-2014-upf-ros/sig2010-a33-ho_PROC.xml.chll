@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2010-a33-ho_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010/a33-ho_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Spatial Relationship Preserving Character Motion Adaptation",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Edmond S. L.-Ho",
+      "name" : "Edmond S. L.",
+      "surname" : "Ho"
+    }, {
+      "uri" : "http://drinventor/Taku-Komura",
+      "name" : "Taku",
+      "surname" : "Komura"
+    }, {
+      "uri" : "http://drinventor/Chiew-Lan-Tai",
+      "name" : "Chiew-Lan",
+      "surname" : "Tai"
+    } ]
+  },
+  "bagOfWords" : [ "future", "work", "we", "plan", "numerically", "evaluate", "topological", "geometric", "feature", "interaction", "mesh", "introduce", "metric", "compare", "motion", "level", "interaction", "mesh", "another", "possible", "research", "direction", "apply", "we", "method", "control", "character", "physically-based", "environment", "combine", "balance", "keep", "technique", "-lsb-", "da", "Silva", "et", "al.", "2008", "Macchietto", "et", "al.", "2009", "-rsb-" ],
+  "content" : "As a future work, we plan to numerically evaluate the topological and geometric features of the interaction meshes, and introduce a metric to compare motions at the level of interaction meshes. Another possible research direction is to apply our method for controlling characters in physically-based environments, such as by combining it with the balance keeping techniques in [da Silva et al. 2008; Macchietto et al. 2009].",
+  "resources" : [ ]
+}

@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2012-a26-tan_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a26-tan_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Soft Body Locomotion",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jie-Tan",
+      "name" : "Jie",
+      "surname" : "Tan"
+    }, {
+      "uri" : "http://drinventor/Greg-Turk",
+      "name" : "Greg",
+      "surname" : "Turk"
+    }, {
+      "uri" : "http://drinventor/C. Karen-Liu",
+      "name" : "C. Karen",
+      "surname" : "Liu"
+    } ]
+  },
+  "bagOfWords" : [ "natural", "alternative", "we", "approach", "would", "represent", "character", "rigid", "articulated", "skeleton", "surround", "skeleton", "soft", "tissue", "deform", "one", "issue", "we", "hope", "explore", "future", "expand", "we", "solution", "technique", "handle", "longer-term", "goal", "can", "reach", "use", "we", "current", "optimization", "method", "we", "would", "like", "develop", "automatic", "muscle", "design", "algorithm", "incorporate", "more", "sophisticated", "muscle", "structure", "would", "interesting", "explore", "other", "form", "shape", "control", "elongate", "muscle", "sheet", "virtual", "muscle" ],
+  "content" : "A natural alternative to our approach would be to represent a character as a rigid, articulated skeleton, and to surround the skeleton with soft tissue that deforms. One of the issues that we hope to explore in the future is to expand our solution techniques to handle longer-term goals that cannot be reached using our current optimization method. We would like to develop an automatic muscle design algorithm to incorporate more sophisticated muscle structures. It would be interesting to explore other forms of shape control, such as elongating muscles or sheets of virtual muscles.",
+  "resources" : [ ]
+}

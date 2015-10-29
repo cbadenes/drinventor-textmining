@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2006-p519-weiss_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p519-weiss_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast Median and Bilateral Filtering",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ben-Weiss",
+      "name" : "Ben",
+      "surname" : "Weiss"
+    } ]
+  },
+  "bagOfWords" : [ "we", "algorithm", "overcome", "all", "limitation", "achieve", "-lrb-", "log", "-rrb-", "runtime", "per", "pixel", "8-bit", "datum", "both", "median", "bilateral", "filter", "accompany", "video", "demonstrate", "realtime", "performance", "we", "median", "bilateral", "filter", "finally", "we", "show", "how", "algorithm", "can", "adapt", "perform", "bilateral", "filter", "compare", "previous", "method", "time", "take", "Photoshop", "cs2", "process", "5x5", "median", "bilateral", "filter", "we", "implementation", "can", "process", "any", "kernel", "up", "255x255", "median", "index", "can", "find", "integrate", "histogram", "from", "one", "end", "until", "appropriate", "sum", "reach", "scan", "histogram", "from", "index", "zero", "find", "median", "take", "about", "128", "step", "average", "fast", "median", "filtering", "algorithm", "Mesh", "Computers", "Computing", "2-D", "Min", "median", "Max", "Filters", "example", "lowest-resolution", "median", "value", "pixel", "0x84", "value", "below", "0x84", "its", "histogram", "value", "below", "0x8400", "next-higher-resolution", "histogram", "median", "-lsb-", "0x8400", "fast", "approximation", "Bilateral", "Filter", "use", "signal", "Processing", "Approach" ],
+  "content" : "Our algorithm overcomes all of these limitations and achieves O(log r) runtime per pixel on 8-bit data, for both median and bilateral filtering. The accompanying videos demonstrate the realtime performance of our median and bilateral filters. Finally, we will show how the algorithm can be adapted to perform bilateral filtering, and compare it with previous methods. In the time it takes Photoshop ? CS2 to process a 5x5 median or bilateral filter, our implementation can process any kernel up to 255x255. The median index can be found by integrating the histogram from one end until the appropriate sum is reached. Scanning the histogram from index zero to find the median takes about 128 steps on average. Fast Median Filtering Algorithms for Mesh Computers. Computing 2-D Min, Median, and Max Filters. For example, if the lowest-resolution median value for a pixel is 0x84, and there are n values below 0x84 in its histogram, then there will be n values below 0x8400 in the next-higher-resolution histogram, and the median will be in [0x8400 .. A Fast Approximation of the Bilateral Filter using a Signal Processing Approach.",
+  "resources" : [ ]
+}

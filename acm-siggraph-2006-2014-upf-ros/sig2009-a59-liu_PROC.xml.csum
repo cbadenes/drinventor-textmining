@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2009-a59-liu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a59-liu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Dextrous Manipulation from a Grasping Pose",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/C. Karen-Liu",
+      "name" : "C. Karen",
+      "surname" : "Liu"
+    } ]
+  },
+  "bagOfWords" : [ "work", "support", "NSF", "CAREER", "award", "CCF", "0742303", "we", "would", "like", "explore", "more", "sophisticated", "trajectory", "planning", "algorithm", "expand", "scope", "we", "method", "when", "perturbation", "large", "desire", "object", "trajectory", "might", "become", "completely", "invalid", "minor", "modification", "we", "current", "algorithm", "can", "handle", "small", "perturbation", "add", "object", "state", "free", "variable", "minimize", "deviation", "from", "desire", "object", "trajectory", "dynamic", "scenario", "object", "motion", "subject", "unexpected", "perturbation", "affect", "object?s", "trajectory", "response", "hand", "requirement", "reasonable", "object", "under", "full", "control", "hand", "environment", "during", "manipulation", "we", "framework", "rely", "user", "provide", "object", "motion", "achievable", "input", "grasp", "pose", "sampling", "method", "describe", "-lsb-", "Popovi", "et", "al.", "2000", "-rsb-", "can", "promising", "direction", "extend", "we", "algorithm", "polygonal", "geometry", "discrete", "search", "algorithm", "can", "consider", "when", "current", "point", "boundary", "smooth", "surface", "example", "solution", "must", "lie", "same", "ellipsoidal", "segment", "hand", "initial", "contact" ],
+  "content" : "This work was supported by NSF CAREER award CCF #0742303. We would like to explore more sophisticated trajectory planning algorithms to expand the scope of our method. When the perturbations are large, the desired object trajectory might become completely invalid. With minor modification, our current algorithm can handle small perturbations by adding object states as free variables and minimizing the deviation from the desired object trajectory. In a dynamic scenario, the object motion is subject to unexpected perturbations that affect the object?s trajectory and the responses of the hand. The requirement is reasonable if the object is under full control of the hand and the environment during manipulation. Our framework relies on the user to provide an object motion achievable by the input grasping pose. The sampling method described in [Popovi? et al. 2000] can be a promising direction. To extend our algorithm to polygonal geometries, a discrete search algorithm can be considered when the current point is at the boundary of a smooth surface. For example, the solution for h must lie on the same ellipsoidal segment of the hand as the initial contact, h 0 .",
+  "resources" : [ ]
+}

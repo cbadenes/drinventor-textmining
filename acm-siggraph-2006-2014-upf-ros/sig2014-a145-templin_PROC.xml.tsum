@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014-a145-templin_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a145-templin_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Modeling and Optimizing Eye Vergence Response to Stereoscopic Cuts",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Krzysztof-Templin",
+      "name" : "Krzysztof",
+      "surname" : "Templin"
+    }, {
+      "uri" : "http://drinventor/Piotr-Didyk",
+      "name" : "Piotr",
+      "surname" : "Didyk"
+    }, {
+      "uri" : "http://drinventor/Karol-Myszkowski",
+      "name" : "Karol",
+      "surname" : "Myszkowski"
+    }, {
+      "uri" : "http://drinventor/Mohamed-Hefeeda",
+      "name" : "Mohamed",
+      "surname" : "Hefeeda"
+    }, {
+      "uri" : "http://drinventor/Hans-Peter-Seidel",
+      "name" : "Hans-Peter",
+      "surname" : "Seidel"
+    }, {
+      "uri" : "http://drinventor/Wojciech-Matusik",
+      "name" : "Wojciech",
+      "surname" : "Matusik"
+    } ]
+  },
+  "bagOfWords" : [ "human", "visual", "accommodation", "vergence", "eye", "movement", "while", "view", "stereoscopic", "display", "actual", "target", "Vergence", "relatively", "slow", "process", "when", "compare", "other", "eye", "movement", "e.", "additionally", "we", "propose", "set", "tool", "editing", "stereoscopic", "content", "minimize", "vergence", "adaptation", "time", "after", "cut", "end", "we", "optimize", "only", "stereoscopic", "parameter", "also", "position", "cut", "datum", "obtain", "allow", "we", "derive", "evaluate", "model", "describe", "adaptation", "vergence", "disparity", "change", "stereoscopic", "display", "section", "we", "propose", "set", "tool", "aid", "production", "stereoscopic", "content", "utilize", "we", "model", "minimize", "vergence", "adaptation", "time", "aim", "main", "experiment", "twofold", "confirm", "vergence", "time", "can", "well", "model", "use", "two", "plane", "suggest", "pilot", "experiment", "so", "estimate", "parameter", "average-observer", "model", "useful", "practical", "application", "vergence", "eye", "movement", "under", "natural", "viewing", "condition", "here", "we", "overview", "basic", "finding", "eye", "vergence", "mechanism", "main", "focus", "s3d", "display", "condition", "order", "gain", "insight", "relation", "vergence", "response", "initial", "end", "disparity", "well", "estimate", "number", "trial", "necessary", "response", "curve", "converge", "we", "conduct", "pilot", "study" ],
+  "content" : "Human visual accommodation and vergence eye movement while viewing stereoscopic display and actual target. Vergence is a relatively slow process when compared to other eye movements, e. Additionally, we proposed a set of tools for the editing of stereoscopic content to minimize the vergence adaptation time after cuts. To this end, we optimize not only stereoscopic parameters, but also the position of the cut. The data obtained allowed us to derive and evaluate a model describing adaptation of vergence to disparity changes on a stereoscopic display. In this section, we propose a set of tools for aiding in the production of stereoscopic content, that utilizes our model to minimize vergence adaptation times. The aim of the main experiment was twofold: to confirm that vergence times can be well modeled using two planes, as suggested by the pilot experiment, and, if so, to estimate parameters of the average-observer model, useful in practical applications. Vergence eye movements under natural viewing conditions. Here we overview basic findings on the eye vergence mechanisms, with the main focus on S3D display conditions. In order to gain insight into the relation of vergence response to the initial and end disparities, as well as to estimate the number of trials m necessary for the response curves to converge, we conducted a pilot study.",
+  "resources" : [ ]
+}

@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2014a-a200-wu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a200-wu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Real-time Shading-based Refinement for Consumer Depth Cameras",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Shahram-Izadi",
+      "name" : "Shahram",
+      "surname" : "Izadi"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "first", "real-time", "method", "refinement", "depth", "datum", "use", "shape-from-shading", "general", "uncontrolled", "scene", "per", "frame", "we", "real-time", "algorithm", "take", "raw", "noisy", "depth", "datum", "align", "RGB", "image", "input", "approximate", "time-varying", "incident", "lighting", "which", "use", "geometry", "refinement", "lead", "dramatically", "enhance", "depth", "map", "30Hz", "we", "algorithm", "make", "few", "scene", "assumption", "handle", "arbitrary", "scene", "object", "even", "under", "motion", "enable", "type", "real-time", "depth", "map", "enhancement", "we", "contribute", "new", "highly", "parallel", "algorithm", "reformulate", "inverse", "render", "optimization", "problem", "prior", "work", "allow", "we", "estimate", "lighting", "shape", "temporally", "coherent", "way", "video", "frame-rate", "we", "optimization", "problem", "minimize", "use", "new", "regular", "grid", "gauss-newton", "solver", "implement", "fully", "GPU", "we", "demonstrate", "result", "show", "enhance", "depth", "map", "which", "comparable", "offline", "method", "computed", "order", "magnitude", "faster", "well", "baseline", "comparison", "online", "filtering-based", "method", "we", "conclude", "application", "we", "higher", "quality", "depth", "map", "improve", "real-time", "surface", "reconstruction", "performance", "capture", "cr", "category", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "digitization", "image", "capture?applications", "i.", "4.8", "-lsb-", "image", "processing", "computer", "Vision", "-rsb-", "scene", "Analysis?Range", "Data", "Keywords", "shading-based", "refinement", "real-time", "depth", "camera" ],
+  "content" : "We present the first real-time method for refinement of depth data using shape-from-shading in general uncontrolled scenes. Per frame, our real-time algorithm takes raw noisy depth data and an aligned RGB image as input, and approximates the time-varying incident lighting, which is then used for geometry refinement. This leads to dramatically enhanced depth maps at 30Hz. Our algorithm makes few scene assumptions, handling arbitrary scene objects even under motion. To enable this type of real-time depth map enhancement, we contribute a new highly parallel algorithm that reformulates the inverse rendering optimization problem in prior work, allowing us to estimate lighting and shape in a temporally coherent way at video frame-rates. Our optimization problem is minimized using a new regular grid Gauss-Newton solver implemented fully on the GPU. We demonstrate results showing enhanced depth maps, which are comparable to offline methods but are computed orders of magnitude faster, as well as baseline comparisons with online filtering-based methods. We conclude with applications of our higher quality depth maps for improved real-time surface reconstruction and performance capture. CR Categories: I.3.7 [Computer Graphics]: Digitization and Image Capture?Applications I.4.8 [Image Processing and Computer Vision]: Scene Analysis?Range Data Keywords: shading-based refinement, real-time, depth camera",
+  "resources" : [ ]
+}

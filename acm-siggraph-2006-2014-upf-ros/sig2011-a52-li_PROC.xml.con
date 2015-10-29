@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2011-a52-li_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a52-li_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "GlobFit: Consistently Fitting Primitives by Discovering Global Relations",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Xiaokun-Wu",
+      "name" : "Xiaokun",
+      "surname" : "Wu"
+    }, {
+      "uri" : "http://drinventor/Yiorgos-Chrysanthou",
+      "name" : "Yiorgos",
+      "surname" : "Chrysanthou"
+    }, {
+      "uri" : "http://drinventor/Andrei-Sharf",
+      "name" : "Andrei",
+      "surname" : "Sharf"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "method", "incorporate", "global", "relation", "reliably", "recover", "relation", "among", "both", "local", "distant", "part", "man-made", "object", "we", "demonstrate", "regular", "object", "i.e.", "object", "low", "information", "content", "various", "global", "relation", "can", "reliably", "extract", "from", "noisy", "-lrb-", "structured", "-rrb-", "incomplete", "dataset", "even", "when", "local", "signal", "ambiguous", "unreliable", "start", "set", "initial", "ransac", "base", "locally", "fit", "primitive", "we", "algorithm", "progressively", "learn", "infer", "orientation", "placement", "equality", "relation", "each", "stage", "set", "feasible", "relation", "extract", "among", "candidate", "relation", "align", "while", "best", "fitting", "input", "datum", "context", "low", "complexity", "procedurally", "model", "man-made", "object", "learn", "global", "prior", "likely", "significantly", "assist", "shape", "understanding", "sparse", "encoding", "moreover", "man-made", "model", "e.g.", "Figure", "left", "commonly", "involve", "hierarchical", "relation", "group", "naturally", "arise", "from", "manufacture", "ease", "reuse", "option", "infer", "hierarchical", "grouping", "however", "challenge", "since", "involve", "solve", "consistent", "segmentation", "across", "noisy", "input", "future", "we", "want", "consider", "directly", "integrate", "stage", "global", "alignment", "lead", "robust", "ransac", "more", "precisely", "partially", "recover", "global", "relation", "can", "guide", "importance", "sampling", "base", "ransac", "fitting", "robustly", "extract", "primitive", "from", "locally", "inconsistent", "sparsely", "sample", "region", "bring", "similar", "global", "relation", "surface", "reconstruction", "remain", "explore", "we", "grateful", "Ruwen", "Schnabel", "make", "code", "from", "-lsb-", "Schnabel", "et", "al.", "2007", "-rsb-", "publicly", "available", "ran", "Gal", "Suhib", "Alsisan", "proofread", "paper", "kaust", "car", "garage", "lend", "machine", "part", "scanning", "aim@shape", "joint", "model", "use", "simulated", "scan", "Figure", "16", "Niloy", "thanks", "Tanveer", "Alam", "initial", "experiment", "project", "Pierre", "Alliez", "Cengiz", "Oztireli", "run", "comparison", "test", "use", "state-of-the-art", "reconstruction", "algorithm", "Reinhard", "Klein", "inspiring", "discussion", "placement", "eq", "length", "eq", "radius", "time", "-lrb-", "sec", "-rrb-", "359", "75", "n/a", "66", "18", "227.3", "25", "18", "68", "20", "n/a", "875.6", "27", "18", "573.1", "90", "43", "222", "19", "88", "27", "838.5", "11", "20", "319.3", "work", "partially", "support", "kaust", "international", "visitingstudent", "scholarship", "Li", "Wu", "NSFC", "grant", "60902104", "61025012", "61003190", "CAS", "100", "scholar", "program", "Shenzhen", "Science", "Technology", "Foundation", "-lrb-", "jc201005270340a", "-rrb-", "Li", "Wu", "CAS", "visit", "Professorship", "Senior", "Int?l", "scientist", "cohen-or", "CAS", "Fellowship", "Young", "Int?l", "scientist", "Sharf", "Cyprus", "RPF", "grantdiethnis/stochos/0609", "Chrysanthou", "Israel", "Science", "Foundation", "Cohen-Or", "european", "fp7", "under", "grant", "agreement", "276982", "Sharf" ],
+  "content" : "We presented a method for incorporating global relations to reliably recover relations among both local and distant parts of man-made objects. We demonstrated that for regular objects, i.e., objects with low information content, various global relations can be reliably extracted from noisy (structured) and incomplete datasets, even when the local signals are ambiguous and unreliable. Starting with a set of initial RANSAC based locally fitted primitives, our algorithm progressively learns and infers orientation, placement, and equality relations. In each stage, a set of feasible relations are extracted among the candidate relations, and then aligned while best fitting to the input data. In the context of low complexity, procedurally modeled man-made objects, learning global priors is likely to significantly assist in shape understanding and sparse encoding. Moreover, man-made models, e.g., Figure 2 -left, commonly involve hierarchical relations. Such a grouping naturally arises from manufacturing ease and reuse options. Inferring such hierarchical grouping, however, is challenging since it will involve solving a consistent segmentation across the noisy input. In the future, we want to consider directly integrating this stage with the global alignment leading to a robust RANSAC. More precisely, partially recovered global relations can guide an importance sampling based RANSAC fitting to robustly extract primitives from locally inconsistent and sparsely sampled regions. Bringing in similar global relations to surface reconstruction remains to be explored. We are grateful to Ruwen Schnabel for making code from [Schnabel et al. 2007] publicly available, Ran Gal and Suhib Alsisan for proofreading the paper, KAUST car garage for lending machine parts for scanning, and AIM@Shape for the joint model used for the simulated scans in Figure 16 . Niloy thanks Tanveer Alam for initial experiments for this project; Pierre Alliez, Cengiz Oztireli for running comparison tests using their state-of-the-art reconstruction algorithms; and Reinhard Klein for inspiring discussions. placement eq. length eq. radii time (in sec) 359?75 N/A 66?18 227.3 25?18 68?20 N/A 875.6 27?18 8?3 4?3 573.1 90?43 222?19 88?27 838.5 11?9 20?8 7?4 319.3\n        The work was partially supported by KAUST international visitingstudent scholarships for Li and Wu, NSFC grants 60902104, 61025012, 61003190, CAS 100 scholar program, Shenzhen Science and Technology Foundation (JC201005270340A) for Li and Wu, CAS Visiting Professorship for Senior Int?l Scientists for Cohen-Or, CAS Fellowship for Young Int?l Scientists for Sharf, Cyprus RPF GrantDiethnis/Stochos/0609 for Chrysanthou, Israel Science Foundation for Cohen-Or, and European FP7 under grant agreement 276982 for Sharf.",
+  "resources" : [ ]
+}

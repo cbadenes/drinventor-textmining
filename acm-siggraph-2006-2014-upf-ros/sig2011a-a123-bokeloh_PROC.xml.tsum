@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2011a-a123-bokeloh_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011a/a123-bokeloh_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Pattern-Aware Shape Deformation Using Sliding Dockers",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Martin-Bokeloh",
+      "name" : "Martin",
+      "surname" : "Bokeloh"
+    }, {
+      "uri" : "http://drinventor/Michael-Wand",
+      "name" : "Michael",
+      "surname" : "Wand"
+    }, {
+      "uri" : "http://drinventor/Vladlen-Koltun",
+      "name" : "Vladlen",
+      "surname" : "Koltun"
+    }, {
+      "uri" : "http://drinventor/Hans-Peter-Seidel",
+      "name" : "Hans-Peter",
+      "surname" : "Seidel"
+    } ]
+  },
+  "bagOfWords" : [ "-lrb-", "-rrb-", "slide", "docker", "-lrb-", "-rrb-", "deformation", "result", "we", "can", "now", "integrate", "slide", "docker", "we", "deformation", "framework", "section", "6.3", "we", "describe", "how", "slide", "docker", "integrate", "deformation", "framework", "extract", "slide", "docker", "after", "precomputation", "find", "slide", "docker", "simple", "transform", "back", "world", "coordinate", "we", "obtain", "final", "slide", "docker", "iterate", "until", "more", "slide", "docker", "group", "find", "yield", "large", "number", "slide", "docker", "most", "which", "overlap", "slide", "docker", "discrete", "pattern", "we", "find", "slide", "docker", "which", "build", "block", "can", "replicate", "when", "object", "locally", "stretch", "consider", "piece", "geometry", "we", "say", "slide", "docker", "respect", "follow", "two", "condition", "hold", "we", "can", "easily", "extend", "definition", "whole", "array", "slide", "docker" ],
+  "content" : "(c) sliding dockers (d) deformation result We can now integrate the sliding dockers into our deformation framework. In Section 6.3, we describe how sliding dockers are integrated into the deformation framework. Extracting sliding dockers: After this precomputation, finding a sliding docker is simple. By transforming back into world coordinates, we obtain the final sliding docker. This is iterated until no more sliding docker groups are found. This yields a large number of sliding dockers, most of which overlap. Sliding dockers: For discrete patterns, we find sliding dockers, which are building blocks that can be replicated when the object is locally stretched. Consider a piece of geometry D ? S. We say that D is a sliding docker with respect to T if the following two conditions hold. We can easily extend this definition to a whole array of sliding dockers.",
+  "resources" : [ ]
+}

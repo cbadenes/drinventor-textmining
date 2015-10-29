@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2008a-a139-ghosh_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a139-ghosh_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Practical Modeling and Acquisition of Layered Facial Reflectance",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Abhijeet-Ghosh",
+      "name" : "Abhijeet",
+      "surname" : "Ghosh"
+    }, {
+      "uri" : "http://drinventor/Tim-Hawkins",
+      "name" : "Tim",
+      "surname" : "Hawkins"
+    }, {
+      "uri" : "http://drinventor/Pieter-Peers",
+      "name" : "Pieter",
+      "surname" : "Peers"
+    }, {
+      "uri" : "http://drinventor/Sune-Frederiksen",
+      "name" : "Sune",
+      "surname" : "Frederiksen"
+    }, {
+      "uri" : "http://drinventor/Paul E.-Debevec",
+      "name" : "Paul E.",
+      "surname" : "Debevec"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

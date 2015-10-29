@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2009a-a128-matusik_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009a/a128-matusik_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Printing Spatially-Varying Reflectance",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Wojciech-Matusik",
+      "name" : "Wojciech",
+      "surname" : "Matusik"
+    }, {
+      "uri" : "http://drinventor/Boris-Ajdin",
+      "name" : "Boris",
+      "surname" : "Ajdin"
+    }, {
+      "uri" : "http://drinventor/Jinwei-Gu",
+      "name" : "Jinwei",
+      "surname" : "Gu"
+    }, {
+      "uri" : "http://drinventor/Jason-Lawrence",
+      "name" : "Jason",
+      "surname" : "Lawrence"
+    }, {
+      "uri" : "http://drinventor/Hendrik P. A.-Lensch",
+      "name" : "Hendrik P. A.",
+      "surname" : "Lensch"
+    }, {
+      "uri" : "http://drinventor/Fabio-Pellacini",
+      "name" : "Fabio",
+      "surname" : "Pellacini"
+    }, {
+      "uri" : "http://drinventor/Szymon-Rusinkiewicz",
+      "name" : "Szymon",
+      "surname" : "Rusinkiewicz"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

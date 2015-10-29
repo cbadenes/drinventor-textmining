@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2014-a51-hamalainen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a51-hamalainen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Online Motion Synthesis Using Sequential Monte Carlo",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "although", "term", "particle", "filter", "smc", "sometimes", "use", "interchangeably", "we", "use", "latter", "sense", "Doucet", "Johansen", "-lsb-", "2009", "-rsb-", "denote", "general", "class", "algorithm", "sampling", "all", "we", "parameter", "have", "minimum", "maximum", "value", "problem", "thus", "inequality-constrained", "axis-aligned", "plane", "i.e.", "space", "possible", "solution", "hypercube", "we", "consider", "we", "implementation", "proof-of-concept", "integrate", "machine", "learning", "smc", "sampling", "control", "strategy", "development", "evaluation", "more", "efficient", "expressive", "learning", "component", "leave", "future", "work", "combine", "global", "sampling", "local", "refinement", "clearly", "topic", "future", "work", "future", "one", "easy", "way", "improve", "naturalness", "movement", "could", "script", "learn", "control", "gaze", "head", "orientation", "hand", "foot", "contact", "ground", "could", "also", "fine-tuned", "e.g.", "so", "character", "always", "exert", "force", "ground", "use", "palm", "instead", "fingertip", "we", "expect", "can", "do", "use", "purely", "visual", "correction", "base", "inverse", "kinematic", "instead", "modify", "optimization", "remain", "future", "work", "we", "see", "improve", "performance", "control", "style", "synthesize", "movement", "two", "main", "item", "future", "work", "future", "we", "also", "plan", "explore", "novel", "interaction", "game", "mechanic", "utilize", "motion", "synthesis", "investigate", "whether", "sequential", "sampling", "competitive", "also", "offline", "synthesis", "where", "function", "landscape", "change", "over", "time", "when", "animator", "interactively", "adjust", "parameter", "could", "also", "interesting", "simulate", "muscle", "animation", "breathing", "grunt", "etc.", "base", "predict", "near-future", "exertion", "-lrb-", "e.g.", "i?ll", "jump", "breathe", "out", "one", "second", "better", "breath", "now", "-rrb-" ],
+  "content" : "Although the terms particle filters and SMC are sometimes used interchangeably, we use the latter in the sense of Doucet and Johansen [2009] to denote a general class of algorithms for sampling\n          1 All our parameters have minimum and maximum values, and the problem is thus inequality-constrained by axis-aligned planes, i.e., the space of possible solutions is a hypercube. We consider our implementation a proof-of-concept of integrating machine learning with the SMC sampling of control strategies; development and evaluation of more efficient and expressive learning components is left as future work. Combining global sampling with local refinement is clearly a topic for future work. In the future, one easy way to improve the naturalness of the movements could be scripted or learned control of gaze and head orientation. The hand and foot contacts with the ground could also be fine-tuned, e.g., so that the character always exerts forces on the ground using the palm instead of fingertips. We expect that this can be done using purely visual corrections based on inverse kinematics instead of modifying the optimization, but this remains future work. We see improving performance and controlling the style of synthesized movement as the two main items for future work. In the future, we also plan to explore novel interactions and game mechanics utilizing the motion synthesis, and investigate whether sequential sampling is competitive also in offline synthesis, where the function landscape changes over time when the animator interactively adjusts parameters. It could also be interesting to simulate muscle animation, breathing, grunting etc. based on the predicted near-future exertion (e.g., ?I?ll jump and breathe out in one second, better breath in now?).",
+  "resources" : [ ]
+}

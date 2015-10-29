@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014-a116-yan_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a116-yan_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Rendering Glints on High-Resolution Normal-Mapped Specular Surfaces",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ling-Qi-Yan",
+      "name" : "Ling-Qi",
+      "surname" : "Yan"
+    }, {
+      "uri" : "http://drinventor/Milo\\v{s}-Ha\\v{s}an",
+      "name" : "Milo\\v{s}",
+      "surname" : "Ha\\v{s}an"
+    }, {
+      "uri" : "http://drinventor/Wenzel-Jakob",
+      "name" : "Wenzel",
+      "surname" : "Jakob"
+    }, {
+      "uri" : "http://drinventor/Jason-Lawrence",
+      "name" : "Jason",
+      "surname" : "Lawrence"
+    }, {
+      "uri" : "http://drinventor/Steve-Marschner",
+      "name" : "Steve",
+      "surname" : "Marschner"
+    }, {
+      "uri" : "http://drinventor/Ravi-Ramamoorthi",
+      "name" : "Ravi",
+      "surname" : "Ramamoorthi"
+    } ]
+  },
+  "bagOfWords" : [ "33", "10:1", "10:16", "ACM", "Trans", "practical", "algorithm", "render", "interreflection", "all-frequency", "brdf", "K.", "ao", "y.-p.", "l.-q.", "ong", "Z.", "ang", "R.", "s.-m", "2014", "28", "92:1", "92:8", "ACM", "Trans", "single", "scattering", "refractive", "media", "triangle", "mesh", "boundary", "ALTER", "B.", "HAO", "S.", "OLZSCHUCH", "N.", "ALA", "K.", "2009", "egsr", "07", "195", "206", "Microfacet", "model", "refraction", "through", "rough", "surface" ],
+  "content" : "33, 1, 10:1?10:16. ACM Trans. A practical algorithm for rendering interreflections with all-frequency brdfs. X U , K., C AO , Y.-P., M A , L.-Q., D ONG , Z., W ANG , R., AND H U , S.-M. 2014. 28, 3, 92:1?92:8. ACM Trans. Single scattering in refractive media with triangle mesh boundaries. W ALTER , B., Z HAO , S., H OLZSCHUCH , N., AND B ALA , K. 2009. EGSR 07, 195?206. Microfacet models for refraction through rough surfaces.",
+  "resources" : [ ]
+}

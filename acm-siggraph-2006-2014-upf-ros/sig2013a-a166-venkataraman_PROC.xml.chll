@@ -1,0 +1,54 @@
+{
+  "uri" : "sig2013a-a166-venkataraman_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a166-venkataraman_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "PiCam: An Ultra-Thin High Performance Monolithic Camera Array",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Kartik-Venkataraman",
+      "name" : "Kartik",
+      "surname" : "Venkataraman"
+    }, {
+      "uri" : "http://drinventor/Dan-Lelescu",
+      "name" : "Dan",
+      "surname" : "Lelescu"
+    }, {
+      "uri" : "http://drinventor/Jacques-Duparr?",
+      "name" : "Jacques",
+      "surname" : "Duparr?"
+    }, {
+      "uri" : "http://drinventor/Andrew-McMahon",
+      "name" : "Andrew",
+      "surname" : "McMahon"
+    }, {
+      "uri" : "http://drinventor/Gabriel-Molina",
+      "name" : "Gabriel",
+      "surname" : "Molina"
+    }, {
+      "uri" : "http://drinventor/Priyam-Chatterjee",
+      "name" : "Priyam",
+      "surname" : "Chatterjee"
+    }, {
+      "uri" : "http://drinventor/Robert-Mullis",
+      "name" : "Robert",
+      "surname" : "Mullis"
+    }, {
+      "uri" : "http://drinventor/Shree-Nayar",
+      "name" : "Shree",
+      "surname" : "Nayar"
+    } ]
+  },
+  "bagOfWords" : [ "thus", "one", "be", "use", "1.1", "pixel", "instead", "1.75", "pixel", "case", "corresponding", "mtf20", "increase", "from", "1000lw/ph", "around", "1300lw/ph", "we", "synthesize", "high", "resolution", "image", "show", "trace", "chromatic", "fringing", "could", "improve", "better", "color", "tuning", "tone", "mapping", "area", "future", "work", "additionally", "potential", "assemble", "system", "multiple", "distribute", "array", "allow", "greater", "range", "imaging", "view", "synthesis", "which", "could", "benefit", "application", "security", "automotive" ],
+  "content" : "Thus, if one were to use the 1.1? pixel instead of the 1.75? pixel in this case, the corresponding MTF20 increases from 1000lw/ph to around 1300lw/ph. Our synthesized high resolution images show traces of chromatic fringing that could be improved with better color tuning and tone mapping and is an area for future work. Additionally, the potential for assembling systems with multiple distributed arrays allows for greater range imaging and view synthesis, which could benefit applications in security and automotive.",
+  "resources" : [ ]
+}

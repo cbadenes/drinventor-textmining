@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2011-a33-ovsjanikov_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a33-ovsjanikov_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Exploration of Continuous Variability in Collections of 3D Shapes",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Maks-Ovsjanikov",
+      "name" : "Maks",
+      "surname" : "Ovsjanikov"
+    }, {
+      "uri" : "http://drinventor/Wilmot-Li",
+      "name" : "Wilmot",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Leonidas J.-Guibas",
+      "name" : "Leonidas J.",
+      "surname" : "Guibas"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    } ]
+  },
+  "bagOfWords" : [ "we", "leave", "comparison", "descriptor", "exploration", "other", "possibility", "future", "work", "keyword", "3d", "database", "exploration", "shape", "descriptor", "shape", "analysis", "morphable", "model", "model", "variability", "we", "use", "we", "exploration", "interface", "visualize", "navigate", "variability", "collection", "finally", "we", "consider", "extension", "we", "exploration", "interface", "where", "user", "can", "query", "system", "deformation", "explore", "different", "part", "descriptor", "space", "describe", "section", "we", "general", "strategy", "extract", "continuous", "variability", "descriptor", "space", "which", "each", "shape", "represent", "vector", "fix", "finite", "dimension", "use", "infer", "continuous", "variability", "relative", "size", "position", "shape", "part", "find", "variability", "descriptor", "space", "convert", "variability", "deformation", "template", "shape", "-lrb-", "section", "5.3", "-rrb-", "we", "describe", "detail", "we", "analysis", "framework", "-lrb-", "section", "-rrb-", "exploration", "interface", "-lrb-", "section", "-rrb-", "we", "goal", "convert", "variability", "descriptor", "space", "variability", "deformation", "template", "we", "also", "assume", "most", "shape", "variability", "within", "collection", "can", "explain", "term", "relative", "size", "position", "shape", "part", "thus", "one", "way", "visualize", "variability", "collection", "show", "range", "allowable", "value", "each", "coordinate", "under", "give", "deformation", "model" ],
+  "content" : "We leave the comparison of these descriptors and exploration of other possibilities to future work. Keywords: 3D database exploration, shape descriptors, shape analysis, morphable models, model variability We then used our exploration interface to visualize and navigate the variability in the collection. Finally, we are considering extensions to our exploration interface, where the user can query the system for deformations that explore different parts of the descriptor space. As described in Section 4, our general strategy is to extract continuous variability in the descriptor space, in which each shape is represented as a vector of fixed finite dimensions, and use it to infer continuous variability in the relative sizes and positions of shape parts. ? Find variability in the descriptor space and convert it into variability in the deformations of the template shape (Section 5.3). We then describe the details of our analysis framework (Section 5) and exploration interface (Section 6). Our goal then is to convert this variability in the descriptor space into variability in the deformation of the template. We also assume that most of the shape variability within the collection can be explained in terms of the relative sizes and positions of the shape parts. Thus, one way to visualize the variability in the collection is to show the range of allowable values for each of these coordinates under the given deformation model.",
+  "resources" : [ ]
+}

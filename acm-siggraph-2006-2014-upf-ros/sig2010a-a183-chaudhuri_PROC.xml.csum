@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2010a-a183-chaudhuri_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a183-chaudhuri_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Data-Driven Suggestions for Creativity Support in 3D Modeling",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Siddhartha-Chaudhuri",
+      "name" : "Siddhartha",
+      "surname" : "Chaudhuri"
+    }, {
+      "uri" : "http://drinventor/Vladlen-Koltun",
+      "name" : "Vladlen",
+      "surname" : "Koltun"
+    } ]
+  },
+  "bagOfWords" : [ "work", "support", "part", "NSF", "grant", "ses0835601", "ccf-0641402", "we", "thank", "all", "participant", "study", "Chris", "Platz", "help", "organize", "informal", "study", "create", "associate", "image", "video", "segment", "we", "grateful", "Daniel", "Cohen-Or", "he", "comment", "draft", "paper", "anonymous", "reviewer", "feedback", "Leonidas", "Guibas", "Scott", "Klemmer", "Fei-Fei", "Li", "helpful", "discussion", "database", "can", "drive", "development", "new", "kind", "tool", "three-dimensional", "content", "creation", "large-scale", "collaboration", "can", "similarly", "enable", "construction", "comprehensive", "detailed", "database", "three-dimensional", "content", "other", "hand", "web", "have", "already", "be", "use", "collaborative", "creation", "extensive", "image", "library", "million", "freely", "available", "rank", "label", "high-quality", "photograph", "-lsb-", "Flickr", "2010", "-rsb-", "exist", "3d", "model", "library", "still", "limit", "extent", "fidelity", "availability", "finally", "effectiveness", "data-driven", "content", "creation", "tool", "closely", "related", "quality", "available", "datum", "more", "generally", "reasoning", "about", "semantics", "shape", "component", "can", "advance", "power", "data-driven", "tool", "three-dimensional", "content", "creation" ],
+  "content" : "This work was supported in part by NSF grants SES0835601 and CCF-0641402. We thank all the participants in the studies. Chris Platz helped organize the informal studies and create the associated images and video segments. We are grateful to Daniel Cohen-Or for his comments on drafts of this paper, anonymous reviewers for their feedback, and Leonidas Guibas, Scott Klemmer and Fei-Fei Li for helpful discussions. Such databases can drive the development of new kinds of tools for three-dimensional content creation. Large-scale collaboration can similarly enable the construction of comprehensive and detailed databases of three-dimensional content. On the other hand, the Web has already been used for collaborative creation of extensive image libraries, with millions of freely available, ranked, labeled, high-quality photographs [Flickr 2010]. Existing 3D model libraries are still limited in their extent, fidelity, and availability. Finally, the effectiveness of data-driven content creation tools is closely related to the quality of the available data. More generally, reasoning about the semantics of shapes and their components can advance the power of data-driven tools for three-dimensional content creation.",
+  "resources" : [ ]
+}

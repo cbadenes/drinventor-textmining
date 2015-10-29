@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2014-a51-hamalainen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a51-hamalainen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Online Motion Synthesis Using Sequential Monte Carlo",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "support", "change", "landscape", "we", "now", "construct", "sequential", "Monte", "Carlo", "sampler", "-lrb-", "algorithm", "-rrb-", "base", "adaptive", "sampler", "describe", "above", "each", "animation", "frame", "we", "system", "generate", "trajectory", "character", "control", "parameter", "near", "future", "few", "seconds", "use", "sequential", "Monte", "Carlo", "sampling", "algorithm", "Adaptive", "Importance", "sample", "use", "kd-tree", "although", "we", "sampler", "bear", "similarity", "e.g.", "particle", "filter", "variant", "discuss", "Arulampalam", "et", "al.", "-lsb-", "2002", "-rsb-", "more", "precisely", "sequential", "version", "mutate", "kd-tree", "importance", "sampling", "H?m?l?inen", "et", "al.", "-lsb-", "2006", "-rsb-", "which", "turn", "base", "hierarchical", "subdivision", "sampling", "Kajiya", "-lsb-", "1986", "-rsb-", "while", "key", "component", "adaptive", "sequential", "sampling", "method", "allow", "easy", "integration", "machine", "learn", "draw", "previous", "experience", "we", "surprise", "performance", "sampler", "even", "without", "machine", "learning", "use", "dimensionality", "reduction", "method", "constrain", "search", "space", "we", "have", "demonstrate", "Sequential", "Monte", "Carlo", "-lrb-", "SMC", "-rrb-", "sampling", "viable", "approach", "online", "synthesis", "complex", "human", "movement", "without", "reliance", "animation", "motion", "capture", "datum", "Figure", "4d", "illustrate", "adaptive", "kd-tree", "define", "sampling", "prior", "-lrb-", "-rrb-", "whose", "construction", "detail", "next", "section", "basic", "idea", "store", "sample", "coordinate", "objective", "function", "value", "-lcb-", "-lrb-", "-rrb-", "-rcb-", "kd-tree", "build", "over", "domain", "multimodality", "objective", "function", "motivate", "sequential", "Monte", "Carlo", "-lrb-", "SMC", "-rrb-", "approach", "figure", "show", "function", "sample", "three", "different", "kd-tree", "model", "build", "from", "same", "set", "sample", "average", "100", "tree" ],
+  "content" : "To support changing landscapes, we now construct a Sequential Monte Carlo sampler (Algorithm 2) based on the adaptive sampler described above. For each animation frame, our system generates trajectories of character control parameters for the near future ? a few seconds ? using Sequential Monte Carlo sampling. Algorithm 1 Adaptive Importance Sampling using a kD-tree. Although our sampler bears similarities, e.g., to the particle filter variants discussed by Arulampalam et al. [2002], it is more precisely a sequential version of the mutated kD-tree importance sampling of H?m?l?inen et al. [2006], which in turn is based on the hierarchical subdivision sampling of Kajiya [1986]. While the key component, an adaptive sequential sampling method, allows easy integration of machine learning to draw on previous experience, we are surprised by the performance of the sampler even without machine learning or using dimensionality reduction methods to constrain the search space. We have demonstrated that Sequential Monte Carlo (SMC) sampling is a viable approach for online synthesis of complex human movements without reliance on animation or motion capture data. Figure 4D illustrates the adaptive kD-tree that defines the sampling prior q(x), whose construction is detailed in the next section. The basic idea is to store the sample coordinates and objective function values {x i , f (x i )} into a kD-tree built over the domain. Multimodality of the objective function motivates a Sequential Monte Carlo (SMC) approach. Figure 7 shows a function with samples, three different kD-tree models built from the same set of samples, and an average of 100 trees.",
+  "resources" : [ ]
+}

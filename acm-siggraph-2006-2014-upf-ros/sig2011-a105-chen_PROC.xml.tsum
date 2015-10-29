@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011-a105-chen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a105-chen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Nonlinear Revision Control for Images",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Hsiang-Ting-Chen",
+      "name" : "Hsiang-Ting",
+      "surname" : "Chen"
+    }, {
+      "uri" : "http://drinventor/Li-Yi-Wei",
+      "name" : "Li-Yi",
+      "surname" : "Wei"
+    }, {
+      "uri" : "http://drinventor/Chun-Fa-Chang",
+      "name" : "Chun-Fa",
+      "surname" : "Chang"
+    } ]
+  },
+  "bagOfWords" : [ "extend", "revision", "control", "datum", "type", "could", "another", "potential", "future", "work", "direction", "similar", "add", "revision", "command", "branch", "can", "easily", "create", "within", "revision", "control", "window", "-lrb-", "figure", "-rrb-", "core", "dag", "structure", "represent", "revision", "history", "upon", "which", "we", "build", "revg", "multi-resolution", "revision", "graph", "various", "algorithm", "component", "revision", "control", "we", "system", "save", "current", "work", "progress", "new", "revision", "user", "can", "simply", "issue", "command", "within", "revision", "control", "window", "-lrb-", "figure", "-rrb-", "however", "system", "about", "revision", "control", "can", "handle", "non-linear", "history", "indicate", "practical", "benefit", "we", "non-linear", "revision", "structure", "summary", "we", "paper", "have", "follow", "contribution", "idea", "nonlinear", "revision", "control", "system", "image", "all", "figure", "we", "divide", "whole", "editing", "process", "four", "revision", "commit", "they", "revision", "repository", "we", "visualize", "we", "dag", "revg", "-lrb-", "revision", "graph", "-rrb-", "which", "provide", "only", "meaningful", "display", "revision", "history", "also", "intuitive", "interface", "common", "revision", "control", "operation", "review", "replay", "diff", "addition", "branch", "merge", "conflict", "resolve", "Revision", "diff", "we", "system", "problem", "extract", "difference", "between", "two", "revision", "can", "pose", "graph", "difference", "problem", "underlie", "dag" ],
+  "content" : "Extending revision control to these data types could be another potential future work direction. Similar to the ?add revision? command, branches can be easily created within the revision control window ( Figure 2 ). ? The core DAG structure representing the revision history, upon which we build RevG, the multi-resolution revision graph, and various algorithm components for revision control. In our system, to save the current work progress as a new revision, users can simply issue the command within the revision control window ( Figure 2 ). However, this system is not about revision control and cannot handle non-linear histories. This indicated a practical benefit of our non-linear revision structure. In summary, our paper has the following contributions: ? The idea of a nonlinear revision control system for images. For all figures, we divide the whole editing process into four revisions, and commit them to the revision repository. We visualize our DAG in RevG (revision graph), which provides not only as a meaningful display of the revision history but also an intuitive interface for common revision control operations such as review, replay, diff, addition, branching, merging, and conflict resolving. Revision diff In our system, the problem of extracting differences between two revisions can be posed as a graph difference problem of the underlying DAGs.",
+  "resources" : [ ]
+}

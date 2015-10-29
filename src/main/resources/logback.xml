@@ -7,6 +7,11 @@
         </encoder>
     </appender>
 
+    <!-- Spark Logger -->
+    <logger name="org.apache.spark" level="WARN"/>
+    <logger name="org.spark-project.jetty" level="INFO"/>
+    <logger name="org.apache.hadoop" level="INFO"/>
+
     <root level="debug">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />

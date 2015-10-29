@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012-a46-lu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a46-lu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "HelpingHand: Example-based Stroke Stylization",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jingwan-Lu",
+      "name" : "Jingwan",
+      "surname" : "Lu"
+    }, {
+      "uri" : "http://drinventor/Fisher-Yu",
+      "name" : "Fisher",
+      "surname" : "Yu"
+    }, {
+      "uri" : "http://drinventor/Adam-Finkelstein",
+      "name" : "Adam",
+      "surname" : "Finkelstein"
+    }, {
+      "uri" : "http://drinventor/Stephen-DiVerdi",
+      "name" : "Stephen",
+      "surname" : "DiVerdi"
+    } ]
+  },
+  "bagOfWords" : [ "note", "Comp", "3072", "Lec", "Biometric", "Authentication", "D.", "Zhang", "A.", "Jain", "Eds", "writer", "identification", "use", "dynamic", "feature", "K.", "ang", "Y.", "t.", "2004", "eurographic", "2009", "state", "Art", "Report", "state", "art", "example-based", "texture", "synthesis", "EI", "L.-Y.", "EFEBVRE", "S.", "WATRA", "V.", "urk", "G.", "2009", "conference", "International", "Graphonomics", "Society", "206", "211", "templatebased", "synthetic", "handwriting", "generation", "training", "recognition", "system" ],
+  "content" : "Notes in Comp. 3072 of Lec. In Biometric Authentication, D. Zhang and A. Jain, Eds. Writer identification using dynamic features. Y U , K., W ANG , Y., AND T AN , T. 2004. In Eurographics 2009, State of the Art Report. State of the art in example-based texture synthesis. W EI , L.-Y., L EFEBVRE , S., K WATRA , V., AND T URK , G. 2009. In Conference of the International Graphonomics Society, 206?211. Templatebased synthetic handwriting generation for the training of recognition systems.",
+  "resources" : [ ]
+}

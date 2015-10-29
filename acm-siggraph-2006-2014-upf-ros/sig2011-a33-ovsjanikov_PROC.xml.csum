@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2011-a33-ovsjanikov_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a33-ovsjanikov_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Exploration of Continuous Variability in Collections of 3D Shapes",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Maks-Ovsjanikov",
+      "name" : "Maks",
+      "surname" : "Ovsjanikov"
+    }, {
+      "uri" : "http://drinventor/Wilmot-Li",
+      "name" : "Wilmot",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Leonidas J.-Guibas",
+      "name" : "Leonidas J.",
+      "surname" : "Guibas"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    } ]
+  },
+  "bagOfWords" : [ "special", "thanks", "skype", "enable", "seamless", "communication", "channel", "during", "all", "stage", "project", "work", "partially", "support", "kaust", "visit", "student", "scholarship", "Adobe", "internship", "NSF", "grant", "FODAVA", "0808515", "ii", "0914833", "CCF", "1011228", "nsf/nih", "MathBio", "grant", "0900700", "grant", "from", "Google", "Inc.", "we", "would", "like", "acknowledge", "INRIA", "GAMMA", "group", "especially", "Eric", "Saltel", "model", "database", "-lsb-", "saltel", "2008", "-rsb-", "anonymous", "reviewer", "helpful", "comment", "suggestion", "Primoz", "Skraba", "extremely", "useful", "feedback", "discussion", "acknowledgement", "finally", "we", "consider", "extension", "we", "exploration", "interface", "where", "user", "can", "query", "system", "deformation", "explore", "different", "part", "descriptor", "space", "perhaps", "most", "interesting", "case", "analyze", "relation", "discrete", "variability", "shape", "-lrb-", "add", "extra", "component", "-rrb-", "term", "change", "various", "descriptor", "mention", "earlier", "also", "interesting", "consider", "compare", "other", "descriptor", "which", "shape", "deformation", "result", "explicit", "change", "other", "extension", "we", "framework", "may", "include", "outlier", "detection", "shape", "retrieval", "verify", "similar", "shape", "use", "curve", "descriptor", "space", "deformation", "produce", "convex", "formulation", "similar", "optimization", "problem", "interesting", "problem", "future", "similarly", "since", "we", "solve", "non-convex", "non-linear", "problem", "we", "may", "only", "find", "local", "minimum", "energy" ],
+  "content" : "Special thanks to Skype for enabling a seamless communication channel during all the stages of the project. The work was partially supported by a KAUST visiting student scholarship, an Adobe internship, NSF grants FODAVA 0808515, IIS 0914833 and CCF 1011228, NSF/NIH MathBio grant 0900700, and a grant from Google Inc. We would like to acknowledge the INRIA GAMMA group and especially Eric Saltel for the model database [Saltel 2008], the anonymous reviewers for the helpful comments and suggestions, and Primoz Skraba for the extremely useful feedback and discussions. Acknowledgements. Finally, we are considering extensions to our exploration interface, where the user can query the system for deformations that explore different parts of the descriptor space. Perhaps most interesting is the case of analyzing the relation of discrete variability in the shape (such as adding extra components), in terms of the changes of various descriptors. As mentioned earlier, it is also interesting to consider and compare other descriptors in which shape deformation results in explicit changes. Other extensions to our framework may include outlier detection for shape retrieval by verifying similar shapes using curves in the descriptor space that their deformations produce. A convex formulation of a similar optimization problem is an interesting problem for the future. Similarly, since we solve a non-convex non-linear problem, we may only find a local minimum of the energy.",
+  "resources" : [ ]
+}

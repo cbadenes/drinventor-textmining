@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2012-a71-hildebrandt_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a71-hildebrandt_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Interactive Spacetime Control of Deformable Objects",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Christian-Schulz",
+      "name" : "Christian",
+      "surname" : "Schulz"
+    } ]
+  },
+  "bagOfWords" : [ "create", "motion", "object", "character", "physically", "plausible", "follow", "animator?s", "intent", "key", "task", "computer", "animation", "spacetime", "constraint", "paradigm", "valuable", "approach", "problem", "suffer", "from", "high", "computational", "cost", "base", "spacetime", "constraint", "we", "propose", "framework", "control", "motion", "deformable", "object", "offer", "interactive", "response", "time", "achieve", "model", "reduction", "underlie", "variational", "problem", "which", "combine", "dimension", "reduction", "multipoint", "linearization", "decoupling", "ode", "after", "preprocess", "cost", "create", "editing", "motion", "reduce", "solve", "number", "one-dimensional", "spacetime", "problem", "whose", "solution", "wiggly", "spline", "introduce", "Kass", "Anderson", "-lsb-", "2008", "-rsb-", "we", "achieve", "interactive", "response", "time", "through", "new", "fast", "robust", "numerical", "scheme", "solve", "one-dimensional", "problem", "base", "closed-form", "representation", "wiggly", "spline", "cr", "category", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "three-dimensional", "graphic", "realism?animation", "i.", "3.5", "-lsb-", "Computer", "Graphics", "-rsb-", "computational", "geometry", "object", "modeling?physically", "base", "modeling", "Keywords", "computer", "animation", "spacetime", "constraint", "physicalbased", "animation", "model", "reduction", "control", "wiggly", "spline", "Links", "dl", "pdf" ],
+  "content" : "Creating motions of objects or characters that are physically plausible and follow an animator?s intent is a key task in computer animation. The spacetime constraints paradigm is a valuable approach to this problem, but it suffers from high computational costs. Based on spacetime constraints, we propose a framework for controlling the motion of deformable objects that offers interactive response times. This is achieved by a model reduction of the underlying variational problem, which combines dimension reduction, multipoint linearization, and decoupling of ODEs. After a preprocess, the cost for creating or editing a motion is reduced to solving a number of one-dimensional spacetime problems, whose solutions are the wiggly splines introduced by Kass and Anderson [2008]. We achieve interactive response times through a new fast and robust numerical scheme for solving the one-dimensional problems that is based on a closed-form representation of the wiggly splines. CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism?Animation; I.3.5 [Computer Graphics]: Computational Geometry and Object Modeling?Physically based modeling; Keywords: computer animation, spacetime constraints, physicalbased animation, model reduction, control, wiggly splines Links: DL PDF",
+  "resources" : [ ]
+}

@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2009a-a107-rosenberger_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009a/a107-rosenberger_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Layered Shape Synthesis: Automatic Generation of Control Maps for Non-Stationary Textures",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Amir-Rosenberger",
+      "name" : "Amir",
+      "surname" : "Rosenberger"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Dani-Lischinski",
+      "name" : "Dani",
+      "surname" : "Lischinski"
+    } ]
+  },
+  "bagOfWords" : [ "author", "would", "also", "like", "thank", "anonymous", "reviewer", "whose", "suggestion", "be", "greatly", "helpful", "acknowledgment", "work", "support", "part", "grant", "from", "Israel", "Ministry", "Science", "from", "Israel", "Science", "Foundation", "found", "Israel", "Academy", "Sciences", "Humanities", "particular", "would", "interesting", "explore", "applicability", "approach", "synthesis", "3d", "shape", "we", "would", "also", "like", "discover", "additional", "application", "we", "shape", "synthesis", "approach", "we", "would", "like", "gain", "better", "understanding", "relation", "between", "property", "experiment", "various", "extension", "we", "similarity", "measure", "we", "current", "measure", "emphasize", "boundary", "similarity", "over", "other", "property", "area", "boundary", "length", "ratio", "which", "maintain", "only", "implicitly", "future", "work", "we", "hope", "extend", "method", "shape", "synthesis", "larger", "set", "texture", "example", "texture", "do", "exhibit", "clear", "hierarchy", "layer", "texture", "larger", "structure", "application", "we", "method", "include", "synthesis", "natural", "texture", "terrain", "generation", "end", "we", "have", "develop", "new", "powerful", "example-based", "shape", "synthesis", "algorithm", "represent", "shape", "collection", "boundary", "patch", "multiple", "resolution", "synthesize", "new", "shape", "from", "example", "optimize", "bidirectional", "similarity", "function", "we", "have", "present", "novel", "example-based", "method", "synthesis", "control", "map", "suitable", "non", "stationary", "texture", "those", "result", "from", "weather" ],
+  "content" : "The authors would also like to thank the anonymous reviewers whose suggestions were greatly helpful. Acknowledgments: This work was supported in part by grants from the Israel Ministry of Science, and from the Israel Science Foundation founded by the Israel Academy of Sciences and Humanities. In particular, it would be interesting to explore the applicability of such an approach to the synthesis of 3D shapes. We would also like to discover additional applications of our shape synthesis approach. We would like to gain a better understanding of the relations between such properties, and experiment with various extensions of our similarity measure. Our current measure emphasizes boundary similarity over other properties, such as area to boundary length ratio, which is maintained only implicitly. In future work we hope to extend the method of shape synthesis to a larger set of textures, for example, textures that do not exhibit a clear hierarchy of layers, and textures with larger structures. Applications of our method include synthesis of natural textures and terrain generation. To that end, we have developed a new  powerful example-based shape synthesis algorithm that represents shapes as a collection of boundary patches at multiple resolution, and synthesizes a new shape from an example by optimizing a bidirectional similarity function. We have presented a novel example-based method for synthesis of control maps suitable for non stationary textures, such as those resulting from weathering.",
+  "resources" : [ ]
+}

@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2011-a41-tocci_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a41-tocci_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Versatile HDR Video Production System",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Michael D.-Tocci",
+      "name" : "Michael D.",
+      "surname" : "Tocci"
+    }, {
+      "uri" : "http://drinventor/Chris-Kiser",
+      "name" : "Chris",
+      "surname" : "Kiser"
+    }, {
+      "uri" : "http://drinventor/Nora-Tocci",
+      "name" : "Nora",
+      "surname" : "Tocci"
+    }, {
+      "uri" : "http://drinventor/Pradeep-Sen",
+      "name" : "Pradeep",
+      "surname" : "Sen"
+    } ]
+  },
+  "bagOfWords" : [ "case", "we", "simply", "use", "me", "image", "set", "hdr", "-lrb-", "-rrb-", "me", "-lrb-", "-rrb-", "exposure", "image", "me", "-rrb-", "merge", "hdr", "image", "hdr", "HDR", "merge", "algorithm", "present", "Sec", "however", "method", "achieve", "HDR", "capture", "have", "be", "publish", "method", "do", "produce", "true", "radiometrically-correct", "hdr", "image", "so", "result", "can", "incorporate", "hdr", "production", "workflow", "demosaicing", "step", "use", "algorithm", "Malvar", "et", "al.", "-lsb-", "2004", "-rsb-", "we", "tonemapp", "final", "hdr", "image", "use", "hdr", "processing", "tool", "HDR", "expose", "Photomatix", "however", "hdr", "video", "system", "small", "set", "sensor", "become", "more", "widely", "use", "issue", "become", "more", "important", "flexible", "design", "we", "present", "simple", "blueprint", "hdr", "video", "imaging", "system", "use", "off-the-shelf", "component", "can", "produce", "high-quality", "hdr", "video", "footage", "order", "automatically", "create", "hdr", "image", "from", "widely-separated", "component", "ldr", "image", "without", "artifact", "we", "find", "necessary", "depart", "from", "standard", "method", "merge", "hdr", "image", "2.1", "HDR", "Acquisition", "system", "process", "capture", "hdr", "image", "have", "be", "focus", "work", "dozen", "researcher", "hundred", "artist", "photographer" ],
+  "content" : "In this case, we simply use the ME image and set I HDR (x, y) = I ME (x, y). exposure image I ME ) that are to be merged into an HDR image I HDR . The HDR merging algorithm presented in Sec. However, their method for achieving HDR capture has not been published. These methods do not produce a true, radiometrically-correct HDR image, so the results cannot be incorporated into an HDR production workflow. The demosaicing step used the algorithm of Malvar et al. [2004], and we tonemapped the final HDR images using HDR processing tools such as HDR Expose and Photomatix. However, as HDR video systems with a small set of sensors become more widely used, this issue will become more important. Flexible design ? We present a simple blueprint for an HDR video imaging system using off-the-shelf components that can produce high-quality HDR video footage. In order to automatically create HDR images from the widely-separated component LDR images without artifacts, we found it necessary to depart from the standard methods for merging HDR images. 2.1 HDR Acquisition systems The process of capturing HDR images has been the focus of work by dozens of researchers and hundreds of artists and photographers.",
+  "resources" : [ ]
+}

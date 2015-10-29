@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2008a-a144-sander_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a144-sander_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Efficient Traversal of Mesh Edges using Adjacency Primitives",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Pedro V.-Sander",
+      "name" : "Pedro V.",
+      "surname" : "Sander"
+    }, {
+      "uri" : "http://drinventor/Diego-Nehab",
+      "name" : "Diego",
+      "surname" : "Nehab"
+    }, {
+      "uri" : "http://drinventor/Eden-Chlamtac",
+      "name" : "Eden",
+      "surname" : "Chlamtac"
+    }, {
+      "uri" : "http://drinventor/Hugues-Hoppe",
+      "name" : "Hugues",
+      "surname" : "Hoppe"
+    } ]
+  },
+  "bagOfWords" : [ "future", "work", "would", "also", "interesting", "explore", "extension", "-lsb-", "Hoppe", "1999", "-rsb-", "-lsb-", "Chhugani", "Kumar", "2007", "-rsb-", "which", "base", "strip", "likely", "geometry", "shader", "implementation", "may", "become", "more", "efficient", "future", "thus", "further", "increase", "importance", "careful", "primitive", "order", "since", "geometry", "shader", "novel", "architectural", "feature", "may", "better", "optimize", "future", "hardware", "generation", "improve", "vertex", "caching", "scheme", "3d", "mesh", "rendering", "thus", "every", "vertex", "cover", "most", "three", "edge", "so", "thus", "compute", "we", "find", "minimum-weight", "perfect", "matching", "use", "-lrb-", "odd", "-rrb-", "algorithm", "Gabow", "-lsb-", "1974", "-rsb-", "implement", "METIS", "library", "-lsb-", "Karypis", "Kumar", "1995", "-rsb-", "thus", "forest", "i.e.", "vertex-disjoint", "union", "tree", "thus", "union", "all", "path", "indeed", "odd", "join", "we", "must", "show", "some", "minimal", "odd", "join", "odd", "connect", "legal", "path", "also", "connect", "illegal", "shortest", "path", "set", "-lrb-", "-rrb-", "-lrb-", "-rrb-", "would", "contradict", "minimality", "-lrb-", "see", "replacement", "Figure", "11", "-rrb-", "thus", "replace", "we", "get", "shortest", "path", "-lrb-", "figure", "11b", "-rrb-", "path", "illegal", "so", "distinct", "from", "intersect", "which", "observation", "contradict", "minimality", "-lrb-", "figure", "11c", "-rrb-", "observation", "do", "intersect", "E.", "thus", "we", "replace", "new", "odd", "join", "-lrb-", "-rrb-", "-lrb-", "figure", "11e", "-rrb-", "contain", "strictly", "fewer", "tree", "than", "contradict", "we", "assumption", "G." ],
+  "content" : "As future work, it would also be interesting to explore extensions of [Hoppe 1999] and [Chhugani and Kumar 2007], which are based on strips. It is likely that geometry shader implementations may become more efficient in the future, thus further increasing the importance of careful primitive ordering. Since geometry shaders are a novel architectural feature, they may be better optimized in future hardware generations. An improved vertex caching scheme for 3D mesh rendering. Thus, every vertex in C covers at most three edges, and so |C| ? |E |/3. Thus, to compute | E|,  ? we find this minimum-weight perfect matching using the O(|V odd | 3 ) algorithm by Gabow [1974], as implemented in the METIS library [Karypis and Kumar 1995]. Thus, G  ? is a forest, i.e. a vertex-disjoint union of trees. Thus, the union of all paths is indeed a V odd -join. We must show that for some minimal V odd -join E,  ? no u, v ? V odd connected by a legal path in E  ? are also connected by an illegal shortest path. That is, the set ( E  ? \\ T a,b ) \\ p ? ? p ? \\ ( E  ? \\ T a,b ) would contradict the minimality of E  ? (see replacements in Figure 11 ). Thus by replacing p x,y with T x,y , we get a shortest path p = p \\ p x,y ? T x,y ( Figure 11b ). This path is illegal, and so distinct from p, and it intersects E,  ? which by Observation 2 contradicts the minimality of E  ? ( Figure 11c ). By Observation 2, p does not intersect E.  ? Thus if we replace p with p , the new V odd -join E  ? = ( E  ? \\ p) ? p ( Figure 11e ) contains strictly fewer trees than E,  ? contradicting our assumption for G.  ?",
+  "resources" : [ ]
+}

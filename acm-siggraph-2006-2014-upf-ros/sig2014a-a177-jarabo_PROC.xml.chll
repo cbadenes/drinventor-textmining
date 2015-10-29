@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014a-a177-jarabo_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a177-jarabo_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Framework for Transient Rendering",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Adrian-Jarabo",
+      "name" : "Adrian",
+      "surname" : "Jarabo"
+    }, {
+      "uri" : "http://drinventor/Julio-Marco",
+      "name" : "Julio",
+      "surname" : "Marco"
+    }, {
+      "uri" : "http://drinventor/Adolfo-Mu?oz",
+      "name" : "Adolfo",
+      "surname" : "Mu?oz"
+    }, {
+      "uri" : "http://drinventor/Raul-Buisan",
+      "name" : "Raul",
+      "surname" : "Buisan"
+    }, {
+      "uri" : "http://drinventor/Wojciech-Jarosz",
+      "name" : "Wojciech",
+      "surname" : "Jarosz"
+    }, {
+      "uri" : "http://drinventor/Diego-Gutierrez",
+      "name" : "Diego",
+      "surname" : "Gutierrez"
+    } ]
+  },
+  "bagOfWords" : [ "regard", "we", "work", "can", "see", "complementary", "we", "provide", "simulation", "-lrb-", "render", "-rrb-", "framework", "suitable", "analysis-by-synthesis", "approach", "explore", "novel", "idea", "application", "help", "better", "understand", "mechanism", "light", "transport", "mean", "can", "combine", "bias", "density", "estimation-based", "algorithm", "-lrb-", "progressive", "-rrb-", "photon", "mapping", "-lsb-", "Jensen", "2001", "Hachisuka", "et", "al.", "2008", "Hachisuka", "Jensen", "2009", "-rsb-", "which", "well", "suit", "complex", "light", "path", "spatial", "caustic", "future", "work", "many", "compelling", "avenue", "future", "work", "First", "would", "interesting", "extend", "unify", "path", "sampling", "framework", "-lsb-", "riv", "nek", "et", "al.", "2014", "-rsb-", "transient", "state", "we", "have", "show", "how", "photon", "beam", "algorithm", "-lsb-", "Jarosz", "et", "al.", "2011b", "-rsb-", "can", "use", "transient", "rendering", "combine", "we", "temporal", "density", "estimation", "however", "spatio-temporal", "progressive", "photon", "beam", "framework", "would", "need", "achieve", "optimal", "convergence", "transient", "state" ],
+  "content" : "In this regard, our work can be seen as complementary: we provide a simulation (rendering) framework, suitable for an analysis-by-synthesis approach to exploring novel ideas and applications, and to help better understand the mechanisms of light transport. This means that it can be combined with biased density estimation-based algorithms such as (progressive) photon mapping [Jensen 2001; Hachisuka et al. 2008; Hachisuka and Jensen 2009], which is well suited for complex light paths such as spatial caustics. Future work. There are many compelling avenues of future work: First, it would be interesting to extend a unified path sampling framework [K riv? nek et al. 2014] to transient state. We have shown how the photon beams algorithm [Jarosz et al. 2011b] can be used in transient rendering, combined with our temporal density estimation; however, a spatio-temporal progressive photon beams framework would be needed to achieve optimal convergence in transient state.",
+  "resources" : [ ]
+}

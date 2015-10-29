@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2011a-a130-dale_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011a/a130-dale_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Video Face Replacement",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Mahmoud-Afifi",
+      "name" : "Mahmoud",
+      "surname" : "Afifi"
+    }, {
+      "uri" : "http://drinventor/Khaled F.-Hussain",
+      "name" : "Khaled F.",
+      "surname" : "Hussain"
+    }, {
+      "uri" : "http://drinventor/Hosny M.-Ibrahim",
+      "name" : "Hosny M.",
+      "surname" : "Ibrahim"
+    }, {
+      "uri" : "http://drinventor/Nagwa M.-Omar",
+      "name" : "Nagwa M.",
+      "surname" : "Omar"
+    } ]
+  },
+  "bagOfWords" : [ "-lrb-", "-rrb-", "when", "tracking", "fail", "source", "content", "replacement", "distort", "see", "here", "after", "alignment", "we", "briefly", "describe", "previous", "work", "face", "replacement", "compare", "approach", "we", "system", "Video", "face", "replacement", "have", "advantage", "over", "replace", "entire", "body", "head", "video", "result", "we", "show", "result", "number", "different", "subject", "capture", "condition", "replacement", "scenario", "paper", "present", "method", "face", "replacement", "video", "achieve", "high-quality", "result", "use", "simple", "acquisition", "process", "main", "contribution", "paper", "new", "system", "video", "face", "replacement", "do", "require", "expensive", "equipment", "significant", "user", "intervention", "Figs.", "show", "replacement", "result", "different", "source", "target", "subject", "notably", "different", "performance", "spatial", "alignment", "from", "image", "sequence", "where", "-lrb-", "-rrb-", "denote", "value", "pixel", "position", "frame", "track", "produce", "sequence", "attribute", "parameter", "pose", "transformation", "final", "scenario", "replacement", "where", "target", "facial", "performance", "replace", "arbitrary", "source", "performance", "different", "subject", "Face", "replacement", "video", "however", "pose", "significant", "challenge", "due", "complex", "facial", "geometry", "well", "we", "perceptual", "sensitivity", "both", "static", "dynamic", "element", "face" ],
+  "content" : "(b) When the tracking fails, the source content for replacement is distorted, seen here after alignment. We briefly  describe previous work on face replacement and compare these approaches to our system. Video face replacement has advantages over replacing the entire body or the head in video. Results We show results for a number of different subjects, capture conditions, and replacement scenarios. This paper presents a method for face replacement in video that achieves high-quality results using a simple acquisition process. The main contribution of this paper is a new system for video face replacement that does not require expensive equipment or significant user intervention. Figs. 9 shows a replacement result with different source and target subjects and notably different performances. Spatial alignment From an image sequence I, where I(x, t) denotes the value at pixel position x in frame t, tracking produces a sequence of attribute parameters and pose transformations. A final scenario is replacement, where the target facial performance is replaced with an arbitrary source performance by a different subject. Face replacement in video, however, poses significant challenges due to the complex facial geometry as well as our perceptual sensitivity to both the static and dynamic elements of faces.",
+  "resources" : [ ]
+}

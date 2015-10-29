@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2010a-a138-lee_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a138-lee_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Motion Fields for Interactive Character Locomotion",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yongjoon-Lee",
+      "name" : "Yongjoon",
+      "surname" : "Lee"
+    }, {
+      "uri" : "http://drinventor/Kevin-Wampler",
+      "name" : "Kevin",
+      "surname" : "Wampler"
+    }, {
+      "uri" : "http://drinventor/Gilbert-Bernstein",
+      "name" : "Gilbert",
+      "surname" : "Bernstein"
+    }, {
+      "uri" : "http://drinventor/Jovan-Popovic",
+      "name" : "Jovan",
+      "surname" : "Popovic"
+    }, {
+      "uri" : "http://drinventor/Zoran-Popovic",
+      "name" : "Zoran",
+      "surname" : "Popovic"
+    } ]
+  },
+  "bagOfWords" : [ "perform", "little", "temporal", "interpolation", "yield", "very", "agile", "controller", "cost", "additional", "memory", "while", "controller", "significant", "temporal", "compression", "tend", "less", "agile", "instance", "despite", "many", "advance", "character", "animation", "technique", "create", "highly", "agile", "realistic", "interactive", "locomotion", "controller", "remain", "common", "difficult", "task", "we", "experiment", "we", "find", "motion", "field", "controller", "temporal", "compression", "approximately", "agile", "graph-based", "controller", "when", "restricted", "use", "equivalent", "amount", "memory", "significantly", "more", "agile", "when", "use", "moderately", "more", "memory", "-lrb-", "see", "section", "-rrb-", "we", "propose", "novel", "representation", "motion", "datum", "control", "enable", "character", "both", "highly", "agile", "response", "user", "input", "natural", "handling", "arbitrary", "external", "disturbance", "goal", "reinforcement", "learning", "find", "best", "rule", "policy", "choose", "which", "action", "perform", "any", "give", "state", "although", "exist", "technique", "which", "allow", "one", "other", "ability", "combination", "two", "which", "allow", "highly", "agile", "controller", "which", "can", "respond", "user", "command", "short", "amount", "time", "use", "reinforcement", "learn", "choose", "between", "possibility", "runtime", "direction", "flow", "can", "alter", "allow", "character", "respond", "optimally", "user", "command", "allow", "motion", "field-based", "controller", "significantly", "more", "agile", "than", "graph-based", "counterpart", "effect", "Value", "function", "compression", "we", "record", "response", "time", "use", "compress", "value", "function", "uniformly", "sample", "user", "direction", "change", "occur", "when", "character", "push", "state", "far", "from", "datum", "reasonable", "response" ],
+  "content" : "Performing little or no temporal interpolation yields very agile controllers at the cost of additional memory, while controllers with significant temporal compression tend to be less agile. For instance, despite many advances in character animation techniques, creating highly agile and realistic interactive locomotion controllers remains a common but difficult task. In our experiments we found that motion field controllers with temporal compression are approximately as agile as graph-based controllers when restricted to use an equivalent amount of memory, and significantly more agile when using moderately more memory (see Section 6). We propose a novel representation of motion data and control that enables characters with both highly agile responses to user input and natural handling of arbitrary external disturbances. The goal of reinforcement learning is to find ?the best? rule or policy for choosing which action to perform at any given state. Although there exist techniques which allow one or the other of these abilities, it is the combination of the two which allows for highly agile controllers which can respond to user commands in a short amount of time. By using reinforcement learning to choose between these possibilities at runtime the direction of the flow can be altered, allowing the character to respond optimally to user commands. This allows motion field-based controllers to be significantly more agile than their graph-based counterparts. Effect of Value Function Compression We recorded response times using the compressed value functions on uniformly sampled user direction changes. This occurs when the character is pushed into a state far from data with a reasonable response.",
+  "resources" : [ ]
+}

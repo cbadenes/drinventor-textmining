@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014-a82-jacobson_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a82-jacobson_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Tangible and Modular Input Device for Character Articulation",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Alec-Jacobson",
+      "name" : "Alec",
+      "surname" : "Jacobson"
+    }, {
+      "uri" : "http://drinventor/Daniele-Panozzo",
+      "name" : "Daniele",
+      "surname" : "Panozzo"
+    }, {
+      "uri" : "http://drinventor/Oliver-Glauser",
+      "name" : "Oliver",
+      "surname" : "Glauser"
+    }, {
+      "uri" : "http://drinventor/C?dric-Pradalier",
+      "name" : "C?dric",
+      "surname" : "Pradalier"
+    }, {
+      "uri" : "http://drinventor/Otmar-Hilliges",
+      "name" : "Otmar",
+      "surname" : "Hilliges"
+    }, {
+      "uri" : "http://drinventor/Olga-Sorkine-Hornung",
+      "name" : "Olga",
+      "surname" : "Sorkine-Hornung"
+    } ]
+  },
+  "bagOfWords" : [ "equation", "-lrb-", "-rrb-", "do", "apply", "non-radial", "splitter", "-lrb-", "e.g.", "hand", "splitter", "Figure", "16", "-rrb-", "contrast", "we", "mechanical", "device", "modular", "automatically", "detect", "topology", "change", "user", "construct", "instance", "we", "device", "fly", "from", "modular", "part", "node", "non-radial", "splitter", "node", "we", "introduce", "auxiliary", "origin", "ij", "outlet", "correspond", "each", "child", "j.", "however", "we", "firmware", "algorithm", "support", "custom", "non-radial", "splitter", "special", "purpose", "-lrb-", "see", "Appedix", "-rrb-", "modularity", "we", "device", "allow", "user", "perfect", "refine", "work", "device", "match", "complexity", "desire", "articulation", "first", "user", "guide", "virtual", "device", "near", "rig?s", "skeleton", "we", "present", "tangible", "input", "device", "compose", "interchangeable", "hot-pluggable", "part", "maintain", "center", "rotation", "rig", "joint", "three", "Euler", "angle", "read", "from", "device?s", "joint", "relative", "reference", "frame", "device?s", "bone", "rather", "than", "respective", "bone", "rig", "rig", "bone", "virtual", "device", "perfectly", "overlap", "space", "would", "sufficient", "deform", "rig", "directly", "use", "bone", "transformation", "determine", "device?s", "kinematic", "chain" ],
+  "content" : "Equation (5) does not apply to non-radial splitters (e.g. the hand splitter in Figure 16 ). In contrast, our mechanical device is modular and automatically detects topology changes. A user constructs an instance of our device on the fly from modular parts or nodes. For a non-radial splitter node i we introduce auxiliary origins a ij at the outlets corresponding to each child j. However, our firmware and algorithms support custom non-radial splitters for special purposes (see Appedix A). The modularity of our device allows users to perfect and refine their working device to match the complexity of the desired articulation. First, the user guides the virtual device near the rig?s skeleton. We present a tangible input device composed of interchangeable, hot-pluggable parts. This maintains centers of rotation at rig joints, but the three Euler angles read from the device?s joints are relative to the reference frames of the device?s bones rather than the respective bones in the rig. If rig bones and the virtual device perfectly overlap in space, then it would be sufficient to deform the rig directly using bone transformations determined by the device?s kinematic chain.",
+  "resources" : [ ]
+}

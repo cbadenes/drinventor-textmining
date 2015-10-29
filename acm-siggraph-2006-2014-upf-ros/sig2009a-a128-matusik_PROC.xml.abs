@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2009a-a128-matusik_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009a/a128-matusik_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Printing Spatially-Varying Reflectance",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Wojciech-Matusik",
+      "name" : "Wojciech",
+      "surname" : "Matusik"
+    }, {
+      "uri" : "http://drinventor/Boris-Ajdin",
+      "name" : "Boris",
+      "surname" : "Ajdin"
+    }, {
+      "uri" : "http://drinventor/Jinwei-Gu",
+      "name" : "Jinwei",
+      "surname" : "Gu"
+    }, {
+      "uri" : "http://drinventor/Jason-Lawrence",
+      "name" : "Jason",
+      "surname" : "Lawrence"
+    }, {
+      "uri" : "http://drinventor/Hendrik P. A.-Lensch",
+      "name" : "Hendrik P. A.",
+      "surname" : "Lensch"
+    }, {
+      "uri" : "http://drinventor/Fabio-Pellacini",
+      "name" : "Fabio",
+      "surname" : "Pellacini"
+    }, {
+      "uri" : "http://drinventor/Szymon-Rusinkiewicz",
+      "name" : "Szymon",
+      "surname" : "Rusinkiewicz"
+    } ]
+  },
+  "bagOfWords" : [ "although", "real-world", "surface", "can", "exhibit", "significant", "variation", "material", "glossy", "diffuse", "metallic", "etc.", "printer", "usually", "use", "reproduce", "color", "gray-scale", "image", "we", "propose", "complete", "system", "use", "appropriate", "ink", "foil", "print", "document", "variety", "material", "property", "give", "set", "ink", "known", "bidirectional", "Reflectance", "distribution", "function", "-lrb-", "brdf", "-rrb-", "we", "system", "automatically", "find", "optimal", "linear", "combination", "approximate", "brdf", "target", "document", "novel", "gamutmapping", "algorithm", "preserve", "relative", "glossiness", "between", "different", "brdf", "halftoning", "use", "produce", "pattern", "send", "printer", "we", "demonstrate", "effectiveness", "approach", "print", "sample", "number", "measure", "spatially-varying", "brdf" ],
+  "content" : "Although real-world surfaces can exhibit significant variation in materials ? glossy, diffuse, metallic, etc. ? printers are usually used to reproduce color or gray-scale images. We propose a complete system that uses appropriate inks and foils to print documents with a variety of material properties. Given a set of inks with known Bidirectional Reflectance Distribution Functions (BRDFs), our system automatically finds the optimal linear combinations to approximate the BRDFs of the target documents. Novel gamutmapping algorithms preserve the relative glossiness between different BRDFs, and halftoning is used to produce patterns to be sent to the printer. We demonstrate the effectiveness of this approach with printed samples of a number of measured spatially-varying BRDFs.",
+  "resources" : [ ]
+}

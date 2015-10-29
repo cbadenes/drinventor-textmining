@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2014-a37-su_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a37-su_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Estimating Image Depth Using Shape Collections",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Hao-Su",
+      "name" : "Hao",
+      "surname" : "Su"
+    }, {
+      "uri" : "http://drinventor/Qixing-Huang",
+      "name" : "Qixing",
+      "surname" : "Huang"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    }, {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Leonidas J.-Guibas",
+      "name" : "Leonidas J.",
+      "surname" : "Guibas"
+    } ]
+  },
+  "bagOfWords" : [ "work", "support", "part", "NSF", "grant", "IIS", "1016324", "DMS", "1228304", "AFOSR", "grant", "fa9550-12-1-0372", "NSFC", "grant", "61202221", "Max", "Plack", "Center", "Visual", "Computing", "Communications", "Google", "Motorola", "research", "award", "gift", "from", "HTC", "corporation", "Marie", "Curie", "Career", "integration", "Grant", "303541", "ERC", "start", "Grant", "SmartGeometry", "-lrb-", "stg-2013335373", "-rrb-", "gift", "from", "Adobe", "we", "thank", "reviewer", "comment", "suggestion", "paper", "would", "require", "we", "automate", "object", "detection", "process", "take", "account", "spatial", "relation", "among", "object", "while", "so", "far", "we", "have", "focus", "estimate", "depth", "single", "segmented", "object", "would", "very", "interesting", "generalize", "approach", "estimate", "depth", "entire", "scene", "ample", "opportunity", "future", "research", "future", "work", "intuition", "each", "part", "object", "image", "need", "have", "multiple", "correspondence", "good", "regularization", "finally", "we", "experience", "minimum", "couple", "hundred", "shape", "necessary", "algorithm", "succeed", "object", "important", "utilize", "more", "specialized", "domain", "knowledge", "-lrb-", "i.e.", "skeleton", "regular", "structure", "-rrb-", "establish", "correspondence", "estimate", "depth", "do", "apply", "well", "object", "high", "variability", "tree", "building", "high", "articulation", "animal" ],
+  "content" : "This work was supported in part by NSF grants IIS 1016324 and DMS 1228304, AFOSR grant FA9550-12-1-0372, NSFC grant 61202221, the Max Plack Center for Visual Computing and Communications, Google and Motorola research awards, a gift from HTC corporation, the Marie Curie Career Integration Grant 303541, the ERC Starting Grant SmartGeometry (StG-2013335373), and gifts from Adobe. We thank the reviewers for their comments and suggestions on the paper. This would require us to automate the object detection process and to take into account spatial relations among objects. While so far we have focused on estimating the depth of a single segmented object, it would be very interesting to generalize this approach to estimate the depth of an entire scene. There are ample opportunities for future research. Future work. The intuition is that each part of the object in the image needs to have multiple correspondences for good regularization. Finally, in our experience, a minimum of a couple of hundreds of shapes is necessary for the algorithm to succeed. For these objects, it is important to utilize more specialized domain knowledge (i.e., skeletons and regular structures) to establish correspondences and estimate depth. It does not apply well to objects of high variability, such as trees, or buildings, or of high articulation, such as animals.",
+  "resources" : [ ]
+}

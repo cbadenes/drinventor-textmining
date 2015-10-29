@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2014a-a186-tang_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a186-tang_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast and Exact Continuous Collision Detection with Bernstein Sign Classification",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Dinesh-Manocha",
+      "name" : "Dinesh",
+      "surname" : "Manocha"
+    } ]
+  },
+  "bagOfWords" : [ "section", "we", "use", "formulation", "CCD", "computation", "term", "Bernstein", "polynomial", "present", "accurate", "algorithm", "perform", "CCD", "query", "use", "Bernstein", "basis", "simple", "arithmetic", "operation", "result", "reduced", "error", "improve", "efficiency", "result", "we", "represent", "semi-algebraic", "set", "use", "CCD", "query", "Bernstein", "basis", "we", "represent", "function", "use", "Bernstein", "basis", "exploit", "geometric", "property", "B?zier", "curve", "design", "efficient", "reliable", "Bernstein", "sign", "classification", "-lrb-", "bsc", "-rrb-", "approach", "CCD", "next", "we", "present", "some", "property", "Bernstein", "basis", "function", "b?zier", "curve", "use", "we", "CCD", "algorithm", "3.6", "CCD", "test", "use", "Bernstein", "Polynomials", "formulation", "coplanarity", "inside", "test", "can", "combine", "follow", "system", "equation", "inequality", "term", "Bernstein", "polynomial", "where", "-lsb-", "...", "compare", "prior", "exact", "CCD", "algorithm", "-lsb-", "Brochu", "et", "al.", "2012", "-rsb-", "we", "observe", "10", "25x", "speedup", "single", "CPU", "core", "section", "we", "give", "brief", "overview", "prior", "work", "CCD", "algorithm", "high-level", "collision", "culling", "computation", "root", "polynomial", "we", "exploit", "property", "Bern", "stein", "function", "b?zier", "curve", "reduce", "CCD", "query", "evaluate", "sign", "Bernstein", "polynomial", "algebraic", "expression", "finally", "we", "would", "like", "develop", "reliable", "algorithm", "high-level", "CCD", "culling", "collision-response" ],
+  "content" : "In this section, we use the formulation of CCD computation in terms of Bernstein polynomials and present accurate algorithms to perform CCD queries. The use of the Bernstein basis and simple arithmetic operations results in reduced errors and improved efficiency. As a result, we represent the semi-algebraic set used for CCD queries in Bernstein basis. We represent these functions using the Bernstein basis and exploit geometric properties of B?zier curves to design an efficient and reliable Bernstein sign classification (BSC) approach for CCD. Next, we present some properties of Bernstein basis functions and B?zier curves that are used by our CCD algorithm. 3.6 CCD Tests using Bernstein Polynomials\n          The formulations for coplanarity and inside tests can be combined into the following system of equations and inequalities in terms of Bernstein polynomials:  where k [0... As compared to prior exact CCD algorithm [Brochu et al. 2012], we observe 10 ? 25X speedup on a single CPU core. In this section, we give a brief overview of prior work on CCD algorithms, high-level collision culling, and the computation of the roots of polynomials. We exploit properties of Bern stein functions and B?zier curves, reducing the CCD queries to evaluating signs of Bernstein polynomials and algebraic expressions. Finally, we would like to develop reliable algorithms for high-level CCD culling and collision-response.",
+  "resources" : [ ]
+}

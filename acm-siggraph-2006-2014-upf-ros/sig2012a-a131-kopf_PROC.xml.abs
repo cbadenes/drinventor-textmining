@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012a-a131-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a131-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Quality Prediction for Image Completion",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Wolf-Kienzle",
+      "name" : "Wolf",
+      "surname" : "Kienzle"
+    }, {
+      "uri" : "http://drinventor/Steven M.-Drucker",
+      "name" : "Steven M.",
+      "surname" : "Drucker"
+    }, {
+      "uri" : "http://drinventor/Sing Bing-Kang",
+      "name" : "Sing Bing",
+      "surname" : "Kang"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "data-driven", "method", "predict", "quality", "image", "completion", "method", "we", "method", "base", "state-of-the-art", "non-parametric", "framework", "Wexler", "et", "al.", "-lsb-", "2007", "-rsb-", "use", "automatically", "derive", "search", "space", "constraint", "patch", "source", "region", "which", "lead", "improve", "texture", "synthesis", "semantically", "more", "plausible", "result", "constraint", "also", "facilitate", "performance", "prediction", "allow", "we", "correlate", "output", "quality", "against", "feature", "possible", "region", "use", "synthesis", "we", "use", "we", "algorithm", "first", "crop", "complete", "stitch", "panorama", "we", "predictive", "ability", "use", "find", "optimal", "crop", "shape", "before", "completion", "compute", "potentially", "save", "significant", "amount", "computation", "we", "optimize", "crop", "include", "much", "original", "panorama", "possible", "while", "avoid", "region", "can", "less", "successfully", "fill", "we", "predictor", "can", "also", "apply", "hole", "filling", "interior", "image", "addition", "extensive", "comparative", "result", "we", "run", "several", "user", "study", "validate", "we", "predictive", "feature", "good", "relative", "quality", "we", "result", "against", "those", "other", "state-of-the-art", "algorithm", "we", "automatic", "crop", "algorithm", "cr", "category", "i.", "4.9", "-lsb-", "image", "processing", "computer", "Vision", "-rsb-", "application", "keyword", "image", "completion", "quality", "prediction", "crop", "Links", "dl", "pdf", "EB" ],
+  "content" : "We present a data-driven method to predict the quality of an image completion method. Our method is based on the state-of-the-art non-parametric framework of Wexler et al. [2007]. It uses automatically derived search space constraints for patch source regions, which lead to improved texture synthesis and semantically more plausible results. These constraints also facilitate performance prediction by allowing us to correlate output quality against features of possible regions used for synthesis. We use our algorithm to first crop and then complete stitched panoramas. Our predictive ability is used to find an optimal crop shape before the completion is computed, potentially saving significant amounts of computation. Our optimized crop includes as much of the original panorama as possible while avoiding regions that can be less successfully filled in. Our predictor can also be applied for hole filling in the interior of images. In addition to extensive comparative results, we ran several user studies validating our predictive feature, good relative quality of our results against those of other state-of-the-art algorithms, and our automatic cropping algorithm. CR Categories: I.4.9 [Image Processing and Computer Vision]: Applications; Keywords: image completion, quality prediction, cropping Links: DL PDF W EB",
+  "resources" : [ ]
+}

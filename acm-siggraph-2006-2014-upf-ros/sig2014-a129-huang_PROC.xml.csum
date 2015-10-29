@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2014-a129-huang_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a129-huang_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Image Completion using Planar Structure Guidance",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jia-Bin-Huang",
+      "name" : "Jia-Bin",
+      "surname" : "Huang"
+    }, {
+      "uri" : "http://drinventor/Sing Bing-Kang",
+      "name" : "Sing Bing",
+      "surname" : "Kang"
+    }, {
+      "uri" : "http://drinventor/Narendra-Ahuja",
+      "name" : "Narendra",
+      "surname" : "Ahuja"
+    }, {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    } ]
+  },
+  "bagOfWords" : [ "support", "Office", "Naval", "Research", "under", "grant", "n00014-12-1-0259", "gratefully", "acknowledge", "detailed", "list", "contributor", "we", "image", "dataset", "please", "refer", "accompany", "project", "website", "we", "thank", "flickr", "user", "who", "put", "image", "under", "Creative", "Commons", "license", "allow", "we", "use", "they", "we", "show", "quality", "image", "completion", "can", "significantly", "improve", "strike", "balance", "between", "analysis", "synthesis", "we", "result", "-lrb-", "unguided", "-rrb-", "we", "result", "-lrb-", "guide", "-rrb-", "-lsb-", "he", "Sun", "2012", "-rsb-", "we", "result", "Input", "hole", "Photoshop", "image", "melding", "-lsb-", "2012", "-rsb-", "Input", "hole", "Photoshop", "image", "melding", "-lsb-", "2012", "-rsb-", "-lsb-", "he", "Sun", "2012", "-rsb-", "we", "result", "Input", "hole", "Photoshop", "image", "melding", "-lsb-", "2012", "-rsb-", "however", "type", "framework", "have", "be", "mostly", "set", "aside", "due", "simplicity", "effectiveness", "example-based", "method" ],
+  "content" : "The support of the Office of Naval Research under grant N00014-12-1-0259 is gratefully acknowledged. For a detailed list of contributors to our image dataset, please refer to the accompanying project website. We thank the flickr users who put their images under Creative Commons license or allowed us to use them. We show that the quality of image completion can be significantly improved by striking a balance between analysis and synthesis. Our result (unguided) Our result (guided)\n        [He and Sun 2012] Our result Input & hole Photoshop Image Melding [2012] Input & hole Photoshop Image Melding [2012] [He and Sun 2012] Our result Input & hole Photoshop Image Melding [2012] However, this type of framework has been mostly set aside due to the simplicity and the effectiveness of example-based methods.",
+  "resources" : [ ]
+}

@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012-a68-tompkin_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a68-tompkin_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Videoscapes: Exploring Sparse, Unstructured Video Collections",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/James-Tompkin",
+      "name" : "James",
+      "surname" : "Tompkin"
+    }, {
+      "uri" : "http://drinventor/Kwang In-Kim",
+      "name" : "Kwang In",
+      "surname" : "Kim"
+    }, {
+      "uri" : "http://drinventor/Jan-Kautz",
+      "name" : "Jan",
+      "surname" : "Kautz"
+    }, {
+      "uri" : "http://drinventor/Christian-Theobalt",
+      "name" : "Christian",
+      "surname" : "Theobalt"
+    } ]
+  },
+  "bagOfWords" : [ "Computer", "Graphics", "-lrb-", "Proc", "ACM", "Trans", "ACM", "Trans", "edge", "Videoscape", "video", "segment", "node", "mark", "possible", "transition", "point", "portal", "between", "video", "end", "we", "compute", "videoscape", "graph", "structure", "from", "collection", "video", "-lrb-", "figure", "-rrb-", "video", "portal", "include", "Videoscape", "finally", "we", "evaluate", "videoscape", "system", "three", "further", "user", "study", "we", "introduce", "integrate", "set", "interface", "interact", "explore", "videoscape", "furthermore", "image", "can", "give", "system", "from", "which", "closest", "matching", "portal", "form", "path", "through", "Videoscape", "each", "study", "compare", "user", "performance/experience", "Videoscapes", "achieve", "exist", "alternative" ],
+  "content" : "Computer Graphics (Proc. ACM Trans. ACM Trans. The edges of the Videoscape are video segments and the nodes mark possible transition points, or portals, between videos. To this end, we compute a Videoscape graph structure from a collection of videos ( Figure 1 ). Videos with no portals are not included in the Videoscape. Finally, we evaluate the Videoscape system with three further user studies. We introduce an integrated set of interfaces to interact with and explore a Videoscape. Furthermore, images can be given to the system, from which the closest matching portals form a path through the Videoscape. Each study compares user performance/experience with Videoscapes to that achieved with existing alternatives.",
+  "resources" : [ ]
+}

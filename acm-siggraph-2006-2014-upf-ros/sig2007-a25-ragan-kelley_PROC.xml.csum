@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2007-a25-ragan-kelley_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2007/a25-ragan-kelley_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "The Lightspeed Automatic Interactive Lighting Preview System",
+    "published" : "2007",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jonathan-Ragan-Kelley",
+      "name" : "Jonathan",
+      "surname" : "Ragan-Kelley"
+    }, {
+      "uri" : "http://drinventor/Charlie-Kilpatrick",
+      "name" : "Charlie",
+      "surname" : "Kilpatrick"
+    }, {
+      "uri" : "http://drinventor/Brian W.-Smith",
+      "name" : "Brian W.",
+      "surname" : "Smith"
+    }, {
+      "uri" : "http://drinventor/Doug-Epps",
+      "name" : "Doug",
+      "surname" : "Epps"
+    }, {
+      "uri" : "http://drinventor/Paul-Green",
+      "name" : "Paul",
+      "surname" : "Green"
+    }, {
+      "uri" : "http://drinventor/Christophe-Hery",
+      "name" : "Christophe",
+      "surname" : "Hery"
+    }, {
+      "uri" : "http://drinventor/Fr?do-Durand",
+      "name" : "Fr?do",
+      "surname" : "Durand"
+    } ]
+  },
+  "bagOfWords" : [ "work", "support", "NSF", "CAREER", "award", "0447561", "NSF", "Graduate", "Research", "Fellowship", "NVIDIA", "Graduate", "Fellowship", "Ford", "Foundation", "Graduate", "Fellowship", "Microsoft", "Research", "New", "Faculty", "Fellowship", "Sloan", "fellowship", "Sylvain", "Paris", "Ravi", "Ramamoorthi", "Kevin", "Egan", "Aner", "Ben-Artzi", "Kayvon", "Fatahalian", "provide", "critical", "write", "feedback", "we", "thank", "Michael", "Bay", "graciously", "share", "unreleased", "image", "from", "he", "movie", "Dan", "Piponi", "generate", "we", "hair", "datum", "anonymous", "reviewer", "insightful", "discussion", "criticism", "Dan", "Wexler", "Larry", "Gritz", "Reid", "Gershbein", "provide", "useful", "explanation", "commercial", "lighting", "technology", "Hilmar", "Koch", "Paul", "Churchill", "Tom", "Martinek", "Charles", "Rose", "provide", "critical", "artist?s", "perspective", "early", "design", "many", "developer", "have", "contribute", "code", "include", "Sebastian", "Fernandez", "Peter", "Murphy", "Simon", "Premo", "ze", "Aaron", "Luk", "Dan", "Goldman", "introduce", "work", "ILM", "where", "Alan", "Trombla", "Ed", "Hanway", "Steve", "Sullivan", "have", "oversee", "Tippett", "Studio", "take", "great", "risk", "actively", "support", "early", "research", "Matt", "Pharr", "John", "Owens", "Aaron", "Lefohn", "Eric", "Chan", "many", "member", "Stanford", "MIT", "Graphics", "Labs", "provide", "year", "essential", "advice", "feedback", "Alex", "Aiken", "John", "Kodumal", "propose", "dependence", "analysis", "graph", "reachability", "provide", "first", "analysis", "library", "we", "use" ],
+  "content" : "This work was supported by NSF CAREER award 0447561, an NSF Graduate Research Fellowship, NVIDIA Graduate Fellowship, Ford Foundation Graduate Fellowship, Microsoft Research New Faculty Fellowship and a Sloan fellowship. Sylvain Paris, Ravi Ramamoorthi, Kevin Egan, Aner Ben-Artzi, and Kayvon Fatahalian provided critical writing feedback. We thank Michael Bay for graciously sharing unreleased images from his movie, Dan Piponi for generating our hair data, and the anonymous reviewers for their insightful discussion and criticism. Dan Wexler, Larry Gritz, and Reid Gershbein provided useful explanations of commercial lighting technologies. Hilmar Koch, Paul Churchill, Tom Martinek, and Charles Rose provided a critical artist?s perspective early in design. Many developers have contributed code, including Sebastian Fernandez, Peter Murphy, Simon Premo ze, and Aaron Luk. Dan Goldman introduced the work to ILM, where Alan Trombla, Ed Hanway, and Steve Sullivan have overseen it. Tippett Studio took great risk in actively supporting early research. Matt Pharr, John Owens, Aaron Lefohn, Eric Chan, and many members of the Stanford and MIT Graphics Labs provided years of essential advice and feedback. Alex Aiken and John Kodumal proposed dependence analysis by graph reachability and provided the first analysis library we used.",
+  "resources" : [ ]
+}

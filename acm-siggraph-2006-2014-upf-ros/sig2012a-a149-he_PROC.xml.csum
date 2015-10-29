@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2012a-a149-he_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a149-he_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Staggered Meshless Solid-Fluid Coupling",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Xiaowei-He",
+      "name" : "Xiaowei",
+      "surname" : "He"
+    }, {
+      "uri" : "http://drinventor/Ning-Liu",
+      "name" : "Ning",
+      "surname" : "Liu"
+    }, {
+      "uri" : "http://drinventor/Guoping-Wang",
+      "name" : "Guoping",
+      "surname" : "Wang"
+    }, {
+      "uri" : "http://drinventor/Fengjun-Zhang",
+      "name" : "Fengjun",
+      "surname" : "Zhang"
+    }, {
+      "uri" : "http://drinventor/Sheng-Li",
+      "name" : "Sheng",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Songdong-Shao",
+      "name" : "Songdong",
+      "surname" : "Shao"
+    }, {
+      "uri" : "http://drinventor/Hongan-Wang",
+      "name" : "Hongan",
+      "surname" : "Wang"
+    } ]
+  },
+  "bagOfWords" : [ "21st", "Symposium", "Naval", "Hydrodynamics", "408", "423", "water", "entry", "arbitrary", "two-dimensional", "section", "without", "flow", "separation", "hao", "R.", "ALTINSEN", "O.", "ARSNES", "J.", "1996", "Proceedings", "27th", "annual", "conference", "computer", "graphic", "interactive", "technique", "ACM", "Press/Addison-Wesley", "Publishing", "Co.", "29", "36", "animate", "explosion", "ngve", "G.", "O?B", "RIEN", "J.", "odgin", "J.", "2000", "International", "Journal", "Numerical", "method", "Engineering", "77", "10", "1416", "1438", "sph", "multiple", "boundary", "tangent", "method", "ildiz", "M.", "OOK", "R.", "ULEMAN", "A.", "2009", "computer", "method", "Applied", "mechanic", "Engineering", "184", "67", "85" ],
+  "content" : "21st Symposium on Naval Hydrodynamics, 408?423. Water entry of arbitrary two-dimensional sections with and without flow separation. Z HAO , R., F ALTINSEN , O., AND A ARSNES , J. 1996. In Proceedings of the 27th annual conference on Computer graphics and interactive techniques, ACM Press/Addison-Wesley Publishing Co., 29?36. Animating explosions. Y NGVE , G., O?B RIEN , J., AND H ODGINS , J. 2000. International Journal for Numerical Methods in Engineering 77, 10, 1416?1438. SPH with the multiple boundary tangent method. Y ILDIZ , M., R OOK , R., AND S ULEMAN , A. 2009. Computer methods in Applied mechanics and Engineering 184, 1, 67?85.",
+  "resources" : [ ]
+}

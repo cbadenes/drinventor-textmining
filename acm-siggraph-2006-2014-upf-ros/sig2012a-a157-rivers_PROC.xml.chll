@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2012a-a157-rivers_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a157-rivers_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Sculpting by Numbers",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Alec R.-Rivers",
+      "name" : "Alec R.",
+      "surname" : "Rivers"
+    }, {
+      "uri" : "http://drinventor/Andrew-Adams",
+      "name" : "Andrew",
+      "surname" : "Adams"
+    }, {
+      "uri" : "http://drinventor/Fr?do-Durand",
+      "name" : "Fr?do",
+      "surname" : "Durand"
+    } ]
+  },
+  "bagOfWords" : [ "we", "find", "we", "system", "enable", "unskilled", "sculptor", "achieve", "far", "better", "result", "than", "would", "otherwise", "capable", "while", "give", "they", "sense", "ownership", "result", "creation", "would", "absent", "automatically-produced", "object", "future", "work", "we", "particularly", "wish", "explore", "application", "task", "assemble", "rigid", "part", "accurately", "match", "target", "configuration", "which", "may", "useful", "industrial", "context" ],
+  "content" : "We found that our system enabled unskilled sculptors to achieve far better results than they would otherwise be capable of, while giving them a sense of ownership of the resulting creations that would be absent with an automatically-produced object. In future work, we particularly wish to explore applications to the task of assembling rigid parts to accurately match a target configuration, which may be useful in industrial contexts.",
+  "resources" : [ ]
+}

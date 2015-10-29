@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2012a-a130-cali_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a130-cali_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "3D-Printing of Non-Assembly, Articulated Models",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jacques-Cal?",
+      "name" : "Jacques",
+      "surname" : "Cal?"
+    }, {
+      "uri" : "http://drinventor/Dan A.-Calian",
+      "name" : "Dan A.",
+      "surname" : "Calian"
+    }, {
+      "uri" : "http://drinventor/Cristina-Amati",
+      "name" : "Cristina",
+      "surname" : "Amati"
+    }, {
+      "uri" : "http://drinventor/Rebecca-Kleinberger",
+      "name" : "Rebecca",
+      "surname" : "Kleinberger"
+    }, {
+      "uri" : "http://drinventor/Anthony-Steed",
+      "name" : "Anthony",
+      "surname" : "Steed"
+    }, {
+      "uri" : "http://drinventor/Jan-Kautz",
+      "name" : "Jan",
+      "surname" : "Kautz"
+    }, {
+      "uri" : "http://drinventor/Tim-Weyrich",
+      "name" : "Tim",
+      "surname" : "Weyrich"
+    } ]
+  },
+  "bagOfWords" : [ "28", "-lrb-", "July", "-rrb-", "35:1", "35:9", "ACM", "Trans", "joint-aware", "manipulation", "deformable", "model", "W.", "ang", "J.", "K.", "HOU", "K.", "VAN", "de", "ANNE", "M.", "HEN", "F.", "UO", "B.", "2009", "ACM", "transaction", "graphic", "-lrb-", "SIGGRAPH", "2011", "issue", "-rrb-", "30", "-lrb-", "August", "-rrb-", "97:1", "97:8", "make", "burr", "puzzle", "from", "3d", "model", "S.", "AI", "C.-F.", "C.-W.", "ONG", "T.-T.", "Y.", "ohen", "D.", "2011", "icra", "IEEE", "3077", "3082", "rapid", "prototyping", "robotic", "system", "J.", "AURENTIS", "K.", "J.", "D.", "AVROIDIS", "C.", "2000" ],
+  "content" : "28, 3 (July), 35:1?35:9. ACM Trans. Joint-aware manipulation of deformable models. X U , W., W ANG , J., Y IN , K., Z HOU , K., VAN DE P ANNE , M., C HEN , F., AND G UO , B. 2009. ACM Transactions on Graphics (SIGGRAPH 2011 issue) 30, 4 (August), 97:1?97:8. Making burr puzzles from 3D models. X IN , S., L AI , C.-F., F U , C.-W., W ONG , T.-T., H E , Y., AND C OHEN -O R , D. 2011. In ICRA, IEEE, 3077? 3082. Rapid prototyping of robotic systems. W ON , J., L AURENTIS , K. J. D., AND M AVROIDIS , C. 2000.",
+  "resources" : [ ]
+}

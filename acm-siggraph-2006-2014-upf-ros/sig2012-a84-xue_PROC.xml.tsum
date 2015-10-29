@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2012-a84-xue_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a84-xue_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Understanding and Improving the Realism of Image Composites",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "average", "each", "zone", "use", "individual", "statistical", "measure", "-lrb-", "appendix", "-rrb-", "ACM", "Trans", "ACM", "Trans", "ACM", "Trans", "ACM", "Trans", "use", "select", "zone", "from", "previous", "section", "we", "adjust", "each", "key", "statistical", "measure", "turn", "also", "numerical", "relationship", "between", "each", "statistical", "measure", "its", "influence", "human", "rating", "realism", "help", "we", "combine", "different", "measure", "single", "algorithm", "automatic", "compositing", "we", "algorithm", "also", "adjust", "base", "zone", "though", "we", "automatically", "choose", "different", "zone", "match", "each", "composite", "give", "statistical", "evidence", "benefit", "use", "zone", "IEEE", "Trans", "algorithm", "ignore", "particular", "characteristic", "composite", "select", "zone", "could", "we", "do", "better", "select", "zone", "dynamically", "per", "composite" ],
+  "content" : "The average of each zone is used as an individual statistical measure (Appendix A). ACM Trans. ACM Trans. ACM Trans. ACM Trans. Using the selected zone from the previous section, we adjust each key statistical measure in turn. Also, a numerical relationship between each statistical measure and its influence on human ratings of realism will help us combine these different measures into a single algorithm for automatic compositing. Our algorithm also adjusts based on zones, though we automatically choose different zones to match for each composite, and give statistical evidence for the benefits of using zones. IEEE Trans. This algorithm ignores the particular characteristics of a composite in selecting zones; could we do better by selecting a zone dynamically per composite?",
+  "resources" : [ ]
+}

@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2010a-a138-lee_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a138-lee_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Motion Fields for Interactive Character Locomotion",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yongjoon-Lee",
+      "name" : "Yongjoon",
+      "surname" : "Lee"
+    }, {
+      "uri" : "http://drinventor/Kevin-Wampler",
+      "name" : "Kevin",
+      "surname" : "Wampler"
+    }, {
+      "uri" : "http://drinventor/Gilbert-Bernstein",
+      "name" : "Gilbert",
+      "surname" : "Bernstein"
+    }, {
+      "uri" : "http://drinventor/Jovan-Popovic",
+      "name" : "Jovan",
+      "surname" : "Popovic"
+    }, {
+      "uri" : "http://drinventor/Zoran-Popovic",
+      "name" : "Zoran",
+      "surname" : "Popovic"
+    } ]
+  },
+  "bagOfWords" : [ "work", "support", "UW", "Animation", "Research", "Labs", "Weil", "Family", "Endowed", "Graduate", "Fellowship", "UW", "Center", "Game", "Science", "Microsoft", "Intel", "Adobe", "Pixar", "we", "believe", "structureless", "motion", "techniques?such", "ours?have", "potential", "significantly", "improve", "realism", "responsiveness", "virtual", "character", "applicability", "animation", "problem", "continue", "improve", "better", "distance", "metric", "integration", "technique", "more", "efficient", "search", "representation", "method", "develop", "more", "generally", "we", "feel", "motion", "field", "provide", "valuable", "start", "point", "motion", "representation", "which", "wish", "move", "beyond", "rigidly", "structure", "notion", "state", "finally", "we", "interested", "technique", "more", "deeply", "incorporate", "idea", "from", "dynamics", "distance", "metric", "integration", "process", "create", "character", "who", "behave", "physically", "plausible", "way", "wide", "range", "situation", "use", "relatively", "little", "underlying", "datum", "way", "one", "could", "reap", "benefit", "graph", "-lrb-", "computational", "efficiency", "ease", "analysis", "etc.", "-rrb-", "when", "motion", "can", "safely", "restrict", "lie", "graph", "retain", "ability", "handle", "case", "where", "motion", "leave", "graph", "-lrb-", "instance", "due", "perturbation", "-rrb-", "when", "extreme", "responsiveness", "requry", "since", "motion", "field", "make", "very", "few", "requirement", "underlie", "datum", "can", "directly", "augment", "graph-based", "representation", "although", "motion", "field", "representation", "can", "use", "itself", "we", "think", "can", "easily", "integrate", "graph-based", "approach", "we", "believe", "structureless", "technique", "one", "we", "propose", "provide", "valuable", "tool", "enable", "highly", "responsive", "interactive", "character", "require", "create", "believable", "virtual", "character", "make", "we", "approach", "both", "flexible", "easy", "implement", "easy", "use", "furthermore", "representation", "require", "preprocessing", "datum", "determine", "where", "connect", "clip", "capture", "datum" ],
+  "content" : "This work was supported by the UW Animation Research Labs, Weil Family Endowed Graduate Fellowship, UW Center for Game Science, Microsoft, Intel, Adobe, and Pixar. We believe that structureless motion techniques?such as ours?have the potential to significantly improve the realism and responsiveness of virtual characters, and that their applicability to animation problems will continue to improve as better distance metrics, integration techniques, and more efficient search and representation methods are developed. More generally, we feel that motion fields provide a valuable starting point for motion representations which wish to move beyond a rigidly structured notion of state. Finally, we are interested in techniques to more deeply incorporate ideas from dynamics into the distance metric and integration process, creating characters who behave in physically plausible ways, in a wide range of situations, using relatively little underlying data. In this way, one could reap the benefits of graphs (computational efficiency, ease of analysis, etc.) when the motion can safely be restricted to lie on the graph, but retain the ability to handle cases where the motion leaves the graph (for instance due to a perturbation), or when extreme responsiveness is requried. Since motion fields make very few requirements of their underlying data, they can directly augment graph-based representations. Although the motion field representation can be used by itself, we think it can easily integrate with graph-based approaches. We believe that structureless techniques such as the one we propose will provide a valuable tool in enabling the highly responsive and interactive characters required to create believable virtual characters. This makes our approach both flexible, easy to implement, and easy to use. Furthermore, the representation requires no preprocessing of data or determining where to connect clips of captured data.",
+  "resources" : [ ]
+}

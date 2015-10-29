@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012a-a131-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a131-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Quality Prediction for Image Completion",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Wolf-Kienzle",
+      "name" : "Wolf",
+      "surname" : "Kienzle"
+    }, {
+      "uri" : "http://drinventor/Steven M.-Drucker",
+      "name" : "Steven M.",
+      "surname" : "Drucker"
+    }, {
+      "uri" : "http://drinventor/Sing Bing-Kang",
+      "name" : "Sing Bing",
+      "surname" : "Kang"
+    } ]
+  },
+  "bagOfWords" : [ "we", "test", "we", "algorithm", "several", "hundred", "panorama", "image", "hole", "interior", "supplementary", "material", "we", "show", "extensive", "comparison", "various", "state-of-the-art", "algorithm", "Input", "prediction", "-lrb-", "brighter", "higher", "quality", "-rrb-", "Adobe", "Photoshop", "CS5", "-lrb-", "Content", "Aware", "fill", "-rrb-", "input", "prediction", "-lrb-", "brighter", "higher", "quality", "-rrb-", "best", "-lrb-", "axis-aligned", "-rrb-", "rectangular", "crop", "best", "rotate", "rectangle", "best", "isosceles", "trapezoid", "-lrb-", "Adobe", "Photoshop", "CS5", "Content", "Aware", "fill", "GIMP", "Resynthesizer", "-lsb-", "Pritch", "et", "al.", "2009", "-rsb-", "-lsb-", "Komodakis", "Tziritas", "2007", "-rsb-", "-lsb-", "Criminisi", "et", "al.", "2003", "-rsb-", "-rrb-", "25", "representative", "sample", "from", "each", "class", "example", "show", "Figure", "10", "addition", "we", "show", "automatic", "crop", "result", "25", "panorama", "representative", "result", "show", "throughout", "paper", "we", "result", "-lrb-", "automatic", "crop", "show", "here", "-rrb-", "Komodakis", "Tziritas", "-lsb-", "2007", "-rsb-", "dual", "Intel", "Xeon", "E5640", "PC", "we", "observe", "follow", "median", "timing", "25", "panorama", "include", "supplementary", "material", "we", "believe", "number", "can", "reduce", "code", "optimization", "full", "completion", "auto-cropping", "restriction", "region", "0.32", "0.22", "feature", "extraction", "applicable", "0.93", "crop", "optimization", "applicable", "1.78", "Completion", "13.29", "6.52", "total", "13.70", "9.17", "panorama", "we", "automatic", "crop", "contain", "average", "slightly", "less", "than", "50", "miss", "pixel", "since", "completion", "algorithm", "runtime", "roughly", "linear", "number", "miss", "pixel", "lead", "significant", "speed-up", "compare", "first", "complete", "full", "panorama", "before", "crop", "image", "completion", "remain", "very", "challenging", "problem", "like", "other", "recent", "approach", "we", "algorithm", "lack", "higher-level", "-lrb-", "object-level", "-rrb-", "understanding", "input", "image", "thus", "occasion", "generate", "semantically", "implausible", "result", "although", "we", "source", "location", "restriction", "significantly", "reduce", "problem", "we", "crop", "optimization", "currently", "ignore", "scene", "context", "may", "crop", "out", "important", "object", "scene", "see", "Figure", "12", "fail", "realize", "importance", "two", "subject", "possible", "solution", "use", "face", "and/or", "saliency", "detector", "we", "prediction", "function", "fit", "perfect", "most", "likely", "due", "occasional", "mismatch", "subject", "rating", "training", "database", "result", "we", "prediction", "function", "would", "occasion", "mislabel", "miss", "region", "-lrb-", "e.g.", "Figure", "11", "where", "mislabeling", "result", "smaller", "crop", "-rrb-", "future", "course", "action", "would", "either", "analyze", "function", "per-person", "basis", "-lrb-", "i.e.", "personalize", "automatic", "crop", "function", "-rrb-", "partition", "datum", "cluster", "similar", "preference", "each", "have", "different", "crop", "function", "input", "prediction", "entire", "completion", "-lrb-", "brighter", "higher", "quality", "-rrb-", "input", "prediction", "crop", "completion", "-lrb-", "brighter", "higher", "quality", "-rrb-" ],
+  "content" : "We tested our algorithm on several hundred panoramas and images with holes in the interior. In the supplementary material, we show an extensive comparison to various state-of-the-art algorithms Input and prediction (brighter is higher quality) Adobe Photoshop CS5 (Content Aware Fill) Input and prediction (brighter is higher quality) Best (axis-aligned) rectangular crops Best rotated rectangle Best isosceles trapezoid (Adobe Photoshop CS5 Content Aware Fill, GIMP Resynthesizer, [Pritch et al. 2009], [Komodakis and Tziritas 2007], [Criminisi et al. 2003]) on 25 representative samples from each class. An example is shown in Figure 10 . In addition, we show automatic cropping results for the 25 panoramas; representative results are shown throughout the paper. Our result (automatic crop not shown here)\n        Komodakis and Tziritas [2007]\n        On a dual Intel Xeon E5640 PC, we observe the following median timings for the 25 panoramas included in the supplementary material. We believe these numbers can be reduced with code optimization. Full completion With auto-cropping Restriction regions 0.32s 0.22s Feature extraction not applicable 0.93s Crop optimization not applicable 1.78s Completion 13.29s 6.52s Total 13.70s 9.17s  For these panoramas, our automatic crops contain on average slightly less than 50% of the missing pixels. Since the completion algorithm runtime is roughly linear in the number of missing pixels, this leads to a significant speed-up compared to first completing the full panoramas before cropping. Image completion remains a very challenging problem. Like other recent approaches, our algorithm lacks higher-level (object-level) understanding of the input image. Thus, it will on occasion generate semantically implausible results, although our source location restriction significantly reduces these problems. Our cropping optimization currently ignores scene context and may crop out important objects in the scene. As seen in Figure 12 , it fails to realize the importance of the two subjects. A possible solution is to use face and/or saliency detectors. Our prediction function fit is not perfect, most likely due to occasional mismatches in subject ratings in the training database. As a result, our prediction function would, on occasion, mislabel the missing regions (e.g., Figure 11 , where mislabeling resulted in a smaller crop). A future course of action would be to either analyze the function on a per-person basis (i.e., personalize the automatic cropping function), or partition the data into clusters of similar preferences, with each having a different cropping function. Input and prediction Entire completion (brighter is higher quality) Input and prediction Cropped completion (brighter is higher quality)",
+  "resources" : [ ]
+}

@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2013-a58-vangorp_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013/a58-vangorp_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Perception of Perspective Distortions in Image-Based Rendering",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Peter-Vangorp",
+      "name" : "Peter",
+      "surname" : "Vangorp"
+    }, {
+      "uri" : "http://drinventor/Christian-Richardt",
+      "name" : "Christian",
+      "surname" : "Richardt"
+    }, {
+      "uri" : "http://drinventor/Emily A.-Cooper",
+      "name" : "Emily A.",
+      "surname" : "Cooper"
+    }, {
+      "uri" : "http://drinventor/Gaurav-Chaurasia",
+      "name" : "Gaurav",
+      "surname" : "Chaurasia"
+    }, {
+      "uri" : "http://drinventor/Martin S.-Banks",
+      "name" : "Martin S.",
+      "surname" : "Banks"
+    }, {
+      "uri" : "http://drinventor/George-Drettakis",
+      "name" : "George",
+      "surname" : "Drettakis"
+    } ]
+  },
+  "bagOfWords" : [ "dge", "1106400", "Emily", "A.", "Cooper", "acknowledge", "support", "from", "NDSEG", "Fellowship", "Program", "National", "Science", "Foundation", "under", "Grant", "work", "support", "INRIA", "CRISP", "associate", "team", "EU", "IP", "project", "verve", "-lrb-", "www.verveconsortium.eu", "-rrb-", "well", "research", "donation", "Adobe", "Autodesk", "we", "also", "thank", "Jean-Pierre", "Merlet", "Emmanuelle", "Chapoulie", "val", "morash", "help", "Charles", "Verron", "Michael", "Wand", "Karol", "Myszkowski", "Holly", "Rushmeier", "comment", "Blend", "Swap", "user", "Sebastian", "Erler", "abab", "fa", "ade", "model", "we", "thank", "reviewer", "comment", "all", "participant", "time", "we", "firmly", "believe", "geometric", "experimental", "framework", "provide", "solid", "basis", "study", "perception", "ibr", "more", "general", "setting", "stereo", "viewing", "even", "transition", "artifact", "have", "recently", "draw", "attention", "graphic", "community", "-lsb-", "Morvan", "O?Sullivan", "2009", "Stich", "et", "al.", "2011", "-rsb-", "addition", "we", "be", "able", "develop", "useful", "application", "theory", "experimental", "result", "however", "methodology", "geometric", "tool", "from", "vision", "science", "allow", "we", "develop", "we", "extended", "hypothesis", "design", "run", "we", "experiment", "Vision", "science", "provide", "well-founded", "explanation", "process", "underlie", "phenomenon", "do", "provide", "directly", "applicable", "model", "we", "start", "common", "observation", "we", "tolerance", "change", "view", "angle", "when", "look", "texture-mapped", "fa", "ade" ],
+  "content" : "DGE 1106400. Emily A. Cooper acknowledges support from the NDSEG Fellowship Program and National Science Foundation under Grant No. This work was supported by the INRIA CRISP associate team, the EU IP project VERVE ( www.verveconsortium.eu ) as well as research donations by Adobe and Autodesk. We also thank Jean-Pierre Merlet, Emmanuelle Chapoulie and Val Morash for their help, Charles Verron, Michael Wand, Karol Myszkowski and Holly Rushmeier for their comments, and Blend Swap users Sebastian Erler and abab for the fa  ?ade models. We thank the reviewers for their comments and all participants for their time. We firmly believe that this geometric and experimental framework provides a solid basis for studying perception of IBR in more general settings, such as stereo viewing, and even transition artifacts that have recently drawn attention in the graphics community [Morvan and O?Sullivan 2009, Stich et al. 2011]. In addition, we were able to develop useful applications of the theory and experimental results. However, methodologies and geometric tools from  vision science allowed us to develop our extended hypothesis, and to design and run our experiments. Vision science provided well-founded explanations of the processes underlying this phenomenon, but did not provide a directly applicable model. We started with a common observation: our tolerance to changes in viewing angle when looking at texture-mapped fa  ?ades.",
+  "resources" : [ ]
+}

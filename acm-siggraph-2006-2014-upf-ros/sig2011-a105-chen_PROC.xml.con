@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011-a105-chen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a105-chen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Nonlinear Revision Control for Images",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Hsiang-Ting-Chen",
+      "name" : "Hsiang-Ting",
+      "surname" : "Chen"
+    }, {
+      "uri" : "http://drinventor/Li-Yi-Wei",
+      "name" : "Li-Yi",
+      "surname" : "Wei"
+    }, {
+      "uri" : "http://drinventor/Chun-Fa-Chang",
+      "name" : "Chun-Fa",
+      "surname" : "Chang"
+    } ]
+  },
+  "bagOfWords" : [ "main", "limitation", "we", "current", "implementation", "integrate", "single", "tool", "-lrb-", "gimp", "-rrb-", "instead", "general", "mechanism", "can", "work", "arbitrary", "image", "editing", "software", "Popular", "image", "editing", "tool", "e.g.", "Photoshop", "Painter", "have", "own", "built-in", "history", "mechanism", "we", "would", "like", "have", "universal", "revision", "control", "interface", "facilitate", "automatic", "integration", "we", "revision", "control", "system", "heterogeneous", "multi-tool", "environment", "we", "current", "prototype", "system", "implement", "primarily", "single", "user", "predominant", "usage", "scenario", "current", "artistic", "workflow", "however", "propose", "algorithm", "system", "framework", "directly", "support", "multiple", "user", "UI", "can", "easily", "extend", "too", "particular", "all", "one", "need", "do", "adopt", "clientserver", "model", "implement", "we", "revision", "control", "backend", "server", "side", "UI", "frontend", "image", "editor", "client", "side", "we", "current", "design", "phase", "we", "have", "only", "conduct", "usability", "study", "few", "subject", "-lrb-", "one", "professional", "artist", "two", "industrial", "designer", "four", "cs", "graduate", "student", "-rrb-", "ideal", "test", "bed", "integrate", "we", "system", "commercial", "studio?s", "pipeline", "however", "rather", "difficult", "find", "studio", "use", "gimp", "main", "tool", "nevertheless", "we", "do", "hope", "release", "we", "source", "code", "public", "domain", "can", "help", "we", "gather", "more", "user", "feedback", "paper", "we", "focus", "mainly", "image", "we", "believe", "similar", "principle", "applicable", "other", "binary", "graphic", "asset", "video", "mesh", "animation", "datum", "extend", "revision", "control", "datum", "type", "could", "another", "potential", "future", "work", "direction", "acknowledgement", "we", "would", "like", "thank", "Eugene", "Lei", "digital", "sketch", "example", "valuable", "comment", "Sin-Jhen", "Chiu", "DigiMax", "Chuan-Chang", "Wang", "Next", "Media", "Animation", "insight", "commercial", "animation", "production", "pipeline", "Eric", "Stollnitz", "video", "dubbing", "Duncan", "Stevenson", "SIGGRAPH", "English", "Review", "Service", "proofread", "well", "KeSen", "Huang", "anonymous", "reviewer", "valuable", "suggestion", "work", "support", "part", "National", "Science", "Council", "-lrb-", "Taiwan", "-rrb-", "under", "grant", "NSC", "98-2220-e-003-001" ],
+  "content" : "The main limitation of our current implementation is that it is integrated into a single tool (GIMP) instead of a general mechanism that can work with arbitrary image editing softwares. Popular image editing tools, e.g. Photoshop and Painter, have with their own built-in history mechanisms. We would like to have a universal revision control interface to facilitate the automatic integration of our revision control system in a heterogeneous multi-tool environment. Our current prototype system is implemented primarily for a single user as it is the predominant usage scenario for current artistic workflows. However, proposed algorithms and system framework directly support multiple users, and the UI can be easily extended for that too. In particular, all one needs to do is to adopt a clientserver model, implementing our revision control backend on the server side with the UI frontend and image editor on the client side. In our current design phase, we have only conducted the usability study with a few subjects (one professional artist, two industrial designers and four CS graduate students). The ideal test bed is to integrate our system into a commercial studio?s pipeline. However, it is rather difficult to find a studio using GIMP as their main tool. Nevertheless, we do hope the release of our source code in the public domain can help us gather more user feedback. In this paper we focused mainly on images, but we believe similar principles are applicable to other binary graphics assets, such as videos, meshes, or animation data. Extending revision control to these data types could be another potential future work direction. Acknowledgements We would like to thank Eugene Lei for digital sketching examples and valuable comments, Sin-Jhen Chiu at DigiMax and Chuan-Chang Wang at Next Media Animation for their insights on the commercial animation production pipeline, Eric Stollnitz for video dubbing, Duncan Stevenson and the SIGGRAPH English Review Service for proofreading, as well as KeSen Huang and the anonymous reviewers for their valuable suggestions. This work is supported in part by National Science Council (Taiwan) under grant NSC 98-2220-E-003-001.",
+  "resources" : [ ]
+}

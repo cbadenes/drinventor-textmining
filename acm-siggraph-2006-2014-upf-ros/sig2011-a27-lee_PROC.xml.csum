@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011-a27-lee_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a27-lee_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "ShadowDraw: Real-Time User Guidance for Freehand Drawing",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yong Jae-Lee",
+      "name" : "Yong Jae",
+      "surname" : "Lee"
+    }, {
+      "uri" : "http://drinventor/C. Lawrence-Zitnick",
+      "name" : "C. Lawrence",
+      "surname" : "Zitnick"
+    }, {
+      "uri" : "http://drinventor/Michael F.-Cohen",
+      "name" : "Michael F.",
+      "surname" : "Cohen"
+    } ]
+  },
+  "bagOfWords" : [ "hopefully", "ShadowDraw", "make", "they", "feel", "more", "comfortable", "pick", "up", "pen", "draw", "future", "finally", "thanks", "all", "participant", "who", "be", "willing", "draw", "part", "user", "study", "we", "would", "also", "like", "thank", "anonymous", "reviewer", "many", "helpful", "comment", "author", "would", "like", "thank", "Ce", "Liu", "many", "insightful", "discussion", "help", "shape", "work", "paper", "we", "hope", "paper", "have", "express", "both", "scope", "specific", "work", "report", "well", "many", "possible", "related", "avenue", "future", "exploration", "conclusion", "we", "have", "find", "area", "investigation", "very", "exciting", "look", "forward", "extend", "work", "many", "direction", "one", "could", "assemble", "large", "database", "artistic", "drawing", "we", "may", "able", "use", "some", "technology", "we", "report", "begin", "learn", "relationship", "leave", "future", "work", "require", "more", "nuanced", "understanding", "relationship", "between", "aesthetics", "realism", "drawing", "say", "more", "work", "require", "make", "system", "truly", "aid", "improve", "overall", "aesthetic", "result", "we", "be", "encourage", "see", "user", "personal", "drawing", "style", "be", "maintain", "when", "use", "ShadowDraw" ],
+  "content" : "Hopefully ShadowDraw will make them feel more comfortable picking up a pen to draw in the future. Finally, thanks to all the participants who were willing to draw as part of the user studies. We would also like to thank the anonymous reviewers for their many helpful comments. The authors would like to thank Ce Liu for many insightful discussions and help in shaping the work in this paper. We hope this paper has expressed both the scope of the specific work reported on, as well as the many possible related avenues for future exploration. In conclusion, we have found this area of investigation very exciting and look forward to extending the work in many directions. If one could assemble a large database of artistic drawings, we may be able to use some of the technology we report to begin to learn such a relationship, but this is left for future work. This will require a more nuanced understanding of the relationship between aesthetics and realism in drawings. That said, more work is required to make the system truly aid in improving the overall aesthetic result. We were encouraged to see that the users? personal drawing styles were maintained when using ShadowDraw.",
+  "resources" : [ ]
+}

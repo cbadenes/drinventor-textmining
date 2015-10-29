@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2008-a34-ben-chen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008/a34-ben-chen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Variational Harmonic Maps for Space Deformation",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Mirela-Ben-Chen",
+      "name" : "Mirela",
+      "surname" : "Ben-Chen"
+    }, {
+      "uri" : "http://drinventor/Ofir-Weber",
+      "name" : "Ofir",
+      "surname" : "Weber"
+    }, {
+      "uri" : "http://drinventor/Craig-Gotsman",
+      "name" : "Craig",
+      "surname" : "Gotsman"
+    } ]
+  },
+  "bagOfWords" : [ "we", "generate", "harmonic", "map", "domain", "linear", "combination", "harmonic", "basis", "function", "we", "mapping", "harmonic", "hence", "all", "partial", "higher", "derivative", "all", "its", "component", "also", "harmonic", "we", "have", "propose", "new", "space", "deformation", "method", "-lrb-", "Variational", "Harmonic", "mapping", "VHM", "-rrb-", "whose", "underlie", "mathematical", "model", "harmonic", "mapping", "since", "harmonic", "all", "its", "partial", "derivative", "harmonic", "function", "addition", "normal", "surface", "do", "depend", "so", "its", "dot", "product", "just", "linear", "combination", "harmonic", "function", "which", "again", "harmonic", "function", "we", "propose", "use", "harmonic", "map", "source", "region", "underlie", "deformation", "model", "future", "we", "hope", "further", "explore", "variational", "harmonic", "mapping", "setting", "other", "than", "deformation", "harmonic", "coordinate", "use", "independent", "harmonic", "function", "each", "coordinate", "thus", "able", "enforce", "exact", "interpolation", "target", "cage", "BEM", "framework", "one", "seek", "harmonic", "function", "domain", "have", "some", "give", "boundary", "value", "whereas", "we", "seek", "harmonic", "map", "which", "minimize", "give", "functional", "we", "generate", "harmonic", "mapping", "linear", "combination", "set", "harmonic", "basis", "function", "which", "have", "closed-form", "expression", "when", "source", "region", "boundary", "piecewise", "linear" ],
+  "content" : "We generate harmonic maps on the domain as a linear combination of harmonic basis functions. Our mapping is harmonic, and hence all the partial and higher derivatives of all its components are also harmonic. We have proposed a new space deformation method (?Variational Harmonic Mapping? ? VHM) whose underlying mathematical model is a harmonic mapping. Since G is harmonic, all its partial derivatives G x , G y and G z are harmonic functions. In addition, the normal to the surface does not depend on p, so its dot product with ?G is just a linear combination of harmonic functions, which is again a harmonic function. We propose to use harmonic maps of the source region as the underlying deformation model. In the future we hope to further explore variational harmonic mappings in settings other than deformation. Harmonic coordinates use independent harmonic functions for each coordinate, thus are able to enforce an exact interpolation of the target cage. In the BEM framework, one seeks a harmonic function on the domain having some given boundary values, whereas we seek a harmonic map which minimizes a given functional. We generate harmonic mappings as a linear combination of a set of harmonic basis functions, which have a closed-form expression when the source region boundary is piecewise linear.",
+  "resources" : [ ]
+}

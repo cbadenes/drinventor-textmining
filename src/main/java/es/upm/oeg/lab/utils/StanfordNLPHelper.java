@@ -9,6 +9,8 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.Pair;
+import intoxicant.analytics.coreNlp.StopwordAnnotator;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -19,14 +21,24 @@ import java.util.Properties;
  */
 public class StanfordNLPHelper {
 
+    //adding a couple extra terms to standard lucene list to test against
+    private static final String customStopWordList = "start,starts,period,periods,a,an,and,are,as,at,be,but,by,for,if,in,into,is,it,no,not,of,on,or,such,that,the,their,then,there,these,they,this,to,was,will,with";
+
+
+
     protected StanfordCoreNLP pipeline;
 
         public StanfordNLPHelper() {
             // Create StanfordCoreNLP object properties, with POS tagging
             // (required for lemmatization), and lemmatization
+
             Properties props;
             props = new Properties();
-            props.put("annotators", "tokenize, ssplit, pos"); //"tokenize, ssplit, pos, lemma, ner, parse, dcoref"
+            props.put("annotators", "tokenize, ssplit, pos, lemma, stopword"); //"tokenize, ssplit, pos, lemma, ner, parse, dcoref"
+            props.setProperty("customAnnotatorClass.stopword", "intoxicant.analytics.coreNlp.StopwordAnnotator");
+            props.setProperty(StopwordAnnotator.CHECK_LEMMA, "true");
+            // CUstom stopwords
+            props.setProperty(StopwordAnnotator.STOPWORDS_LIST, customStopWordList);
 //            props.setProperty("annotators", "tokenize, ssplit, pos, lemma");
 
             /*
@@ -69,7 +81,13 @@ public class StanfordNLPHelper {
                     String pos = token.get(PartOfSpeechAnnotation.class);
                     // Retrieve and add the lemma for each word into the
                     // list of lemmas
-                    lemmas.add(token.get(LemmaAnnotation.class));
+                    String lemma = token.get(LemmaAnnotation.class);
+
+                    Pair<Boolean, Boolean> stopword = token.get(StopwordAnnotator.class);
+
+                    if (!stopword.first && word.length()>1){
+                        lemmas.add(lemma);
+                    }
                 }
             }
             return lemmas;

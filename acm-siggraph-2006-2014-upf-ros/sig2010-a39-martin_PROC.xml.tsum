@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2010-a39-martin_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010/a39-martin_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Unified Simulation of Elastic Rods, Shells, and Solids",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Sebastian-Martin",
+      "name" : "Sebastian",
+      "surname" : "Martin"
+    }, {
+      "uri" : "http://drinventor/Peter-Kaufmann",
+      "name" : "Peter",
+      "surname" : "Kaufmann"
+    }, {
+      "uri" : "http://drinventor/Mario-Botsch",
+      "name" : "Mario",
+      "surname" : "Botsch"
+    }, {
+      "uri" : "http://drinventor/Eitan-Grinspun",
+      "name" : "Eitan",
+      "surname" : "Grinspun"
+    }, {
+      "uri" : "http://drinventor/Markus H.-Gross",
+      "name" : "Markus H.",
+      "surname" : "Gross"
+    } ]
+  },
+  "bagOfWords" : [ "we", "obtain", "store", "deformation", "energy", "solid", "shell", "rod", "deform", "under", "volumetric", "displacement", "field", "u.", "finally", "we", "integrate", "energy", "density", "over", "remain", "three", "two", "one", "tangent", "direction", "solid", "shell", "rod", "respectively", "equation", "describe", "convenient", "approximation", "elastic", "energy", "which", "allow", "treatment", "solid", "shell", "rod", "unified", "manner", "can", "observe", "time", "require", "solve", "linear", "system", "depend", "only", "number", "dof", "also", "density", "stiffness", "matrix", "which", "decrease", "from", "solid", "over", "shell", "rod", "analytic", "solution", "clamp", "solid", "shell", "rod", "subject", "''", "volumetric", "tessellation", "however", "would", "less", "suitable", "shell", "rod", "place", "elaston", "along", "rod?s", "centerline", "shell?s", "mid-surface", "throughout", "solid?s", "volume", "we", "can", "approximate", "store", "elastic", "energy", "rod", "shell", "solid", "respectively", "likewise", "rod", "model", "serve", "integration", "rule", "shell", "energy", "transitivity", "volumetric", "solid", "first", "we", "analytically", "integrate", "over", "zero", "one", "two", "normal", "direction", "solid", "shell", "rod", "respectively", "obtain", "tangential", "energy", "density", "approach", "extend", "beyond", "scope", "standard", "benchmark", "without", "any", "modification", "implementation", "we", "demonstrate", "compelling", "example", "non-manifold", "geometry", "-lrb-", "where", "classical", "rod", "shell", "model", "break", "down", "-rrb-", "hybrid", "form", "can", "discretely", "classify", "rod", "shell", "solid", "-lrb-", "where", "classical", "rod", "shell", "model", "do", "apply", "na?ve", "implementation", "volumetric", "elastica", "suffer", "from", "poor", "numeric", "-rrb-" ],
+  "content" : "We obtained the stored deformation energy of solids, shells, and rods deforming under the volumetric displacement field u. Finally, we integrate the energy density over the remaining three, two, and one tangent directions of a solid, shell, or rod, respectively. This equation describes a convenient approximation of the elastic energy, which allows the treatment of solids, shells, and rods in a unified manner. It can be observed that the time required for solving the linear system depends not only on the number of DOFs, but also on the density of the stiffness matrix, which decreases from solids over shells to rods. % or analytic solutions for a clamped solid, shell, and rod, subject !\" This volumetric tessellation, however, would be less suitable for shells and rods. By placing the elastons along a rod?s centerline, or on a shell?s mid-surface, or throughout a solid?s volume, we can approximate the stored elastic energy of rods, shells, or solids, respectively. Likewise, a rod model serves as an integration rule for shell energies, and by transitivity for volumetric solids. First, we analytically integrate over the zero, one, and two normal directions of a solid, shell, or rod, respectively, to obtain the tangential energy density. But the approach extends beyond the scope of standard benchmarks: without any modification to the implementation, we demonstrate compelling examples on non-manifold geometry (where classical rod or shell models break down) and on hybrid forms that cannot be discretely classified as rods, shells, or solids (where classical rod or shell models do not apply, and na?ve implementations of volumetric elastica suffer from poor numerics).",
+  "resources" : [ ]
+}

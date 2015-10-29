@@ -1,0 +1,62 @@
+{
+  "uri" : "sig2010a-a141-jimenez_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a141-jimenez_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Practical Appearance Model for Dynamic Facial Color",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jorge-Jimenez",
+      "name" : "Jorge",
+      "surname" : "Jimenez"
+    }, {
+      "uri" : "http://drinventor/Timothy-Scully",
+      "name" : "Timothy",
+      "surname" : "Scully"
+    }, {
+      "uri" : "http://drinventor/Nuno-Barbosa",
+      "name" : "Nuno",
+      "surname" : "Barbosa"
+    }, {
+      "uri" : "http://drinventor/Craig-Donner",
+      "name" : "Craig",
+      "surname" : "Donner"
+    }, {
+      "uri" : "http://drinventor/Xenxo-Alvarez",
+      "name" : "Xenxo",
+      "surname" : "Alvarez"
+    }, {
+      "uri" : "http://drinventor/Teresa-Vieira",
+      "name" : "Teresa",
+      "surname" : "Vieira"
+    }, {
+      "uri" : "http://drinventor/Paul-Matts",
+      "name" : "Paul",
+      "surname" : "Matts"
+    }, {
+      "uri" : "http://drinventor/Ver?nica-Orvalho",
+      "name" : "Ver?nica",
+      "surname" : "Orvalho"
+    }, {
+      "uri" : "http://drinventor/Diego-Gutierrez",
+      "name" : "Diego",
+      "surname" : "Gutierrez"
+    }, {
+      "uri" : "http://drinventor/Tim-Weyrich",
+      "name" : "Tim",
+      "surname" : "Weyrich"
+    } ]
+  },
+  "bagOfWords" : [ "high-quality", "head", "scan", "we", "also", "thank", "XYZRGB", "Inc.", "research", "have", "be", "partially", "fund", "Marie", "Curie", "grant", "from", "Seventh", "Framework", "Programme", "-lrb-", "grant", "agreement", "251415", "-rrb-", "Spanish", "Ministry", "Science", "Technology", "-lrb-", "tin2010-21543", "-rrb-", "Gobierno", "de", "Arag?n", "-lrb-", "project", "OTRI", "2009/0411", "ctpp05/09", "plus", "grant", "Jorge", "Jimenez", "-rrb-", "thanks", "also", "we", "test", "subject", "Gabriel", "Brostow", "Kirstin", "Rautzenberg", "we", "thank", "reviewer", "keen", "insight", "useful", "suggestion", "we", "plan", "develop", "more", "robust", "system", "capable", "provide", "more", "detailed", "accurate", "physiological", "information", "able", "detect", "overall", "concentration", "melanin", "hemoglobin", "depth", "deposition", "other", "feature", "hemoglobin", "oxygenation", "one", "limitation", "lie", "use", "siascope", "algorithm", "we", "method", "could", "also", "use", "inverse", "fashion", "detect", "emotion", "base", "deformation", "color", "cue" ],
+  "content" : "for the high-quality head scan. We also thank XYZRGB Inc. This research has been partially funded by a Marie Curie grant from the Seventh Framework Programme (grant agreement no. : 251415), the Spanish Ministry of Science and Technology (TIN2010-21543) and the Gobierno de Arag?n (projects OTRI 2009/0411 and CTPP05/09, plus a grant for Jorge Jimenez). Thanks also to our test subjects Gabriel Brostow and Kirstin Rautzenberg. We thank the reviewers for their keen insight and useful suggestions. We plan to develop a more robust system capable of providing more detailed and accurate physiological information. They are able to detect overall concentrations of melanin and hemoglobin, but not depth of deposition, or other features, such as hemoglobin oxygenation. One limitations lies in the use of the SIAscope algorithms. Our method could also be used in an inverse fashion, to detect emotions based on deformation and color cues.",
+  "resources" : [ ]
+}

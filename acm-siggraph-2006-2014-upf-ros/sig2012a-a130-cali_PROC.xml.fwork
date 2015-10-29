@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2012a-a130-cali_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a130-cali_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "3D-Printing of Non-Assembly, Articulated Models",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jacques-Cal?",
+      "name" : "Jacques",
+      "surname" : "Cal?"
+    }, {
+      "uri" : "http://drinventor/Dan A.-Calian",
+      "name" : "Dan A.",
+      "surname" : "Calian"
+    }, {
+      "uri" : "http://drinventor/Cristina-Amati",
+      "name" : "Cristina",
+      "surname" : "Amati"
+    }, {
+      "uri" : "http://drinventor/Rebecca-Kleinberger",
+      "name" : "Rebecca",
+      "surname" : "Kleinberger"
+    }, {
+      "uri" : "http://drinventor/Anthony-Steed",
+      "name" : "Anthony",
+      "surname" : "Steed"
+    }, {
+      "uri" : "http://drinventor/Jan-Kautz",
+      "name" : "Jan",
+      "surname" : "Kautz"
+    }, {
+      "uri" : "http://drinventor/Tim-Weyrich",
+      "name" : "Tim",
+      "surname" : "Weyrich"
+    } ]
+  },
+  "bagOfWords" : [ "additive", "manufacturing", "-lrb-", "3d", "printing", "-rrb-", "commonly", "use", "produce", "physical", "model", "wide", "variety", "application", "from", "archaeology", "design", "additive", "manufacturing", "-lrb-", "3d", "printing", "-rrb-", "commonly", "use", "produce", "physical", "model", "wide", "variety", "application", "from", "archaeology", "industrial", "prototyping", "design", "while", "have", "be", "simple", "set", "gear", "have", "be", "demonstrate", "early", "now", "even", "attract", "hobbyist", "community", "-lsb-", "thingiverse", "2012", "-rsb-", "Custom", "deformable", "object", "have", "be", "print", "use", "use", "multi-material", "printer", "-lsb-", "Bickel", "et", "al.", "2010", "-rsb-", "user", "rig", "model", "3d", "printing", "use", "standard", "rigging", "procedure", "-lsb-", "Autodesk", "2012", "-rsb-", "interactive", "joint", "fitting", "pipeline", "make", "use", "simple", "rigging", "structure", "output", "3d-printable", "model", "require", "assembly", "set", "automatism", "support", "pipeline", "sculpt", "joint", "geometry", "accord", "specify", "rotation", "constraint", "while", "otherwise", "allow", "free", "rotation", "joint", "Computer", "control", "milling", "most", "obvious", "CAM", "example", "offer", "new", "opportunity", "designer", "engineer", "because", "unique", "capability", "compare", "previous", "manufacturing", "process", "stereolithography", "-lrb-", "slum", "-rrb-", "use", "ultraviolet", "curable", "liquid", "ultraviolet", "laser", "solidify", "layer", "liquid", "desire", "shape", "material", "solidify", "instantly", "thus", "create", "stratified", "structure", "both", "slum", "fdm", "have", "problem", "build", "structure", "overhang", "interlock", "part", "structure", "need", "support", "build", "fdm", "relatively", "cheap", "technology", "have", "attract", "vibrant", "hobbyist", "scene", "-lsb-", "stemp-morlock", "2010", "-rsb-", "resolution", "printing", "coarser", "than", "slum", "sl", "relationship", "between", "computer", "graphic", "additive", "manufacturing", "have", "develop", "two", "distinct", "way", "second", "computer", "graphic", "technique", "have", "be", "employ", "develop", "novel", "additive", "manufacturing", "process", "deformable", "object", "-lsb-", "Bickel", "et", "al.", "2010", "-rsb-", "thus", "thread", "work", "from", "mechanical", "engineering", "community", "address", "additive", "printing", "mechanism", "Won", "et", "al.", "Mavroidis", "et", "al.", "report", "success", "use", "additive", "manufacture", "joint", "form", "robot", "-lsb-", "Won", "et", "al.", "2000", "Mavroidis", "et", "al.", "2001", "-rsb-", "date", "have", "receive", "much", "attention", "literature", "closest", "work", "technique", "predict", "mechanical", "property", "object", "-lsb-", "rajagopalan", "Cutkosky", "2003", "Chen", "Zhezheng", "2011", "-rsb-", "work", "physical", "analogy", "Sims", "well-known", "work", "computer", "graphic", "evolution", "jointed", "virtual", "creature", "-lsb-", "sim", "1994", "-rsb-", "related", "work", "attempt", "find", "articulation", "shape", "-lsb-", "Xu", "et", "al.", "2009", "-rsb-", "technique", "target", "deformation", "object", "whereas", "we", "need", "find", "joint", "between", "rigid", "object", "approach", "take", "skin", "mesh", "input", "i.e.", "contain", "datum", "deformation", "which", "allow", "individual", "rigid", "part", "extract", "joint", "location", "estimate", "New", "pin", "can", "insert", "extremal", "shaft", "direction", "between", "pin", "interpolate", "use", "spherical", "linear", "interpolation", "-lrb-", "slerp", "-rrb-", "-lsb-", "Shoemake", "1985", "-rsb-" ],
+  "content" : "Additive manufacturing (3D printing) is commonly used to produce physical models for a wide variety of applications, from archaeology to design. Additive manufacturing (3D printing) is commonly used to produce physical models for a wide variety of applications, from archaeology to industrial prototyping and design. While having been Simple sets of gears have been demonstrated early on, and by now they even attracted a hobbyist community [Thingiverse 2012]. Custom deformable objects have been printed using using a multi-material printer [Bickel et al. 2010]. The user rigs this model for 3D printing using a standard rigging procedure [Autodesk 2012]. ? An interactive joint fitting pipeline that makes use of a simple rigging structure and outputs 3D-printable models requiring no assembly ? A set of automatisms that support this pipeline by sculpting joints and geometry according to the specified rotation constraints while otherwise allowing for free rotation of the joint. Computer controlled milling is the most obvious CAM example. These offer new opportunities to designers and engineers because of their unique capabilities compared to previous manufacturing processes. Stereolithography (SLA) uses an ultraviolet curable liquid and an ultraviolet laser to solidify layers of the liquid into the desired shape. The material solidifies instantly thus creating stratified structures. Both SLA and FDM have problems building structures with overhangs or interlocking parts, as the structure needs support as it is built. FDM is a relatively cheap technology that has attracted a vibrant hobbyist scene [Stemp-Morlock 2010] but  the resolution of printing is coarser than SLA and SLS. The relationship between computer graphics and additive manufacturing has developed in two distinct ways. Second, computer graphics techniques have been employed in developing novel additive manufacturing processes such as deformable objects [Bickel et al. 2010]. Thus a thread of work from the mechanical engineering community addresses the additive printing of mechanisms. Won et al. and Mavroidis et al. report success in the use of additive manufacture of joints that form robots [Won et al. 2000; Mavroidis et al. 2001]. To date this has not received much attention in the literature; the closest work are techniques to predict the mechanical properties of objects [Rajagopalan and Cutkosky 2003; Chen and Zhezheng 2011]. This work is a physical analogy of Sims? well-known work in computer graphics on evolution of jointed virtual creatures [Sims 1994]. A related work attempts to find articulations of shapes [Xu et al. 2009], but that technique targets deformation of objects, whereas we need to find joints between rigid objects. Their approach takes a skinned mesh as input, i.e., containing data on deformations, which allows for individual rigid parts to be extracted and joint locations to be estimated. New pins can be inserted, and the extremal shaft directions between pins are interpolated using spherical linear interpolation (Slerp) [Shoemake 1985].",
+  "resources" : [ ]
+}

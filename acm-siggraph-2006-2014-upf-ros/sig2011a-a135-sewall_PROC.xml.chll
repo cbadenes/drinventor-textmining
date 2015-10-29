@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011a-a135-sewall_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011a/a135-sewall_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Interactive Hybrid Simulation of Large-Scale Traffic",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jason-Sewall",
+      "name" : "Jason",
+      "surname" : "Sewall"
+    }, {
+      "uri" : "http://drinventor/David-Wilkie",
+      "name" : "David",
+      "surname" : "Wilkie"
+    }, {
+      "uri" : "http://drinventor/Ming C.-Lin",
+      "name" : "Ming C.",
+      "surname" : "Lin"
+    } ]
+  },
+  "bagOfWords" : [ "we", "allow", "arbitrary", "number", "interface", "point", "where", "two", "type", "simulation", "must", "couple", "vehicle", "under", "one", "type", "simulation", "must", "transition", "other", "approach", "open", "many", "other", "promising", "avenue", "future", "work", "could", "use", "calculate", "better", "route", "individual", "vehicle", "more", "effective", "remediation", "traffic", "congestion" ],
+  "content" : "We allow for an arbitrary number of interface points where the two types of simulation must be coupled and vehicles under one type of simulation must be transitioned into the other. This approach opens many other promising avenues for future work. This could be used to calculate better routing for individual vehicles and more effective remediation for traffic congestion.",
+  "resources" : [ ]
+}

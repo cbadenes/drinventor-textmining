@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2013a-a162-gkioulekas_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a162-gkioulekas_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Inverse Volume Rendering with Material Dictionaries",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ioannis-Gkioulekas",
+      "name" : "Ioannis",
+      "surname" : "Gkioulekas"
+    }, {
+      "uri" : "http://drinventor/Shuang-Zhao",
+      "name" : "Shuang",
+      "surname" : "Zhao"
+    }, {
+      "uri" : "http://drinventor/Kavita-Bala",
+      "name" : "Kavita",
+      "surname" : "Bala"
+    }, {
+      "uri" : "http://drinventor/Todd-Zickler",
+      "name" : "Todd",
+      "surname" : "Zickler"
+    }, {
+      "uri" : "http://drinventor/Anat-Levin",
+      "name" : "Anat",
+      "surname" : "Levin"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "optimization", "framework", "invert", "effect", "multiple-scattering", "recover", "scattering", "property", "homogeneous", "volume", "from", "handful", "image", "approach", "do", "require", "precise", "isolation", "single", "scattering", "enable", "measurement", "broader", "set", "material", "include", "both", "solid", "liquid", "optimization", "also", "incorporate", "large", "material", "dictionary", "thereby", "avoid", "restriction", "low-parameter", "phase", "function", "model", "we", "analysis", "experiment", "show", "we", "can", "recover", "accurate", "physical", "scattering", "parameter", "variety", "material", "we", "current", "setup", "optimization", "framework", "do", "account", "polarization", "fluorescence", "phenomenon", "polarization", "can", "important", "appearance", "material", "strongly", "polarizationdependent", "scattering", "property", "index", "refraction", "-lrb-", "birefringence", "-rrb-", "crystalline", "material", "experimentally", "we", "optimization", "have", "be", "unable", "find", "scatter", "parameter", "match", "we", "setup?s", "image", "microcrystalline", "wax", "may", "due", "some", "combination", "we", "simulator?s", "ignorance", "polarization", "we", "use", "partially-polarized", "-lrb-", "laser", "plus", "fiber", "-rrb-", "light", "regard", "fluorescence", "we", "have", "verify", "have", "negligible", "impact", "we", "measurement", "material", "list", "section", "we", "setup", "can", "easily", "modify", "measure", "strongly", "fluorescent", "behavior", "other", "material", "include", "addition", "hyperspectral", "camera", "mechanism", "control", "wavelength", "source", "side", "while", "we", "propose", "one", "possible", "scanning", "configuration", "we", "optimization", "could", "use", "infer", "scatter", "parameter", "from", "image", "capture", "from", "variety", "scene", "geometry", "incident", "light", "field", "only", "requirement", "both", "lighting", "geometry", "precisely", "calibrate", "we", "setup", "combine", "benefit", "highfrequency", "angular", "lighting", "-lrb-", "stable", "optimization", "-rrb-", "precise", "stable", "calibration", "-lrb-", "repeatability", "-rrb-", "limit", "measurement", "three", "wavelength", "solid", "can", "cast", "glass", "cell", "thickness", "within", "order", "magnitude", "mean", "free", "path", "principle", "we", "optimization", "could", "apply", "image", "more", "general", "solid", "object", "would", "require", "enhance", "we", "setup", "also" ],
+  "content" : "We present an optimization framework for inverting the effect of multiple-scattering to recover scattering properties of homogeneous volumes from a handful of images. The approach does not require precise isolation of single scattering, and this enables the measurement of a broader set of materials, including both solids and liquids. The optimization also incorporates a large material dictionary and thereby avoids the restrictions of low-parameter phase function models. Our analysis and experiments show that we can recover accurate physical scattering parameters for a variety of materials. Our current setup and optimization framework do not account for polarization or fluorescence phenomena. Polarization can be important for the appearance of materials with strongly polarizationdependent scattering properties or index of refraction (birefringence), such as crystalline materials. Experimentally, our optimization has been unable to find scattering parameters that match our setup?s images of microcrystalline wax, and this may be due to some combination of our simulator?s ignorance of polarization and our use of partially-polarized (laser plus fiber) light. Regarding fluorescence, we have verified that it has negligible impact on our measurements of the materials listed in Section 6. Our setup can be easily modified to measure the strongly fluorescent behavior of other materials, by including in addition to the hyperspectral camera a mechanism to control wavelength at the source side. While we proposed one possible scanning configuration, our optimization could be used to infer scattering parameters from images captured from a variety of scene geometries and incident light fields. The only requirement is that both lighting and geometry be precisely calibrated. Our setup combines the benefits of highfrequency angular lighting (for stable optimization) and precise, stable calibration (for repeatability), but it limits measurements to three wavelengths and to solids that can be cast into glass cells of thickness within an order of magnitude of the mean free path. In principle, our optimization could be applied to images of more general solid objects, but this would require enhancing our setup to also",
+  "resources" : [ ]
+}

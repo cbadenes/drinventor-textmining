@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2007-a17-todo_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2007/a17-todo_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Locally Controllable Stylized Shading",
+    "published" : "2007",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Hideki-Todo",
+      "name" : "Hideki",
+      "surname" : "Todo"
+    }, {
+      "uri" : "http://drinventor/Ken-ichi Anjyo",
+      "name" : "Ken",
+      "surname" : "ichi Anjyo"
+    }, {
+      "uri" : "http://drinventor/William V. Baxter-III",
+      "name" : "William V. Baxter",
+      "surname" : "III"
+    }, {
+      "uri" : "http://drinventor/Takeo-Igarashi",
+      "name" : "Takeo",
+      "surname" : "Igarashi"
+    } ]
+  },
+  "bagOfWords" : [ "we", "conclude", "some", "limitation", "future", "work", "section", "we", "may", "need", "more", "sophisticated", "algorithm", "obtain", "more", "precise", "approximation", "paint", "area" ],
+  "content" : "We conclude with some limitations and future work in section 6. We may need a more sophisticated algorithm to obtain a more precise approximation of the painted area.",
+  "resources" : [ ]
+}

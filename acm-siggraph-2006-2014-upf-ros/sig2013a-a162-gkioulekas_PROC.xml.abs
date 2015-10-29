@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2013a-a162-gkioulekas_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a162-gkioulekas_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Inverse Volume Rendering with Material Dictionaries",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ioannis-Gkioulekas",
+      "name" : "Ioannis",
+      "surname" : "Gkioulekas"
+    }, {
+      "uri" : "http://drinventor/Shuang-Zhao",
+      "name" : "Shuang",
+      "surname" : "Zhao"
+    }, {
+      "uri" : "http://drinventor/Kavita-Bala",
+      "name" : "Kavita",
+      "surname" : "Bala"
+    }, {
+      "uri" : "http://drinventor/Todd-Zickler",
+      "name" : "Todd",
+      "surname" : "Zickler"
+    }, {
+      "uri" : "http://drinventor/Anat-Levin",
+      "name" : "Anat",
+      "surname" : "Levin"
+    } ]
+  },
+  "bagOfWords" : [ "scatter", "play", "critical", "role", "appearance", "most", "material", "much", "effort", "have", "be", "devote", "modeling", "simulate", "its", "visual", "effect", "give", "we", "precise", "efficient", "scatter", "simulation", "algorithm", "however", "algorithm", "produce", "image", "only", "accurate", "material", "parameter", "give", "input", "create", "need", "acquisition", "system", "can", "faithfully", "measure", "scattering", "parameter", "real-world", "material", "collect", "accurate", "repeatable", "measurement", "scattering", "significant", "challenge", "homogeneous", "materials?which", "primary", "topic", "paper?scattering", "any", "particular", "wavelength", "describe", "two", "scalar", "value", "one", "angular", "function", "scattering", "coefficient", "absorption", "coefficient", "represent", "fraction", "light", "scatter", "absorb", "phase", "function", "-lrb-", "-rrb-", "describe", "angular", "distribution", "scattering", "measurement", "difficult", "because", "sensor", "almost", "always", "observe", "combined", "effect", "many", "scattering", "absorption", "event", "three", "factor", "can", "easily", "separate", "indeed", "deeplyscatter", "geometry", "similarity", "theory", "-lsb-", "Wyman", "et", "al.", "1989", "-rsb-", "prove", "one", "can", "analytically", "derive", "distinct", "parameter-set", "nonetheless", "produce", "indistinguishable", "image" ],
+  "content" : "Scattering plays a critical role in the appearance of most materials. Much effort has been devoted to modeling and simulating its visual effects, giving us precise and efficient scattering simulation algorithms. However, these algorithms produce images that are only as accurate as the material parameters given as input. This creates a need for acquisition systems that can faithfully measure the scattering parameters of real-world materials. Collecting accurate and repeatable measurements of scattering is a significant challenge. For homogeneous materials?which is the primary topic of this paper?scattering at any particular wavelength is described by two scalar values and one angular function. The scattering coefficient ? s and absorption coefficient ? a represent the fractions of light that are scattered and absorbed, and the phase function p(?) describes the angular distribution of scattering. Measurement is difficult because a sensor almost always observes the combined effects of many scattering and absorption events, and these three factors cannot be easily separated. Indeed, for deeplyscattering geometries, similarity theory [Wyman et al. 1989] proves that one can analytically derive distinct parameter-sets that nonetheless produce indistinguishable images.",
+  "resources" : [ ]
+}

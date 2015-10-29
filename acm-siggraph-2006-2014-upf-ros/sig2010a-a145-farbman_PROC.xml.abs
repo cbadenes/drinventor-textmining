@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2010a-a145-farbman_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a145-farbman_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Diffusion Maps for Edge-Aware Image Editing",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Zeev-Farbman",
+      "name" : "Zeev",
+      "surname" : "Farbman"
+    }, {
+      "uri" : "http://drinventor/Raanan-Fattal",
+      "name" : "Raanan",
+      "surname" : "Fattal"
+    }, {
+      "uri" : "http://drinventor/Dani-Lischinski",
+      "name" : "Dani",
+      "surname" : "Lischinski"
+    } ]
+  },
+  "bagOfWords" : [ "edge-aware", "operation", "edge-preserving", "smoothing", "edge-aware", "interpolation", "require", "assess", "degree", "similarity", "between", "pair", "pixel", "typically", "define", "simple", "monotonic", "function", "euclidean", "distance", "between", "pixel", "value", "some", "feature", "space", "work", "we", "introduce", "idea", "replace", "euclidean", "distance", "diffusion", "distance", "which", "better", "account", "global", "distribution", "pixel", "feature", "space", "distance", "approximate", "use", "diffusion", "map", "set", "dominant", "eigenvector", "large", "affinity", "matrix", "which", "may", "compute", "efficiently", "sampling", "small", "number", "matrix", "column", "-lrb-", "nystr?m", "method", "-rrb-", "we", "demonstrate", "benefit", "use", "diffusion", "distance", "variety", "image", "editing", "context", "explore", "use", "diffusion", "map", "tool", "facilitate", "creation", "complex", "selection", "mask", "finally", "we", "present", "new", "analysis", "establish", "connection", "between", "spatial", "interaction", "range", "between", "two", "pixel", "number", "sample", "necessary", "accurate", "nystr?m", "approximation", "keyword", "diffusion", "map", "edge-preserving", "smoothing", "edgeaware", "interpolation", "edit", "propagation", "nystr?m", "method" ],
+  "content" : "Edge-aware operations, such as edge-preserving smoothing and edge-aware interpolation, require assessing the degree of similarity between pairs of pixels, typically defined as a simple monotonic function of the Euclidean distance between pixel values in some feature space. In this work we introduce the idea of replacing these Euclidean distances with diffusion distances, which better account for the global distribution of pixels in their feature space. These distances are approximated using diffusion maps: a set of the dominant eigenvectors of a large affinity matrix, which may be computed efficiently by sampling a small number of matrix columns (the Nystr?m method). We demonstrate the benefits of using diffusion distances in a variety of image editing contexts, and explore the use of diffusion maps as a tool for facilitating the creation of complex selection masks. Finally, we present a new analysis that establishes a connection between the spatial interaction range between two pixels, and the number of samples necessary for accurate Nystr?m approximations. Keywords: diffusion maps, edge-preserving smoothing, edgeaware interpolation, edit propagation, Nystr?m method",
+  "resources" : [ ]
+}

@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2008a-a108-tan_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a108-tan_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Single Image Tree Modeling",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ping-Tan",
+      "name" : "Ping",
+      "surname" : "Tan"
+    }, {
+      "uri" : "http://drinventor/Tian-Fang",
+      "name" : "Tian",
+      "surname" : "Fang"
+    }, {
+      "uri" : "http://drinventor/Jianxiong-Xiao",
+      "name" : "Jianxiong",
+      "surname" : "Xiao"
+    }, {
+      "uri" : "http://drinventor/Peng-Zhao",
+      "name" : "Peng",
+      "surname" : "Zhao"
+    }, {
+      "uri" : "http://drinventor/Long-Quan",
+      "name" : "Long",
+      "surname" : "Quan"
+    } ]
+  },
+  "bagOfWords" : [ "paper", "we", "introduce", "simple", "sketch", "method", "generate", "realistic", "3d", "tree", "model", "from", "single", "image", "user", "draw", "least", "two", "stroke", "tree", "image", "first", "crown", "stroke", "around", "tree", "crown", "mark", "up", "leaf", "region", "second", "branch", "stroke", "from", "tree", "root", "mark", "up", "main", "trunk", "possibly", "few", "other", "branch", "stroke", "refinement", "method", "automatically", "generate", "3d", "tree", "model", "include", "branch", "leave", "branch", "synthesize", "growth", "engine", "from", "small", "library", "elementary", "subtree", "pre-defined", "build", "fly", "from", "recover", "visible", "branch", "visible", "branch", "automatically", "trace", "from", "draw", "branch", "stroke", "accord", "image", "statistics", "stroke", "leaf", "generate", "from", "region", "bound", "first", "crown", "stroke", "complete", "tree", "we", "demonstrate", "we", "method", "variety", "example" ],
+  "content" : "In this paper, we introduce a simple sketching method to generate a realistic 3D tree model from a single image. The user draws at least two strokes in the tree image: the first crown stroke around the tree crown to mark up the leaf region, the second branch stroke from the tree root to mark up the main trunk, and possibly few other branch strokes for refinement. The method automatically generates a 3D tree model including branches and leaves. Branches are synthesized by a growth engine from a small library of elementary subtrees that are pre-defined or built on the fly from the recovered visible branches. The visible branches are automatically traced from the drawn branch strokes according to image statistics on the strokes. Leaves are generated from the region bounded by the first crown stroke to complete the tree. We demonstrate our method on a variety of examples.",
+  "resources" : [ ]
+}

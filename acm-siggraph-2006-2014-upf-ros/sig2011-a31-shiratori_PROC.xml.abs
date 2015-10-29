@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2011-a31-shiratori_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a31-shiratori_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Motion Capture from Body-Mounted Cameras",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Takaaki-Shiratori",
+      "name" : "Takaaki",
+      "surname" : "Shiratori"
+    }, {
+      "uri" : "http://drinventor/Hyun Soo-Park",
+      "name" : "Hyun Soo",
+      "surname" : "Park"
+    }, {
+      "uri" : "http://drinventor/Leonid-Sigal",
+      "name" : "Leonid",
+      "surname" : "Sigal"
+    }, {
+      "uri" : "http://drinventor/Yaser-Sheikh",
+      "name" : "Yaser",
+      "surname" : "Sheikh"
+    }, {
+      "uri" : "http://drinventor/Jessica K.-Hodgins",
+      "name" : "Jessica K.",
+      "surname" : "Hodgins"
+    } ]
+  },
+  "bagOfWords" : [ "Motion", "capture", "technology", "generally", "require", "recording", "perform", "laboratory", "closed", "stage", "set", "control", "lighting", "restriction", "preclude", "capture", "motion", "require", "outdoor", "setting", "traversal", "large", "area", "paper", "we", "present", "theory", "practice", "use", "body-mounted", "camera", "reconstruct", "motion", "subject", "outward-looking", "camera", "attach", "limb", "subject", "joint", "angle", "root", "pose", "estimate", "through", "non-linear", "optimization", "optimization", "objective", "function", "incorporate", "term", "image", "matching", "error", "temporal", "continuity", "motion", "structure-from-motion", "use", "estimate", "skeleton", "structure", "provide", "initialization", "non-linear", "optimization", "procedure", "global", "motion", "estimate", "drift", "control", "match", "capture", "set", "video", "reference", "imagery", "we", "show", "result", "setting", "where", "capture", "would", "difficult", "impossible", "traditional", "motion", "capture", "system", "include", "walk", "outside", "swing", "monkey", "bar", "quality", "motion", "reconstruction", "evaluate", "compare", "we", "result", "against", "motion", "capture", "datum", "produce", "commercially", "available", "optical", "system", "cr", "category", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "three", "Dimensional", "Graphics", "realism?animation", "Keywords", "Motion", "capture", "structure-from-motion", "articulate", "motion", "wearable", "camera", "Links", "dl", "pdf", "EB", "IDEO" ],
+  "content" : "Motion capture technology generally requires that recordings be performed in a laboratory or closed stage setting with controlled lighting. This restriction precludes the capture of motions that require an outdoor setting or the traversal of large areas. In this paper, we present the theory and practice of using body-mounted cameras to reconstruct the motion of a subject. Outward-looking cameras are attached to the limbs of the subject, and the joint angles and root pose are estimated through non-linear optimization. The optimization objective function incorporates terms for image matching error and temporal continuity of motion. Structure-from-motion is used to estimate the skeleton structure and to provide initialization for the non-linear optimization procedure. Global motion is estimated and drift is controlled by matching the captured set of videos to reference imagery. We show results in settings where capture would be difficult or impossible with traditional motion capture systems, including walking outside and swinging on monkey bars. The quality of the motion reconstruction is evaluated by comparing our results against motion capture data produced by a commercially available optical system. CR Categories: I.3.7 [Computer Graphics]: Three Dimensional Graphics and Realism?Animation; Keywords: Motion capture, structure-from-motion, articulated motion, wearable cameras Links: DL PDF W EB V IDEO",
+  "resources" : [ ]
+}

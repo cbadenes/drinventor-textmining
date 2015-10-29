@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2009-a59-liu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a59-liu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Dextrous Manipulation from a Grasping Pose",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/C. Karen-Liu",
+      "name" : "C. Karen",
+      "surname" : "Liu"
+    } ]
+  },
+  "bagOfWords" : [ "give", "current", "contact", "point", "object", "first", "process", "plan", "future", "contact", "force", "base", "object", "motion", "future", "furthermore", "hand", "motion", "synthesis", "step", "could", "change", "contact", "position", "use", "contact", "force", "planning", "iteration", "give", "current", "contact", "force", "future", "additional", "contact", "point", "from", "planning", "phase", "process", "hand", "motion", "synthesis", "optimize", "hand", "pose", "hand", "torque", "contact", "position", "hand", "coordinate", "object", "coordinate", "current", "time", "instance", "future", "work", "we", "would", "like", "investigate", "more", "intelligent", "algorithm", "explore", "other", "strategy", "which", "consider", "variable", "like", "stability", "efficiency", "comfort", "-lsb-", "Rosenbaum", "Jorgensen", "1992", "-rsb-" ],
+  "content" : "Given the current contact points on the object, the first process plans future contact forces based on the object motion in the future . Furthermore, the hand motion synthesis step could change the contact positions used in the contact force planning at iteration k ? 1. Given the current contact forces and future additional contact points from the planning phase, the process of hand motion synthesis optimizes the hand pose q, hand torques u, and contact positions in the hand coordinates h and in the object coordinates p at the current time instance. As a future work, we would like to investigate more intelligent algorithms to explore other strategies which consider variables like stability, efficiency, or comfort [Rosenbaum and Jorgensen 1992].",
+  "resources" : [ ]
+}

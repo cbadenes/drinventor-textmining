@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012-a55-kalogerakis_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a55-kalogerakis_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Probabilistic Model for Component-Based Shape Synthesis",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Evangelos-Kalogerakis",
+      "name" : "Evangelos",
+      "surname" : "Kalogerakis"
+    }, {
+      "uri" : "http://drinventor/Siddhartha-Chaudhuri",
+      "name" : "Siddhartha",
+      "surname" : "Chaudhuri"
+    }, {
+      "uri" : "http://drinventor/Daphne-Koller",
+      "name" : "Daphne",
+      "surname" : "Koller"
+    }, {
+      "uri" : "http://drinventor/Vladlen-Koltun",
+      "name" : "Vladlen",
+      "surname" : "Koltun"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "approach", "synthesize", "shape", "from", "complex", "domain", "identify", "new", "plausible", "combination", "component", "from", "exist", "shape", "we", "primary", "contribution", "new", "generative", "model", "component-based", "shape", "structure", "model", "represent", "probabilistic", "relationship", "between", "property", "shape", "component", "relate", "they", "learn", "underlie", "cause", "structural", "variability", "within", "domain", "cause", "treat", "latent", "variable", "lead", "compact", "representation", "can", "effectively", "learn", "without", "supervision", "from", "set", "compatibly", "segmented", "shape", "we", "evaluate", "model", "number", "shape", "dataset", "complex", "structural", "variability", "demonstrate", "its", "application", "amplification", "shape", "database", "interactive", "shape", "synthesis", "cr", "category", "i.", "3.5", "-lsb-", "Computing", "Methodologies", "-rsb-", "Computer", "Graphics?Computational", "Geometry", "Object", "Modeling", "Keywords", "shape", "synthesis", "shape", "structure", "probabilistic", "graphical", "model", "machine", "learning", "data-driven", "3d", "modeling", "Links", "dl", "pdf", "acm", "Reference", "Format", "Kalogerakis", "E.", "Chaudhuri", "S.", "Koller", "D.", "Koltun", "V.", "2012" ],
+  "content" : "We present an approach to synthesizing shapes from complex domains, by identifying new plausible combinations of components from existing shapes. Our primary contribution is a new generative model of component-based shape structure. The model represents probabilistic relationships between properties of shape components, and relates them to learned underlying causes of structural variability within the domain. These causes are treated as latent variables, leading to a compact representation that can be effectively learned without supervision from a set of compatibly segmented shapes. We evaluate the model on a number of shape datasets with complex structural variability and demonstrate its application to amplification of shape databases and to interactive shape synthesis. CR Categories: I.3.5 [Computing Methodologies]: Computer Graphics?Computational Geometry and Object Modeling; Keywords: shape synthesis, shape structure, probabilistic graphical models, machine learning, data-driven 3D modeling\n      Links: DL PDF ACM Reference Format Kalogerakis, E., Chaudhuri, S., Koller, D., Koltun, V. 2012.",
+  "resources" : [ ]
+}

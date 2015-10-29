@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2008a-a150-bimber_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a150-bimber_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Superimposing Dynamic Range",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Oliver-Bimber",
+      "name" : "Oliver",
+      "surname" : "Bimber"
+    }, {
+      "uri" : "http://drinventor/Daisuke-Iwai",
+      "name" : "Daisuke",
+      "surname" : "Iwai"
+    } ]
+  },
+  "bagOfWords" : [ "J.", "Visual", "Communication", "image", "representation", "18", "439", "451", "photometric", "image", "processing", "high", "dynamic", "range", "display", "rentacoste", "M.", "EIDRICH", "W.", "HITEHEAD", "L.", "EETZEN", "H.", "ARD", "G.", "2007", "ACM", "Siggraph", "760", "768", "high", "dynamic", "range", "display", "system", "eetzen", "H.", "EIDRICH", "W.", "tuerzlinger", "W.", "ARD", "G.", "HITEHEAD", "L.", "rentacoste", "M.", "HOSH", "a.", "orozcov", "a.", "2004", "Society", "Information", "display", "1450", "1453", "high", "dynamic", "range", "display", "use", "low", "high", "resolution", "modulator", "eetzen", "H.", "HITEHEAD", "L.", "A.", "ARD", "G.", "2003", "radiological", "society", "North", "America", "annual", "meeting", "electronic", "abstract" ],
+  "content" : "J. Visual Communication and Image Representation 18, 5, 439?451. Photometric image processing for high dynamic range displays. T RENTACOSTE , M., H EIDRICH , W., W HITEHEAD , L., S EETZEN , H., AND W ARD , G. 2007. ACM Siggraph, 760?768. High dynamic range display systems. S EETZEN , H., H EIDRICH , W., S TUERZLINGER , W., W ARD , G., W HITEHEAD , L., T RENTACOSTE , M., G HOSH , A., AND V OROZCOVS , A. 2004. Society for Information Display, 1450?1453. A high dynamic range display using low and high resolution modulators. S EETZEN , H., W HITEHEAD , L. A., AND W ARD , G. 2003. Radiological Society of North America annual meeting, electronic abstract.",
+  "resources" : [ ]
+}

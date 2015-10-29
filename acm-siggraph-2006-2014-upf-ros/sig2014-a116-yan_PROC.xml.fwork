@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014-a116-yan_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a116-yan_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Rendering Glints on High-Resolution Normal-Mapped Specular Surfaces",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ling-Qi-Yan",
+      "name" : "Ling-Qi",
+      "surname" : "Yan"
+    }, {
+      "uri" : "http://drinventor/Milo\\v{s}-Ha\\v{s}an",
+      "name" : "Milo\\v{s}",
+      "surname" : "Ha\\v{s}an"
+    }, {
+      "uri" : "http://drinventor/Wenzel-Jakob",
+      "name" : "Wenzel",
+      "surname" : "Jakob"
+    }, {
+      "uri" : "http://drinventor/Jason-Lawrence",
+      "name" : "Jason",
+      "surname" : "Lawrence"
+    }, {
+      "uri" : "http://drinventor/Steve-Marschner",
+      "name" : "Steve",
+      "surname" : "Marschner"
+    }, {
+      "uri" : "http://drinventor/Ravi-Ramamoorthi",
+      "name" : "Ravi",
+      "surname" : "Ramamoorthi"
+    } ]
+  },
+  "bagOfWords" : [ "use", "Monte", "Carlo", "pixel", "sampling", "purpose", "impractical", "energy", "concentrate", "tiny", "highlight", "take", "up", "minuscule", "fraction", "pixel", "cr", "category", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "Three-Dimensional", "Graphics", "Realism?Color", "shade", "shadow", "texture", "keyword", "glint", "specular", "highlight", "high-resolution", "normal", "map", "normal", "distribution", "function", "bump", "flake", "from", "anywhere", "between", "few", "micron", "-lrb-", "brush", "metal", "-rrb-", "about", "0.1", "mm", "-lrb-", "flake", "metallic", "paint", "-rrb-", "centimeter", "-lrb-", "ocean", "wave", "-rrb-", "can", "produce", "interesting", "glinty", "behavior", "visible", "naked", "eye", "most", "shiny", "surface", "one", "encounter", "reality", "have", "type", "glinty", "behavior", "readily", "observe", "under", "sharp", "lighting", "alternative", "explanation", "space", "valid", "camera-surface-light", "path", "complicate", "can", "easily", "sample", "from", "camera", "from", "light", "although", "approach", "avoid", "aliase", "artifact", "able", "reproduce", "glinty", "appearance", "under", "high-frequency", "lighting", "caustic", "related", "we", "work", "since", "glint", "can", "interpret", "directional", "caustic", "most", "method", "sample", "path", "-lrb-", "particle", "photon", "-rrb-", "accumulate", "they", "datum", "structure", "-lrb-", "kd-tree", "hash", "grid", "bin", "-rrb-", "related", "we", "approach", "linear", "normal", "interpolation", "over", "triangle", "use", "discrete", "set", "specular", "connection", "enumerate", "Jacobian", "determinant", "term", "determine", "highlight", "intensity", "hierarchy", "use", "speed", "up", "enumeration", "Mitchell", "Hanrahan", "-lsb-", "1992", "-rsb-", "compute", "reflect", "caustic", "from", "implicit", "surface", "enumerate", "discrete", "set", "valid", "light", "path", "through", "interval", "arithmetic", "anisotropic", "gaussian", "mixture", "10", "anisotropic", "-lrb-", "lean", "leadr", "-rrb-", "-lsb-", "Han", "et", "al", "2007", "-rsb-", "other", "work", "specular", "path", "Moon", "et", "al.", "publish", "several", "approach", "approximate", "higher-order", "specular", "bounce", "e.g.", "-lsb-", "2007", "-rsb-", "loworder", "specular", "path", "still", "compute", "brute-force", "relatively", "large", "light", "source", "-lsb-", "Jakob", "et", "al.", "2014", "-rsb-", "concurrent", "work", "also", "address", "problem", "glinty", "surface", "use", "stochastic", "approach", "rather", "than", "work", "from", "normal", "map", "method", "model", "surface", "procedural", "random", "collection", "specular", "flake", "occur", "accord", "particular", "normal", "distribution", "Table", "list", "symbol", "use", "throughout", "paper", "point", "-lrb-", "-rrb-", "represent", "unit", "vector", "-lrb-", "-rrb-", "hemisphere", "normal", "map", "define", "function", "from", "point", "-lrb-", "-rrb-", "texture", "space", "normal", "-lrb-", "-rrb-", "Jacobian", "-lrb-", "-rrb-", "denote", "-lrb-", "-rrb-", "play", "important", "role", "determine", "highlight", "brightness", "point", "where", "det", "-lrb-", "-rrb-", "cause", "problem", "unless", "we", "careful", "furthermore", "we", "now", "have", "more", "freedom", "what", "pass", "ndf", "any", "suitable", "plane", "function", "can", "restricted", "unit", "disk", "properly", "normalize", "where", "-lrb-", "-rrb-", "half", "vector", "unmapped", "surface", "normal", "Fresnel", "term", "shadowing-masking", "term", "-lrb-", "only", "need", "avoid", "infinity", "grazing", "-rrb-", "lead", "integral", "1-dimensional", "gaussian", "over", "segment", "which", "can", "compute", "easily", "term", "erf", "-lrb-", "-rrb-", "since", "we", "linearly", "interpolate", "normal", "affine", "function", "which", "allow", "we", "collapse", "4-dimensional", "combined", "gaussian", "some", "other", "2d", "gaussian", "problem", "have", "be", "study", "package", "implement", "one", "possible", "solution", "-lsb-", "PolyCub", "2004", "-rsb-", "related", "problem", "spherical", "Gaussians", "have", "be", "study", "Xu", "et", "al.", "-lsb-", "2014", "-rsb-" ],
+  "content" : "Using Monte Carlo pixel sampling for this purpose is impractical: the energy is concentrated in tiny highlights that take up a minuscule fraction of the pixel. CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism?Color, shading, shadowing, and texture Keywords: glints, specular highlights, high-resolution normal maps, normal distribution functions Bumps and flakes from anywhere between a few microns (brushed metal) to about 0.1 mm (flakes in metallic paints) to centimeters (ocean waves) can produce interesting glinty behavior that is visible with the naked eye. Most shiny surfaces that one encounters in reality have this type of glinty behavior, readily observed under sharp lighting. An alternative explanation is that the space of valid camera-surface-light paths is complicated and cannot be easily sampled from the camera or from the light. Although these approaches avoid aliasing artifacts, they are not able to reproduce glinty appearance under high-frequency lighting. Caustics are related to our work, since glints can be interpreted as ?directional caustics?. Most methods sample paths (particles, photons) and accumulate them in a data structure (kd-tree, hash grid, or bins). This is related to our approach: linear normal interpolation over triangles is used, a discrete set of specular connections is enumerated, the Jacobian determinant term determines highlight intensity, and a hierarchy is used to speed up the enumeration. Mitchell and Hanrahan [1992] compute reflected caustics from an implicit surface by enumerating the discrete set of valid light paths through interval arithmetic. anisotropic Gaussian mixture of 10 anisotropic (LEAN, LEADR) [Han et al 2007] Other work on specular paths. Moon et al. published several approaches to approximate higher-order specular bounces, e.g. [2007], but loworder specular paths are still computed brute-force with a relatively large light source. [Jakob et al. 2014] is concurrent work that also addresses the problem of glinty surfaces, using a stochastic approach. Rather than work from a normal map, that method models the surface as a procedural random collection of specular flakes that occur according to a particular normal distribution. Table 1 lists the symbols used throughout the paper. ? The point s = (s, t) ? D represents the unit vector (s, t, 1 ? s 2 ? t 2 ) on the hemisphere. The normal map is then defined as a function n : R 2 ? D from points u = (u, v) in texture space to normals s = (s, t). The Jacobian of n(u), denoted J(u), plays an important role in determining highlight brightness, and points where det J(u) = 0 cause problems unless we are careful. Furthermore, we now have more freedom in what passes as an NDF: any suitable plane function can be restricted to the unit disk and properly normalized. where h = (i+o)/ i+o is the half vector, n is the unmapped surface normal, F is the Fresnel term, and G is a shadowing-masking term (only needed to avoid infinities at grazing). This leads to integrals of 1-dimensional Gaussians over the segments, which can be computed easily in terms of erf(?). Since we linearly interpolate the normals, n is an affine function on , which allows us to collapse the 4-dimensional combined Gaussian G c into some other 2D Gaussian G. This problem has been studied, and an R package implements one possible solution [PolyCub 2004]. A related problem for spherical Gaussians has been studied by Xu et al. [2014].",
+  "resources" : [ ]
+}

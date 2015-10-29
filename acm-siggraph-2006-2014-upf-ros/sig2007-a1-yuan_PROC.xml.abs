@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2007-a1-yuan_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2007/a1-yuan_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Image Deblurring with Blurred/Noisy Image Pairs",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "take", "satisfactory", "photo", "under", "dim", "lighting", "condition", "use", "hand-held", "camera", "challenge", "camera", "set", "long", "exposure", "time", "image", "blur", "due", "camera", "shake", "other", "hand", "image", "dark", "noisy", "take", "short", "exposure", "time", "high", "camera", "gain", "combine", "information", "extract", "from", "both", "blur", "noisy", "image", "however", "we", "show", "paper", "how", "produce", "high", "quality", "image", "can", "obtain", "simply", "denoise", "noisy", "image", "deblurr", "blur", "image", "alone", "we", "approach", "image", "deblurr", "help", "noisy", "image", "first", "both", "image", "use", "estimate", "accurate", "blur", "kernel", "which", "otherwise", "difficult", "obtain", "from", "single", "blur", "image", "second", "again", "use", "both", "image", "residual", "deconvolution", "propose", "significantly", "reduce", "ring", "artifact", "inherent", "image", "deconvolution", "Third", "remain", "ringing", "artifact", "smooth", "image", "region", "further", "suppress", "gain-controlled", "deconvolution", "process", "we", "demonstrate", "effectiveness", "we", "approach", "use", "number", "indoor", "outdoor", "image", "take", "off-the-shelf", "hand-held", "camera", "poor", "lighting", "environment" ],
+  "content" : "Taking satisfactory photos under dim lighting conditions using a hand-held camera is challenging. If the camera is set to a long exposure time, the image is blurred due to camera shake. On the other hand, the image is dark and noisy if it is taken with a short exposure time but with a high camera gain. By combining information extracted from both blurred and noisy images, however, we show in this paper how to produce a high quality image that cannot be obtained by simply denoising the noisy image, or deblurring the blurred image alone. Our approach is image deblurring with the help of the noisy image. First, both images are used to estimate an accurate blur kernel, which otherwise is difficult to obtain from a single blurred image. Second, and again using both images, a residual deconvolution is proposed to significantly reduce ringing artifacts inherent to image deconvolution. Third, the remaining ringing artifacts in smooth image regions are further suppressed by a gain-controlled deconvolution process. We demonstrate the effectiveness of our approach using a number of indoor and outdoor images taken by off-the-shelf hand-held cameras in poor lighting environments.",
+  "resources" : [ ]
+}

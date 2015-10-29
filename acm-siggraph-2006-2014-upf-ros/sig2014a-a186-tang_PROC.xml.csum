@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2014a-a186-tang_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a186-tang_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast and Exact Continuous Collision Detection with Bernstein Sign Classification",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Dinesh-Manocha",
+      "name" : "Dinesh",
+      "surname" : "Manocha"
+    } ]
+  },
+  "bagOfWords" : [ "we", "gratefully", "acknowledge", "support", "NVIDIA", "Corporation", "donation", "Tesla", "k40c", "GPU", "use", "research", "Ruofeng", "Tong", "partly", "support", "nsfc", "-lrb-", "61170141", "-rrb-", "National", "High-Tech", "Research", "Development", "Program", "-lrb-", "No.", "2013AA013903", "-rrb-", "China", "content", "solely", "responsibility", "author", "do", "necessarily", "represent", "official", "view", "National", "Institutes", "Health", "Dinesh", "Manocha", "support", "part", "ARO", "Contract", "W911NF-10-1-0506", "Intel", "Office", "director", "National", "Institutes", "Health", "under", "award", "number", "r44od018334", "National", "Thousand", "Talents", "Program", "China", "research", "support", "part", "nsfc", "-lrb-", "61170140", "-rrb-", "National", "Basic", "Research", "Program", "China", "-lrb-", "2011CB302205", "-rrb-", "National", "Key", "Technology", "R&D", "Program", "China", "-lrb-", "2012bad35b01", "-rrb-", "Doctoral", "Fund", "Ministry", "Education", "China", "-lrb-", "20130101110133", "-rrb-", "finally", "we", "would", "like", "develop", "reliable", "algorithm", "high-level", "CCD", "culling", "collision-response", "would", "useful", "use", "we", "reliable", "CCD", "algorithm", "other", "application", "include", "hair", "simulation", "dynamic", "solver", "-lsb-", "Zhao", "et", "al.", "2012", "-rsb-", "would", "help", "explain", "its", "high", "accuracy", "we", "benchmark", "besides", "overcome", "limitation", "may", "useful", "derive", "tight", "error", "bind", "we", "floating-point", "variant", "exact", "number", "bit", "need", "extended", "precision", "many", "avenue", "future", "work" ],
+  "content" : "We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Tesla K40c GPU used for this research. Ruofeng Tong is partly supported by NSFC (61170141), the National High-Tech Research and Development Program (No.2013AA013903) of China. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. Dinesh Manocha is supported in part by ARO Contract W911NF-10-1-0506, Intel and the Office Of The Director, National Institutes Of Health under Award Number R44OD018334, and the National Thousand Talents Program of China. This research is supported in part by NSFC (61170140), the National Basic Research Program of China (2011CB302205), the National Key Technology R&D Program of China (2012BAD35B01), the Doctoral Fund of Ministry of Education of China (20130101110133). Finally, we would like to develop reliable algorithms for high-level CCD culling and collision-response. It would be useful to use our reliable CCD algorithm for other applications including hair simulation and dynamic solvers [Zhao et al. 2012]. This would help explain its high accuracy in our benchmarks. Besides overcoming these limitations, it may be useful to derive a tight error bound on our floating-point variant and the exact number of bits needed for extended precision. There are many avenues for future work.",
+  "resources" : [ ]
+}

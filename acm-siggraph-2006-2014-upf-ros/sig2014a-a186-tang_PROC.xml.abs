@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2014a-a186-tang_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a186-tang_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast and Exact Continuous Collision Detection with Bernstein Sign Classification",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Dinesh-Manocha",
+      "name" : "Dinesh",
+      "surname" : "Manocha"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "fast", "algorithm", "perform", "accurate", "CCD", "query", "between", "triangulated", "model", "we", "formulation", "use", "property", "Bernstein", "basis", "b?zier", "curve", "reduce", "problem", "evaluate", "sign", "polynomial", "we", "present", "geometrically", "exact", "CCD", "algorithm", "base", "exact", "geometric", "computation", "paradigm", "perform", "reliable", "boolean", "collision", "query", "we", "algorithm", "more", "than", "order", "magnitude", "faster", "than", "prior", "exact", "algorithm", "we", "evaluate", "its", "performance", "cloth", "fem", "simulation", "cpus", "gpus", "highlight", "benefit", "cr", "category", "i.", "3.5", "-lsb-", "Computer", "Graphics", "-rsb-", "computational", "geometry", "object", "modeling?physically", "base", "modeling", "keyword", "continuous", "collision", "detection", "Bernstein", "sign", "classification", "exact", "geometric", "computation", "physically", "base", "simulation" ],
+  "content" : "We present fast algorithms to perform accurate CCD queries between triangulated models. Our formulation uses properties of the Bernstein basis and B?zier curves and reduces the problem to evaluating signs of polynomials. We present a geometrically exact CCD algorithm based on the exact geometric computation paradigm to perform reliable Boolean collision queries. Our algorithm is more than an order of magnitude faster than prior exact algorithms. We evaluate its performance for cloth and FEM simulations on CPUs and GPUs, and highlight the benefits. CR Categories: I.3.5 [Computer Graphics]: Computational Geometry and Object Modeling?Physically based modeling Keywords: Continuous collision detection, Bernstein sign classification, Exact geometric computation, Physically based simulation",
+  "resources" : [ ]
+}

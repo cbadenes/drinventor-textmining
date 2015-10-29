@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2013a-a162-gkioulekas_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a162-gkioulekas_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Inverse Volume Rendering with Material Dictionaries",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ioannis-Gkioulekas",
+      "name" : "Ioannis",
+      "surname" : "Gkioulekas"
+    }, {
+      "uri" : "http://drinventor/Shuang-Zhao",
+      "name" : "Shuang",
+      "surname" : "Zhao"
+    }, {
+      "uri" : "http://drinventor/Kavita-Bala",
+      "name" : "Kavita",
+      "surname" : "Bala"
+    }, {
+      "uri" : "http://drinventor/Todd-Zickler",
+      "name" : "Todd",
+      "surname" : "Zickler"
+    }, {
+      "uri" : "http://drinventor/Anat-Levin",
+      "name" : "Anat",
+      "surname" : "Levin"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

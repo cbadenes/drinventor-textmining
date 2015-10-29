@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2011a-a130-dale_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011a/a130-dale_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Video Face Replacement",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Mahmoud-Afifi",
+      "name" : "Mahmoud",
+      "surname" : "Afifi"
+    }, {
+      "uri" : "http://drinventor/Khaled F.-Hussain",
+      "name" : "Khaled F.",
+      "surname" : "Hussain"
+    }, {
+      "uri" : "http://drinventor/Hosny M.-Ibrahim",
+      "name" : "Hosny M.",
+      "surname" : "Ibrahim"
+    }, {
+      "uri" : "http://drinventor/Nagwa M.-Omar",
+      "name" : "Nagwa M.",
+      "surname" : "Omar"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "method", "replace", "facial", "performance", "video", "we", "approach", "account", "difference", "identity", "visual", "appearance", "speech", "timing", "between", "source", "target", "video", "unlike", "prior", "work", "do", "require", "substantial", "manual", "operation", "complex", "acquisition", "hardware", "only", "single-camera", "video", "we", "use", "3d", "multilinear", "model", "track", "facial", "performance", "both", "video", "use", "corresponding", "3d", "geometry", "we", "warp", "source", "target", "face", "retime", "source", "match", "target", "performance", "we", "compute", "optimal", "seam", "through", "video", "volume", "maintain", "temporal", "consistency", "final", "composite", "we", "showcase", "use", "we", "method", "variety", "example", "present", "result", "user", "study", "suggest", "we", "result", "difficult", "distinguish", "from", "real", "video", "footage", "cr", "category", "i.", "4.3", "-lsb-", "image", "processing", "computer", "Vision", "-rsb-", "enhancement?filtering", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "ThreeDimensional", "Graphics", "Realism?Animation", "Keywords", "face", "replacement", "facial", "animation", "video", "compositing" ],
+  "content" : "We present a method for replacing facial performances in video. Our approach accounts for differences in identity, visual appearance, speech, and timing between source and target videos. Unlike prior work, it does not require substantial manual operation or complex acquisition hardware, only single-camera video. We use a 3D multilinear model to track the facial performance in both videos. Using the corresponding 3D geometry, we warp the source to the target face and retime the source to match the target performance. We then compute an optimal seam through the video volume that maintains temporal consistency in the final composite. We showcase the use of our method on a variety of examples and present the result of a user study that suggests our results are difficult to distinguish from real video footage. CR Categories: I.4.3 [Image Processing and Computer Vision]: Enhancement?Filtering; I.3.7 [Computer Graphics]: ThreeDimensional Graphics and Realism?Animation Keywords: face replacement, facial animation, video compositing",
+  "resources" : [ ]
+}

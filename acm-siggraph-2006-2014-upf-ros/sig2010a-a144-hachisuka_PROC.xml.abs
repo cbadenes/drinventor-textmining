@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2010a-a144-hachisuka_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a144-hachisuka_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Progressive Error Estimation Framework for Photon Density Estimation",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Toshiya-Hachisuka",
+      "name" : "Toshiya",
+      "surname" : "Hachisuka"
+    }, {
+      "uri" : "http://drinventor/Wojciech-Jarosz",
+      "name" : "Wojciech",
+      "surname" : "Jarosz"
+    }, {
+      "uri" : "http://drinventor/Henrik Wann-Jensen",
+      "name" : "Henrik Wann",
+      "surname" : "Jensen"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "error", "estimation", "framework", "progressive", "photon", "mapping", "although", "estimate", "render", "error", "have", "be", "establish", "unbiased", "render", "algorithm", "error", "estimation", "bias", "render", "algorithm", "have", "be", "investigate", "well", "comparison", "we", "characterize", "error", "sum", "bias", "estimate", "stochastic", "noise", "bind", "which", "motivate", "stochastic", "error", "bound", "formulation", "bias", "method", "part", "we", "error", "computation", "we", "extend", "progressive", "photon", "map", "operate", "smooth", "kernel", "enable", "calculation", "illumination", "gradient", "arbitrary", "accuracy", "which", "we", "use", "progressively", "compute", "local", "bias", "radiance", "estimate", "we", "also", "show", "how", "variance", "can", "compute", "progressive", "photon", "mapping", "which", "use", "estimate", "error", "due", "noise", "example", "application", "we", "show", "how", "we", "error", "estimation", "can", "use", "compute", "image", "give", "error", "threshold", "example", "application", "we", "framework", "only", "require", "error", "threshold", "confidence", "level", "automatically", "terminate", "rendering", "we", "result", "demonstrate", "how", "we", "error", "estimation", "framework", "work", "well", "realistic", "synthetic", "scene" ],
+  "content" : "We present an error estimation framework for progressive photon mapping. Although estimating rendering error has been established for unbiased rendering algorithms, error estimation for biased rendering algorithms has not been investigated well in comparison. We characterize the error by the sum of a bias estimate and a stochastic noise bound, which is motivated by stochastic error bounds formulation in biased methods. As a part of our error computation, we extend progressive photon mapping to operate with smooth kernels. This enables the calculation of illumination gradients with arbitrary accuracy, which we use to progressively compute the local bias in the radiance estimate. We also show how variance can be computed in progressive photon mapping, which is used to estimate the error due to noise. As an example application, we show how our error estimation can be used to compute images with a given error threshold. For this example application, our framework only requires the error threshold and a confidence level to automatically terminate rendering. Our results demonstrate how our error estimation framework works well in realistic synthetic scenes.",
+  "resources" : [ ]
+}

@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2008-a26-kerr_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008/a26-kerr_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Toward Evaluating Lighting Design Interface Paradigms for Novice Users",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/William B.-Kerr",
+      "name" : "William B.",
+      "surname" : "Kerr"
+    }, {
+      "uri" : "http://drinventor/Fabio-Pellacini",
+      "name" : "Fabio",
+      "surname" : "Pellacini"
+    } ]
+  },
+  "bagOfWords" : [ "work", "support", "nsf", "-lrb-", "cns-070820", "ccf-0746117", "-rrb-", "Intel", "Corporation", "we", "would", "like", "thank", "Xiaobo", "Lori", "Lorigo", "George", "Wolford", "help", "prepare", "paper", "furthermore", "we", "also", "interested", "investigate", "hybrid", "interface", "include", "measure", "benefit", "all", "paradigm", "test", "future", "we", "interested", "extend", "we", "study", "include", "expert", "lighter", "natural", "illumination", "move", "toward", "comprehensive", "evaluation", "lighting", "interface", "paradigm", "addition", "we", "expect", "we", "experiment", "design", "use", "base", "further", "exploration", "effectiveness", "appearance", "editing", "interface", "while", "any", "user", "study", "we", "acknowledge", "we", "measurement", "only", "strictly", "valid", "test", "scene", "we", "do", "believe", "main", "trend", "find", "we", "study", "may", "generalize", "other", "lighting", "task", "furthermore", "within", "realm", "we", "study", "we", "find", "geometric", "lighting", "complexity", "do", "hinder", "ability", "subject", "light", "painting", "interface", "perform", "significantly", "worse", "due", "tendency", "user", "sketch", "rather", "than", "paint", "goal", "image", "we", "conclude", "novice", "can", "light", "well", "direct", "indirect", "interface", "latter", "be", "prefer", "perform", "series", "matching", "open", "trial", "simple", "scene", "up", "point", "light", "collect", "subject", "evaluation", "questionnaire", "we", "have", "measure", "how", "different", "interface", "aid", "subject", "perform", "specific", "lighting", "adjustment", "artistic", "exploration", "lighting", "configuration" ],
+  "content" : "This work was supported by NSF (CNS-070820, CCF-0746117) and Intel Corporation. We would like to thank Xiaobo An, Lori Lorigo, and George Wolford for their help in preparing this paper. Furthermore, we are also interested in investigating a hybrid interface that will include the measured benefits of all the paradigms tested. In the future, we are interested in extending our study to include expert lighters and natural illumination, moving toward a comprehensive evaluation of lighting interface paradigms. In addition, we expect that our experiment design will be used as the base for further explorations of the effectiveness of appearance editing interfaces. While, as in any user study, we acknowledge that our measurements are only strictly valid with the tested scenes, we do believe that the main trends found in our study may generalize to other lighting tasks. Furthermore, within the realm of our studies, we found that geometric and lighting complexity do not hinder the ability of subjects to light. Painting interfaces perform significantly worse, due to the tendency of users to sketch, rather than paint, goal images. We conclude that novices can light well with direct and indirect interfaces, with the latter being preferred. By performing a series of matching and open trials in simple scenes with up to 8 point lights and by collecting subject evaluation in questionnaires, we  have measured how different interfaces aid subjects in performing specific lighting adjustments and in the artistic exploration of lighting configurations.",
+  "resources" : [ ]
+}

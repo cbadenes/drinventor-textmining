@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2014-a35-xu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a35-xu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Organizing Heterogeneous Scene Collections through Contextual Focal Points",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Kai Xu-null",
+      "name" : "Kai Xu",
+      "surname" : null
+    }, {
+      "uri" : "http://drinventor/Rui-Ma",
+      "name" : "Rui",
+      "surname" : "Ma"
+    }, {
+      "uri" : "http://drinventor/Hao Zhang-null",
+      "name" : "Hao Zhang",
+      "surname" : null
+    }, {
+      "uri" : "http://drinventor/Chenyang-Zhu",
+      "name" : "Chenyang",
+      "surname" : "Zhu"
+    }, {
+      "uri" : "http://drinventor/Ariel-Shamir",
+      "name" : "Ariel",
+      "surname" : "Shamir"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Hui Huang-null",
+      "name" : "Hui Huang",
+      "surname" : null
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012-a46-lu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a46-lu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "HelpingHand: Example-based Stroke Stylization",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jingwan-Lu",
+      "name" : "Jingwan",
+      "surname" : "Lu"
+    }, {
+      "uri" : "http://drinventor/Fisher-Yu",
+      "name" : "Fisher",
+      "surname" : "Yu"
+    }, {
+      "uri" : "http://drinventor/Adam-Finkelstein",
+      "name" : "Adam",
+      "surname" : "Finkelstein"
+    }, {
+      "uri" : "http://drinventor/Stephen-DiVerdi",
+      "name" : "Stephen",
+      "surname" : "DiVerdi"
+    } ]
+  },
+  "bagOfWords" : [ "therefore", "we", "feature", "vector", "take", "account", "sample", "recent", "history", "near", "future", "patch", "construction", "from", "section", "3.1", "similarly", "line", "drawing", "make", "artist", "unsure", "hand", "can", "make", "have", "more", "confident", "stroke", "handwriting", "we", "could", "use", "auxiliary", "information", "semantic", "content", "text", "im", "prove", "stylization", "would", "generalizable", "other", "type", "artistic", "stroke", "may", "fixable", "handwriting", "specific", "algorithm", "we", "make", "assumption", "about", "type", "stroke", "be", "make", "we", "collect", "library", "stroke", "draw", "artist", "6-dof", "tablet", "Adobe", "Photoshop", "analyze", "pose", "datum", "insight", "future", "research", "area" ],
+  "content" : "Therefore, our feature vector takes into account samples in the ?recent history? and ?near future? as in the patch construction from Section 3.1. Similarly, a line drawing made by an artist with an unsure hand can be made to have more confident strokes. For handwriting, we could use auxiliary information such as the semantic content of the text to im prove stylization, but that would not be generalizable to other types of artistic strokes. This may be fixable with a handwriting specific algorithm, but we make no assumptions about the types of strokes being made. We collect a library of strokes drawn by artists on a 6-DOF tablet in Adobe Photoshop and analyze the pose data as insight for future research in this area.",
+  "resources" : [ ]
+}

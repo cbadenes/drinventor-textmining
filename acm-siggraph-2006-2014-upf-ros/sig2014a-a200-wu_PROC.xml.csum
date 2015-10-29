@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2014a-a200-wu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a200-wu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Real-time Shading-based Refinement for Consumer Depth Cameras",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Shahram-Izadi",
+      "name" : "Shahram",
+      "surname" : "Izadi"
+    } ]
+  },
+  "bagOfWords" : [ "computer", "animation", "virtual", "world", "25", "3-4", "213", "222", "interactive", "model-based", "reconstruction", "human", "head", "use", "rgb-d", "sensor", "OLLH", "OFER", "M.", "hie", "J.", "OLAIANNI", "M.", "tamminger", "m.", "reiner", "G.", "2014", "SIGGRAPH", "-rrb-", "33", "ACM", "TOG", "-lrb-", "Proc", "real-time", "non-rigid", "reconstruction", "use", "rgb-d", "camera", "OLLH", "OFER", "M.", "IESSNER", "M.", "ZADI", "S.", "EHMANN", "C.", "ach", "C.", "ISHER", "M.", "C.", "itzgibbon", "a.", "oop", "C.", "heobalt", "C.", "TAMMINGER", "M.", "2014", "fusion", "time-of-flight", "depth", "stereo", "high", "accuracy", "depth", "map", "hu", "J.", "ang", "L.", "ang", "R.", "AVIS", "J.", "2008", "IEEE", "PAMI", "21", "690", "706" ],
+  "content" : "Computer Animation and Virtual Worlds 25, 3-4, 213?222. Interactive model-based reconstruction of the human head using an rgb-d sensor. Z OLLH OFER  ? , M., T HIES , J., C OLAIANNI , M., S TAMMINGER , M., AND G REINER , G. 2014. SIGGRAPH) 33, 4. ACM TOG (Proc. Real-time non-rigid reconstruction using an rgb-d camera. Z OLLH OFER  ? , M., N IESSNER , M., I ZADI , S., R EHMANN , C., Z ACH , C., F ISHER , M., W U , C., F ITZGIBBON , A., L OOP , C., T HEOBALT , C., AND S TAMMINGER , M. 2014. Fusion of time-of-flight depth and stereo for high accuracy depth maps. Z HU , J., W ANG , L., Y ANG , R., AND D AVIS , J. 2008. IEEE PAMI 21, 8, 690?706.",
+  "resources" : [ ]
+}

@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014a-a177-jarabo_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a177-jarabo_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Framework for Transient Rendering",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Adrian-Jarabo",
+      "name" : "Adrian",
+      "surname" : "Jarabo"
+    }, {
+      "uri" : "http://drinventor/Julio-Marco",
+      "name" : "Julio",
+      "surname" : "Marco"
+    }, {
+      "uri" : "http://drinventor/Adolfo-Mu?oz",
+      "name" : "Adolfo",
+      "surname" : "Mu?oz"
+    }, {
+      "uri" : "http://drinventor/Raul-Buisan",
+      "name" : "Raul",
+      "surname" : "Buisan"
+    }, {
+      "uri" : "http://drinventor/Wojciech-Jarosz",
+      "name" : "Wojciech",
+      "surname" : "Jarosz"
+    }, {
+      "uri" : "http://drinventor/Diego-Gutierrez",
+      "name" : "Diego",
+      "surname" : "Gutierrez"
+    } ]
+  },
+  "bagOfWords" : [ "transient", "simulation", "assume", "framework", "transient", "rendering", "transient", "rendering", "transient", "rendering", "New", "sampling", "strategy", "therefore", "need", "transient", "rendering", "we", "first", "introduce", "transient", "path", "integral", "framework", "formally", "describe", "light", "transport", "transient", "state", "we", "first", "extend", "standard", "path", "integral", "formulation", "transient", "state", "transient", "light", "path", "define", "term", "spatial", "temporal", "coordinate", "allow", "we", "analyze", "main", "challenge", "transient", "rendering", "we", "mention", "earlier", "-lrb-", "section", "3.1", "-rrb-", "performance", "we", "transient", "density", "estimation", "technique", "can", "further", "improve", "more", "uniform", "distribution", "sample", "time" ],
+  "content" : "The transient simulation is assumed to start at t ? 0 = 0. A Framework for Transient Rendering. Transient rendering. Transient rendering. New sampling strategies are therefore needed for transient rendering. We first introduce the transient path integral framework, formally describing light transport in transient state. We first extend the standard path integral formulation to transient state. A transient light path is defined in terms of spatial and temporal coordinates. This allows us to analyze the main challenges in transient rendering. As we mentioned earlier (Section 3.1), the performance of our transient density estimation techniques can be further improved by a more uniform distribution of samples in time.",
+  "resources" : [ ]
+}

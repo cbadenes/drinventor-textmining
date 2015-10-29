@@ -1,0 +1,62 @@
+{
+  "uri" : "sig2010a-a141-jimenez_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a141-jimenez_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Practical Appearance Model for Dynamic Facial Color",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jorge-Jimenez",
+      "name" : "Jorge",
+      "surname" : "Jimenez"
+    }, {
+      "uri" : "http://drinventor/Timothy-Scully",
+      "name" : "Timothy",
+      "surname" : "Scully"
+    }, {
+      "uri" : "http://drinventor/Nuno-Barbosa",
+      "name" : "Nuno",
+      "surname" : "Barbosa"
+    }, {
+      "uri" : "http://drinventor/Craig-Donner",
+      "name" : "Craig",
+      "surname" : "Donner"
+    }, {
+      "uri" : "http://drinventor/Xenxo-Alvarez",
+      "name" : "Xenxo",
+      "surname" : "Alvarez"
+    }, {
+      "uri" : "http://drinventor/Teresa-Vieira",
+      "name" : "Teresa",
+      "surname" : "Vieira"
+    }, {
+      "uri" : "http://drinventor/Paul-Matts",
+      "name" : "Paul",
+      "surname" : "Matts"
+    }, {
+      "uri" : "http://drinventor/Ver?nica-Orvalho",
+      "name" : "Ver?nica",
+      "surname" : "Orvalho"
+    }, {
+      "uri" : "http://drinventor/Diego-Gutierrez",
+      "name" : "Diego",
+      "surname" : "Gutierrez"
+    }, {
+      "uri" : "http://drinventor/Tim-Weyrich",
+      "name" : "Tim",
+      "surname" : "Weyrich"
+    } ]
+  },
+  "bagOfWords" : [ "facial", "appearance", "depend", "both", "physical", "physiological", "state", "skin", "people", "move", "talk", "undergo", "stress", "change", "expression", "skin", "appearance", "constant", "flux", "one", "key", "indicator", "change", "color", "skin", "skin", "color", "determine", "scattering", "absorption", "light", "within", "skin", "layer", "cause", "mostly", "concentration", "two", "chromophore", "melanin", "hemoglobin", "paper", "we", "present", "real-time", "dynamic", "appearance", "model", "skin", "build", "from", "vivo", "measurement", "melanin", "hemoglobin", "concentration", "we", "demonstrate", "efficient", "implementation", "we", "method", "show", "add", "negligible", "overhead", "exist", "animation", "render", "pipeline", "additionally", "we", "develop", "realistic", "intuitive", "automatic", "control", "skin", "color", "which", "we", "term", "skin", "appearance", "rig", "rig", "can", "easily", "couple", "traditional", "geometric", "facial", "animation", "rig", "we", "demonstrate", "we", "method", "augment", "digital", "facial", "performance", "realistic", "appearance", "change" ],
+  "content" : "Facial appearance depends on both the physical and physiological state of the skin. As people move, talk, undergo stress, and change expression, skin appearance is in constant flux. One of the key indicators of these changes is the color of skin. Skin color is determined by scattering and absorption of light within the skin layers, caused mostly by concentrations of two chromophores, melanin and hemoglobin. In this paper we present a real-time dynamic appearance model of skin built from in vivo measurements of melanin and hemoglobin concentrations. We demonstrate an efficient implementation of our method, and show that it adds negligible overhead to existing animation and rendering pipelines. Additionally, we develop a realistic, intuitive, and automatic control for skin color, which we term a skin appearance rig. This rig can easily be coupled with a traditional geometric facial animation rig. We demonstrate our method by augmenting digital facial performance with realistic appearance changes.",
+  "resources" : [ ]
+}

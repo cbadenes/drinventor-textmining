@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2013a-a182-akinci_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a182-akinci_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Versatile Surface Tension and Adhesion for SPH Fluids",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Nadir-Akinci",
+      "name" : "Nadir",
+      "surname" : "Akinci"
+    }, {
+      "uri" : "http://drinventor/Gizem-Akinci",
+      "name" : "Gizem",
+      "surname" : "Akinci"
+    }, {
+      "uri" : "http://drinventor/Matthias-Teschner",
+      "name" : "Matthias",
+      "surname" : "Teschner"
+    } ]
+  },
+  "bagOfWords" : [ "we", "also", "thank", "NVIDIA", "ARC", "gmbh", "support", "work", "project", "support", "German", "Research", "Foundation", "-lrb-", "DFG", "-rrb-", "under", "contract", "number", "sfb/tr", "-8", "TE", "632/12", "we", "thank", "reviewer", "helpful", "comment", "combine", "both", "force", "allow", "we", "simulate", "variety", "interesting", "scenario", "have", "be", "show", "graphic", "literature", "yet", "furthermore", "we", "force", "can", "easily", "add", "exist", "sph", "solver", "we", "adhesion", "force", "allow", "physically", "plausible", "fluid-solid", "adhesion", "effect", "include", "symmetric", "adhesion", "can", "use", "model", "different", "surface", "wetting", "we", "surface", "tension", "force", "allow", "simulate", "large", "surface", "tension", "minimize", "surface", "curvature", "address", "particle-clustering", "problem", "SPH", "conserve", "momentum", "all", "same", "time", "we", "present", "new", "surface", "tension", "force", "new", "fluid-solid", "adhesion", "force", "improve", "handling", "fluid-air", "fluid-solid", "interface", "SPH", "simulation", "we", "believe", "we", "result", "would", "further", "improve", "use", "surface", "tracking", "capillary", "wave", "simulation", "approach", "recently", "-lsb-", "Yu", "et", "al.", "2012", "-rsb-", "demonstrate", "sub-particle", "scale", "capillary", "wave", "directly", "simulated", "fluid", "surface", "mesh", "can", "add", "significant", "amount", "detail", "exist", "simulation" ],
+  "content" : "We also thank NVIDIA ARC GmbH for supporting this work. This project is supported by the German Research Foundation (DFG) under contract numbers SFB/TR-8 and TE 632/12. We thank the reviewers for their helpful comments. Combining both forces allowed us to simulate a variety of interesting scenarios that have not been shown in the graphics literature yet. Furthermore, our forces can be easily added to an existing SPH solver. Our adhesion force allows physically plausible fluid-solid adhesion effects, including symmetric adhesion, and can be used to model different surface wettings. Our surface tension force allows simulating large surface tension, minimizes surface curvature, addresses  the particle-clustering problem in SPH, and conserves momentum, all at the same time. We presented a new surface tension force and a new fluid-solid adhesion force to improve the handling of fluid-air and fluid-solid interfaces in SPH simulations. We believe that our results would further improve by using their surface tracking and capillary wave simulation approach. Recently, [Yu et al. 2012] demonstrated that sub-particle scale capillary waves that are directly simulated on the fluid surface mesh can add a significant amount of detail to an existing simulation.",
+  "resources" : [ ]
+}

@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2010-a35-kerr_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010/a35-kerr_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Toward Evaluating Material Design Interface Paradigms for Novice Users",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/William B.-Kerr",
+      "name" : "William B.",
+      "surname" : "Kerr"
+    }, {
+      "uri" : "http://drinventor/Fabio-Pellacini",
+      "name" : "Fabio",
+      "surname" : "Pellacini"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

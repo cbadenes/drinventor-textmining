@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2009a-a119-chadwick_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009a/a119-chadwick_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Harmonic Shells: A Practical Nonlinear Sound Model for Near-Rigid Thin Shells",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jeffrey N.-Chadwick",
+      "name" : "Jeffrey N.",
+      "surname" : "Chadwick"
+    }, {
+      "uri" : "http://drinventor/Steven S.-An",
+      "name" : "Steven S.",
+      "surname" : "An"
+    }, {
+      "uri" : "http://drinventor/Doug L.-James",
+      "name" : "Doug L.",
+      "surname" : "James"
+    } ]
+  },
+  "bagOfWords" : [ "Limitations", "Future", "Work", "numerous", "way", "improve", "result", "future", "work" ],
+  "content" : "Limitations and Future Work: There are numerous ways to improve this result in future work.",
+  "resources" : [ ]
+}

@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2007-a1-yuan_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2007/a1-yuan_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Image Deblurring with Blurred/Noisy Image Pairs",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "Figure", "-lrb-", "-rrb-", "show", "deconvolution", "result", "use", "residual", "rl", "algorithm", "same", "number", "iteration", "above", "three", "step", "kernel", "estimation", "-lrb-", "section", "-rrb-", "residual", "deconvolution", "-lrb-", "section", "-rrb-", "de-ringing", "-lrb-", "section", "-rrb-", "iterate", "refine", "estimate", "blur", "kernel", "deconvoluted", "image", "i.", "-lrb-", "-rrb-", "rl", "deconvolution", "-lrb-", "-rrb-", "we", "result", "formulate", "image", "deblurr", "problem", "use", "two", "image", "we", "have", "develop", "iterative", "deconvolution", "algorithm", "which", "can", "estimate", "very", "good", "initial", "kernel", "significantly", "reduce", "deconvolution", "artifact", "-lrb-", "-rrb-", "blurred/noisy", "image", "-lrb-", "-rrb-", "residual", "rl", "summarize", "we", "iterative", "image", "deblurr", "algorithm", "consist", "follow", "step", "estimate", "kernel", "compute", "residual", "deconvolution", "image", "compute", "gain-controlled", "deconvolution", "image", "construct", "final", "image", "add", "detail", "layer", "clean", "deconvolution", "result", "large", "scale", "sharp", "edge", "compare", "residual", "rl", "result", "figure", "-lrb-", "-rrb-", "other", "hand", "deblurr", "from", "single", "blur", "image", "challenging", "blind", "deconvolution", "problem", "both", "blur", "kernel", "-lrb-", "point", "spread", "function", "-rrb-", "estimation", "image", "deconvolution", "highly", "under-constrained", "we", "have", "propose", "image", "deblurr", "approach", "use", "pair", "blurred/noisy", "image", "-lrb-", "d-f", "-rrb-", "deconvolution", "result", "standard", "rl", "-lrb-", "green", "-rrb-", "residual", "rl", "-lrb-", "blue", "-rrb-", "gain-controlled", "rl", "-lrb-", "red", "-rrb-", "after", "iteration", "10", "20" ],
+  "content" : "Figure 4(b) shows the deconvolution results using the residual RL algorithm with the same number of iterations. The above three steps kernel estimation (Section 4), residual deconvolution (Section 5), and de-ringing (Section 6) are iterated to refine the estimated blur kernel K and the deconvoluted image I. (d) RL deconvolution (e) our result By formulating the image deblurring problem using two images, we have developed an iterative deconvolution algorithm which can estimate a very good initial kernel and significantly reduce deconvolution artifacts. (a) blurred/noisy image (b) I, by residual RL To summarize, our iterative image deblurring algorithm consists of the following steps: estimate the kernel K, compute the residual deconvolution image I, compute the gain-controlled deconvolution image I g , and construct the final image by adding the detail layer I d . It is a clean deconvolution result with large scale sharp edges, compared with the residual RL result I in Figure 7(c) . On the other hand, deblurring from a single blurred image is a challenging blind deconvolution problem both blur kernel (or Point Spread Function) estimation and image deconvolution are highly under-constrained. We have proposed an image deblurring approach using a pair of blurred/noisy images. (d-f) deconvolution results by standard RL (green), residual RL(blue), and gain-controlled RL (red), after iteration 1, 10, and 20.",
+  "resources" : [ ]
+}

@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2009-a46-cashman_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a46-cashman_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "NURBS with Extraordinary Points: High-degree, Non-uniform, Rational Subdivision Schemes",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Thomas J.-Cashman",
+      "name" : "Thomas J.",
+      "surname" : "Cashman"
+    }, {
+      "uri" : "http://drinventor/Ursula H.-Augsd?rfer",
+      "name" : "Ursula H.",
+      "surname" : "Augsd?rfer"
+    }, {
+      "uri" : "http://drinventor/Neil A.-Dodgson",
+      "name" : "Neil A.",
+      "surname" : "Dodgson"
+    }, {
+      "uri" : "http://drinventor/Malcolm A.-Sabin",
+      "name" : "Malcolm A.",
+      "surname" : "Sabin"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

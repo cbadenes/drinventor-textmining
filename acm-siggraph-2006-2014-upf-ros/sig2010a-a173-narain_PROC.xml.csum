@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2010a-a173-narain_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a173-narain_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Free-Flowing Granular Materials with Two-Way Solid Coupling",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Rahul-Narain",
+      "name" : "Rahul",
+      "surname" : "Narain"
+    }, {
+      "uri" : "http://drinventor/Abhinav-Golas",
+      "name" : "Abhinav",
+      "surname" : "Golas"
+    }, {
+      "uri" : "http://drinventor/Ming C.-Lin",
+      "name" : "Ming C.",
+      "surname" : "Lin"
+    } ]
+  },
+  "bagOfWords" : [ "first", "author", "support", "Intel", "PhD", "fellowship", "acknowledgment", "work", "support", "part", "Army", "Research", "Office", "National", "Science", "Foundation", "RDECOM", "further", "independent", "investigation", "problem", "valuable", "finally", "issue", "sampling", "render", "million", "grain", "from", "continuum", "representation", "granular", "material", "interesting", "research", "problem", "itself", "can", "further", "enhance", "visual", "appearance", "we", "key", "contribution", "simulation", "surprising", "phenomenon", "beyond", "scope", "we", "current", "work", "remain", "puzzling", "challenging", "effect", "model", "physics", "mathematics", "community", "assumption", "allow", "many", "scenario", "interest", "graphic", "application", "simulated", "efficiently", "preclude", "modeling", "more", "counterintuitive", "behavior", "formation", "convection", "layer", "surface", "wave", "upon", "shake", "Brazil", "nut", "reverse", "Brazil", "nut", "effect", "derive", "tractable", "model", "granular", "material", "dynamics", "we", "have", "adopt", "critical", "state", "assumption", "neglect", "inter-particle", "interaction", "collisional", "regime", "lower", "density", "approach", "could", "also", "useful", "engineering", "application", "addition", "model", "subgrid-scale", "interaction", "would", "allow", "simulation", "even", "more", "complex", "scene", "avalanche", "involve", "object", "many", "different", "shape", "size", "include", "subgrid-scale", "variation", "motion", "interaction", "between", "grain", "widely", "differ", "size" ],
+  "content" : "The first author was supported by an Intel PhD fellowship. Acknowledgments: This work is supported in part by the Army Research Office, National Science Foundation, and RDECOM. Further independent investigation of this problem is valuable. Finally, the issue of sampling and rendering millions of grains from a continuum representation of granular material is an interesting research problem in itself, and can further enhance the visual appearance of our key contribution on simulation. These surprising phenomena are beyond the scope of our current work, and remain as puzzling, challenging effects to model for the physics and mathematics communities. These assumptions allow many scenarios of interest to graphics applications to be simulated efficiently, but preclude modeling the more counterintuitive behaviors such as formation of convection layers and surface waves upon shaking, and the Brazil nut and reverse Brazil nut effects. To derive a tractable model for granular material dynamics, we have adopted a critical state assumption and neglected inter-particle interactions in the collisional regime of lower density. Such an approach could also be useful in engineering applications. The addition of a model for such subgrid-scale interactions would allow for the simulation of even more complex scenes such as avalanches involving objects of many different shapes and sizes. These include subgrid-scale variations in motion, and interactions between grains of widely differing sizes.",
+  "resources" : [ ]
+}

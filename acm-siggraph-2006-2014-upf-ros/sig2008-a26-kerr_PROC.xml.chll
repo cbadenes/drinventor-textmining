@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2008-a26-kerr_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008/a26-kerr_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Toward Evaluating Lighting Design Interface Paradigms for Novice Users",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/William B.-Kerr",
+      "name" : "William B.",
+      "surname" : "Kerr"
+    }, {
+      "uri" : "http://drinventor/Fabio-Pellacini",
+      "name" : "Fabio",
+      "surname" : "Pellacini"
+    } ]
+  },
+  "bagOfWords" : [ "while", "painting", "interface", "perform", "generally", "inferior", "other", "support", "artistic", "exploration", "slightly", "better", "than", "precise", "lighting", "adjustment", "while", "strictly", "speak", "we", "observation", "only", "apply", "within", "boundary", "test", "case", "any", "user", "study", "we", "believe", "trend", "general", "enough", "apply", "other", "scene", "lighting", "configuration", "thus", "affect", "development", "future", "lighting", "design", "interface", "open-ended", "trial", "tend", "experiment", "more", "expect", "serendipitously", "encounter", "nice", "lighting", "configuration", "could", "aim", "what", "know", "could", "do", "still", "have", "approximate", "style", "suggest", "future", "work", "lighting", "design", "novice", "have", "impact", "large", "number", "user", "suggest", "future", "work", "appearance", "design", "should", "consider", "indirect", "manipulation", "its", "main", "control", "mechanism", "we", "believe", "three", "extension", "most", "important", "exploration", "focus", "future", "work", "eventually", "reach", "comprehensive", "study", "lighting", "design", "paradigm", "future", "we", "interested", "extend", "we", "study", "include", "expert", "lighter", "natural", "illumination", "move", "toward", "comprehensive", "evaluation", "lighting", "interface", "paradigm" ],
+  "content" : "while painting interfaces perform generally inferior to the others, they support artistic exploration slightly better than precise lighting adjustment\n      While strictly speaking our observations only apply within the boundary of the tested cases, as in any user study, we believe that these trends are general enough to apply to other scenes and lighting configurations, thus affecting the development of future lighting design interfaces. , ?the open-ended trials I tended to experiment more with, as if I expected to serendipitously encounter a nice lighting configuration,? and ?I could aim for what I know I could do and still have it be in the approximate style?. This suggests that future work on lighting design for novices will have an impact for a large number of users. This suggests that future work on appearance design should consider indirect manipulation as its main control mechanism. We believe that these three extensions are the most important explorations to focus on in future work to eventually reach a comprehensive study of lighting design paradigms. In the future, we are interested in extending our study to include expert lighters and natural illumination, moving toward a comprehensive evaluation of lighting interface paradigms.",
+  "resources" : [ ]
+}

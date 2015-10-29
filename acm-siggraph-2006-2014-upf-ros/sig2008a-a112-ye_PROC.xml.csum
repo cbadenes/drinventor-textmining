@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2008a-a112-ye_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a112-ye_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Animating Responsive Characters with Dynamic Constraints in Near-Unactuated Coordinates",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yuting-Ye",
+      "name" : "Yuting",
+      "surname" : "Ye"
+    }, {
+      "uri" : "http://drinventor/C. Karen-Liu",
+      "name" : "C. Karen",
+      "surname" : "Liu"
+    } ]
+  },
+  "bagOfWords" : [ "work", "support", "NSF", "grant", "ccf-cise", "0742303", "author", "would", "like", "thank", "Satoru", "Ishigaki", "Wei", "Liu", "Shuang", "Hao", "help", "collect", "motion", "datum", "result", "show", "sporadic", "noise", "motion", "have", "negligible", "effect", "long", "input", "motion", "contain", "sufficient", "clean", "datum", "we", "test", "robustness", "we", "method", "against", "datum", "noise", "randomly", "select", "different", "cycle", "from", "input", "motion", "fortunately", "we", "method", "do", "directly", "apply", "computed", "torque", "simulate", "motion", "only", "use", "they", "derive", "eigenbasis", "input", "activity", "we", "approach", "use", "inverse", "dynamics", "method", "principle", "component", "analysis", "both", "which", "know", "sensitive", "input", "noise", "another", "promising", "future", "direction", "combine", "we", "technique", "sophisticated", "balance", "controller", "determine", "lower", "body", "root", "movement", "-lsb-", "da", "Silva", "et", "al.", "2008", "Yin", "et", "al.", "2007", "-rsb-", "one", "possibility", "estimate", "ground", "contact", "force", "from", "motion", "capture", "datum", "use", "method", "describe", "Liu", "et", "al.", "-lsb-", "2005", "-rsb-", "we", "anticipate", "technique", "can", "apply", "whole", "body", "motion", "we", "can", "accurately", "measure", "ground", "contact", "force", "we", "technique", "focus", "only", "upper", "body", "response", "suitable", "large", "perturbation", "incur", "loss", "balance", "change", "high-level", "behavior" ],
+  "content" : "This work is supported by NSF grant CCF-CISE 0742303. The authors would like to thank Satoru Ishigaki, Wei Liu and Shuang Hao for their help in collecting motion data. The results show that sporadic noise in the motion has negligible effect as long as the input motion contains sufficient clean data. We tested the robustness of our method against data noise by randomly selecting different cycles from the input motion. Fortunately, our method does not directly apply the computed torques to simulate motion but only uses them to derive the  eigenbasis of the input activity. Our approach uses inverse dynamics methods and principle component analysis, both of which are known to be sensitive to input noise. Another promising future direction is to combine our technique with sophisticated balance controllers that determine the lower body and root movements [da Silva et al. 2008; Yin et al. 2007]. One possibility is to estimate the ground contact forces from motion capture data using the method described by Liu et al. [2005]. We anticipate that the technique can be applied to the whole body motion if we can accurately measure the ground contact forces. Our technique focuses only on the upper body response and is not suitable for large perturbations that incur the loss of balance or changes of high-level behaviors.",
+  "resources" : [ ]
+}

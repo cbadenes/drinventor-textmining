@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2009-a29-wang_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a29-wang_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Kernel Nystr?m Method for Light Transport",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "we", "propose", "kernel", "nystr?m", "method", "reconstruct", "light", "transport", "matrix", "from", "relatively", "small", "number", "acquire", "image", "we", "work", "base", "generalize", "nystr?m", "method", "low", "rank", "matrix", "we", "introduce", "light", "transport", "kernel", "incorporate", "nystr?m", "method", "exploit", "nonlinear", "coherence", "light", "transport", "matrix", "we", "also", "develop", "adaptive", "scheme", "efficiently", "capture", "sparsely", "sample", "image", "from", "scene", "we", "experiment", "indicate", "kernel", "nystr?m", "method", "can", "achieve", "good", "reconstruction", "light", "transport", "matrix", "few", "hundred", "image", "produce", "high", "quality", "relighting", "result", "kernel", "nystr?m", "method", "effective", "modeling", "scene", "complex", "lighting", "effect", "occlusion", "which", "have", "be", "challenge", "exist", "technique" ],
+  "content" : "We propose a kernel Nystr?m method for reconstructing the light transport matrix from a relatively small number of acquired images. Our work is based on the generalized Nystr?m method for low rank matrices. We introduce the light transport kernel and incorporate it into the Nystr?m method to exploit the nonlinear coherence of the light transport matrix. We also develop an adaptive scheme for efficiently capturing the sparsely sampled images from the scene. Our experiments indicate that the kernel Nystr?m method can achieve good reconstruction of the light transport matrix with a few hundred images and produce high quality relighting results. The kernel Nystr?m method is effective for modeling scenes with complex lighting effects and occlusions which have been challenging for existing techniques.",
+  "resources" : [ ]
+}

@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2013a-a169-neissner_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a169-neissner_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Real-time 3D Reconstruction at Scale using Voxel Hashing",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "we", "believe", "advantage", "we", "method", "even", "more", "evident", "when", "future", "depth", "camera", "higher", "resolution", "sense", "emerge", "we", "datum", "structure", "already", "capable", "reconstruct", "surface", "beyond", "resolution", "exist", "depth", "sensor", "kinect" ],
+  "content" : "We believe the advantages of our method will be even more evident when future depth cameras with higher resolution sensing emerge, as our data structure is already capable of reconstructing surfaces beyond the resolution of existing depth sensors such as Kinect.",
+  "resources" : [ ]
+}

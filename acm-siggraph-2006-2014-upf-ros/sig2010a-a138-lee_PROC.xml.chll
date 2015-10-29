@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2010a-a138-lee_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a138-lee_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Motion Fields for Interactive Character Locomotion",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yongjoon-Lee",
+      "name" : "Yongjoon",
+      "surname" : "Lee"
+    }, {
+      "uri" : "http://drinventor/Kevin-Wampler",
+      "name" : "Kevin",
+      "surname" : "Wampler"
+    }, {
+      "uri" : "http://drinventor/Gilbert-Bernstein",
+      "name" : "Gilbert",
+      "surname" : "Bernstein"
+    }, {
+      "uri" : "http://drinventor/Jovan-Popovic",
+      "name" : "Jovan",
+      "surname" : "Popovic"
+    }, {
+      "uri" : "http://drinventor/Zoran-Popovic",
+      "name" : "Zoran",
+      "surname" : "Popovic"
+    } ]
+  },
+  "bagOfWords" : [ "finally", "we", "interested", "technique", "more", "deeply", "incorporate", "idea", "from", "dynamics", "distance", "metric", "integration", "process", "create", "character", "who", "behave", "physically", "plausible", "way", "wide", "range", "situation", "use", "relatively", "little", "underlying", "datum" ],
+  "content" : "Finally, we are interested in techniques to more deeply incorporate ideas from dynamics into the distance metric and integration process, creating characters who behave in physically plausible ways, in a wide range of situations, using relatively little underlying data.",
+  "resources" : [ ]
+}

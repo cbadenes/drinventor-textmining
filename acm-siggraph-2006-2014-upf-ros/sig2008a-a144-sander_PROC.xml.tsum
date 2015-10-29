@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2008a-a144-sander_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a144-sander_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Efficient Traversal of Mesh Edges using Adjacency Primitives",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Pedro V.-Sander",
+      "name" : "Pedro V.",
+      "surname" : "Sander"
+    }, {
+      "uri" : "http://drinventor/Diego-Nehab",
+      "name" : "Diego",
+      "surname" : "Nehab"
+    }, {
+      "uri" : "http://drinventor/Eden-Chlamtac",
+      "name" : "Eden",
+      "surname" : "Chlamtac"
+    }, {
+      "uri" : "http://drinventor/Hugues-Hoppe",
+      "name" : "Hugues",
+      "surname" : "Hoppe"
+    } ]
+  },
+  "bagOfWords" : [ "Proceedings", "Symposium", "interactive", "3d", "graphic", "Games", "-lrb-", "i3d", "-rrb-", "page", "16", "Proceedings", "ACM", "SIGGRAPH", "99", "page", "269", "276", "Proceedings", "Symposium", "Computational", "Geometry", "page", "254", "263", "ShaderX", "Vertex", "Pixel", "Shader", "Tips", "Tricks", "ACM", "SIGGRAPH", "Course", "Notes", "IEEE", "transaction", "visualization", "computer", "graphic", "12", "-lrb-", "-rrb-", ":640", "648", "addition", "we", "extend", "two", "exist", "vertex", "cache", "optimization", "algorithm", "produce", "cache-efficient", "traversal", "ordering", "adjacency", "primitive", "constrain", "acceptable", "matching", "we", "prove", "nonetheless", "always", "possible", "find", "perfect", "restricted", "matching", "particular", "we", "show", "select", "minimum", "number", "primitive", "cover", "all", "edge", "reduce", "minimum", "vertex", "cover", "problem", "assign", "remain", "face", "primitive", "reduce", "two", "bipartite", "matching", "problem", "we", "contribution", "optimize", "traversal", "triangle", "primitive", "adjacency", "create", "describe", "previous", "two", "section" ],
+  "content" : "In Proceedings of Symposium on Interactive 3D Graphics and Games (I3D), pages 9?16. In Proceedings of ACM SIGGRAPH 99, pages 269?276. In Proceedings of Symposium on Computational Geometry, pages 254?263. In ShaderX: Vertex and Pixel Shader Tips and Tricks. ACM SIGGRAPH Course Notes. IEEE Transactions on Visualization and Computer Graphics, 12(4):640?648. In addition, we extend two existing vertex cache optimization algorithms to produce cache-efficient traversal orderings for adjacency primitives. This constrains the acceptable matchings, but we will prove that nonetheless it is always possible to find such a perfect restricted matching. In particular, we show that selecting a minimum number of primitives to cover all edges reduces to a minimum vertex cover problem, and that assigning the remaining faces to these primitives reduces to two bipartite matching problems. Our contribution is to optimize the traversal of triangle primitives with adjacency, created as described in the previous two sections.",
+  "resources" : [ ]
+}

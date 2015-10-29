@@ -1,0 +1,54 @@
+{
+  "uri" : "sig2008a-a116-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a116-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Deep Photo: Model-Based Photograph Enhancement and Viewing",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Boris-Neubert",
+      "name" : "Boris",
+      "surname" : "Neubert"
+    }, {
+      "uri" : "http://drinventor/Billy-Chen",
+      "name" : "Billy",
+      "surname" : "Chen"
+    }, {
+      "uri" : "http://drinventor/Michael F.-Cohen",
+      "name" : "Michael F.",
+      "surname" : "Cohen"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Oliver-Deussen",
+      "name" : "Oliver",
+      "surname" : "Deussen"
+    }, {
+      "uri" : "http://drinventor/Matthew-Uyttendaele",
+      "name" : "Matthew",
+      "surname" : "Uyttendaele"
+    }, {
+      "uri" : "http://drinventor/Dani-Lischinski",
+      "name" : "Dani",
+      "surname" : "Lischinski"
+    } ]
+  },
+  "bagOfWords" : [ "paper", "we", "introduce", "novel", "system", "browse", "enhance", "manipulate", "casual", "outdoor", "photograph", "combine", "they", "already", "exist", "georeferenced", "digital", "terrain", "urban", "model", "simple", "interactive", "registration", "process", "use", "align", "photograph", "model", "once", "photograph", "model", "have", "be", "register", "abundance", "information", "depth", "texture", "GIS", "datum", "become", "immediately", "available", "we", "system", "information", "turn", "enable", "variety", "operation", "range", "from", "dehaze", "relight", "photograph", "novel", "view", "synthesis", "overlay", "geographic", "information", "we", "describe", "implementation", "number", "application", "discuss", "possible", "extension", "we", "result", "show", "augment", "photograph", "already", "available", "3d", "model", "world", "support", "wide", "variety", "new", "way", "we", "experience", "interact", "we", "everyday", "snapshot", "keyword", "image-based", "modeling", "image-based", "rendering", "image", "completion", "dehazing", "relighting", "photo", "browse", "ACM", "Reference", "Format", "Kopf", "J.", "Neubert", "B.", "Chen", "B.", "Cohen", "M.", "Cohen-Or", "D.", "Deussen", "O.", "Uyttendaele", "M.", "Lischinski", "D.", "2008" ],
+  "content" : "In this paper, we introduce a novel system for browsing, enhancing, and manipulating casual outdoor photographs by combining them with already existing georeferenced digital terrain and urban models. A simple interactive registration process is used to align a photograph with such a model. Once the photograph and the model have been registered, an abundance of information, such as depth, texture, and GIS data, becomes immediately available to our system. This information, in turn, enables a variety of operations, ranging from dehazing and relighting the photograph, to novel view synthesis, and overlaying with geographic information. We describe the implementation of a number of these applications and discuss possible extensions. Our results show that augmenting photographs with already available 3D models of the world supports a wide variety of new ways for us to experience and interact with our everyday snapshots. Keywords: image-based modeling, image-based rendering, image completion, dehazing, relighting, photo browsing\n      ACM Reference Format Kopf, J., Neubert, B., Chen, B., Cohen, M., Cohen-Or, D., Deussen, O., Uyttendaele, M., Lischinski, D. 2008.",
+  "resources" : [ ]
+}

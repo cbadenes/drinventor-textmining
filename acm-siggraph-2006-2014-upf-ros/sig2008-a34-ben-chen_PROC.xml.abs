@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2008-a34-ben-chen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008/a34-ben-chen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Variational Harmonic Maps for Space Deformation",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Mirela-Ben-Chen",
+      "name" : "Mirela",
+      "surname" : "Ben-Chen"
+    }, {
+      "uri" : "http://drinventor/Ofir-Weber",
+      "name" : "Ofir",
+      "surname" : "Weber"
+    }, {
+      "uri" : "http://drinventor/Craig-Gotsman",
+      "name" : "Craig",
+      "surname" : "Gotsman"
+    } ]
+  },
+  "bagOfWords" : [ "space", "deformation", "mapping", "from", "source", "region", "target", "region", "within", "euclidean", "space", "which", "best", "satisfy", "some", "userspecified", "constraint", "can", "use", "deform", "shape", "embed", "ambient", "space", "represent", "various", "form", "polygon", "mesh", "point", "cloud", "volumetric", "datum", "space", "deformation", "method", "useful", "should", "possess", "some", "natural", "property", "e.g.", "detail", "preservation", "smoothness", "intuitive", "control", "harmonic", "map", "from", "domain", "mapping", "whose", "component", "harmonic", "function", "harmonic", "mapping", "smooth", "regular", "component", "couple", "some", "special", "way", "mapping", "can", "detail-preserving", "make", "natural", "choice", "space", "deformation", "application", "challenge", "find", "harmonic", "mapping", "domain", "which", "satisfy", "constraint", "specify", "user", "yet", "also", "detail-preserving", "intuitive", "control", "we", "generate", "harmonic", "mapping", "linear", "combination", "set", "harmonic", "basis", "function", "which", "have", "closed-form", "expression", "when", "source", "region", "boundary", "piecewise", "linear", "do", "define", "energy", "functional", "mapping", "minimize", "within", "linear", "span", "basis", "function", "result", "mapping", "harmonic", "natural", "``", "as-rigid-as-possible", "''", "deformation", "source", "region", "unlike", "other", "space", "deformation", "method", "we", "approach", "do", "require", "explicit", "discretization", "domain", "show", "much", "more", "efficient", "yet", "generate", "comparable", "deformation", "state-ofthe-art", "method", "we", "describe", "optimization", "algorithm", "minimize", "deformation", "energy", "which", "robust", "provably", "convergent", "easy", "implement" ],
+  "content" : "A space deformation is a mapping from a source region to a target region within Euclidean space, which best satisfies some userspecified constraints. It can be used to deform shapes embedded in the ambient space and represented in various forms ? polygon meshes, point clouds or volumetric data. For a space deformation method to be useful, it should possess some natural properties: e.g. detail preservation, smoothness and intuitive control. A harmonic map from a domain ? ? R d to R d is a mapping whose d components are harmonic functions. Harmonic mappings are smooth and regular, and if their components are coupled in some special way, the mapping can be detail-preserving, making it a natural choice for space deformation applications. The challenge is to find a harmonic mapping of the domain, which will satisfy constraints specified by the user, yet also be detail-preserving, and intuitive to control. We generate harmonic mappings as a linear combination of a set of harmonic basis functions, which have a closed-form expression when the source region boundary is piecewise linear. This is done by defining an energy functional of the mapping, and minimizing it within the linear span of these basis functions. The resulting mapping is harmonic, and a natural \"As-Rigid-As-Possible\" deformation of the source region. Unlike other space deformation methods, our approach does not require an explicit discretization of the domain. It is shown to be much more efficient, yet generate comparable deformations to state-ofthe-art methods. We describe an optimization algorithm to minimize the deformation energy, which is robust, provably convergent, and easy to implement.",
+  "resources" : [ ]
+}

@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2008a-a108-tan_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a108-tan_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Single Image Tree Modeling",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ping-Tan",
+      "name" : "Ping",
+      "surname" : "Tan"
+    }, {
+      "uri" : "http://drinventor/Tian-Fang",
+      "name" : "Tian",
+      "surname" : "Fang"
+    }, {
+      "uri" : "http://drinventor/Jianxiong-Xiao",
+      "name" : "Jianxiong",
+      "surname" : "Xiao"
+    }, {
+      "uri" : "http://drinventor/Peng-Zhao",
+      "name" : "Peng",
+      "surname" : "Zhao"
+    }, {
+      "uri" : "http://drinventor/Long-Quan",
+      "name" : "Long",
+      "surname" : "Quan"
+    } ]
+  },
+  "bagOfWords" : [ "another", "interesting", "direction", "future", "research", "make", "modeling", "procedure", "fully", "automatic" ],
+  "content" : "Another interesting direction for future research is to make the modeling procedure fully automatic.",
+  "resources" : [ ]
+}

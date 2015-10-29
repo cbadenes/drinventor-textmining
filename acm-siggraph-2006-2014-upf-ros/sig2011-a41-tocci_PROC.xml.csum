@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2011-a41-tocci_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a41-tocci_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Versatile HDR Video Production System",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Michael D.-Tocci",
+      "name" : "Michael D.",
+      "surname" : "Tocci"
+    }, {
+      "uri" : "http://drinventor/Chris-Kiser",
+      "name" : "Chris",
+      "surname" : "Kiser"
+    }, {
+      "uri" : "http://drinventor/Nora-Tocci",
+      "name" : "Nora",
+      "surname" : "Tocci"
+    }, {
+      "uri" : "http://drinventor/Pradeep-Sen",
+      "name" : "Pradeep",
+      "surname" : "Sen"
+    } ]
+  },
+  "bagOfWords" : [ "scene", "from", "top", "bottom", "now", "OG", "ASH", "hip", "lame", "elting", "ldr", "image", "capture", "three", "sensor", "we", "system", "show", "right", "sample", "tonemapp", "image", "demonstrate", "different", "imaging", "hdr", "effect", "image", "from", "video", "capture", "we", "camera", "Acknowledgment", "we", "thank", "anonymous", "reviewer", "helpful", "comment", "improve", "final", "version", "paper", "test", "we", "design", "we", "build", "work", "prototype", "system", "show", "image", "from", "video", "acquire", "system", "we", "also", "propose", "novel", "hdr", "merge", "algorithm", "minimize", "quantization", "artifact", "from", "LDR", "datum", "use", "highest-exposure", "datum", "until", "saturation", "before", "spatially-blending", "darker-exposure", "datum", "conclusion", "we", "have", "present", "optical", "architecture", "highdynamic", "range", "video", "make", "efficient", "use", "incoming", "light", "produce", "cinema-quality", "image", "would", "give", "director", "photography", "same", "kind", "tool", "post-process", "use", "have", "disposal", "when", "light", "set", "finally", "would", "useful", "develop", "software", "package", "hdr", "cinematography", "use", "system", "like", "one", "propose" ],
+  "content" : "The scenes are, from top to bottom, S NOW D OG , W ASH M E , G O C HIPS & F LAME , M ELTING S , M , and L T . The LDR images captured by three sensors in our system are shown on the right. These are sample tonemapped images that demonstrate different imaging HDR effects. Images from videos captured with our camera. Acknowledgment ? We thank the anonymous reviewers for their helpful comments that improved the final version of the paper. To test our design, we built a working prototype of the system and showed images from video acquired with the system. We also proposed a novel HDR merging algorithm that minimizes quantization artifacts from the LDR data by using the highest-exposure data until saturation before spatially-blending in darker-exposure data. In conclusion, we have presented an optical architecture for highdynamic range video that makes efficient use of the incoming light and produces cinema-quality images. These would give directors of photography the same kinds of tools in post-process that they are used to having at their disposal when lighting the set. Finally, it would be useful to develop software packages for HDR cinematography for use with systems like the one proposed.",
+  "resources" : [ ]
+}

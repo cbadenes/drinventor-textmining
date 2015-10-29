@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2014a-a232-liu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a232-liu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast Burst Images Denoising",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "-lrb-", "-rrb-", "ambiguous", "region", "-lrb-", "similar", "color", "-rrb-", "from", "different", "move", "object", "input", "burst", "image", "we", "result", "-lrb-", "-rrb-", "motion", "blur", "dynamic", "object", "-lrb-", "majority", "frame", "-rrb-", "we", "thank", "all", "reviewer", "helpful", "discussion", "Steve", "Lin", "Jiangyu", "Liu", "help", "proofread", "despite", "above", "issue", "we", "believe", "we", "highly", "efficient", "solution", "practical", "enough", "deploy", "improve", "photo", "experience", "user", "broad", "range", "lighting", "condition", "issue", "also", "appear", "ghost-free", "hdr", "reconstruction", "-lsb-", "Granados", "et", "al.", "2013", "-rsb-", "which", "require", "interaction", "exclude", "ambiguous", "region", "finally", "lead", "ghost", "because", "we", "selection", "wrongly", "regard", "background", "different", "move", "person", "have", "very", "similar", "color", "region", "ambiguous", "region", "-lrb-", "indicate", "highlight", "box", "-rrb-", "occur", "majority", "frame", "-lrb-", "i.e.", "more", "than", "half", "all", "frame", "-rrb-", "Figure", "15", "-lrb-", "-rrb-", "show", "example", "we", "pixel", "selection", "algorithm", "rely", "per-pixel", "color", "difference", "which", "too", "weak", "distinguish", "object", "second", "case", "when", "different", "move", "object", "background", "may", "have", "similar", "color", "same", "pixel", "location" ],
+  "content" : "(b) ambiguous regions (with similar colors) from different moving objects. input burst images our results (a) motion blurs on dynamic objects (on a majority of frames). We thank all the reviewers for their helpful discussions, Steve Lin and Jiangyu Liu for their help in proofreading. Despite the above issues, we believe that our highly efficient solution is practical enough to be deployed for improving the photo experience of users in a broad range of lighting conditions. This issue also appears in ghost-free HDR reconstruction [Granados et al. 2013], which requires interactions to exclude these ambiguous regions. Finally, it will lead to ghosting because our selection wrongly regard it as the background. Different moving persons have very similar color regions and such ambiguous regions (indicated by highlight box) occur in a majority of frames (i.e., more than half of all frames). Figure 15 (b) shows an example. Our pixels selection algorithm relies on per-pixel color difference, which is too weak to distinguish such objects. The second case is when different moving objects and the background may have similar colors in the same pixel locations.",
+  "resources" : [ ]
+}

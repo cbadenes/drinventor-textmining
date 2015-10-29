@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014-a145-templin_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a145-templin_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Modeling and Optimizing Eye Vergence Response to Stereoscopic Cuts",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Krzysztof-Templin",
+      "name" : "Krzysztof",
+      "surname" : "Templin"
+    }, {
+      "uri" : "http://drinventor/Piotr-Didyk",
+      "name" : "Piotr",
+      "surname" : "Didyk"
+    }, {
+      "uri" : "http://drinventor/Karol-Myszkowski",
+      "name" : "Karol",
+      "surname" : "Myszkowski"
+    }, {
+      "uri" : "http://drinventor/Mohamed-Hefeeda",
+      "name" : "Mohamed",
+      "surname" : "Hefeeda"
+    }, {
+      "uri" : "http://drinventor/Hans-Peter-Seidel",
+      "name" : "Hans-Peter",
+      "surname" : "Seidel"
+    }, {
+      "uri" : "http://drinventor/Wojciech-Matusik",
+      "name" : "Wojciech",
+      "surname" : "Matusik"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

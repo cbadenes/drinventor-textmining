@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2008a-a112-ye_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a112-ye_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Animating Responsive Characters with Dynamic Constraints in Near-Unactuated Coordinates",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yuting-Ye",
+      "name" : "Yuting",
+      "surname" : "Ye"
+    }, {
+      "uri" : "http://drinventor/C. Karen-Liu",
+      "name" : "C. Karen",
+      "surname" : "Liu"
+    } ]
+  },
+  "bagOfWords" : [ "animate", "responsive", "character", "Dynamic", "constraint", "Near-Unactuated", "coordinate", "character", "appear", "more", "responsive", "number", "dynamic", "constraint", "increase", "we", "method", "also", "take", "hybrid", "approach", "synthesis", "responsive", "motion", "we", "method", "also", "produce", "responsive", "motion", "preserve", "style", "input", "motion", "first", "responsive", "motion", "vary", "due", "different", "activity", "style", "individual", "synthesize", "responsive", "character", "animation", "important", "research", "topic", "broad", "range", "application", "we", "method", "synthesize", "responsive", "motion", "via", "dynamic", "constraint", "instead", "motion", "blending", "thereby", "completely", "remove", "dependency", "motion", "database", "choose", "appropriate", "coordinate", "enforce", "equation", "motion", "we", "approach", "can", "create", "physically", "responsive", "motion", "base", "kinematic", "pose", "control", "without", "explicitly", "compute", "joint", "actuation", "only", "enforce", "equation", "motion", "less", "actuated", "coordinate", "we", "approach", "can", "create", "physically", "responsive", "motion", "base", "kinematic", "pose", "control", "without", "explicitly", "compute", "joint", "actuation", "compare", "actuation", "among", "style", "individual", "we", "extract", "near", "unactuated", "coordinate", "one", "individual", "perform", "normal", "walk", "apply", "they", "simulate", "another", "individual?s", "normal", "walk", "under", "perturbation" ],
+  "content" : "Animating Responsive Characters with Dynamic Constraints in Near-Unactuated Coordinates. The character appears more responsive as the number of dynamic constraints increases. Our method also takes a hybrid approach to synthesis of responsive motions. Our method also produces responsive motion that preserves the ?style? of the input motion. First, the responsive motion varies due to different activities, styles, and individuals. Synthesizing responsive character animation is an important research topic with a broad range of applications. Our method synthesizes responsive motions via dynamic constraints instead of motion blending, thereby completely removing the dependency on a motion database. By choosing the appropriate coordinates to enforce the equations of motion, our approach can create physically responsive motion based on kinematic pose control without explicitly computing the joint actuations. By only enforcing the equations of motion in the less actuated coordinates, our approach can create physically responsive motion based on kinematic pose control without explicitly computing the joint actuations. To compare the actuation among styles of individuals, we extracted the near unactuated coordinates of one individual performing a normal walk, and applied them to simulate another individual?s normal walk under perturbations.",
+  "resources" : [ ]
+}

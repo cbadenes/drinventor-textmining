@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012-a55-kalogerakis_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a55-kalogerakis_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Probabilistic Model for Component-Based Shape Synthesis",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Evangelos-Kalogerakis",
+      "name" : "Evangelos",
+      "surname" : "Kalogerakis"
+    }, {
+      "uri" : "http://drinventor/Siddhartha-Chaudhuri",
+      "name" : "Siddhartha",
+      "surname" : "Chaudhuri"
+    }, {
+      "uri" : "http://drinventor/Daphne-Koller",
+      "name" : "Daphne",
+      "surname" : "Koller"
+    }, {
+      "uri" : "http://drinventor/Vladlen-Koltun",
+      "name" : "Vladlen",
+      "surname" : "Koltun"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

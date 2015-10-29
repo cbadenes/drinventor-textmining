@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012a-a131-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a131-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Quality Prediction for Image Completion",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Wolf-Kienzle",
+      "name" : "Wolf",
+      "surname" : "Kienzle"
+    }, {
+      "uri" : "http://drinventor/Steven M.-Drucker",
+      "name" : "Steven M.",
+      "surname" : "Drucker"
+    }, {
+      "uri" : "http://drinventor/Sing Bing-Kang",
+      "name" : "Sing Bing",
+      "surname" : "Kang"
+    } ]
+  },
+  "bagOfWords" : [ "image", "completion", "remain", "very", "challenging", "problem", "input", "prediction", "entire", "completion", "-lrb-", "brighter", "higher", "quality", "-rrb-", "paper", "we", "use", "machine", "learn", "predict", "quality", "image", "completion", "we", "present", "data-driven", "method", "predict", "quality", "image", "completion", "method", "algorithm", "have", "desire", "effect", "produce", "small", "restriction", "region", "near", "image", "boundary", "force", "completion", "continue", "semantic", "region", "whereas", "further", "away", "from", "boundary", "result", "larger", "restriction", "region", "give", "completion", "algorithm", "more", "freedom", "while", "substantial", "amount", "previous", "work", "image", "completion", "-lrb-", "also", "refer", "inpainting", "image", "filling", "-rrb-", "best", "we", "knowledge", "we", "aware", "any", "method", "can", "predict", "quality", "before", "completion", "automatic", "search", "space", "constraint", "design", "part", "facilitate", "prediction", "quality", "have", "demonstrate", "technique", "image", "retargeting", "rearrangement", "completion", "most", "previous", "work", "image", "completion", "use", "fill", "hole", "after", "unwanted", "object", "remove", "input", "prediction", "crop", "follow", "-lrb-", "brighter", "higher", "quality", "-rrb-", "image", "completion" ],
+  "content" : "Image completion remains a very challenging problem. Input and prediction Entire completion (brighter is higher quality) In this paper, we use machine learning to predict the quality of image completion. We present a data-driven method to predict the quality of an image completion method. This algorithm has the desired effect of producing small restriction regions near to the image boundary, forcing the completion to continue semantic regions, whereas further away from the boundary it results in larger restriction regions giving the completion algorithm more freedom. While there is a substantial amount of previous work on image completion (also referred to as inpainting or image filling), to the best of our knowledge, we are not aware of any methods that can predict quality before completion. The automatic search space constraints are designed in part to facilitate prediction of quality. They have demonstrated their technique on image retargeting, rearrangement, and completion. In most previous work, image completion is used to fill holes after unwanted objects are removed. Input and prediction Cropped followed by (brighter is higher quality) image completion",
+  "resources" : [ ]
+}

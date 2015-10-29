@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2009-a29-wang_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a29-wang_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Kernel Nystr?m Method for Light Transport",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "make", "kernel", "nystr?m", "method", "work", "one", "have", "specify", "light", "transport", "kernel", "model", "subsurface", "light", "transport", "kernel", "nystr?m", "method", "paper", "we", "propose", "kernel", "nystr?m", "method", "reconstruct", "light", "transport", "matrix", "from", "small", "number", "image", "50", "sample", "image", "we", "reconstruct", "light", "transport", "matrix", "subsurface", "scattering", "use", "kernel", "nystr?m", "method", "we", "experiment", "indicate", "kernel", "nystr?m", "method", "can", "achieve", "good", "reconstruction", "light", "transport", "matrix", "few", "hundred", "image", "produce", "high", "quality", "relighting", "result", "we", "experiment", "indicate", "kernel", "nystr?m", "method", "can", "achieve", "good", "reconstruction", "light", "transport", "matrix", "few", "hundred", "image", "produce", "high", "quality", "relighting", "result", "we", "also", "reconstruct", "light", "transport", "matrix", "from", "sparse", "sample", "set", "via", "kernel", "nystr?m", "method", "kernel", "nystr?m", "method", "refer", "nystr?m", "method", "light", "transport", "kernel", "incorporate", "we", "introduce", "light", "transport", "kernel", "incorporate", "nystr?m", "method", "exploit", "nonlinear", "coherence", "light", "transport", "matrix", "we", "have", "present", "kernel", "nystr?m", "method", "reconstruct", "light", "transport", "matrix", "from", "relatively", "small", "number", "acquire" ],
+  "content" : "To make the kernel Nystr?m method work, one has to specify the light transport kernel f . Modeling subsurface light transport with the kernel Nystr?m method. In this paper we propose a kernel Nystr?m method for reconstructing the light transport matrix from a small number of images. With 50 sampled images, we reconstruct the light transport matrix of subsurface scattering using the kernel Nystr?m method. Our experiments indicate that the kernel Nystr?m method can achieve good reconstruction of the light transport matrix with a few hundred images and produce high quality relighting results. Our experiments indicate that the kernel Nystr?m method can achieve good reconstruction of the light transport matrix with a few hundred images and produce high quality relighting results. We also reconstruct the light transport matrix from the sparse sample set via the kernel  Nystr?m method. The kernel Nystr?m method refers to the Nystr?m method with the light transport kernel incorporated. We introduce the light transport kernel and incorporate it into the Nystr?m method to exploit the nonlinear coherence of the light transport matrix. We have presented the kernel Nystr?m method for reconstructing the light transport matrix from a relatively small number of acquired",
+  "resources" : [ ]
+}

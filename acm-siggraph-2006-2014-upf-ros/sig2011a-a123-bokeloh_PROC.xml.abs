@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2011a-a123-bokeloh_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011a/a123-bokeloh_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Pattern-Aware Shape Deformation Using Sliding Dockers",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Martin-Bokeloh",
+      "name" : "Martin",
+      "surname" : "Bokeloh"
+    }, {
+      "uri" : "http://drinventor/Michael-Wand",
+      "name" : "Michael",
+      "surname" : "Wand"
+    }, {
+      "uri" : "http://drinventor/Vladlen-Koltun",
+      "name" : "Vladlen",
+      "surname" : "Koltun"
+    }, {
+      "uri" : "http://drinventor/Hans-Peter-Seidel",
+      "name" : "Hans-Peter",
+      "surname" : "Seidel"
+    } ]
+  },
+  "bagOfWords" : [ "paper", "introduce", "new", "structure-aware", "shape", "deformation", "technique", "key", "idea", "detect", "continuous", "discrete", "regular", "pattern", "ensure", "pattern", "preserve", "during", "freeform", "deformation", "we", "propose", "variational", "deformation", "model", "preserve", "structure", "discrete", "algorithm", "adaptively", "insert", "remove", "repeated", "element", "regular", "pattern", "minimize", "distortion", "tool", "structural", "adaptation", "we", "introduce", "slide", "docker", "which", "represent", "repeatable", "element", "fit", "together", "seamlessly", "arbitrary", "repetition", "count", "we", "demonstrate", "present", "approach", "number", "complex", "3d", "model", "from", "commercial", "shape", "library", "cr", "category", "i.", "3.5", "-lsb-", "Computing", "Methodologies", "-rsb-", "Computer", "Graphics?Computational", "Geometry", "Object", "Modeling", "Keywords", "shape", "deformation", "shape", "analysis", "symmetry", "structural", "regularity" ],
+  "content" : "This paper introduces a new structure-aware shape deformation technique. The key idea is to detect continuous and discrete regular patterns and ensure that these patterns are preserved during freeform deformation. We propose a variational deformation model that preserves these structures, and a discrete algorithm that adaptively inserts or removes repeated elements in regular patterns to minimize distortion. As a tool for such structural adaptation, we introduce sliding dockers, which represent repeatable elements that fit together seamlessly for arbitrary repetition counts. We demonstrate the presented approach on a number of complex 3D models from commercial shape libraries. CR Categories: I.3.5 [Computing Methodologies]: Computer Graphics?Computational Geometry and Object Modeling; Keywords: shape deformation, shape analysis, symmetry, structural regularity",
+  "resources" : [ ]
+}

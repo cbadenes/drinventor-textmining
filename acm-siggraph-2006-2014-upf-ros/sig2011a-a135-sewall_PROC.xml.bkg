@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011a-a135-sewall_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011a/a135-sewall_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Interactive Hybrid Simulation of Large-Scale Traffic",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jason-Sewall",
+      "name" : "Jason",
+      "surname" : "Sewall"
+    }, {
+      "uri" : "http://drinventor/David-Wilkie",
+      "name" : "David",
+      "surname" : "Wilkie"
+    }, {
+      "uri" : "http://drinventor/Ming C.-Lin",
+      "name" : "Ming C.",
+      "surname" : "Lin"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

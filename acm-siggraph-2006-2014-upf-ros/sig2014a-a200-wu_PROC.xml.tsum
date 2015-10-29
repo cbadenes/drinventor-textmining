@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2014a-a200-wu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a200-wu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Real-time Shading-based Refinement for Consumer Depth Cameras",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Shahram-Izadi",
+      "name" : "Shahram",
+      "surname" : "Izadi"
+    } ]
+  },
+  "bagOfWords" : [ "shading-based", "shape", "refinement", "rgb-d", "image", "CVPR", "Workshop", "input", "we", "algorithm", "noisy", "low", "resolution", "depth", "map", "from", "depth", "camera", "align", "RGB", "image", "i.", "unlike", "previous", "offline", "method", "use", "multi-camera", "input", "refine", "full", "3d", "mesh", "we", "rephrase", "shading-based", "refinement", "depth", "map", "enhancement", "process", "so", "far", "possible", "real", "time", "refinement", "technique", "have", "yet", "use", "interactively", "depth", "constraint", "we", "also", "define", "depth", "constraint", "which", "enforce", "refined", "depth", "stay", "close", "initial", "depth", "before", "refinement", "both", "static", "dynamic", "scene", "all", "rgb-d", "sensor", "significant", "enhancement", "detail", "compare", "raw", "depth", "datum", "achieve", "see", "Fig.", "12", "fig.", "supplemental", "video", "document", "which", "show", "screen", "capture", "visualization", "reconstruction", "before", "after", "refinement", "we", "present", "first", "method", "real-time", "shading-based", "refinement", "rgb-d", "datum", "capture", "commodity", "depth", "camera", "general", "uncontrolled", "scene", "aside", "from", "refinement", "complete", "depth", "map", "we", "perform", "we", "optimization", "only", "block", "contain", "foreground", "pixel", "-lrb-", "cp", "we", "refinement", "energy", "-lrb-", "-rrb-", "-lrb-", "eq", "we", "run", "propose", "rgb-d", "shading-based", "refinement", "strategy", "hierarchical", "coarse-to-fine", "manner", "allow", "faster", "convergence", "we", "method" ],
+  "content" : "Shading-based shape refinement of rgb-d images. CVPR Workshop. Input to our algorithm is a noisy low resolution depth map D r from a depth camera and an aligned RGB image I. Unlike previous offline methods that used multi-camera input to refine full 3D meshes, we rephrase shading-based refinement as a depth map enhancement process. So far, this was not possible in real time, and as such refinement techniques have yet to be used interactively. Depth Constraint We also define a depth constraint, which enforces that the refined depth stays close to the initial depth before refinement D i : On both static and dynamic scenes and for all RGB-D sensors, a significant enhancement of detail compared to the raw depth data was achieved, see Fig. 12 , Fig. 1 , and the supplemental video and document, which show screen captured visualizations of the reconstructions before and after refinement. We presented the first method for real-time shading-based refinement of RGB-D data captured with commodity depth cameras in general uncontrolled scenes. Aside from the refinement of complete depth maps, we perform our optimization only on blocks containing foreground pixels (cp. Our refinement energy E(d) : R N ? R (Eq. We run the proposed RGB-D shading-based refinement strategy in a hierarchical coarse-to-fine manner to allow for a faster convergence of our method.",
+  "resources" : [ ]
+}

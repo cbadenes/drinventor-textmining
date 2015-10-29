@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2010-a39-martin_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010/a39-martin_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Unified Simulation of Elastic Rods, Shells, and Solids",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Sebastian-Martin",
+      "name" : "Sebastian",
+      "surname" : "Martin"
+    }, {
+      "uri" : "http://drinventor/Peter-Kaufmann",
+      "name" : "Peter",
+      "surname" : "Kaufmann"
+    }, {
+      "uri" : "http://drinventor/Mario-Botsch",
+      "name" : "Mario",
+      "surname" : "Botsch"
+    }, {
+      "uri" : "http://drinventor/Eitan-Grinspun",
+      "name" : "Eitan",
+      "surname" : "Grinspun"
+    }, {
+      "uri" : "http://drinventor/Markus H.-Gross",
+      "name" : "Markus H.",
+      "surname" : "Gross"
+    } ]
+  },
+  "bagOfWords" : [ "we", "develop", "accurate", "unified", "treatment", "elastica", "follow", "method", "resultant-based", "formulation", "its", "logical", "extreme", "we", "derive", "higher-order", "integration", "rule", "elaston", "measure", "stretch", "shear", "bend", "twist", "along", "any", "axis", "theory", "accompany", "implementation", "do", "distinguish", "between", "form", "different", "dimension", "-lrb-", "solid", "shell", "rod", "-rrb-", "nor", "between", "manifold", "region", "non-manifold", "junction", "consequently", "single", "code", "accurately", "model", "diverse", "range", "elastoplastic", "behavior", "include", "buckling", "writhe", "cut", "merge", "emphasis", "convergence", "continuum", "set", "we", "apart", "from", "early", "unification", "effort" ],
+  "content" : "We develop an accurate, unified treatment of elastica. Following the method of resultant-based formulation to its logical extreme, we derive a higher-order integration rule, or elaston, measuring stretching, shearing, bending, and twisting along any axis. The theory and accompanying implementation do not distinguish between forms of different dimension (solids, shells, rods), nor between manifold regions and non-manifold junctions. Consequently, a single code accurately models a diverse range of elastoplastic behaviors, including buckling, writhing, cutting and merging. Emphasis on convergence to the continuum sets us apart from early unification efforts.",
+  "resources" : [ ]
+}

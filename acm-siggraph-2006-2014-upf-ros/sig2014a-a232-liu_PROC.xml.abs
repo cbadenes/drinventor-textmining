@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2014a-a232-liu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a232-liu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast Burst Images Denoising",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "paper", "present", "fast", "denoising", "method", "produce", "clean", "image", "from", "burst", "noisy", "image", "we", "accelerate", "alignment", "image", "introduce", "lightweight", "camera", "motion", "representation", "call", "homography", "flow", "align", "image", "fuse", "create", "denoised", "output", "rapid", "per-pixel", "operation", "temporal", "spatial", "domain", "handle", "scene", "motion", "during", "capture", "mechanism", "select", "consistent", "pixel", "temporal", "fusion", "propose", "synthesize", "clean", "ghost-free", "image", "which", "can", "largely", "reduce", "computation", "track", "motion", "between", "frame", "combine", "efficient", "solution", "we", "method", "run", "several", "order", "magnitude", "faster", "than", "previous", "work", "while", "denoising", "quality", "comparable", "smartphone", "prototype", "demonstrate", "we", "method", "practical", "work", "well", "large", "variety", "real", "example", "cr", "category", "i.", "4.3", "-lsb-", "image", "processing", "computer", "Vision", "-rsb-", "enhancement?smoothing", "keyword", "denoising", "burst", "image", "homography", "flow", "ghost-free" ],
+  "content" : "This paper presents a fast denoising method that produces a clean image from a burst of noisy images. We accelerate alignment of the images by introducing a lightweight camera motion representation called homography flow. The aligned images are then fused to create a denoised output with rapid per-pixel operations in temporal and spatial domains. To handle scene motion during the capture, a mechanism of selecting consistent pixels for temporal fusion is proposed to ?synthesize? a clean, ghost-free image, which can largely reduce the computation of tracking motion between frames. Combined with these efficient solutions, our method runs several orders of magnitude faster than previous work, while the denoising quality is comparable. A smartphone prototype demonstrates that our method is practical and works well on a large variety of real examples. CR Categories: I.4.3 [Image Processing and Computer Vision]: Enhancement?Smoothing Keywords: denoising, burst images, homography flow, ghost-free",
+  "resources" : [ ]
+}

@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2006-p549-podolak_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p549-podolak_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Planar-Reflective Symmetry Transform for 3D Shapes",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Joshua-Podolak",
+      "name" : "Joshua",
+      "surname" : "Podolak"
+    }, {
+      "uri" : "http://drinventor/Philip-Shilane",
+      "name" : "Philip",
+      "surname" : "Shilane"
+    }, {
+      "uri" : "http://drinventor/Aleksey-Golovinskiy",
+      "name" : "Aleksey",
+      "surname" : "Golovinskiy"
+    }, {
+      "uri" : "http://drinventor/Szymon-Rusinkiewicz",
+      "name" : "Szymon",
+      "surname" : "Rusinkiewicz"
+    }, {
+      "uri" : "http://drinventor/Thomas A.-Funkhouser",
+      "name" : "Thomas A.",
+      "surname" : "Funkhouser"
+    } ]
+  },
+  "bagOfWords" : [ "symmetry", "important", "cue", "many", "application", "include", "object", "alignment", "recognition", "segmentation", "paper", "we", "describe", "planar", "reflective", "symmetry", "transform", "-lrb-", "prst", "-rrb-", "capture", "continuous", "measure", "reflectional", "symmetry", "shape", "respect", "all", "possible", "plane", "transform", "combine", "extend", "previous", "work", "have", "focus", "global", "symmetry", "respect", "center", "mass", "3d", "mesh", "local", "symmetry", "respect", "point", "2d", "image", "we", "provide", "efficient", "Monte", "Carlo", "sampling", "algorithm", "compute", "transform", "surface", "show", "stable", "under", "common", "transformation", "we", "also", "provide", "iterative", "refinement", "algorithm", "find", "local", "maximum", "transform", "precisely", "we", "use", "transform", "define", "two", "new", "geometric", "property", "center", "symmetry", "principal", "symmetry", "axis", "show", "useful", "align", "object", "canonical", "coordinate", "system", "finally", "we", "demonstrate", "symmetry", "transform", "useful", "several", "application", "computer", "graphic", "include", "shape", "matching", "segmentation", "mesh", "part", "automatic", "viewpoint", "selection", "keyword", "symmetry", "shape", "analysis", "registration", "match", "segmentation", "viewpoint", "selection" ],
+  "content" : "Symmetry is an important cue for many applications, including object alignment, recognition, and segmentation. In this paper, we describe a planar reflective symmetry transform (PRST) that captures a continuous measure of the reflectional symmetry of a shape with respect to all possible planes. This transform combines and extends previous work that has focused on global symmetries with respect to the center of mass in 3D meshes and local symmetries with respect to points in 2D images. We provide an efficient Monte Carlo sampling algorithm for computing the transform for surfaces and show that it is stable under common transformations. We also provide an iterative refinement algorithm to find local maxima of the transform precisely. We use the transform to define two new geometric properties, center of symmetry and principal symmetry axes, and show that they are useful for aligning objects in a canonical coordinate system. Finally, we demonstrate that the symmetry transform is useful for several applications in computer graphics, including shape matching, segmentation of meshes into parts, and automatic viewpoint selection. Keywords: symmetry, shape analysis, registration, matching, segmentation, viewpoint selection",
+  "resources" : [ ]
+}

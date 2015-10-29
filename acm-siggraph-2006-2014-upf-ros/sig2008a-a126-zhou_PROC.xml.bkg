@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2008a-a126-zhou_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a126-zhou_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Real-Time KD-Tree Construction on Graphics Hardware",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Kun-Zhou",
+      "name" : "Kun",
+      "surname" : "Zhou"
+    }, {
+      "uri" : "http://drinventor/Qiming-Hou",
+      "name" : "Qiming",
+      "surname" : "Hou"
+    }, {
+      "uri" : "http://drinventor/Rui Wang-null",
+      "name" : "Rui Wang",
+      "surname" : null
+    }, {
+      "uri" : "http://drinventor/Baining-Guo",
+      "name" : "Baining",
+      "surname" : "Guo"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

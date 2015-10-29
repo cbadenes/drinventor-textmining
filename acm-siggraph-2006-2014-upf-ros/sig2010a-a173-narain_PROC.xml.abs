@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2010a-a173-narain_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a173-narain_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Free-Flowing Granular Materials with Two-Way Solid Coupling",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Rahul-Narain",
+      "name" : "Rahul",
+      "surname" : "Narain"
+    }, {
+      "uri" : "http://drinventor/Abhinav-Golas",
+      "name" : "Abhinav",
+      "surname" : "Golas"
+    }, {
+      "uri" : "http://drinventor/Ming C.-Lin",
+      "name" : "Ming C.",
+      "surname" : "Lin"
+    } ]
+  },
+  "bagOfWords" : [ "we", "present", "novel", "continuum-based", "model", "enable", "efficient", "simulation", "granular", "material", "we", "approach", "fully", "solve", "internal", "pressure", "frictional", "stress", "granular", "material", "thereby", "allow", "visually", "noticeable", "behavior", "granular", "material", "reproduce", "include", "freely", "disperse", "splash", "without", "cohesion", "global", "coupling", "between", "friction", "pressure", "full", "treatment", "internal", "force", "material", "also", "enable", "two-way", "interaction", "solid", "body", "we", "method", "achieve", "result", "only", "very", "small", "fraction", "computational", "cost", "comparable", "particle-based", "model", "granular", "flow", "cr", "category", "i.", "3.5", "-lsb-", "Computer", "Graphics", "-rsb-", "computational", "geometry", "object", "modeling?physically", "base", "modeling", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "three-dimensional", "graphic", "realism", "animation", "keyword", "sand", "granular", "material", "simulation", "animation" ],
+  "content" : "We present a novel continuum-based model that enables efficient simulation of granular materials. Our approach fully solves the internal pressure and frictional stresses in a granular material, thereby allows visually noticeable behaviors of granular materials to be reproduced, including freely dispersing splashes without cohesion, and a global coupling between friction and pressure. The full treatment of internal forces in the material also enables two-way interaction with solid bodies. Our method achieves these results at only a very small fraction of computational costs of the comparable particle-based models for granular flows. CR Categories: I.3.5 [Computer Graphics]: Computational Geometry and Object Modeling?Physically based modeling; I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism? Animation Keywords: sand, granular materials, simulation, animation",
+  "resources" : [ ]
+}

@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2013a-a173-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a173-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Content-Adaptive Image Downscaling",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Ariel-Shamir",
+      "name" : "Ariel",
+      "surname" : "Shamir"
+    }, {
+      "uri" : "http://drinventor/Pieter-Peers",
+      "name" : "Pieter",
+      "surname" : "Peers"
+    } ]
+  },
+  "bagOfWords" : [ "we", "result", "Input", "we", "result", "Input", "Input", "Bicubic", "we", "result", "Input", "Input", "Subsampling", "Input", "Downscaled", "Input", "Subsampling", "Bicubic", "Input", "Subsampling", "Bicubic", "Proceedings", "IEEE", "International", "Conference", "Computer", "Vision", "-lrb-", "ICCV", "2007", "-rrb-", "nonhomogeneous", "content-driven", "video-retargeting", "OLF", "L.", "UTTMANN", "M.", "ohen", "D.", "2007", "IEEE", "Computer", "Society", "Press", "Los", "Alamitos", "CA", "USA", "Digital", "image", "warping" ],
+  "content" : "Our result Input\n        Our result Input\n        Input\n        Bicubic Our result Input Input Subsampling Input\n        Downscaled Input Subsampling Bicubic Input Subsampling Bicubic Proceedings of IEEE International Conference on Computer Vision (ICCV 2007), 1?6. Nonhomogeneous content-driven video-retargeting. W OLF , L., G UTTMANN , M., AND C OHEN -O R , D. 2007. IEEE Computer Society Press, Los Alamitos, CA, USA. Digital Image Warping.",
+  "resources" : [ ]
+}

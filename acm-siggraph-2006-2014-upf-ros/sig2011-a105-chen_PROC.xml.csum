@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011-a105-chen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a105-chen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Nonlinear Revision Control for Images",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Hsiang-Ting-Chen",
+      "name" : "Hsiang-Ting",
+      "surname" : "Chen"
+    }, {
+      "uri" : "http://drinventor/Li-Yi-Wei",
+      "name" : "Li-Yi",
+      "surname" : "Wei"
+    }, {
+      "uri" : "http://drinventor/Chun-Fa-Chang",
+      "name" : "Chun-Fa",
+      "surname" : "Chang"
+    } ]
+  },
+  "bagOfWords" : [ "work", "support", "part", "National", "Science", "Council", "-lrb-", "Taiwan", "-rrb-", "under", "grant", "NSC", "98-2220-e-003-001", "acknowledgement", "we", "would", "like", "thank", "Eugene", "Lei", "digital", "sketch", "example", "valuable", "comment", "Sin-Jhen", "Chiu", "DigiMax", "Chuan-Chang", "Wang", "Next", "Media", "Animation", "insight", "commercial", "animation", "production", "pipeline", "Eric", "Stollnitz", "video", "dubbing", "Duncan", "Stevenson", "SIGGRAPH", "English", "Review", "Service", "proofread", "well", "KeSen", "Huang", "anonymous", "reviewer", "valuable", "suggestion", "extend", "revision", "control", "datum", "type", "could", "another", "potential", "future", "work", "direction", "paper", "we", "focus", "mainly", "image", "we", "believe", "similar", "principle", "applicable", "other", "binary", "graphic", "asset", "video", "mesh", "animation", "datum", "nevertheless", "we", "do", "hope", "release", "we", "source", "code", "public", "domain", "can", "help", "we", "gather", "more", "user", "feedback", "however", "rather", "difficult", "find", "studio", "use", "gimp", "main", "tool", "ideal", "test", "bed", "integrate", "we", "system", "commercial", "studio?s", "pipeline", "we", "current", "design", "phase", "we", "have", "only", "conduct", "usability", "study", "few", "subject", "-lrb-", "one", "professional", "artist", "two", "industrial", "designer", "four", "cs", "graduate", "student", "-rrb-", "particular", "all", "one", "need", "do", "adopt", "clientserver", "model", "implement", "we", "revision", "control", "backend", "server", "side", "UI", "frontend", "image", "editor", "client", "side", "however", "propose", "algorithm", "system", "framework", "directly", "support", "multiple", "user", "UI", "can", "easily", "extend", "too" ],
+  "content" : "This work is supported in part by National Science Council (Taiwan) under grant NSC 98-2220-E-003-001. Acknowledgements We would like to thank Eugene Lei for digital sketching examples and valuable comments, Sin-Jhen Chiu at DigiMax and Chuan-Chang Wang at Next Media Animation for their insights on the commercial animation production pipeline, Eric Stollnitz for video dubbing, Duncan Stevenson and the SIGGRAPH English Review Service for proofreading, as well as KeSen Huang and the anonymous reviewers for their valuable suggestions. Extending revision control to these data types could be another potential future work direction. In this paper we focused mainly on images, but we believe similar principles are applicable to other binary graphics assets, such as videos, meshes, or animation data. Nevertheless, we do hope the release of our source code in the public domain can help us gather more user feedback. However, it is rather difficult to find a studio using GIMP as their main tool. The ideal test bed is to integrate our system into a commercial studio?s pipeline. In our current design phase, we have only conducted the usability study with a few subjects (one professional artist, two industrial designers and four CS graduate students). In particular, all one needs to do is to adopt a clientserver model, implementing our revision control backend on the server side with the UI frontend and image editor on the client side. However, proposed algorithms and system framework directly support multiple users, and the UI can be easily extended for that too.",
+  "resources" : [ ]
+}

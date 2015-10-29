@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2013a-a194-hu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a194-hu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Inverse Image Editing: Recovering a Semantic Editing History from a Before-and-After Image Pair",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Shi-Min-Hu",
+      "name" : "Shi-Min",
+      "surname" : "Hu"
+    }, {
+      "uri" : "http://drinventor/Kun-Xu",
+      "name" : "Kun",
+      "surname" : "Xu"
+    }, {
+      "uri" : "http://drinventor/Li-Qian-Ma",
+      "name" : "Li-Qian",
+      "surname" : "Ma"
+    }, {
+      "uri" : "http://drinventor/Bin-Liu",
+      "name" : "Bin",
+      "surname" : "Liu"
+    }, {
+      "uri" : "http://drinventor/Bi-Ye-Jiang",
+      "name" : "Bi-Ye",
+      "surname" : "Jiang"
+    }, {
+      "uri" : "http://drinventor/Jue-Wang",
+      "name" : "Jue",
+      "surname" : "Wang"
+    } ]
+  },
+  "bagOfWords" : [ "inverse", "image", "editing", "recover", "Semantic", "Editing", "history", "from", "Before-and-After", "image", "pair", "consist", "three", "main", "step", "-lrb-", "-rrb-", "region", "match", "-lrb-", "-rrb-", "recover", "semantic", "appearance", "operator", "each", "match", "region", "pair", "-lrb-", "-rrb-", "generate", "editing", "history", "one", "many", "application", "we", "recover", "history", "from", "one", "image", "pair", "can", "apply", "new", "image", "achieve", "semantic", "editing", "transfer", "section", "we", "describe", "how", "further", "recover", "semantic", "editing", "operation", "from", "from", "all", "possible", "edit", "path", "we", "recover", "optimal", "one", "base", "semantic", "constraint", "we", "study", "problem", "inverse", "image", "editing", "which", "recover", "semantically-meaningful", "editing", "history", "from", "source", "image", "edit", "copy", "each", "edit", "region", "we", "determine", "geometric", "semantic", "appearance", "operation", "have", "be", "apply", "we", "propose", "new", "method", "recover", "semantic", "appearance", "operator", "each", "edit", "region", "-lrb-", "see", "Sec", "secondly", "we", "recover", "semantic", "appearance", "operation", "each", "match", "region", "pair", "-lrb-", "sec", "study", "demonstrate", "we", "recover", "history", "comparable", "original", "one", "produce", "artist", "term", "semantic", "meaningfulness" ],
+  "content" : "Inverse Image Editing: Recovering a Semantic Editing History from a Before-and-After Image Pair. It consists of three main steps: (1) region matching; (2) recovering semantic appearance operators for each matched region pair; and (3) generating the editing history. As one of many applications, our recovered history from one image pair can be applied to new images to achieve semantic editing transfer. In this section we describe how to further recover semantic editing operations from it. From all possible edit paths, we recover an optimal one based on semantic constraints. We study the problem of inverse image editing, which recovers a semantically-meaningful editing history from a source image and an edited copy. For each edited region, we determine geometric and semantic appearance operations that have been applied. We propose new methods to recover semantic appearance operators for each edited region (see Sec. Secondly, we recover semantic appearance operations for each matched region pair (Sec. This study demonstrates that our recovered histories are comparable to the original ones produced by artists in terms of semantic meaningfulness.",
+  "resources" : [ ]
+}

@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2010a-a145-farbman_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a145-farbman_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Diffusion Maps for Edge-Aware Image Editing",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Zeev-Farbman",
+      "name" : "Zeev",
+      "surname" : "Farbman"
+    }, {
+      "uri" : "http://drinventor/Raanan-Fattal",
+      "name" : "Raanan",
+      "surname" : "Fattal"
+    }, {
+      "uri" : "http://drinventor/Dani-Lischinski",
+      "name" : "Dani",
+      "surname" : "Lischinski"
+    } ]
+  },
+  "bagOfWords" : [ "paper", "we", "have", "introduce", "idea", "perform", "edge-aware", "operation", "image", "use", "diffusion", "distance", "instead", "euclidean", "distance", "we", "have", "demonstrate", "diffusion", "distance", "which", "account", "both", "length", "number", "path", "between", "datum", "point", "feature", "space", "provide", "local", "edit", "propagation", "scheme", "edge-preserving", "smoothing", "operator", "valuable", "global", "perspective", "cluster", "present", "feature", "space", "variety", "scale", "we", "have", "also", "provide", "analysis", "extend", "applicability", "nystr?m", "method", "more", "general", "class", "affinity", "matrix", "suggest", "efficient", "solution", "entire", "range", "spatial", "interaction", "conclude", "we", "paper", "remain", "point", "out", "number", "interesting", "direction", "future", "work", "use", "diffusion", "distance", "span", "two-dimensional", "space", "edge-aware", "operator", "two", "axis", "space", "diffusion", "time", "parameter", "spatial", "interaction", "range", "currently", "up", "user", "specify", "appropriate", "value", "two", "parameter", "provide", "important", "degree", "user", "control", "currently", "unclear", "how", "automatically", "determine", "optimal", "combination", "two", "parameter", "particular", "image", "manipulation", "task", "we", "currently", "construct", "diffusion", "map", "use", "only", "color", "-lrb-", "sometimes", "-rrb-", "spatial", "position", "pixel", "image", "natural", "direction", "explore", "work", "richer", "feature", "space", "however", "we", "preliminary", "attempt", "direction", "be", "too", "successful", "since", "point", "out", "earlier", "exist", "texture", "descriptor", "effectively", "operate", "lower", "spatial", "resolution", "finally", "we", "believe", "further", "integration", "higher-level", "image", "understanding", "image", "manipulation", "operator", "another", "promising", "yet", "challenging", "research", "direction", "all", "exist", "edge-aware", "operator", "oblivious", "semantic", "content", "example", "human", "present", "image", "-lrb-", "any", "other", "object", "large", "variance", "texture", "and/or", "color", "-rrb-", "unlikely", "select", "edit", "single", "region", "unless", "sufficient", "user", "input", "provide", "thus", "integration", "object", "detection", "recognition", "algorithm", "image", "editing", "tool", "seem", "fruitful", "direction", "explore", "acknowledgment", "work", "support", "part", "Israel", "Science", "Foundation", "found", "Israel", "Academy", "Sciences", "Humanities" ],
+  "content" : "In this paper we have introduced the idea of performing edge-aware operations on images using diffusion distances instead of Euclidean distances. We have demonstrated that diffusion distances, which account for both the length and the number of paths between the data points in the feature space, provide local edit propagation schemes and edge-preserving smoothing operators with a valuable global perspective of the clusters present in the feature space at a variety of scales. We have also provided an analysis that extends the applicability of the Nystr?m method to a more general class of affinity matrices, and suggested an efficient solution for the entire range of spatial interactions. To conclude our paper it remains to point out a number of interesting directions for future work. The use of diffusion distances spans a two-dimensional space of edge-aware operators. The two axes of this space are the diffusion time parameter t and the spatial interaction range ?. Currently, it is up to the user to specify the appropriate values for these two parameters. This provides an important degree of user control, but it is currently unclear how to automatically determine the optimal combination of these two parameters for a particular image manipulation task. We currently construct diffusion maps using only the color and (sometimes) spatial position of the pixels in the image. A natural direction to explore is working in a richer feature space. However, our preliminary attempts in this direction were not too successful, since as was pointed out earlier, existing texture descriptors effectively operate at a lower spatial resolution. Finally, we believe that further integration of higher-level of image understanding into image manipulation operators is another promising, yet challenging research direction. All of the existing edge-aware operators are oblivious to semantic content. For example, a human present in the image (or any other object with a large variance in texture and/or color) is unlikely to be selected or edited as a single region, unless sufficient user input is provided. Thus, integration of object detection and recognition algorithms into image editing tools seems a fruitful direction to explore. Acknowledgments: This work was supported in part by the Israel Science Foundation founded by the Israel Academy of Sciences and Humanities.",
+  "resources" : [ ]
+}

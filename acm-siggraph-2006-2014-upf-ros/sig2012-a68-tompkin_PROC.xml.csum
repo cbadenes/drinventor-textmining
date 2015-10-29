@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2012-a68-tompkin_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a68-tompkin_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Videoscapes: Exploring Sparse, Unstructured Video Collections",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/James-Tompkin",
+      "name" : "James",
+      "surname" : "Tompkin"
+    }, {
+      "uri" : "http://drinventor/Kwang In-Kim",
+      "name" : "Kwang In",
+      "surname" : "Kim"
+    }, {
+      "uri" : "http://drinventor/Jan-Kautz",
+      "name" : "Jan",
+      "surname" : "Kautz"
+    }, {
+      "uri" : "http://drinventor/Christian-Theobalt",
+      "name" : "Christian",
+      "surname" : "Theobalt"
+    } ]
+  },
+  "bagOfWords" : [ "eccv", "255", "268", "accurate", "image", "localization", "base", "Google", "map", "street", "view", "AMIR", "A.", "R.", "HAH", "M.", "2010", "discover", "favorite", "view", "popular", "place", "iconoid", "shift", "EYAND", "T.", "eibe", "B.", "2011", "Graphics", "Interface", "193", "200", "technique", "view", "transition", "multi-camera", "outdoor", "environment", "ea", "E.", "ULLONI", "A.", "RUIJFF", "E.", "EGENBRECHT", "H.", "CHMALSTIEG", "D.", "2010", "-lrb-", "07", "-rrb-", "1241", "1250", "Computer", "Graphics", "Forum" ],
+  "content" : "ECCV, 255?268. Accurate image localization based on Google maps street view. Z AMIR , A. R., AND S HAH , M. 2010. Discovering favorite views of popular places with iconoid shift. W EYAND , T., AND L EIBE , B. 2011. Graphics Interface, 193?200. Techniques for view transition in multi-camera outdoor environments. V EAS , E., M ULLONI , A., K RUIJFF , E., R EGENBRECHT , H., AND S CHMALSTIEG , D. 2010. 4 (07), 1241?1250. Computer Graphics Forum",
+  "resources" : [ ]
+}

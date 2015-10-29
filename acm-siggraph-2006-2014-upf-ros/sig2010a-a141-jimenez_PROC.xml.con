@@ -1,0 +1,62 @@
+{
+  "uri" : "sig2010a-a141-jimenez_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a141-jimenez_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Practical Appearance Model for Dynamic Facial Color",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jorge-Jimenez",
+      "name" : "Jorge",
+      "surname" : "Jimenez"
+    }, {
+      "uri" : "http://drinventor/Timothy-Scully",
+      "name" : "Timothy",
+      "surname" : "Scully"
+    }, {
+      "uri" : "http://drinventor/Nuno-Barbosa",
+      "name" : "Nuno",
+      "surname" : "Barbosa"
+    }, {
+      "uri" : "http://drinventor/Craig-Donner",
+      "name" : "Craig",
+      "surname" : "Donner"
+    }, {
+      "uri" : "http://drinventor/Xenxo-Alvarez",
+      "name" : "Xenxo",
+      "surname" : "Alvarez"
+    }, {
+      "uri" : "http://drinventor/Teresa-Vieira",
+      "name" : "Teresa",
+      "surname" : "Vieira"
+    }, {
+      "uri" : "http://drinventor/Paul-Matts",
+      "name" : "Paul",
+      "surname" : "Matts"
+    }, {
+      "uri" : "http://drinventor/Ver?nica-Orvalho",
+      "name" : "Ver?nica",
+      "surname" : "Orvalho"
+    }, {
+      "uri" : "http://drinventor/Diego-Gutierrez",
+      "name" : "Diego",
+      "surname" : "Gutierrez"
+    }, {
+      "uri" : "http://drinventor/Tim-Weyrich",
+      "name" : "Tim",
+      "surname" : "Weyrich"
+    } ]
+  },
+  "bagOfWords" : [ "here", "we", "demonstrate", "we", "novel", "skin", "appearance", "rig", "under", "various", "expression", "condition", "all", "image", "section", "use", "hemoglobin", "map", "26-year-old", "male", "subject", "be", "render", "real-time", "many", "we", "example", "hemoglobin", "map", "inset", "lower-left", "corner", "image", "note", "due", "delicacy", "skin", "color", "widely-varying", "gamut", "display", "device", "we", "suggest", "view", "pdf", "version", "paper", "color-calibrated", "monitor", "Figure", "show", "five", "emotional", "basis", "state", "sad", "smile", "anger", "neutral", "pose", "fear", "disgust", "hemoglobin", "map", "generate", "we", "rig", "show", "figure", "note", "wide", "variation", "appearance", "across", "expression", "some", "color", "cause", "blood", "perfusion", "due", "deformation", "while", "some", "due", "capillary", "dilation", "reality", "extreme", "emotion", "like", "anger", "fear", "trigger", "very", "strong", "dilation", "constriction", "blood", "vessel", "cause", "significant", "involuntary", "blushing", "pallor", "-lsb-", "Goldstein", "2006", "-rsb-", "which", "difficult", "measure", "experimentally", "we", "model", "effect", "easily", "simulated", "scale", "global", "hemoglobin", "respect", "neutral", "pose", "show", "anger", "fear", "pose", "global", "hemoglobin", "scale", "127", "81", "respectively", "those", "case", "add", "more", "expressiveness", "realism", "image", "Figure", "10", "show", "two", "additional", "physiological", "state", "exercise", "alcohol", "consumption", "apply", "neutral", "pose", "although", "change", "may", "appear", "subtle", "increase", "realism", "convey", "emotion", "free", "animator", "from", "cumbersome", "tweaking", "skin", "texture", "Figure", "13", "show", "close-up", "comparison", "neutral", "disgust", "pose", "where", "automatic", "change", "predict", "we", "model", "clearly", "show", "we", "approach", "general", "enough", "any", "expression", "emotion", "state", "may", "add", "allow", "multiple", "combination", "pose", "-lrb-", "see", "Figure", "11", "-rrb-", "change", "hemoglobin", "distribution", "generate", "we", "model", "show", "section", "encode", "hemoglobin", "change", "directly", "transferrable", "different", "character", "can", "also", "apply", "different", "neutral", "map", "either", "capture", "from", "real", "subject", "create", "manually", "artist", "we", "believe", "feature", "can", "greatly", "improve", "workflow", "production", "environment", "hide", "detail", "facial", "color", "animation", "expose", "useful", "control", "proof-of-concept", "integration", "we", "have", "implement", "shader", "mental", "ray", "within", "Autodesk", "maya", "2010", "use", "render", "small", "cartoonish", "animation", "-lrb-", "see", "video", "supplementary", "material", "-rrb-", "artist", "have", "immediate", "feedback", "color", "variation", "skin", "can", "render", "final", "result", "off-line", "finally", "we", "make", "neutral", "hemoglobin", "melanin", "map", "available", "ACM", "Portal", "together", "skin", "color", "lookup", "table", "map", "can", "directly", "use", "render", "take", "start", "point", "create", "different", "variation", "we", "have", "demonstrate", "efficient", "low-overhead", "skin", "appearance", "rig", "predict", "skin", "color", "change", "during", "facial", "animation", "we", "dynamic", "model", "use", "novel", "local", "histogram", "match", "technique", "allow", "efficient", "calculation", "blood", "perfusion", "skin", "layer", "model", "anatomically", "motivate", "base", "statistical", "information", "gather", "from", "vivo", "measurement", "hemoglobin", "perfusion", "we", "have", "validate", "we", "model", "use", "measurement", "show", "potential", "application", "appearance", "transfer", "synthesis", "novel", "pose", "realistic", "variation", "due", "intrinsic", "chromophore", "blur", "we", "measurement", "we", "rendering", "method", "add", "minimal", "overhead", "lend", "itself", "real-time", "GPU", "implementation", "while", "we", "have", "use", "blend", "shape", "we", "model", "integrate", "well", "any", "standard", "geometric", "rig", "we", "have", "demonstrate", "pre-existing", "workflow", "pipeline", "common", "commercial", "software", "package", "-lrb-", "please", "refer", "video", "-rrb-", "current", "model", "focus", "skin", "color", "only", "exist", "other", "equally", "important", "aspect", "skin", "appearance", "wrinkle", "pore", "however", "present", "geometric", "topographic", "well", "render", "challenge", "coupling", "chromophore", "change", "would", "one", "direction", "future", "work", "use", "more", "standardized", "expression", "classification", "system", "fac", "-lsb-", "sagar", "2006", "-rsb-", "would", "simplify", "use", "we", "appearance", "rig", "other", "field", "behavioral", "cognitive", "science", "we", "method", "could", "also", "use", "inverse", "fashion", "detect", "emotion", "base", "deformation", "color", "cue", "one", "limitation", "lie", "use", "siascope", "algorithm", "able", "detect", "overall", "concentration", "melanin", "hemoglobin", "depth", "deposition", "other", "feature", "hemoglobin", "oxygenation", "we", "plan", "develop", "more", "robust", "system", "capable", "provide", "more", "detailed", "accurate", "physiological", "information" ],
+  "content" : "Here we demonstrate our novel skin appearance rig under various expressions and conditions. All of the images in this section use hemoglobin maps of the 26-year-old male subject and were rendered in real-time. In many of our examples, the hemoglobin maps are inset into the lower-left corner of the images. Note that due to the delicacy of skin color and the widely-varying gamut of display devices we suggest viewing the PDF version of this paper on a color-calibrated monitor. Figure 1 shows five emotional basis states, a sad smile, anger, the neutral pose, fear, and disgust. The hemoglobin maps generated by our rig are shown in Figure 2 . Note the wide variation in appearance across the expressions. Some of the color is caused by blood perfusion due to deformation, while some is due to capillary dilation. In reality, extreme emotions like anger or fear trigger a very strong dilation or constriction of blood vessels. This causes significant involuntary blushing or pallor [Goldstein 2006], which is difficult to measure experimentally. With our model, these effects are easily simulated by scaling the global hemoglobin with respect to the neutral pose, as shown for the anger and fear poses. The global hemoglobin was scaled by 127% and 81% respectively in those cases, adding more expressiveness and realism to the images. Figure 10 shows two additional physiological states, exercise and alcohol consumption, applied to a neutral pose. Although these changes may appear subtle, they increase realism and convey emotions, and free animators from the cumbersome tweaking of skin textures. Figure 13 shows close-up comparisons of the neutral and disgust poses, where the automatic changes predicted by our model are clearly shown. Our approach is general enough that any expression, emotion or state may be added, and allows for multiple combinations of poses (see Figure 11 ). The changes in hemoglobin distribution are generated by our model. As shown in this section, the encoded hemoglobin changes are directly transferrable to different characters. They can also be applied to a different neutral map, either captured from a real subject or created manually by an artist. We believe this feature can greatly improve the workflow in production environments, as it hides the details of facial color animation, but exposes useful controls. As a proof-of-concept integration, we have implemented it as a shader in mental ray R within Autodesk R Maya R 2010, and used it to render a small cartoonish animation (see video in the supplementary material). The artist has immediate feedback on the color variation of the skin, and can render final results off-line. Finally, we make neutral hemoglobin and melanin maps available at ACM Portal, together with the skin color lookup table. The maps can be directly used for rendering or taken as a starting point to create different variations. We have demonstrated an efficient, low-overhead skin appearance rig for predicting skin color changes during facial animation. Our dynamic model uses a novel local histogram matching technique, allowing efficient calculation of blood perfusion in skin layers. The model is anatomically motivated, and is based on statistical information gathered from in vivo measurements of hemoglobin perfusion. We have validated our model using these measurements, and shown potential applications, such as appearance transfer, and the synthesis of novel poses with realistic variations. Due to the intrinsic chromophore blurring in our measurements, our rendering method adds minimal overhead, and lends itself to a real-time GPU implementation. While we have used blend shapes, our model integrates well with any standard geometric rig; we have demonstrated it in a pre-existing workflow pipeline of a common commercial software package (please refer to the video). The current model focuses on skin color only. There exist other equally important aspects to skin appearance, such as wrinkles and pores. These, however, present geometric and topographic as well as rendering challenges. Coupling these to chromophore changes would be one direction for future work. Using a more standardized expression classification system, such as FACS [Sagar 2006], would simplify the use of our appearance rig in other fields, such as the behavioral and cognitive sciences. Our method could also be used in an inverse fashion, to detect emotions based on deformation and color cues. One limitations lies in the use of the SIAscope algorithms. They are able to detect overall concentrations of melanin and hemoglobin, but not depth of deposition, or other features, such as hemoglobin oxygenation. We plan to develop a more robust system capable of providing more detailed and accurate physiological information.",
+  "resources" : [ ]
+}

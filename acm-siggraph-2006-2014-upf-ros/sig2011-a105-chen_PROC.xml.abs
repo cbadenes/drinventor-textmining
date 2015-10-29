@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011-a105-chen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a105-chen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Nonlinear Revision Control for Images",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Hsiang-Ting-Chen",
+      "name" : "Hsiang-Ting",
+      "surname" : "Chen"
+    }, {
+      "uri" : "http://drinventor/Li-Yi-Wei",
+      "name" : "Li-Yi",
+      "surname" : "Wei"
+    }, {
+      "uri" : "http://drinventor/Chun-Fa-Chang",
+      "name" : "Chun-Fa",
+      "surname" : "Chang"
+    } ]
+  },
+  "bagOfWords" : [ "Revision", "control", "vital", "component", "digital", "project", "management", "have", "be", "widely", "deploy", "text", "file", "binary", "file", "other", "hand", "have", "receive", "relatively", "less", "attention", "can", "inconvenient", "graphic", "application", "use", "significant", "amount", "binary", "datum", "image", "video", "mesh", "animation", "exist", "strategy", "store", "whole", "file", "individual", "revision", "simple", "binary", "delta", "could", "consume", "significant", "storage", "obscure", "vital", "semantic", "information", "we", "present", "nonlinear", "revision", "control", "system", "image", "design", "common", "digital", "editing", "sketch", "workflow", "mind", "we", "use", "dag", "-lrb-", "direct", "acyclic", "graph", "-rrb-", "core", "structure", "dag", "node", "represent", "editing", "operation", "dag", "edge", "corresponding", "spatial", "temporal", "semantic", "relationship", "we", "visualize", "we", "dag", "revg", "-lrb-", "revision", "graph", "-rrb-", "which", "provide", "only", "meaningful", "display", "revision", "history", "also", "intuitive", "interface", "common", "revision", "control", "operation", "review", "replay", "diff", "addition", "branch", "merge", "conflict", "resolve", "beyond", "revision", "control", "we", "system", "also", "facilitate", "artistic", "creation", "process", "common", "image", "editing", "digital", "painting", "workflow", "we", "have", "build", "prototype", "system", "upon", "GIMP", "open", "source", "image", "editor", "demonstrate", "its", "effectiveness", "through", "formative", "user", "study", "comparison", "alternative", "revision", "control", "system", "cr", "category", "i.", "3.4", "-lsb-", "Computer", "Graphics", "-rsb-", "Graphics", "Utilities", "Graphics", "editor", "keyword", "revision", "control", "image", "nonlinear", "editing", "interaction", "Links", "dl", "pdf" ],
+  "content" : "Revision control is a vital component of digital project management and has been widely deployed for text files. Binary files, on the other hand, have received relatively less attention. This can be inconvenient for graphics applications that use a significant amount of binary data, such as images, videos, meshes, and animations. Existing strategies such as storing whole files for individual revisions or simple binary deltas could consume significant storage and obscure vital semantic information. We present a nonlinear revision control system for images, designed with the common digital editing and sketching workflows in mind. We use DAG (directed acyclic graph) as the core structure, with DAG nodes representing editing operations and DAG edges the corresponding spatial, temporal and semantic relationships. We visualize our DAG in RevG (revision graph), which provides not only as a meaningful display of the revision history but also an intuitive interface for common revision control operations such as review, replay, diff, addition, branching, merging, and conflict resolving. Beyond revision control, our system also facilitates artistic creation processes in common image editing and digital painting workflows. We have built a prototype system upon GIMP, an open source image editor, and demonstrate its effectiveness through formative user study and comparisons with alternative revision control systems. CR Categories: I.3.4 [Computer Graphics]: Graphics Utilities? Graphics editors; Keywords: revision control, images, nonlinear editing, interaction Links: DL PDF",
+  "resources" : [ ]
+}

@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2006-p494-wonka_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p494-wonka_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Guided Visibility Sampling",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Peter-Wonka",
+      "name" : "Peter",
+      "surname" : "Wonka"
+    }, {
+      "uri" : "http://drinventor/Michael-Wimmer",
+      "name" : "Michael",
+      "surname" : "Wimmer"
+    }, {
+      "uri" : "http://drinventor/Kaichi-Zhou",
+      "name" : "Kaichi",
+      "surname" : "Zhou"
+    }, {
+      "uri" : "http://drinventor/Stefan-Maierhofer",
+      "name" : "Stefan",
+      "surname" : "Maierhofer"
+    }, {
+      "uri" : "http://drinventor/Gerd-Hesina",
+      "name" : "Gerd",
+      "surname" : "Hesina"
+    }, {
+      "uri" : "http://drinventor/Alexander-Reshetov",
+      "name" : "Alexander",
+      "surname" : "Reshetov"
+    } ]
+  },
+  "bagOfWords" : [ "hm1582-05-1-2004", "research", "also", "support", "EU", "scope", "GameTools", "project", "-lrb-", "ist-2-004363", "-rrb-", "NGA", "grant", "we", "thank", "Jiri", "Bittner", "fruitful", "discussion", "thus", "gv", "can", "use", "general", "purpose", "visibility", "tool", "combine", "speed", "ease", "implementation", "sampling-based", "special-purpose", "conservative", "algorithm", "most", "accuracy", "exact", "solution", "we", "have", "provide", "evidence", "guided", "visibility", "sample", "close", "important", "gap", "visibility", "research", "due", "new", "sampling", "strategy", "employ", "algorithm", "its", "accuracy", "competitive", "even", "exact", "conservative", "approach", "while", "also", "extremely", "simple", "implement", "propose", "algorithm", "work", "arbitrary", "so-called", "polygon", "soup", "do", "require", "any", "memory", "beyond", "use", "ray", "caster", "propose", "algorithm", "improve", "efficiency", "previous", "sampling", "strategy", "over", "two", "order", "magnitude", "thereby", "allow", "visibility", "solution", "negligible", "error", "compute", "reasonable", "time", "we", "have", "present", "visibility", "sampling", "algorithm", "compute", "full", "3d", "visibility", "solution", "from", "region", "space" ],
+  "content" : "HM1582-05-1-2004. This research was also supported by the EU in the scope of the GameTools project (IST-2-004363), and by the NGA, grant no. We thank Jiri Bittner for fruitful discussions. Thus, GVS can be used as a general purpose visibility tool. It combines the speed and ease of implementation of sampling-based and special-purpose conservative algorithms with most of the accuracy of exact solutions. We have provided evidence that Guided Visibility Sampling closes an important gap in visibility research. Due to the new sampling strategies employed in the algorithm, its accuracy is competitive even with exact and conservative approaches, while it is also extremely simple to implement. The proposed algorithm works on arbitrary so-called polygon soups and does not require any memory beyond that used by the ray caster. The proposed algorithm improves the efficiency of previous sampling strategies by over two orders of magnitude, thereby allowing visibility solutions with negligible error to be computed in reasonable time. We have presented a visibility sampling algorithm to compute a full 3D visibility solution from a region in space.",
+  "resources" : [ ]
+}

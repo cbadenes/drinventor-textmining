@@ -1,0 +1,54 @@
+{
+  "uri" : "sig2013a-a166-venkataraman_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a166-venkataraman_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "PiCam: An Ultra-Thin High Performance Monolithic Camera Array",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Kartik-Venkataraman",
+      "name" : "Kartik",
+      "surname" : "Venkataraman"
+    }, {
+      "uri" : "http://drinventor/Dan-Lelescu",
+      "name" : "Dan",
+      "surname" : "Lelescu"
+    }, {
+      "uri" : "http://drinventor/Jacques-Duparr?",
+      "name" : "Jacques",
+      "surname" : "Duparr?"
+    }, {
+      "uri" : "http://drinventor/Andrew-McMahon",
+      "name" : "Andrew",
+      "surname" : "McMahon"
+    }, {
+      "uri" : "http://drinventor/Gabriel-Molina",
+      "name" : "Gabriel",
+      "surname" : "Molina"
+    }, {
+      "uri" : "http://drinventor/Priyam-Chatterjee",
+      "name" : "Priyam",
+      "surname" : "Chatterjee"
+    }, {
+      "uri" : "http://drinventor/Robert-Mullis",
+      "name" : "Robert",
+      "surname" : "Mullis"
+    }, {
+      "uri" : "http://drinventor/Shree-Nayar",
+      "name" : "Shree",
+      "surname" : "Nayar"
+    } ]
+  },
+  "bagOfWords" : [ "finally", "we", "would", "like", "acknowledge", "support", "encouragement", "Chris", "Pickett", "we", "also", "extend", "thanks", "those", "help", "preparation", "paper", "include", "Herve", "Hornung", "Lisa", "Garvey", "Stephen", "Williams", "sensor", "lens", "array", "base", "architectural", "specification", "Pelican", "Imaging", "Corporation", "manufacture", "we", "industry", "partner", "Aptina", "Imaging", "-lsb-", "Cho", "et", "al.", "2013", "-rsb-", "Heptagon", "other", "author", "wish", "thank", "people", "whose", "hard", "work", "have", "make", "computational", "camera", "array", "possible", "include", "engineering", "team", "lead", "Purnam", "Sheth", "camera", "basis", "Silicon", "Valley", "startup", "Pelican", "Imaging", "Corporation", "found", "author", "Kartik", "Venkataraman", "assistance", "from", "colleague", "Dan", "Lelescu", "Jacques", "Duparr", "Robert", "Mullis", "Bedabrata", "pain", "privilege", "part", "team", "help", "create", "PiCam", "computational", "camera", "array", "nevertheless", "we", "believe", "continued", "work", "both", "area", "architecture", "have", "potential", "remove", "some", "limitation", "camera", "design", "small", "form", "factor", "device", "enable", "new", "imaging", "application", "algorithm", "computationally", "intensive", "while", "efficiency", "be", "exploit", "allow", "pipeline", "scale", "mobile", "device", "remain", "active", "area", "work", "due", "constrain", "nature", "power", "compute", "availability", "form", "factor", "correction", "artifact", "while", "focus", "paper", "remain", "important", "area", "continue", "research", "artifact", "from", "incorrect", "depth", "estimate", "along", "contour", "object", "close", "camera", "still", "possible", "depend", "scene", "content", "background", "texture" ],
+  "content" : "Finally, we would like to acknowledge the support and encouragement of Chris Pickett. We also extend thanks to those that helped with the preparation of this paper, including Herve Hornung, Lisa Garvey, and Stephen Williams. The sensor and lens arrays are based on the architectural specification of Pelican Imaging Corporation and manufactured by our industry partners Aptina Imaging [Cho et al. 2013], Heptagon and others. The authors wish to thank the people whose hard work has made this computational camera array possible, including the engineering team led by Purnam Sheth. This camera is the basis of Silicon Valley startup Pelican Imaging Corporation founded by the author Kartik Venkataraman with assistance from colleagues Dan Lelescu, Jacques Duparr?, Robert Mullis, and Bedabrata Pain. It is a privilege to be part of the team that helped create the PiCam computational camera array. Nevertheless, we believe that with continued work in both of these areas this architecture has the potential to remove some of the limitations to camera design for small form factor devices, and enable new imaging applications. The algorithms are computationally intensive and while efficiencies are being exploited to allow the pipeline to scale to mobile devices, this remains an active area of work due to the constrained nature of power and compute  availability in these form factors. The correction of these artifacts, while not a focus of this paper, remains an important area of continuing research. Artifacts from incorrect depth estimates, along the contours of objects close to the camera, are still possible depending on scene content and background texture.",
+  "resources" : [ ]
+}

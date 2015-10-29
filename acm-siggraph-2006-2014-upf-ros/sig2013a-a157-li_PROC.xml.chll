@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2013a-a157-li_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a157-li_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Analyzing Growing Plants from 4D Point Cloud Data",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Xiaochen-Fan",
+      "name" : "Xiaochen",
+      "surname" : "Fan"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    }, {
+      "uri" : "http://drinventor/Daniel A.-Chamovitz",
+      "name" : "Daniel A.",
+      "surname" : "Chamovitz"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Baoquan-Chen",
+      "name" : "Baoquan",
+      "surname" : "Chen"
+    } ]
+  },
+  "bagOfWords" : [ "we", "approach", "first", "building", "geometric", "feature", "flatness", "orientation", "track", "structure", "correspondence", "base", "feature", "analysis", "work", "around", "challenge", "we", "bi-directional", "approach", "fully", "take", "advantage", "premise", "carry", "new", "structure", "detect", "robustly", "future", "moment", "backward", "locate", "its", "birth", "moment", "forward", "propagate", "future", "growth", "future", "we", "plan", "similarly", "analyze", "plant", "growth", "outdoor", "setting", "another", "venue", "future", "work", "incorporate", "color", "information", "analysis" ],
+  "content" : "Our approach of first building geometric features, such as flatness and orientation, and then tracking structure correspondence based on feature analysis, works around this challenge. Our bi-directional approach fully takes advantage of the premises by carrying a new structure, detected robustly at a future moment, backward in locating its birth moment, and forward in propagating to future growth. In the future, we plan to similarly analyze plant growth, but in outdoor settings. Another venue of future work is incorporating color information into the analysis.",
+  "resources" : [ ]
+}

@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2008a-a162-thomaszewski_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a162-thomaszewski_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Magnets in Motion",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "we", "introduce", "magnetic", "interaction", "rigid", "body", "simulation", "we", "approach", "base", "equivalent", "dipole", "method", "discrete", "from", "ground", "up", "we", "approach", "symmetric", "we", "base", "both", "field", "force", "computation", "dipole", "interaction", "enrich", "rigid", "body", "simulation", "magnetism", "allow", "many", "new", "interesting", "possibility", "computer", "animation", "special", "effect", "we", "method", "also", "allow", "accurate", "computation", "magnetic", "field", "arbitrarily", "shaped", "object", "which", "especially", "interesting", "pedagogy", "allow", "user", "visually", "discover", "property", "magnetism", "which", "would", "otherwise", "difficult", "grasp", "we", "demonstrate", "we", "method", "variety", "problem", "we", "result", "reflect", "intuitive", "well", "surprising", "effect", "we", "method", "fast", "can", "couple", "any", "rigid", "body", "solver", "simulate", "dozen", "magnetic", "object", "interactive", "rate", "cr", "category", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "three-dimensional", "graphic", "realism?animation", "Keywords", "magnetic", "field", "force", "rigid", "body", "dynamics" ],
+  "content" : "We introduce magnetic interaction for rigid body simulation. Our approach is based on an equivalent dipole method and as such it is discrete from the ground up. Our approach is symmetric as we base both field and force computations on dipole interactions. Enriching rigid body simulation with magnetism allows for many new and interesting possibilities in computer animation and special effects. Our method also allows the accurate computation of magnetic fields for arbitrarily shaped objects, which is especially interesting for pedagogy as it allows the user to visually discover properties of magnetism which would otherwise be difficult to grasp. We demonstrate our method on a variety of problems and our results reflect intuitive as well as surprising effects. Our method is fast and can be coupled with any rigid body solver to simulate dozens of magnetic objects at interactive rates. CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism?Animation; Keywords: Magnetic fields and forces, rigid body dynamics",
+  "resources" : [ ]
+}

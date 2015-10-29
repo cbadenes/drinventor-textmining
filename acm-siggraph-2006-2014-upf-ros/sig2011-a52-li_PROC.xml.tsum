@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2011-a52-li_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a52-li_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "GlobFit: Consistently Fitting Primitives by Discovering Global Relations",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Xiaokun-Wu",
+      "name" : "Xiaokun",
+      "surname" : "Wu"
+    }, {
+      "uri" : "http://drinventor/Yiorgos-Chrysanthou",
+      "name" : "Yiorgos",
+      "surname" : "Chrysanthou"
+    }, {
+      "uri" : "http://drinventor/Andrei-Sharf",
+      "name" : "Andrei",
+      "surname" : "Sharf"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    } ]
+  },
+  "bagOfWords" : [ "ACM", "SIGGRAPH", "27", "43", "11", "ACM", "SIGGRAPH", "26", "22", "ACM", "SIGGRAPH", "71", "78", "ACM", "SIGGRAPH", "28", "33", "10", "ACM", "SIGGRAPH", "24", "544", "552", "ACM", "SIGGRAPH", "67", "76", "ACM", "SIGGRAPH", "29", "104:1", "104:10", "ACM", "SIGGRAPH", "ASIA", "29", "152:1", "152:10", "we", "perform", "global", "alignment", "one", "after", "another", "without", "break", "already", "learn", "satisfied", "relation", "GlobFit", "consistently", "fitting", "primitive", "discover", "global", "relation" ],
+  "content" : "ACM SIGGRAPH 27, 3, #43, 1?11. ACM SIGGRAPH 26, 3, 22. of ACM SIGGRAPH, 71?78. ACM SIGGRAPH 28, 3, #33, 1?10. ACM SIGGRAPH 24, 544?552. of ACM SIGGRAPH, 67?76. ACM SIGGRAPH 29, 104:1?104:10. ACM SIGGRAPH ASIA 29, 152:1?152:10. We perform global alignments one after another, without breaking already learned and satisfied relations. GlobFit: Consistently Fitting Primitives by Discovering Global Relations.",
+  "resources" : [ ]
+}

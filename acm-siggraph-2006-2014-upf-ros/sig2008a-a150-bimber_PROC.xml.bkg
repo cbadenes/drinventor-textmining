@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2008a-a150-bimber_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a150-bimber_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Superimposing Dynamic Range",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Oliver-Bimber",
+      "name" : "Oliver",
+      "surname" : "Bimber"
+    }, {
+      "uri" : "http://drinventor/Daisuke-Iwai",
+      "name" : "Daisuke",
+      "surname" : "Iwai"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

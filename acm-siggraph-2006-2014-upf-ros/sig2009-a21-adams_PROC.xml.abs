@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2009-a21-adams_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a21-adams_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Gaussian KD-Trees for Fast High-Dimensional Filtering",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "we", "propose", "method", "accelerate", "broad", "class", "non-linear", "filter", "include", "bilateral", "non-local", "means", "other", "related", "filter", "filter", "can", "all", "express", "similar", "way", "First", "assign", "each", "value", "filter", "position", "some", "vector", "space", "replace", "every", "value", "weighted", "linear", "combination", "all", "value", "weight", "determine", "gaussian", "function", "distance", "between", "position", "value", "pixel", "color", "position", "-lrb-", "-rrb-", "coordinate", "describe", "gaussian", "blur", "position", "instead", "-lrb-", "-rrb-", "coordinate", "five-dimensional", "space-color", "volume", "describe", "bilateral", "filter", "we", "instead", "set", "position", "local", "patch", "color", "around", "associate", "pixel", "describe", "non-local", "means", "we", "describe", "monte-carlo", "kdtree", "sampling", "algorithm", "efficiently", "compute", "any", "filter", "can", "express", "way", "along", "GPU", "implementation", "technique", "we", "use", "algorithm", "implement", "accelerate", "bilateral", "filter", "respect", "full", "3d", "color", "distance", "accelerate", "non-local", "means", "single", "image", "volume", "unaligned", "burst", "image", "denoising", "fast", "adaptation", "non-local", "means", "geometry", "we", "have", "value", "filter", "each", "assign", "position", "d-dimensional", "space", "we", "space", "complexity", "-lrb-", "dn", "-rrb-", "we", "time", "complexity", "-lrb-", "dn", "log", "-rrb-", "whereas", "exist", "method", "typically", "either", "exponential", "quadratic", "n.", "cr", "category", "i.", "4.3", "-lsb-", "image", "processing", "computer", "Vision", "-rsb-", "enhancement?filtering", "i.", "3.5", "-lsb-", "Computer", "Graphics", "-rsb-", "computational", "geometry", "object", "modeling?geometric", "algorithm", "language", "system", "Keywords", "bilateral", "filter", "non-local", "means", "geometry", "filter", "denoising", "ACM", "Reference", "Format", "Adams", "a.", "Gelfand", "N.", "Dolson", "J.", "Levoy", "M.", "2009" ],
+  "content" : "We propose a method for accelerating a broad class of non-linear filters that includes the bilateral, non-local means, and other related filters. These filters can all be expressed in a similar way: First, assign each value to be filtered a position in some vector space. Then, replace every value with a weighted linear combination of all values, with weights determined by a Gaussian function of distance between the positions. If the values are pixel colors and the positions are (x, y) coordinates, this describes a Gaussian blur. If the positions are instead (x, y, r, g, b) coordinates in a five-dimensional space-color volume, this describes a bilateral filter. If we instead set the positions to local patches of color around the associated pixel, this describes non-local means. We describe a Monte-Carlo kdtree sampling algorithm that efficiently computes any filter that can be expressed in this way, along with a GPU implementation of this technique. We use this algorithm to implement an accelerated bilateral filter that respects full 3D color distance; accelerated non-local means on single images, volumes, and unaligned bursts of images for denoising; and a fast adaptation of non-local means to geometry. If we have n values to filter, and each is assigned a position in a d-dimensional space, then our space complexity is O(dn) and our time complexity is O(dn log n), whereas existing methods are typically either exponential in d or quadratic in n. CR Categories: I.4.3 [Image Processing and Computer Vision]: Enhancement?Filtering I.3.5 [Computer Graphics]: Computational Geometry and Object Modeling?Geometric algorithms, languages, and systems Keywords: bilateral filter, non-local means, geometry filtering,\n      denoising ACM Reference Format Adams, A., Gelfand, N., Dolson, J., Levoy, M. 2009.",
+  "resources" : [ ]
+}

@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2006-p494-wonka_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p494-wonka_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Guided Visibility Sampling",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Peter-Wonka",
+      "name" : "Peter",
+      "surname" : "Wonka"
+    }, {
+      "uri" : "http://drinventor/Michael-Wimmer",
+      "name" : "Michael",
+      "surname" : "Wimmer"
+    }, {
+      "uri" : "http://drinventor/Kaichi-Zhou",
+      "name" : "Kaichi",
+      "surname" : "Zhou"
+    }, {
+      "uri" : "http://drinventor/Stefan-Maierhofer",
+      "name" : "Stefan",
+      "surname" : "Maierhofer"
+    }, {
+      "uri" : "http://drinventor/Gerd-Hesina",
+      "name" : "Gerd",
+      "surname" : "Hesina"
+    }, {
+      "uri" : "http://drinventor/Alexander-Reshetov",
+      "name" : "Alexander",
+      "surname" : "Reshetov"
+    } ]
+  },
+  "bagOfWords" : [ "respect", "avenue", "future", "work", "incorporate", "geometric", "lod", "sampling", "framework", "similar", "vlod", "system", "propose", "Chhugani", "et", "al.", "-lsb-", "2005", "-rsb-", "furthermore", "small", "modification", "gv", "make", "algorithm", "better", "suitable", "progressive", "evaluation", "instead", "interleave", "ab", "random", "sample", "from", "beginning", "create", "certain", "number", "-lrb-", "e.g.", "1m", "-rrb-", "random", "sample", "startup", "phase", "only", "use", "those", "seed", "ABS", "ray" ],
+  "content" : "In this respect, an avenue of future work is to incorporate geometric LOD into the sampling framework, similar to the vLOD system proposed by Chhugani et al. [2005]. Furthermore, a small modification to GVS makes the algorithm better suitable to progressive evaluation: instead of interleaving ABS and random samples from the beginning, create a certain number (e.g., 1M) of random samples in a startup phase, and only then use those to seed the ABS rays.",
+  "resources" : [ ]
+}

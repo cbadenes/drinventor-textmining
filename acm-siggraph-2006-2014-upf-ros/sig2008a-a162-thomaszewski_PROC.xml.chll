@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2008a-a162-thomaszewski_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a162-thomaszewski_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Magnets in Motion",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "future", "work", "since", "we", "approach", "exhibit", "good", "approximation", "quality", "robustness", "already", "low", "cell", "density", "could", "use", "fast", "preview", "stage", "heavy-weight", "fem", "simulation", "engineering", "application", "regard", "could", "very", "interesting", "extension", "include", "dc", "even", "ac", "current", "source", "magnetic", "field", "include", "force", "torque", "act", "same", "current" ],
+  "content" : "Future Work Since our approach exhibits good approximation quality and robustness already with a low cell density, it could be used as a fast preview stage to heavy-weight FEM simulations in engineering applications. In this regard, it could be a very interesting extension to include DC or even AC currents as sources of magnetic field and to include force and torque acting on the same currents.",
+  "resources" : [ ]
+}

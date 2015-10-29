@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2011-p71-wang-fixed_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/p71-wang-fixed_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Data-Driven Elastic Models for Cloth: Modeling and Measurement",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Huamin-Wang",
+      "name" : "Huamin",
+      "surname" : "Wang"
+    }, {
+      "uri" : "http://drinventor/James F.-O'Brien",
+      "name" : "James F.",
+      "surname" : "O'Brien"
+    }, {
+      "uri" : "http://drinventor/Ravi-Ramamoorthi",
+      "name" : "Ravi",
+      "surname" : "Ramamoorthi"
+    } ]
+  },
+  "bagOfWords" : [ "http://www.zwick.com/en/applications/metals/stripsheet/biaxial", "tensile-test.html", "Biaxial", "Tensile", "Test", "Jan.", "Zwick", "Roell", "G.", "2011", "Textile", "Research", "Journal", "-lrb-", "July", "-rrb-", "533", "542", "on-line", "measurement", "fabric", "bend", "behavior", "Zhou", "N.", "Ghosh", "T.", "1998", "finite", "element", "analysis", "design", "41", "-lrb-", "May", "-rrb-", "963", "988", "analysis", "geometrically", "nonlinear", "anisotropic", "membrane", "theory", "verification", "Zhang", "W.", "Leonard", "J.", "L.", "Accorsi", "M.", "L.", "2005", "Biomaterials", "31", "-lrb-", "November", "-rrb-", "8484", "8493" ],
+  "content" : "http://www.zwick.com/en/applications/metals/stripsheet/biaxial- tensile-test.html. Biaxial Tensile Test, Jan. Zwick Roell, G., 2011. Textile Research Journal, 7 (July), 533?542. On-line measurement of fabric bending behavior. Zhou, N., and Ghosh, T. 1998. Finite Elements in Analysis and Design 41 (May), 963?988. Analysis of geometrically nonlinear anisotropic membranes: theory and verification. Zhang, W., Leonard, J. L., and Accorsi, M. L. 2005. Biomaterials 31 (November), 8484?8493.",
+  "resources" : [ ]
+}

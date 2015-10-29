@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2014-a37-su_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a37-su_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Estimating Image Depth Using Shape Collections",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Hao-Su",
+      "name" : "Hao",
+      "surname" : "Su"
+    }, {
+      "uri" : "http://drinventor/Qixing-Huang",
+      "name" : "Qixing",
+      "surname" : "Huang"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    }, {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Leonidas J.-Guibas",
+      "name" : "Leonidas J.",
+      "surname" : "Guibas"
+    } ]
+  },
+  "bagOfWords" : [ "image", "while", "easy", "acquire", "view", "publish", "share", "lack", "critical", "depth", "information", "pose", "serious", "bottleneck", "many", "image", "manipulation", "editing", "retrieval", "task", "paper", "we", "consider", "problem", "add", "depth", "image", "object", "effectively", "lifting", "back", "3d", "exploit", "collection", "align", "3d", "model", "related", "object", "we", "key", "insight", "even", "when", "image", "object", "contain", "shape", "collection", "network", "shape", "implicitly", "characterize", "shape-specific", "deformation", "subspace", "regularize", "problem", "enable", "robust", "diffusion", "depth", "information", "from", "shape", "collection", "input", "image", "we", "evaluate", "we", "fully", "automatic", "approach", "diverse", "challenging", "input", "image", "validate", "result", "against", "kinect", "depth", "reading", "demonstrate", "several", "imaging", "application", "include", "depth-enhanced", "image", "editing", "image", "relighting", "cr", "category", "i.", "3.5", "-lsb-", "Computer", "Graphics", "-rsb-", "computational", "geometry", "object", "modeling?geometric", "algorithm", "keyword", "data-driven", "shape", "analysis", "pose", "estimation", "depth", "estimation", "image", "retrieval", "shape", "collection" ],
+  "content" : "Images, while easy to acquire, view, publish, and share, they lack critical depth information. This poses a serious bottleneck for many image manipulation, editing, and retrieval tasks. In this paper we consider the problem of adding depth to an image of an object, effectively ?lifting? it back to 3D, by exploiting a collection of aligned 3D models of related objects. Our key insight is that, even when the imaged object is not contained in the shape collection, the network of shapes implicitly characterizes a shape-specific deformation subspace that regularizes the problem and enables robust diffusion of depth information from the shape collection to the input image. We evaluate our fully automatic approach on diverse and challenging input images, validate the results against Kinect depth readings, and demonstrate several imaging applications including depth-enhanced image editing and image relighting. CR Categories: I.3.5 [Computer Graphics]: Computational Geometry and Object Modeling?Geometric algorithms. Keywords: data-driven shape analysis, pose estimation, depth estimation, image retrieval, shape collections",
+  "resources" : [ ]
+}

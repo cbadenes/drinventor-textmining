@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2006-p805-irving_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p805-irving_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Efficient Simulation of Large Bodies of Water by Coupling Two and Three Dimensional Techniques",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Geoffrey-Irving",
+      "name" : "Geoffrey",
+      "surname" : "Irving"
+    }, {
+      "uri" : "http://drinventor/Eran-Guendelman",
+      "name" : "Eran",
+      "surname" : "Guendelman"
+    }, {
+      "uri" : "http://drinventor/Frank-Losasso",
+      "name" : "Frank",
+      "surname" : "Losasso"
+    }, {
+      "uri" : "http://drinventor/Ronald-Fedkiw",
+      "name" : "Ronald",
+      "surname" : "Fedkiw"
+    } ]
+  },
+  "bagOfWords" : [ "we", "have", "present", "novel", "method", "simulation", "large", "body", "water", "combine", "two-dimensional", "three-dimensional", "simulation", "technique", "bulk", "water", "volume", "represent", "tall", "cell", "similar", "height", "field", "method", "surface", "layer", "water", "simulated", "state", "art", "fully", "three-dimensional", "Navier-Stokes", "free", "surface", "solver", "algorithm", "work", "well", "capture", "detailed", "surface", "motion", "represent", "detailed", "bottom", "topography", "we", "general", "philosophy", "use", "best", "available", "method", "surface", "layer", "where", "we", "expect", "interesting", "detail", "coarsen", "mesh", "away", "from", "interface", "efficiency", "like", "shallow", "water", "we", "method", "only", "admit", "computational", "gain", "flow", "heavily", "dominate", "gravity", "where", "large", "portion", "water", "near", "vertical", "equilibrium", "against", "ground", "general", "we", "believe", "best", "approach", "any", "simulation", "uniform", "grid", "capture", "interesting", "flow", "feature", "coarsen", "vertically", "use", "we", "method", "area", "where", "linear", "pressure", "profile", "sufficient", "refine", "uniform", "cell", "use", "octree", "area", "where", "more", "resolution", "desirable", "finally", "we", "note", "effect", "bottom", "topography", "surface", "diminish", "increase", "depth", "deep", "water", "limit", "effect", "negligible", "however", "we", "interested", "problem", "shallow", "water", "regime", "where", "tall", "cell", "almost", "exclusively", "use" ],
+  "content" : "We have presented a novel method for the simulation of large bodies of water by combining two-dimensional and three-dimensional simulation techniques. The bulk of the water volume is represented with tall cells similar to a height field method, and a surface layer of water is simulated with a state of the art, fully three-dimensional Navier-Stokes free surface solver. This algorithm works well for capturing detailed surface motion and for representing detailed bottom topography. Our general philosophy is to use the best available method in the surface layer where we expect interesting detail, and to coarsen the mesh away from the interface for efficiency. Like shallow water, our method only admits computational gains for flows heavily dominated by gravity, where a large portion of the water is in near vertical equilibrium against the ground. In general, we believe that the best approach for any simulation is to start with a uniform grid that captures the interesting flow features, coarsen vertically using our method in areas where linear pressure profiles are sufficient, and then refine uniform cells using an octree in areas where more resolution is desirable. Finally, we note that the effects of bottom topography on the surface diminish with increasing depth, and in the deep water limit the effects are negligible. However, we are interested in problems in the shallow water regime, where tall cells are almost exclusively used.",
+  "resources" : [ ]
+}

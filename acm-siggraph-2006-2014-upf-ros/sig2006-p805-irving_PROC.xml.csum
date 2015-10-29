@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2006-p805-irving_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p805-irving_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Efficient Simulation of Large Bodies of Water by Coupling Two and Three Dimensional Techniques",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Geoffrey-Irving",
+      "name" : "Geoffrey",
+      "surname" : "Irving"
+    }, {
+      "uri" : "http://drinventor/Eran-Guendelman",
+      "name" : "Eran",
+      "surname" : "Guendelman"
+    }, {
+      "uri" : "http://drinventor/Frank-Losasso",
+      "name" : "Frank",
+      "surname" : "Losasso"
+    }, {
+      "uri" : "http://drinventor/Ronald-Fedkiw",
+      "name" : "Ronald",
+      "surname" : "Fedkiw"
+    } ]
+  },
+  "bagOfWords" : [ "g.i.", "support", "part", "NSF", "Graduate", "Fellowship", "Research", "support", "part", "ONR", "YIP", "award", "pecase", "award", "-lrb-", "onr", "n00014-01-1-0620", "-rrb-", "Packard", "Foundation", "Fellowship", "Sloan", "Research", "Fellowship", "ONR", "n00014-03-1-0071", "onr", "n00014-02-1-0720", "onr", "n00014-05-1-0479", "-lrb-", "SUN", "computing", "cluster", "-rrb-", "aro", "daad19-03-1-0331", "nsf", "iis-0326388", "nsf", "itr-0205671", "nsf", "itr-0121288", "nsf", "aci-0323866", "NIH", "u54-gm072970", "however", "we", "interested", "problem", "shallow", "water", "regime", "where", "tall", "cell", "almost", "exclusively", "use", "finally", "we", "note", "effect", "bottom", "topography", "surface", "diminish", "increase", "depth", "deep", "water", "limit", "effect", "negligible", "general", "we", "believe", "best", "approach", "any", "simulation", "uniform", "grid", "capture", "interesting", "flow", "feature", "coarsen", "vertically", "use", "we", "method", "area", "where", "linear", "pressure", "profile", "sufficient", "refine", "uniform", "cell", "use", "octree", "area", "where", "more", "resolution", "desirable", "like", "shallow", "water", "we", "method", "only", "admit", "computational", "gain", "flow", "heavily", "dominate", "gravity", "where", "large", "portion", "water", "near", "vertical", "equilibrium", "against", "ground", "we", "general", "philosophy", "use", "best", "available", "method", "surface", "layer", "where", "we", "expect", "interesting", "detail", "coarsen", "mesh", "away", "from", "interface", "efficiency", "algorithm", "work", "well", "capture", "detailed", "surface", "motion", "represent", "detailed", "bottom", "topography", "bulk", "water", "volume", "represent", "tall", "cell", "similar", "height", "field", "method", "surface", "layer", "water", "simulated", "state", "art", "fully", "three-dimensional", "Navier-Stokes", "free", "surface", "solver", "we", "have", "present", "novel", "method", "simulation", "large", "body", "water", "combine", "two-dimensional", "three-dimensional", "simulation", "technique" ],
+  "content" : "G.I. was supported in part by an NSF Graduate Fellowship. Research supported in part by an ONR YIP award and a PECASE award (ONR N00014-01-1-0620), a Packard Foundation Fellowship, a Sloan Research Fellowship, ONR N00014-03-1-0071, ONR N00014-02-1-0720, ONR N00014-05-1-0479 (for a SUN computing cluster), ARO DAAD19-03-1-0331, NSF IIS-0326388, NSF  ITR-0205671, NSF ITR-0121288, NSF ACI-0323866 and NIH U54-GM072970. However, we are interested in problems in the shallow water regime, where tall cells are almost exclusively used. Finally, we note that the effects of bottom topography on the surface diminish with increasing depth, and in the deep water limit the effects are negligible. In general, we believe that the best approach for any simulation is to start with a uniform grid that captures the interesting flow features, coarsen vertically using our method in areas where linear pressure profiles are sufficient, and then refine uniform cells using an octree in areas where more resolution is desirable. Like shallow water, our method only admits computational gains for flows heavily dominated by gravity, where a large portion of the water is in near vertical equilibrium against the ground. Our general philosophy is to use the best available method in the surface layer where we expect interesting detail, and to coarsen the mesh away from the interface for efficiency. This algorithm works well for capturing detailed surface motion and for representing detailed bottom topography. The bulk of the water volume is represented with tall cells similar to a height field method, and a surface layer of water is simulated with a state of the art, fully three-dimensional Navier-Stokes free surface solver. We have presented a novel method for the simulation of large bodies of water by combining two-dimensional and three-dimensional simulation techniques.",
+  "resources" : [ ]
+}

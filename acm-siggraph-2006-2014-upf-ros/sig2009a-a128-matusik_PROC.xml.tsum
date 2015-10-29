@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2009a-a128-matusik_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009a/a128-matusik_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Printing Spatially-Varying Reflectance",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Wojciech-Matusik",
+      "name" : "Wojciech",
+      "surname" : "Matusik"
+    }, {
+      "uri" : "http://drinventor/Boris-Ajdin",
+      "name" : "Boris",
+      "surname" : "Ajdin"
+    }, {
+      "uri" : "http://drinventor/Jinwei-Gu",
+      "name" : "Jinwei",
+      "surname" : "Gu"
+    }, {
+      "uri" : "http://drinventor/Jason-Lawrence",
+      "name" : "Jason",
+      "surname" : "Lawrence"
+    }, {
+      "uri" : "http://drinventor/Hendrik P. A.-Lensch",
+      "name" : "Hendrik P. A.",
+      "surname" : "Lensch"
+    }, {
+      "uri" : "http://drinventor/Fabio-Pellacini",
+      "name" : "Fabio",
+      "surname" : "Pellacini"
+    }, {
+      "uri" : "http://drinventor/Szymon-Rusinkiewicz",
+      "name" : "Szymon",
+      "surname" : "Rusinkiewicz"
+    } ]
+  },
+  "bagOfWords" : [ "we", "note", "approach", "necessarily", "map", "each", "target", "brdf", "convex", "linear", "combination", "printer", "brdf", "we", "approach", "gamut", "mapping", "simply", "map", "each", "basis", "material", "we", "factored", "target", "svbrdf", "closest", "brdf", "representable", "linear", "combination", "printer", "brdf", "thus", "remainder", "we", "pipeline", "can", "assume", "all", "brdf", "fall", "within", "space", "span", "printer", "brdf", "brdf", "second", "third", "fourth", "row", "longer", "distinct", "have", "be", "map", "same", "printer", "brdf", "although", "we", "could", "simply", "map", "each", "target", "brdf", "closest", "printable", "brdf", "-lrb-", "discuss", "section", "3.2", "-rrb-", "would", "lead", "undesirable", "clamp", "artifact", "target", "brdf", "fall", "outside", "gamut", "available", "ink", "we", "find", "most", "extreme", "brdf", "present", "document", "document", "representable", "convex", "linear", "combination", "they", "map", "only", "those", "brdf", "printer", "gamut", "because", "each", "target", "brdf", "construction", "convex", "combination", "target", "basis", "brdf", "which", "turn", "express", "convex", "combination", "printer", "brdf", "further", "direction", "future", "work", "develop", "device", "allow", "dynamically", "change", "between", "different", "brdf", "lead", "true", "brdf", "display", "target", "basis", "brdf", "brdf", "Distance", "Metric", "order", "perform", "operation", "minimum-error", "projection", "brdf", "necessary", "have", "distance", "metric" ],
+  "content" : "We note that this approach necessarily maps each target BRDF into a convex linear combination of the printer BRDFs. Our approach to gamut mapping is simply to map each basis material of our factored target svBRDF to the closest BRDF representable as a linear combination of printer BRDFs. Thus, the remainder of our pipeline can assume that all BRDFs will fall within the space spanned by the printer BRDFs. That is, the BRDFs in the second, third, and fourth rows are no longer distinct, but have been mapped to the same printer BRDF. Although we could simply map each target BRDF to the closest printable BRDF (as discussed in Section 3.2), this would lead to undesirable clamping artifacts if target BRDFs fall outside the gamut of the available inks. We find the ?most extreme? BRDFs present in the document, such that the document is representable as a convex linear combination of them, then map only those BRDFs to the printer gamut. This is because each target BRDF is, by construction, a convex combination of the target basis BRDFs, which in turn are expressed as convex combinations of the printer BRDFs. A further direction for future work is developing devices that allow dynamically changing between different BRDFs, leading to a true ?BRDF display. Target Basis BRDFs BRDF Distance Metric: In order to perform operations such as minimum-error projection of BRDFs, it is necessary to have a distance metric.",
+  "resources" : [ ]
+}

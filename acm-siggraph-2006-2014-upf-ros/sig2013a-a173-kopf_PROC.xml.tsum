@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2013a-a173-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a173-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Content-Adaptive Image Downscaling",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Ariel-Shamir",
+      "name" : "Ariel",
+      "surname" : "Shamir"
+    }, {
+      "uri" : "http://drinventor/Pieter-Peers",
+      "name" : "Pieter",
+      "surname" : "Peers"
+    } ]
+  },
+  "bagOfWords" : [ "however", "since", "correspond", "output", "pixel", "number", "constraint", "kernel", "necessary", "due", "application", "image", "downscaling", "subfigure", "-lrb-", "-rrb-", "kernel", "keep", "small", "color", "variance", "lead", "solution", "where", "one", "kernel", "grab", "all", "dark", "pixel", "line", "while", "other", "kernel", "grab", "light", "pixel", "surrounding", "we", "algorithm", "rely", "number", "heuristic", "constraint", "prevent", "certain", "downscale", "artifact", "-lrb-", "section", "-rrb-", "downscale", "perhaps", "most", "commonly", "use", "image", "operation", "today", "first", "number", "kernel", "must", "equal", "number", "output", "pixel", "hence", "kernel", "can", "vanish", "during", "optimization", "we", "optimize", "kernel", "represent", "input", "image", "well", "find", "output", "image", "from", "which", "input", "can", "well", "reconstruct", "downscale", "more", "restricted", "problem", "than", "general", "signal", "reconstruction", "thus", "find", "optimal", "kernel", "shape", "weight", "minimize", "reconstruction", "error", "sufficient", "condition", "obtain", "good", "downscaled", "result", "downscale", "we", "algorithm", "particularly", "well", "suit", "downscale", "cartoon", "vector", "art", "image", "create", "pixel", "art", "we", "interpret", "each", "input", "image", "pixel", "sample", "draw", "randomly", "from", "one", "local", "kernel", "uniform", "probability", "sampling", "local", "kernel", "-lrb-", "also", "unknown", "-rrb-", "kernel", "domain", "-lrb-", "-rrb-", "-lsb-", "-rsb-", "bilateral", "gaussian", "kernel", "we", "case", "i.e.", "we", "denote", "value", "kernel", "pixel" ],
+  "content" : "However, since they correspond to output pixels, a number of constraints on the kernels are necessary due to the application to image downscaling. In subfigure (b) the kernels keep a small color variance, leading to a solution where one kernel grabs all dark pixels on the line, while the other kernels grab the light pixels in the surrounding. Our algorithm relies on a number of heuristic constraints to prevent certain downscaling artifacts (Section 4). Downscaling is perhaps the most commonly used image operation today. First, the number of kernels must be equal to the number of output pixels, hence, no kernel can vanish during optimization. We optimize these kernels to represent the input image well, by finding an output image from which the input can be well reconstructed. Downscaling is a more restricted problem than general signal reconstruction, and thus finding the optimal kernel shape and weight that minimizes the reconstruction error is not a sufficient condition for obtaining a good downscaled result. Downscaling: Our algorithm is particularly well suited for downscaling cartoon and vector art images to create pixel art. We interpret each input image pixel as a sample drawn randomly from one of the local kernels with uniform probability and then sampling this local kernel. The (also unknown) kernels w k : domain(X) ? [0, 1] are bilateral Gaussian kernels in our case, i.e., we denote the value of kernel k at pixel i as:",
+  "resources" : [ ]
+}

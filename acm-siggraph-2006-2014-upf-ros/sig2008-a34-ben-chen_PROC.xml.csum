@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2008-a34-ben-chen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008/a34-ben-chen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Variational Harmonic Maps for Space Deformation",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Mirela-Ben-Chen",
+      "name" : "Mirela",
+      "surname" : "Ben-Chen"
+    }, {
+      "uri" : "http://drinventor/Ofir-Weber",
+      "name" : "Ofir",
+      "surname" : "Weber"
+    }, {
+      "uri" : "http://drinventor/Craig-Gotsman",
+      "name" : "Craig",
+      "surname" : "Gotsman"
+    } ]
+  },
+  "bagOfWords" : [ "finally", "hessian", "matrix", "-lrb-", "-rrb-", "-lrb-", "-rrb-", "-lrb-", "-rrb-", "-lrb-", "-rrb-", "-lrb-", "-rrb-", "??", "-lrb-", "-rrb-", "-lrb-", "-lrb-", "-rrb-", "-rrb-", "-lrb-", "-lrb-", "-lrb-", "-rrb-", "-rrb-", "-rrb-", "-lsb-", "-rsb-", "??", "where", "give", "vector", "-lsb-", "-rsb-", "skew", "symmetric", "matrix", "any", "vector", "-lsb-", "-rsb-", "v?w", "derive", "hessian", "matrix", "we", "need", "jacobian", "matrix", "gradient", "vector", "again", "follow", "Urago", "-lsb-", "2000", "-rsb-", "take", "derivative", "??", "??", "-lrb-", "-rrb-", "Hessians", "follow", "Urago", "-lsb-", "2000", "-rsb-", "we", "obtain", "-lrb-", "-rrb-", "vol", "-lrb-", "-rrb-", "gradient", "normalize", "outward", "point", "normal", "area", "face", "t.", "-lrb-", "log", "-rrb-", "-lrb-", "-rrb-", "tetrahedron", "??", "sign", "solid", "angle", "point", "subtend", "face", "vol", "its", "signed", "volume", "give", "point", "face", "-lrb-", "-rrb-", "we", "define", "tetrahedron", "span", "four", "point", "Figure", "15", "value", "determine", "sum", "value", "face", "neighbor", "mapping", "define", "vertex", "face", "mesh", "respectively", "so", "we", "must", "provide", "each", "face", "scalar", "value", "each", "vertex", "scalar", "value" ],
+  "content" : "Finally the Hessian matrices of ? v and ? t are: H ( ? t ) = ? J ( P t ) H ( ? v ) = ? t ? ? N ( v ) 2 1 A t ? ? d v t ? ? ? J ( P t ) These are: ?? t = ? 3 J v t i C v t i ( e v i + 1 ? 1 + e v i + 2 ? 1 ) i = 1 J ( P t = ( u , v , w ) ) = ? ? ? ? ? ( ( ( e e e u u v + + + e e e w v w ) ) ) C C C w t u v t t ? ? ? ? ? 3 x 3 T ? ? ? ? ? d d d w u v t t t ? ? ? ? ? 3 x 3 [ N t ] ? T + ?? T t N t where, given a vector v , [v] ? is the skew symmetric matrix, such that for any vector w, [v] ? w = v?w. To derive the Hessian matrices for ? t and ? v we need the Jacobian matrix of P t , and the gradient vector of ? t . Again following Urago [2000], and taking the derivative of ? v : ?? t = ? P t ?? v = t ? ? N ( v ) 2 1 A t P t ? d v t The Hessians. Following Urago [2000] we obtain: ? t = ? ? i ? t C i t ( J i t ? N t ) ? A 3 t ? t vol t ? v = t ? ? N ( v ) 2 1 A t P t ? J v t The gradients. N t is the normalized outward pointing normal of t, and A t is the area of the face t. N t u e v = e e v v T d v t R v t = e w + e u v e v J v t w C C v v t t = = 2 4 ? ? 1 ( d R v t v t + log d ? ? ? ? v t 1 R R )( v v t t R + ? v t ? d d v v t t d ? ? ? ? v t ) p P t = N t ? ? d i t C i t ? ? t N t i ? t On this tetrahedron, 4?? t is the signed solid angle at the point p, subtended by the face t, and vol t is its signed volume. Given a point p ? ?, and a face t = (u,v,w) ?F, we define a tetrahedron T spanned by these four points, as in Figure 15 . The values of ? v are determined as a sum of values on the faces neighboring v. The mappings ? and ? are defined on the vertices and faces of the mesh, respectively, so we must provide for each face a scalar value ? t and for each vertex a scalar value ? v .",
+  "resources" : [ ]
+}

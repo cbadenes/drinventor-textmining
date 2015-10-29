@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2006-p519-weiss_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p519-weiss_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Fast Median and Bilateral Filtering",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ben-Weiss",
+      "name" : "Ben",
+      "surname" : "Weiss"
+    } ]
+  },
+  "bagOfWords" : [ "1965-1972", "pattern", "recognition", "vol", "fast", "median", "filtering", "algorithm", "Mesh", "Computers", "http://www.codercorner.com", "radixsortrevisited.htm", "ANIMOTO", "S.", "L.", "1995", "Radix", "Sort", "Revisited", "erdiman", "P.", "2000", "proceed", "1989", "International", "Conference", "parallel", "processing", "iii-56", "iii-62", "efficient", "serial", "parallel", "algorithm", "median", "filtering", "anka", "S.", "AHNI", "S.", "1989", "Multimedia", "Expo" ],
+  "content" : "1965-1972. Pattern Recognition, vol. Fast Median Filtering Algorithms for Mesh Computers. <http://www.codercorner.com /RadixSortRevisited.htm> T ANIMOTO , S. L. 1995. Radix Sort Revisited. T ERDIMAN , P. 2000. Proceeding 1989 International Conference on Parallel Processing, III-56 -III-62. Efficient Serial and Parallel Algorithms for Median Filtering. R ANKA , S. AND S AHNI , S. 1989. on Multimedia & Expo.",
+  "resources" : [ ]
+}

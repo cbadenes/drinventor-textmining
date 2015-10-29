@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014-a116-yan_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a116-yan_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Rendering Glints on High-Resolution Normal-Mapped Specular Surfaces",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ling-Qi-Yan",
+      "name" : "Ling-Qi",
+      "surname" : "Yan"
+    }, {
+      "uri" : "http://drinventor/Milo\\v{s}-Ha\\v{s}an",
+      "name" : "Milo\\v{s}",
+      "surname" : "Ha\\v{s}an"
+    }, {
+      "uri" : "http://drinventor/Wenzel-Jakob",
+      "name" : "Wenzel",
+      "surname" : "Jakob"
+    }, {
+      "uri" : "http://drinventor/Jason-Lawrence",
+      "name" : "Jason",
+      "surname" : "Lawrence"
+    }, {
+      "uri" : "http://drinventor/Steve-Marschner",
+      "name" : "Steve",
+      "surname" : "Marschner"
+    }, {
+      "uri" : "http://drinventor/Ravi-Ramamoorthi",
+      "name" : "Ravi",
+      "surname" : "Ramamoorthi"
+    } ]
+  },
+  "bagOfWords" : [ "future", "would", "interesting", "bring", "we", "approach", "closer", "interactivity", "further", "approximation", "we", "could", "also", "explore", "related", "glinty", "phenomenon", "cause", "refraction", "see", "e.g.", "snow", "hair", "waterfall", "fabric", "plant", "cellular", "structure" ],
+  "content" : "In the future, it would be interesting to bring our approach closer to interactivity with further approximations. We could also explore related glinty phenomena caused by refraction, seen e.g. in snow, hair, waterfalls, fabrics or plant cellular structures.",
+  "resources" : [ ]
+}

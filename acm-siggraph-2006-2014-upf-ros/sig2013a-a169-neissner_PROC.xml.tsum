@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2013a-a169-neissner_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a169-neissner_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Real-time 3D Reconstruction at Scale using Voxel Hashing",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "we", "current", "implementation", "voxel", "block", "compose", "voxel", "voxel", "per", "block", "-lrb-", "byte", "per", "voxel", "-rrb-", "correspond", "18", "voxel", "block", "each", "block", "small", "regular", "voxel", "grid", "one", "special", "case", "need", "consider", "sampling", "across", "voxel", "block", "boundary", "previously", "stream", "out", "voxel", "block", "can", "also", "stream", "back", "GPU", "datum", "structure", "when", "revisit", "area", "each", "voxel", "block", "we", "store", "voxel", "block", "descriptor", "which", "correspond", "hash", "entry", "datum", "well", "voxel", "datum", "give", "host-to-gpu", "streaming", "stagger", "rare", "case", "where", "voxel", "block", "wait", "stream", "may", "enter", "view", "frustum", "while", "still", "operate", "very", "restricted", "regular", "grid", "method", "stream", "out", "voxel", "from", "GPU", "base", "camera", "motion", "free", "space", "new", "datum", "store", "we", "must", "verify", "new", "allocation", "voxel", "block", "staggered", "region", "each", "voxel", "sign", "distance", "from", "voxel", "center", "observe", "surface", "measurement", "store", "positive", "distance", "front", "negative", "behind", "near", "zero", "surface", "interface" ],
+  "content" : "In our current implementation a voxel block is composed of 8 3 voxels. With 8 3 voxels per block (8 byte per voxel) this corresponds to 2 18 voxel blocks. Each block is a small regular voxel grid. One special case  that needs to be considered is sampling across voxel block boundaries. Previously streamed out voxel blocks can also be streamed back to the GPU data structure when revisiting areas. For each voxel block we store the voxel block descriptor which corresponds to hash entry data, as well as the voxel data. Given that Host-to-GPU streaming is staggered, there are rare cases where voxel blocks waiting to be streamed may enter the view frustum. While still operating on a very restricted regular grid, these methods stream out voxels from the GPU based on camera motion, freeing space for new data to be stored. We must verify that there is no new allocation of these voxel blocks in these staggered regions. At each of these voxels a signed distance from the voxel center to the observed surface measurement is stored, with positive distances in front, negative behind, and nearing zero at the surface interface.",
+  "resources" : [ ]
+}

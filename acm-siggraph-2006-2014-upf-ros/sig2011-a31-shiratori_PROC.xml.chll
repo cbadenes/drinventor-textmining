@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2011-a31-shiratori_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2011/a31-shiratori_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Motion Capture from Body-Mounted Cameras",
+    "published" : "2011",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Takaaki-Shiratori",
+      "name" : "Takaaki",
+      "surname" : "Shiratori"
+    }, {
+      "uri" : "http://drinventor/Hyun Soo-Park",
+      "name" : "Hyun Soo",
+      "surname" : "Park"
+    }, {
+      "uri" : "http://drinventor/Leonid-Sigal",
+      "name" : "Leonid",
+      "surname" : "Sigal"
+    }, {
+      "uri" : "http://drinventor/Yaser-Sheikh",
+      "name" : "Yaser",
+      "surname" : "Sheikh"
+    }, {
+      "uri" : "http://drinventor/Jessica K.-Hodgins",
+      "name" : "Jessica K.",
+      "surname" : "Hodgins"
+    } ]
+  },
+  "bagOfWords" : [ "we", "would", "also", "like", "thank", "Moshe", "Mahler", "Valeria", "Reznitskaya", "Matthew", "Kaemmerer", "help", "modeling", "rendering", "Justin", "Macey", "he", "help", "record", "motion", "capture", "datum" ],
+  "content" : "We would also like to thank Moshe Mahler, Valeria Reznitskaya, and Matthew Kaemmerer for their help in modeling and rendering, and Justin Macey for his help in recording the motion capture data.",
+  "resources" : [ ]
+}

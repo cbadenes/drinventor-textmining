@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2009a-a119-chadwick_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009a/a119-chadwick_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Harmonic Shells: A Practical Nonlinear Sound Model for Near-Rigid Thin Shells",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jeffrey N.-Chadwick",
+      "name" : "Jeffrey N.",
+      "surname" : "Chadwick"
+    }, {
+      "uri" : "http://drinventor/Steven S.-An",
+      "name" : "Steven S.",
+      "surname" : "An"
+    }, {
+      "uri" : "http://drinventor/Doug L.-James",
+      "name" : "Doug L.",
+      "surname" : "James"
+    } ]
+  },
+  "bagOfWords" : [ "nonlinear/transfer", "-lrb-", "harmonic", "shell", "-rrb-", "nonlinear", "modal", "vibration", "acoustic", "transfer", "-lrb-", "ffat", "map", "fast", "multipole", "method", "evaluation", "-rrb-", "discrete", "shell", "finite", "element", "analysis", "shell", "cubic", "shell", "we", "have", "present", "practical", "method", "generate", "plausible", "impact", "sound", "thin", "shell", "Linear/Transfer", "linear", "modal", "vibration", "acoustic", "transfer", "while", "vibration", "nonlinear", "without", "acoustic", "transfer", "sound", "quality", "poor", "both", "model", "sound", "very", "plausible", "acoustic", "transfer", "lack", "both", "nonlinear", "vibration", "acoustic", "transfer", "case", "usually", "sound", "quite", "unrealistic", "second", "we", "propose", "far-field", "acoustic", "transfer", "map", "-lrb-", "ffat", "map", "-rrb-", "fast", "runtime", "evaluation", "high-frequency", "acoustic", "transfer", "from", "general", "modal", "vibration", "source" ],
+  "content" : "Nonlinear/Transfer (?Harmonic Shells?): Nonlinear modal vibrations with acoustic transfer (FFAT maps, or fast multipole method evaluation). Discrete shells. The finite element analysis of shells. Cubic shells. We have presented a practical method for generating plausible impact sounds for thin shells. Linear/Transfer: Linear modal vibrations with acoustic transfer. While the vibrations are nonlinear, without acoustic transfer the sound quality is poor. Both models sound very plausible with acoustic transfer. Lacking both nonlinear vibrations and acoustic transfer, this case usually sounds quite unrealistic. Second, we propose far-field acoustic transfer maps (FFAT maps) for fast runtime evaluation of high-frequency acoustic transfer from general modal vibration sources.",
+  "resources" : [ ]
+}

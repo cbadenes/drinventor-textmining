@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2008a-a150-bimber_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a150-bimber_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Superimposing Dynamic Range",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Oliver-Bimber",
+      "name" : "Oliver",
+      "surname" : "Bimber"
+    }, {
+      "uri" : "http://drinventor/Daisuke-Iwai",
+      "name" : "Daisuke",
+      "surname" : "Iwai"
+    } ]
+  },
+  "bagOfWords" : [ "registration", "calibration", "precision", "additional", "registration", "frame", "enhance", "result", "registration", "step", "furthermore", "take", "minimum", "number", "image", "speed", "up", "calibration", "process", "more", "importantly", "prevent", "place", "too", "much", "stress", "mechanical", "part", "case", "digital", "slr", "camera", "use", "registration", "note", "registration", "necessary", "max", "use", "estimate", "HDR", "image", "since", "already", "register", "perspective", "camera", "other", "hdr", "display", "approach", "we", "reflective", "secondary", "modulation", "lead", "large", "number", "physically", "producible", "luminance", "level", "above", "technique", "require", "precise", "geometric", "registration", "between", "project", "capture", "print", "image", "geometric", "registration", "photometric", "calibration", "projector", "camera", "printer", "case", "same", "explain", "section", "3.1.2", "second", "image", "modulation", "process", "can", "take", "place", "directly", "arbitrary", "reflective", "surface", "component", "hdr", "display", "precision", "geometric", "registration", "photometric", "calibration", "strongly", "depend", "resolution", "dynamic", "range", "camera", "projector", "registration", "print", "locate", "table", "plane", "correlate", "camera", "pixel", "simple", "when", "use", "registration", "frame", "around", "print", "image", "content" ],
+  "content" : "Registration and Calibration Precision. The additional registration frame enhances the result of this registration step. Furthermore, taking a minimum number of images speeds up the calibration process, but more importantly, it prevents placing too much stress on the mechanical parts in case digital SLR cameras are used for registration. Note that such a registration is not necessary if I max is used for estimating the HDR image, since it is already registered in the perspective of the camera. As for other HDR display approaches, our reflective secondary modulation leads to a large number of physically producible luminance levels. The above techniques require a precise geometric registration between projected, captured and printed images. The geometric registration and the photometric calibration of projector, camera and printer for this case are the same as explained in Section 3.1.2. The second image modulation process can take place directly on arbitrary reflective surfaces that are not a component of an HDR display. The precision of geometric registration and photometric calibration strongly depends on the resolution and dynamic range of camera and projector. The registration of prints located on the table plane with correlated camera pixels is simple when using a registration frame around the printed image content.",
+  "resources" : [ ]
+}

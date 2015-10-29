@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2013a-a194-hu_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a194-hu_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Inverse Image Editing: Recovering a Semantic Editing History from a Before-and-After Image Pair",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Shi-Min-Hu",
+      "name" : "Shi-Min",
+      "surname" : "Hu"
+    }, {
+      "uri" : "http://drinventor/Kun-Xu",
+      "name" : "Kun",
+      "surname" : "Xu"
+    }, {
+      "uri" : "http://drinventor/Li-Qian-Ma",
+      "name" : "Li-Qian",
+      "surname" : "Ma"
+    }, {
+      "uri" : "http://drinventor/Bin-Liu",
+      "name" : "Bin",
+      "surname" : "Liu"
+    }, {
+      "uri" : "http://drinventor/Bi-Ye-Jiang",
+      "name" : "Bi-Ye",
+      "surname" : "Jiang"
+    }, {
+      "uri" : "http://drinventor/Jue-Wang",
+      "name" : "Jue",
+      "surname" : "Wang"
+    } ]
+  },
+  "bagOfWords" : [ "Vision", "93", "368", "388", "J.", "Comput", "optic", "flow", "harmony", "immer", "H.", "RUHN", "A.", "EICKERT", "J.", "2011", "IEEE", "transaction", "visualization", "computer", "graphic", "18", "11", "1849", "1857", "Imageadmixture", "put", "together", "dissimilar", "object", "from", "group", "hang", "F.-L.", "HENG", "M.-M.", "IA", "J.", "s.-m", "2012", "31", "176:1", "176:9", "ACM", "Trans", "transfusive", "image", "manipulation" ],
+  "content" : "Vision 93, 3, 368?388. J. Comput. Optic flow in harmony. Z IMMER , H., B RUHN , A., AND W EICKERT , J. 2011. IEEE Transactions on Visualization and Computer Graphics 18, 11, 1849?1857. Imageadmixture: Putting together dissimilar objects from groups. Z HANG , F.-L., C HENG , M.-M., J IA , J., AND H U , S.-M. 2012. 31, 6, 176:1?176:9. ACM Trans. Transfusive image manipulation.",
+  "resources" : [ ]
+}

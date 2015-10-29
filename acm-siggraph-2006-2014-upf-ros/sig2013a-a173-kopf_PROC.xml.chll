@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2013a-a173-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a173-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Content-Adaptive Image Downscaling",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Ariel-Shamir",
+      "name" : "Ariel",
+      "surname" : "Shamir"
+    }, {
+      "uri" : "http://drinventor/Pieter-Peers",
+      "name" : "Pieter",
+      "surname" : "Peers"
+    } ]
+  },
+  "bagOfWords" : [ "future", "work", "we", "would", "like", "further", "improve", "robustness", "method", "e.g.", "through", "smarter", "heuristic", "so", "we", "method", "always", "outperform", "simpler", "filter" ],
+  "content" : "For future work we would like to further improve the robustness of the method, e.g., through smarter heuristics, so that our method always outperforms simpler filters.",
+  "resources" : [ ]
+}

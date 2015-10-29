@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2014a-a177-jarabo_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014a/a177-jarabo_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "A Framework for Transient Rendering",
+    "published" : "2014",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Adrian-Jarabo",
+      "name" : "Adrian",
+      "surname" : "Jarabo"
+    }, {
+      "uri" : "http://drinventor/Julio-Marco",
+      "name" : "Julio",
+      "surname" : "Marco"
+    }, {
+      "uri" : "http://drinventor/Adolfo-Mu?oz",
+      "name" : "Adolfo",
+      "surname" : "Mu?oz"
+    }, {
+      "uri" : "http://drinventor/Raul-Buisan",
+      "name" : "Raul",
+      "surname" : "Buisan"
+    }, {
+      "uri" : "http://drinventor/Wojciech-Jarosz",
+      "name" : "Wojciech",
+      "surname" : "Jarosz"
+    }, {
+      "uri" : "http://drinventor/Diego-Gutierrez",
+      "name" : "Diego",
+      "surname" : "Gutierrez"
+    } ]
+  },
+  "bagOfWords" : [ "recent", "advance", "ultra-fast", "imaging", "have", "trigger", "many", "promising", "application", "graphic", "vision", "capture", "transparent", "object", "estimate", "hidden", "geometry", "material", "visualize", "light", "motion", "however", "very", "little", "work", "regard", "effective", "simulation", "analysis", "transient", "light", "transport", "where", "speed", "light", "can", "longer", "consider", "infinite", "we", "first", "introduce", "transient", "path", "integral", "framework", "formally", "describe", "light", "transport", "transient", "state", "we", "analyze", "difficulty", "arise", "when", "consider", "light?s", "time-of-flight", "simulation", "-lrb-", "render", "-rrb-", "image", "video", "we", "propose", "novel", "density", "estimation", "technique", "allow", "reuse", "sample", "path", "reconstruct", "time-resolved", "radiance", "devise", "new", "sampling", "strategy", "take", "account", "distribution", "radiance", "along", "time", "participate", "media", "we", "efficiently", "simulate", "time-resolved", "phenomenon", "-lrb-", "caustic", "propagation", "fluorescence", "temporal", "chromatic", "dispersion", "-rrb-", "which", "can", "help", "design", "future", "ultra-fast", "imaging", "device", "use", "analysis-by-synthesis", "approach", "well", "achieve", "better", "understanding", "nature", "light", "transport", "cr", "category", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "Three-Dimensional", "Graphics", "Realism?Raytracing", "Keywords", "transient", "rendering", "transient", "light", "transport", "importance", "sampling", "bidirectional", "path", "trace", "progressive", "photon", "mapping" ],
+  "content" : "Recent advances in ultra-fast imaging have triggered many promising applications in graphics and vision, such as capturing transparent objects, estimating hidden geometry and materials, or visualizing light in motion. There is, however, very little work regarding the effective simulation and analysis of transient light transport, where the speed of light can no longer be considered infinite. We first introduce the transient path integral framework, formally describing light transport in transient state. We then analyze the difficulties arising when considering the light?s time-of-flight in the simulation (rendering) of images and videos. We propose a novel density estimation technique that allows reusing sampled paths to reconstruct time-resolved radiance, and devise new sampling strategies that take into account the distribution of radiance along time in participating media. We then efficiently simulate time-resolved phenomena (such as caustic propagation, fluorescence or temporal chromatic dispersion), which can help design future ultra-fast imaging devices using an analysis-by-synthesis approach, as well as to achieve a better understanding of the nature of light transport. CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism?Raytracing Keywords: transient rendering, transient light transport, importance sampling, bidirectional path tracing, progressive photon mapping",
+  "resources" : [ ]
+}

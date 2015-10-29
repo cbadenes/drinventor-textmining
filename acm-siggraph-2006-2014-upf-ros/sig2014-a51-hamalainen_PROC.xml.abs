@@ -1,0 +1,22 @@
+{
+  "uri" : "sig2014-a51-hamalainen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2014/a51-hamalainen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Online Motion Synthesis Using Sequential Monte Carlo",
+    "published" : null,
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ ]
+  },
+  "bagOfWords" : [ "we", "present", "Model-Predictive", "Control", "-lrb-", "MPC", "-rrb-", "system", "online", "synthesis", "interactive", "physically", "valid", "character", "motion", "we", "system", "enable", "complex", "-lrb-", "36-dof", "-rrb-", "3d", "human", "character", "model", "balance", "give", "pose", "dodge", "projectile", "improvise", "get", "up", "strategy", "force", "lose", "balance", "all", "dynamic", "unpredictable", "environment", "contact-rich", "predictive", "reactive", "motion", "have", "previously", "only", "be", "generate", "offline", "use", "handcrafted", "state", "machine", "dataset", "reference", "motion", "which", "we", "system", "do", "require", "each", "animation", "frame", "we", "system", "generate", "trajectory", "character", "control", "parameter", "near", "future", "few", "seconds", "use", "sequential", "Monte", "Carlo", "sampling", "we", "main", "technical", "contribution", "multimodal", "tree-based", "sampler", "simultaneously", "explore", "multiple", "different", "near-term", "control", "strategy", "represent", "parameter", "spline", "strategy", "represent", "each", "sample", "evaluate", "parallel", "use", "causal", "physics", "engine", "best", "strategy", "determine", "objective", "function", "measure", "goal", "achievement", "fluidity", "motion", "etc.", "use", "control", "signal", "current", "frame", "maintain", "multiple", "hypothesis", "crucial", "adapt", "dynamically", "change", "environment", "cr", "category", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "three-dimensional", "graphic", "realism?animation", "keyword", "animation", "motion", "synthesis", "motion", "planning", "sequential", "Monte", "Carlo", "particle", "filter", "optimization" ],
+  "content" : "We present a Model-Predictive Control (MPC) system for online synthesis of interactive and physically valid character motion. Our system enables a complex (36-DOF) 3D human character model to balance in a given pose, dodge projectiles, and improvise a get up strategy if forced to lose balance, all in a dynamic and unpredictable environment. Such contact-rich, predictive and reactive motions have previously only been generated offline or using a handcrafted state machine or a dataset of reference motions, which our system does not require. For each animation frame, our system generates trajectories of character control parameters for the near future ? a few seconds ? using Sequential Monte Carlo sampling. Our main technical contribution is a multimodal, tree-based sampler that simultaneously explores multiple different near-term control strategies represented as parameter splines. The strategies represented by each sample are evaluated in parallel using a causal physics engine. The best strategy, as determined by an objective function measuring goal achievement, fluidity of motion, etc., is used as the control signal for the current frame, but maintaining multiple hypotheses is crucial for adapting to dynamically changing environments. CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism?Animation Keywords: animation, motion synthesis, motion planning, sequential Monte Carlo, particle filter, optimization",
+  "resources" : [ ]
+}

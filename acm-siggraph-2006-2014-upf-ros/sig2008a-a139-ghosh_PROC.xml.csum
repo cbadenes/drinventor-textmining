@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2008a-a139-ghosh_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a139-ghosh_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Practical Modeling and Acquisition of Layered Facial Reflectance",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Abhijeet-Ghosh",
+      "name" : "Abhijeet",
+      "surname" : "Ghosh"
+    }, {
+      "uri" : "http://drinventor/Tim-Hawkins",
+      "name" : "Tim",
+      "surname" : "Hawkins"
+    }, {
+      "uri" : "http://drinventor/Pieter-Peers",
+      "name" : "Pieter",
+      "surname" : "Peers"
+    }, {
+      "uri" : "http://drinventor/Sune-Frederiksen",
+      "name" : "Sune",
+      "surname" : "Frederiksen"
+    }, {
+      "uri" : "http://drinventor/Paul E.-Debevec",
+      "name" : "Paul E.",
+      "surname" : "Debevec"
+    } ]
+  },
+  "bagOfWords" : [ "-lrb-", "-rrb-", "rendering", "-lrb-", "-rrb-", "Photograph", "-lrb-", "-rrb-", "rendering", "-lrb-", "-rrb-", "Photograph", "-lrb-", "-rrb-", "rendering", "-lrb-", "-rrb-", "Photograph", "content", "information", "do", "necessarily", "reflect", "position", "policy", "US", "government", "official", "endorsement", "should", "infer", "work", "sponsor", "University", "Southern", "California", "Office", "Provost", "U.S.", "Army", "Research", "Development", "Engineering", "command", "-lrb-", "rdecom", "-rrb-", "we", "also", "thank", "Wolfgang", "Heidrich", "we", "annonymous", "reviewer", "valuable", "suggestion", "improve", "paper", "we", "would", "like", "thank", "Tomas", "Pereira", "Wan-Chun", "Ma", "valuable", "input", "Cynthia", "Richards", "David", "Price", "Krishna", "Mamidibathula", "sit", "subject", "Marko", "Vukovic", "Jay", "Busch", "Jen-Yuan", "Chiang", "assistance", "datum", "processing", "Bill", "Swartout", "Randy", "Hill", "Randolph", "Hall", "Max", "Nikias", "support", "assistance", "work", "finally", "we", "model", "currently", "miss", "model", "asperity", "scattering", "-lsb-", "Koenderink", "Pont", "2003", "-rsb-", "which", "result", "scattering", "thin", "layer", "facial", "hair", "can", "play", "significant", "role", "reproduce", "velvety", "peachy", "facial", "appearance", "many", "subject", "furthermore", "relate", "separated", "layer", "more", "precisely", "multi-layer", "model", "Donner", "Jensen", "-lsb-", "2005", "-rsb-", "another", "interesting", "avenue", "future", "work", "future", "work", "we", "would", "like", "investigate", "other", "method", "than", "-lsb-", "Nayar", "et", "al.", "2006", "-rsb-", "separate", "subsurface", "scattering", "layer", "skin", "color", "space", "separation", "from", "different", "color", "channel", "we", "image", "example", "one", "could", "monitor", "change", "skin", "reflectance", "due", "blood", "flow", "sweat", "examine", "effect", "facial", "animation", "appearance", "skin", "present", "system", "due", "its", "short", "acquisition", "time", "enable", "new", "possibility", "analyze", "time-varying", "effect", "facial", "reflectance" ],
+  "content" : "(c) Rendering (d) Photograph\n        (g) Rendering (h) Photograph\n        (k) Rendering (l) Photograph The content of the information does not necessarily reflect the position or the policy of the US Government, and no official endorsement should be inferred. This work was sponsored by the University of Southern California Office of the Provost and the U.S. Army Research, Development, and Engineering Command (RDECOM). We also thank Wolfgang Heidrich and our annonymous reviewers for their valuable suggestions for improving the paper. We would like to thank Tomas Pereira and Wan-Chun Ma for their valuable input, Cynthia Richards, David Price, and Krishna Mamidibathula for sitting as subjects, Marko Vukovic, Jay Busch, and Jen-Yuan Chiang for their assistance in data processing, Bill Swartout, Randy Hill, Randolph Hall, and Max Nikias for their support and assistance with this work. Finally, our model is currently missing a model for asperity scattering [Koenderink and Pont 2003], which is the result of scattering in a thin layer of facial hair and can play a significant role in reproducing the ?velvety? or ?peachy? facial appearance of many subjects. Furthermore, relating these separated layers more precisely to the multi-layer model of Donner and Jensen [2005] is another interesting avenue for future work. For future work, we would like to investigate other methods than [Nayar et al. 2006] for separating the subsurface scattering layers of skin such as color space separation from the different color channels of our images. For example one could monitor the change in skin reflectance due to blood flow or sweat, or examine the effects of facial animation on the appearance of skin. The presented system, due to its short acquisition times, enables new possibilities for analyzing time-varying effects of facial reflectance.",
+  "resources" : [ ]
+}

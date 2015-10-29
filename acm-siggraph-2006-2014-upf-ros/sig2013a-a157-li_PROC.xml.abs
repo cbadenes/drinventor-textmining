@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2013a-a157-li_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a157-li_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Analyzing Growing Plants from 4D Point Cloud Data",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Xiaochen-Fan",
+      "name" : "Xiaochen",
+      "surname" : "Fan"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    }, {
+      "uri" : "http://drinventor/Daniel A.-Chamovitz",
+      "name" : "Daniel A.",
+      "surname" : "Chamovitz"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Baoquan-Chen",
+      "name" : "Baoquan",
+      "surname" : "Chen"
+    } ]
+  },
+  "bagOfWords" : [ "study", "growth", "development", "plant", "central", "importance", "botany", "current", "quantitative", "either", "limit", "tedious", "sparse", "manual", "measurement", "coarse", "image-based", "2d", "measurement", "availability", "cheap", "portable", "3d", "acquisition", "device", "have", "potential", "automate", "process", "easily", "provide", "scientist", "volume", "accurate", "datum", "scale", "much", "beyond", "realm", "exist", "method", "however", "during", "development", "plant", "grow", "new", "part", "-lrb-", "e.g.", "vegetative", "bud", "-rrb-", "bifurcate", "different", "component", "violate", "central", "incompressibility", "assumption", "make", "exist", "acquisition", "algorithm", "which", "make", "algorithm", "unsuited", "analyze", "growth", "we", "introduce", "framework", "study", "plant", "growth", "particularly", "focus", "accurate", "localization", "tracking", "topological", "event", "like", "bud", "bifurcation", "achieve", "novel", "forward-backward", "analysis", "wherein", "we", "track", "robustly", "detect", "plant", "component", "back", "time", "ensure", "correct", "spatio-temporal", "event", "detection", "use", "locally", "adapt", "threshold", "we", "evaluate", "we", "approach", "several", "group", "time", "lapse", "scan", "often", "range", "from", "day", "week", "diverse", "set", "plant", "species", "use", "result", "animate", "static", "virtual", "plant", "directly", "attach", "they", "physical", "simulator", "keyword", "growth", "analysis", "4d", "point", "cloud", "event", "detection" ],
+  "content" : "Studying growth and development of plants is of central importance in botany. Current quantitative are either limited to tedious and sparse manual measurements, or coarse image-based 2D measurements. Availability of cheap and portable 3D acquisition devices has the potential to automate this process and easily provide scientists with volumes of accurate data, at a scale much beyond the realms of existing methods. However, during their development, plants grow new parts (e.g., vegetative buds) and bifurcate to different components ? violating the central incompressibility assumption made by existing acquisition algorithms, which makes these algorithms unsuited for analyzing growth. We introduce a framework to study plant growth, particularly focusing on accurate localization and tracking topological events like budding and bifurcation. This is achieved by a novel forward-backward analysis, wherein we track robustly detected plant components back in time to ensure correct spatio-temporal event detection using a locally adapting threshold. We evaluate our approach on several groups of time lapse scans, often ranging from days to weeks, on a diverse set of plant species and use the results to animate static virtual plants or directly attach them to physical simulators. Keywords: growth analysis, 4D point cloud, event detection",
+  "resources" : [ ]
+}

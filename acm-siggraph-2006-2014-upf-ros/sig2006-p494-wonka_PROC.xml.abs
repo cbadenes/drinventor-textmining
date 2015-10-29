@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2006-p494-wonka_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2006/p494-wonka_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Guided Visibility Sampling",
+    "published" : "2006",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Peter-Wonka",
+      "name" : "Peter",
+      "surname" : "Wonka"
+    }, {
+      "uri" : "http://drinventor/Michael-Wimmer",
+      "name" : "Michael",
+      "surname" : "Wimmer"
+    }, {
+      "uri" : "http://drinventor/Kaichi-Zhou",
+      "name" : "Kaichi",
+      "surname" : "Zhou"
+    }, {
+      "uri" : "http://drinventor/Stefan-Maierhofer",
+      "name" : "Stefan",
+      "surname" : "Maierhofer"
+    }, {
+      "uri" : "http://drinventor/Gerd-Hesina",
+      "name" : "Gerd",
+      "surname" : "Hesina"
+    }, {
+      "uri" : "http://drinventor/Alexander-Reshetov",
+      "name" : "Alexander",
+      "surname" : "Reshetov"
+    } ]
+  },
+  "bagOfWords" : [ "paper", "address", "problem", "compute", "triangle", "visible", "from", "region", "space", "propose", "aggressive", "visibility", "solution", "base", "stochastic", "ray", "shooting", "can", "take", "any", "triangular", "model", "input", "we", "do", "rely", "connectivity", "information", "volumetric", "occluder", "availability", "large", "occluder", "can", "therefore", "process", "any", "give", "input", "scene", "propose", "algorithm", "practically", "memoryless", "thereby", "alleviate", "large", "memory", "consumption", "problem", "prevalent", "several", "previous", "algorithm", "strategy", "we", "algorithm", "use", "ray", "mutation", "ray", "space", "cast", "ray", "likely", "sample", "new", "triangle", "we", "algorithm", "improve", "sampling", "efficiency", "previous", "work", "over", "two", "order", "magnitude", "cr", "category", "i.", "3.7", "-lsb-", "Computer", "Graphics", "-rsb-", "three-dimensional", "graphic", "realism?visible", "line/surface", "algorithm", "Keywords", "visibility", "occlusion", "culling", "pv", "visibility", "sampling" ],
+  "content" : "This paper addresses the problem of computing the triangles visible from a region in space. The proposed aggressive visibility solution is based on stochastic ray shooting and can take any triangular model as input. We do not rely on connectivity information, volumetric occluders, or the availability of large occluders, and can therefore process any given input scene. The proposed algorithm is practically memoryless, thereby alleviating the large memory consumption problems prevalent in several previous algorithms. The strategy of our algorithm is to use ray mutations in ray space to cast rays that are likely to sample new triangles. Our algorithm improves the sampling efficiency of previous work by over two orders of magnitude. CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism?Visible line/surface algorithms Keywords: visibility, occlusion culling, PVS, visibility sampling",
+  "resources" : [ ]
+}

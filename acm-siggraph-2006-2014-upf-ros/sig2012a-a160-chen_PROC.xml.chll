@@ -1,0 +1,42 @@
+{
+  "uri" : "sig2012a-a160-chen_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a160-chen_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Depth-Presorted Triangle Lists",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Ge-Chen",
+      "name" : "Ge",
+      "surname" : "Chen"
+    }, {
+      "uri" : "http://drinventor/Pedro V.-Sander",
+      "name" : "Pedro V.",
+      "surname" : "Sander"
+    }, {
+      "uri" : "http://drinventor/Diego-Nehab",
+      "name" : "Diego",
+      "surname" : "Nehab"
+    }, {
+      "uri" : "http://drinventor/Lei-Yang",
+      "name" : "Lei",
+      "surname" : "Yang"
+    }, {
+      "uri" : "http://drinventor/Liang-Hu",
+      "name" : "Liang",
+      "surname" : "Hu"
+    } ]
+  },
+  "bagOfWords" : [ "we", "conclude", "revisit", "strength", "weakness", "method", "suggest", "venue", "future", "work", "because", "we", "have", "succeed", "reduce", "total", "number", "edge", "must", "consider", "future", "alternatively", "we", "finegrain", "triangle-level", "technique", "can", "combine", "coarse-level", "dynamic", "sort", "enable", "animated", "character", "rigid", "part" ],
+  "content" : "We conclude by revisiting the strengths and weaknesses of the method and suggesting venues for future work. This is because we have succeeded in reducing the total number of edges that must be considered in the future. Alternatively, our finegrained triangle-level technique can be combined with coarse-level dynamic sorting to enable animated characters with rigid parts.",
+  "resources" : [ ]
+}

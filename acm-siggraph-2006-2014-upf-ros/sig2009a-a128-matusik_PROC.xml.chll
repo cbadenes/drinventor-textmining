@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2009a-a128-matusik_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009a/a128-matusik_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Printing Spatially-Varying Reflectance",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Wojciech-Matusik",
+      "name" : "Wojciech",
+      "surname" : "Matusik"
+    }, {
+      "uri" : "http://drinventor/Boris-Ajdin",
+      "name" : "Boris",
+      "surname" : "Ajdin"
+    }, {
+      "uri" : "http://drinventor/Jinwei-Gu",
+      "name" : "Jinwei",
+      "surname" : "Gu"
+    }, {
+      "uri" : "http://drinventor/Jason-Lawrence",
+      "name" : "Jason",
+      "surname" : "Lawrence"
+    }, {
+      "uri" : "http://drinventor/Hendrik P. A.-Lensch",
+      "name" : "Hendrik P. A.",
+      "surname" : "Lensch"
+    }, {
+      "uri" : "http://drinventor/Fabio-Pellacini",
+      "name" : "Fabio",
+      "surname" : "Pellacini"
+    }, {
+      "uri" : "http://drinventor/Szymon-Rusinkiewicz",
+      "name" : "Szymon",
+      "surname" : "Rusinkiewicz"
+    } ]
+  },
+  "bagOfWords" : [ "we", "believe", "most", "other", "halftoning", "dither", "algorithm", "whether", "order", "base", "error", "diffusion", "could", "adapt", "similar", "way", "moreover", "future", "output", "technology", "may", "eliminate", "cluster-size", "constraint", "allow", "any", "multi-channel", "halftoning", "algorithm", "use", "we", "current", "system", "have", "some", "limitation", "suggest", "interesting", "direction", "future", "work", "would", "desirable", "print", "spatially-varying", "brdf", "directly", "onto", "3d", "object", "-lrb-", "example", "object", "produce", "3d", "printer", "-rrb-", "order", "design", "control", "reflectance", "property", "finally", "one", "could", "also", "improve", "we", "gamutmapping", "algorithm", "which", "globally", "remap", "document", "reflectance", "further", "direction", "future", "work", "develop", "device", "allow", "dynamically", "change", "between", "different", "brdf", "lead", "true", "brdf", "display", "thanks", "J.", "C.", "Bradfield", "make", "he", "ppmtomd", "package", "available", "Paul", "Debevec", "environment", "map", "use", "natural-illumination", "rendering", "however", "factor", "would", "ordinarily", "go", "outside", "square", "norm", "equation", "so", "order", "fold", "-lrb-", "hence", "allow", "precompute", "-rrb-", "we", "must", "take", "its", "square", "root", "equation" ],
+  "content" : "We believe that most other halftoning and dithering algorithms, whether ordered or based on error diffusion, could be adapted in similar ways. Moreover, future output technologies may eliminate the cluster-size constraints, allowing any multi-channel halftoning algorithm to be used. Our current system has some limitations that suggest interesting directions for future work. It would be desirable to print spatially-varying BRDFs directly onto 3D objects (for example, objects produced by 3D printers) in order to design and control their reflectance properties. Finally, one could also improve our gamutmapping algorithm, which globally remaps document reflectances. A further direction for future work is developing devices that allow dynamically changing between different BRDFs, leading to a true ?BRDF display. Thanks to J. C. Bradfield for making his ppmtomd package available, and to Paul Debevec for the environment maps used in natural-illumination renderings. However, this factor would ordinarily go outside the squared norm in equation 2, so in order to fold it into g (hence allowing it to be precomputed) we must take its square root in equation 3.",
+  "resources" : [ ]
+}

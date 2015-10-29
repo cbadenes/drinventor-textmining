@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2012a-a149-he_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a149-he_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Staggered Meshless Solid-Fluid Coupling",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Xiaowei-He",
+      "name" : "Xiaowei",
+      "surname" : "He"
+    }, {
+      "uri" : "http://drinventor/Ning-Liu",
+      "name" : "Ning",
+      "surname" : "Liu"
+    }, {
+      "uri" : "http://drinventor/Guoping-Wang",
+      "name" : "Guoping",
+      "surname" : "Wang"
+    }, {
+      "uri" : "http://drinventor/Fengjun-Zhang",
+      "name" : "Fengjun",
+      "surname" : "Zhang"
+    }, {
+      "uri" : "http://drinventor/Sheng-Li",
+      "name" : "Sheng",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Songdong-Shao",
+      "name" : "Songdong",
+      "surname" : "Shao"
+    }, {
+      "uri" : "http://drinventor/Hongan-Wang",
+      "name" : "Hongan",
+      "surname" : "Wang"
+    } ]
+  },
+  "bagOfWords" : [ "Proceedings", "2008", "ACM", "SIGGRAPH/Eurographics", "Symposium", "Computer", "Animation", "Eurographics", "Association", "211", "218", "ACM", "SIGGRAPH", "2002", "conference", "abstract", "application", "ACM", "266", "266", "ACM", "SIGGRAPH", "2003", "Sketches", "application", "ACM", "Eurographics/IEEE", "VGTC", "Symposium", "Proceedings", "Point-Based", "Graphics", "IEEE", "125", "148", "computer", "animation", "Eurographics", "Association", "154", "159", "Eurographics", "Association", "141", "151", "ACM", "transaction", "graphic", "-lrb-", "tog", "-rrb-", "28", "ACM", "transaction", "graphic", "-lrb-", "tog", "-rrb-", "30", "81", "ACM", "transaction", "graphic", "-lrb-", "tog", "-rrb-", "27", "49", "ACM", "transaction", "graphic", "-lrb-", "tog", "-rrb-", "24", "973", "981" ],
+  "content" : "In Proceedings of the 2008 ACM SIGGRAPH/Eurographics Symposium on Computer Animation, Eurographics Association, 211?218. In ACM SIGGRAPH 2002 conference abstracts and applications, ACM, 266?266. In ACM SIGGRAPH 2003 Sketches & Applications, ACM, 1?1. In Eurographics/IEEE VGTC Symposium Proceedings on Point-Based Graphics, IEEE, 125?148. Computer animation, Eurographics Association, 154?159. Eurographics Association, 141?151. ACM Transactions on Graphics (TOG) 28, 3, 1?6. ACM Transactions on Graphics (TOG) 30, 4, 81. ACM Transactions on Graphics (TOG) 27, 3, 49. ACM Transactions on Graphics (TOG) 24, 3, 973?981.",
+  "resources" : [ ]
+}

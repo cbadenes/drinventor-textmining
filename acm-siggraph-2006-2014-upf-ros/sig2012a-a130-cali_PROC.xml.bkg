@@ -1,0 +1,50 @@
+{
+  "uri" : "sig2012a-a130-cali_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012a/a130-cali_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "3D-Printing of Non-Assembly, Articulated Models",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jacques-Cal?",
+      "name" : "Jacques",
+      "surname" : "Cal?"
+    }, {
+      "uri" : "http://drinventor/Dan A.-Calian",
+      "name" : "Dan A.",
+      "surname" : "Calian"
+    }, {
+      "uri" : "http://drinventor/Cristina-Amati",
+      "name" : "Cristina",
+      "surname" : "Amati"
+    }, {
+      "uri" : "http://drinventor/Rebecca-Kleinberger",
+      "name" : "Rebecca",
+      "surname" : "Kleinberger"
+    }, {
+      "uri" : "http://drinventor/Anthony-Steed",
+      "name" : "Anthony",
+      "surname" : "Steed"
+    }, {
+      "uri" : "http://drinventor/Jan-Kautz",
+      "name" : "Jan",
+      "surname" : "Kautz"
+    }, {
+      "uri" : "http://drinventor/Tim-Weyrich",
+      "name" : "Tim",
+      "surname" : "Weyrich"
+    } ]
+  },
+  "bagOfWords" : [ ],
+  "content" : "",
+  "resources" : [ ]
+}

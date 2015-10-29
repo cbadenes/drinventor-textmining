@@ -1,0 +1,26 @@
+{
+  "uri" : "sig2012-a71-hildebrandt_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2012/a71-hildebrandt_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Interactive Spacetime Control of Deformable Objects",
+    "published" : "2012",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Christian-Schulz",
+      "name" : "Christian",
+      "surname" : "Schulz"
+    } ]
+  },
+  "bagOfWords" : [ "interesting", "direction", "future", "work", "develop", "counterpart", "present", "approach", "other", "type", "physical", "system", "like", "fluid", "particle", "system", "parametrized", "character" ],
+  "content" : "A interesting direction of future work is to develop counterparts of the presented approach for other types of physical systems, like fluids or particles systems, and for parametrized characters.",
+  "resources" : [ ]
+}

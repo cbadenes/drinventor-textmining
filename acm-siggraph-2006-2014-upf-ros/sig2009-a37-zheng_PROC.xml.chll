@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2009-a37-zheng_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009/a37-zheng_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Harmonic fluids",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Changxi-Zheng",
+      "name" : "Changxi",
+      "surname" : "Zheng"
+    }, {
+      "uri" : "http://drinventor/Doug L.-James",
+      "name" : "Doug L.",
+      "surname" : "James"
+    } ]
+  },
+  "bagOfWords" : [ "finally", "physically", "base", "sound", "rendering", "might", "combine", "data-driven", "stochastic", "method", "exploit", "complementary", "advantage", "more", "complex", "noise-like", "phenomenon", "e.g.", "Niagara", "Falls" ],
+  "content" : "Finally, physically based sound rendering might be combined with data-driven and stochastic methods to exploit complementary advantages for more complex and noise-like phenomena, e.g., Niagara Falls.",
+  "resources" : [ ]
+}

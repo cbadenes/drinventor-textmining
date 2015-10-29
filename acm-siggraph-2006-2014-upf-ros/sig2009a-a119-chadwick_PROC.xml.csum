@@ -1,0 +1,34 @@
+{
+  "uri" : "sig2009a-a119-chadwick_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2009a/a119-chadwick_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Harmonic Shells: A Practical Nonlinear Sound Model for Near-Rigid Thin Shells",
+    "published" : "2009",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Jeffrey N.-Chadwick",
+      "name" : "Jeffrey N.",
+      "surname" : "Chadwick"
+    }, {
+      "uri" : "http://drinventor/Steven S.-An",
+      "name" : "Steven S.",
+      "surname" : "An"
+    }, {
+      "uri" : "http://drinventor/Doug L.-James",
+      "name" : "Doug L.",
+      "surname" : "James"
+    } ]
+  },
+  "bagOfWords" : [ "Journal", "Acoustical", "Society", "America", "124", "2680", "method", "reconstruct", "acoustic", "quantity", "base", "acoustic", "pressure", "measurement", "S.", "2008", "Springer", "Verlag", "Auralization", "fundamental", "Acoustics", "Modelling", "Simulation", "Algorithms", "Acoustic", "Virtual", "reality", "orlander", "M.", "2007", "Proceedings", "ACM", "SIGGRAPH", "2001", "Computer", "Graphics", "Proceedings", "annual", "Conference", "Series", "537", "544", "FoleyAutomatic", "physically", "base", "sound", "effect", "Interactive", "Simulation", "Animation", "VAN", "DEN", "OEL", "K.", "RY", "P.", "G.", "aus", "D.", "K.", "2001", "Auditory", "display" ],
+  "content" : "The Journal of the Acoustical Society of America 124, 5, 2680. Methods for reconstructing acoustic quantities based on acoustic pressure measurements. W U , S. 2008. Springer Verlag. Auralization: Fundamentals of Acoustics, Modelling, Simulation, Algorithms and Acoustic Virtual Reality. V ORLANDER , M. 2007. In Proceedings of ACM SIGGRAPH 2001, Computer Graphics Proceedings, Annual Conference Series, 537?544. FoleyAutomatic: Physically Based Sound Effects for Interactive Simulation and Animation. VAN DEN D OEL , K., K RY , P. G., AND P AI , D. K. 2001. on Auditory Display.",
+  "resources" : [ ]
+}

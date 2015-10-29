@@ -1,0 +1,38 @@
+{
+  "uri" : "sig2008a-a144-sander_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a144-sander_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Efficient Traversal of Mesh Edges using Adjacency Primitives",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Pedro V.-Sander",
+      "name" : "Pedro V.",
+      "surname" : "Sander"
+    }, {
+      "uri" : "http://drinventor/Diego-Nehab",
+      "name" : "Diego",
+      "surname" : "Nehab"
+    }, {
+      "uri" : "http://drinventor/Eden-Chlamtac",
+      "name" : "Eden",
+      "surname" : "Chlamtac"
+    }, {
+      "uri" : "http://drinventor/Hugues-Hoppe",
+      "name" : "Hugues",
+      "surname" : "Hoppe"
+    } ]
+  },
+  "bagOfWords" : [ "observation", "do", "intersect", "E.", "thus", "we", "replace", "new", "odd", "join", "-lrb-", "-rrb-", "-lrb-", "figure", "11e", "-rrb-", "contain", "strictly", "fewer", "tree", "than", "contradict", "we", "assumption", "G.", "case", "tree", "-lrb-", "figure", "11d", "-rrb-", "path", "illegal", "so", "distinct", "from", "intersect", "which", "observation", "contradict", "minimality", "-lrb-", "figure", "11c", "-rrb-", "thus", "replace", "we", "get", "shortest", "path", "-lrb-", "figure", "11b", "-rrb-", "minimality", "observation", "both", "path", "shortest", "path", "from", "y.", "let", "sub-path", "from", "let", "shortest", "tree", "path", "from", "we", "consider", "two", "case", "Case", "node", "same", "tree", "-lrb-", "possibly", "-rrb-", "-lrb-", "figure", "11a", "-rrb-", "suppose", "sake", "contradiction", "some", "vertex", "odd", "some", "tree", "connect", "legal", "path", "exist", "illegal", "shortest", "path", "contain", "two", "internal", "vertex", "odd", "we", "may", "assume", "contain", "minimum", "number", "tree", "among", "all", "minimum", "odd", "join", "set", "-lrb-", "-rrb-", "-lrb-", "-rrb-", "would", "contradict", "minimality", "-lrb-", "see", "replacement", "Figure", "11", "-rrb-" ],
+  "content" : "By Observation 2, p does not intersect E.  ? Thus if we replace p with p , the new V odd -join E  ? = ( E  ? \\ p) ? p ( Figure 11e ) contains strictly fewer trees than E,  ? contradicting our assumption for G.  ? Case 2: For trees T = T in G,  ? x ? T and y ? T (Figure 11d). This path is illegal, and so distinct from p, and it intersects E,  ? which by Observation 2 contradicts the minimality of E  ? ( Figure 11c ). Thus by replacing p x,y with T x,y , we get a shortest path p = p \\ p x,y ? T x,y ( Figure 11b ). By the minimality of p and Observation 1, both paths are shortest paths from x to y. Let p x,y be the sub-path of p from x to y, and let T x,y be the shortest tree path from x to y. We consider two cases: Case 1: Nodes x and y are in the same tree T (possibly T = T ) in G  ? ( Figure 11a ). Suppose for the sake of contradiction that for some vertices u, v ? V odd in some tree T connected by a legal T -path p, there exists an illegal shortest path p containing two internal vertices x, y ? V odd . We may assume that G  ? contains the minimum number of trees among all minimum V odd -joins. That is, the set ( E  ? \\ T a,b ) \\ p ? ? p ? \\ ( E  ? \\ T a,b ) would contradict the minimality of E  ? (see replacements in Figure 11 ).",
+  "resources" : [ ]
+}

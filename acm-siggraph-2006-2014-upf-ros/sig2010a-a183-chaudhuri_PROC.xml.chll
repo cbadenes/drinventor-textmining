@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2010a-a183-chaudhuri_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2010a/a183-chaudhuri_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Data-Driven Suggestions for Creativity Support in 3D Modeling",
+    "published" : "2010",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Siddhartha-Chaudhuri",
+      "name" : "Siddhartha",
+      "surname" : "Chaudhuri"
+    }, {
+      "uri" : "http://drinventor/Vladlen-Koltun",
+      "name" : "Vladlen",
+      "surname" : "Koltun"
+    } ]
+  },
+  "bagOfWords" : [ "number", "art", "student", "note", "InspireMe", "would", "useful", "early-stage", "3d", "design", "one", "comment", "would", "definitely", "use", "tool", "like", "during", "early", "conceptual", "phase", "another", "say", "inspireme", "would", "great", "whiteboxing", "data-driven", "suggestion", "could", "thus", "integrate", "tool", "assist", "artist", "conceptual", "3d", "design" ],
+  "content" : "A number of art students noted that InspireMe would be useful for early-stage 3D design, with one commenting ?I would definitely use a tool like this during an early conceptual phase? and another saying InspireMe ?would be great for whiteboxing. Data-driven suggestions could thus be integrated into such tools to assist artists with conceptual 3D design.",
+  "resources" : [ ]
+}

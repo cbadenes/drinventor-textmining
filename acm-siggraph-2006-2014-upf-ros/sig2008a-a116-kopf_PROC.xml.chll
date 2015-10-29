@@ -1,0 +1,54 @@
+{
+  "uri" : "sig2008a-a116-kopf_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2008a/a116-kopf_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Deep Photo: Model-Based Photograph Enhancement and Viewing",
+    "published" : "2008",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Johannes-Kopf",
+      "name" : "Johannes",
+      "surname" : "Kopf"
+    }, {
+      "uri" : "http://drinventor/Boris-Neubert",
+      "name" : "Boris",
+      "surname" : "Neubert"
+    }, {
+      "uri" : "http://drinventor/Billy-Chen",
+      "name" : "Billy",
+      "surname" : "Chen"
+    }, {
+      "uri" : "http://drinventor/Michael F.-Cohen",
+      "name" : "Michael F.",
+      "surname" : "Cohen"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Oliver-Deussen",
+      "name" : "Oliver",
+      "surname" : "Deussen"
+    }, {
+      "uri" : "http://drinventor/Matthew-Uyttendaele",
+      "name" : "Matthew",
+      "surname" : "Uyttendaele"
+    }, {
+      "uri" : "http://drinventor/Dani-Lischinski",
+      "name" : "Dani",
+      "surname" : "Lischinski"
+    } ]
+  },
+  "bagOfWords" : [ "however", "automatically", "resolve", "difference", "certainly", "challenging", "interesting", "topic", "future", "work" ],
+  "content" : "However, automatically resolving such differences is certainly a challenging and interesting topic for future work.",
+  "resources" : [ ]
+}

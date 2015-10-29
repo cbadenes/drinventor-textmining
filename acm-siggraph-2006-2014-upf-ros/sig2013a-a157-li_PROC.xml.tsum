@@ -1,0 +1,46 @@
+{
+  "uri" : "sig2013a-a157-li_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013a/a157-li_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Analyzing Growing Plants from 4D Point Cloud Data",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Yangyan-Li",
+      "name" : "Yangyan",
+      "surname" : "Li"
+    }, {
+      "uri" : "http://drinventor/Xiaochen-Fan",
+      "name" : "Xiaochen",
+      "surname" : "Fan"
+    }, {
+      "uri" : "http://drinventor/Niloy J.-Mitra",
+      "name" : "Niloy J.",
+      "surname" : "Mitra"
+    }, {
+      "uri" : "http://drinventor/Daniel A.-Chamovitz",
+      "name" : "Daniel A.",
+      "surname" : "Chamovitz"
+    }, {
+      "uri" : "http://drinventor/Daniel-Cohen-Or",
+      "name" : "Daniel",
+      "surname" : "Cohen-Or"
+    }, {
+      "uri" : "http://drinventor/Baoquan-Chen",
+      "name" : "Baoquan",
+      "surname" : "Chen"
+    } ]
+  },
+  "bagOfWords" : [ "thus", "best", "we", "knowledge", "we", "present", "first", "attempt", "focus", "event", "detection", "raw", "point", "cloud", "analyze", "growth", "pattern", "both", "geometry", "change", "topology", "across", "time", "context", "grow", "-lrb-", "decay", "-rrb-", "plant", "leaf-stem", "classification", "frame", "immediately", "identify", "new", "leaf", "start", "from", "input", "4d", "point", "cloud", "datum", "record", "development", "plant", "we", "main", "goal", "track", "growth", "plant", "keyword", "growth", "analysis", "4d", "point", "cloud", "event", "detection", "however", "unlike", "leaf", "largely", "isolate", "leaf-stem", "classification", "stem", "point", "still", "tightly", "connect", "leaf-stem", "binary", "classification", "already", "take", "stem", "point", "away", "from", "leave", "leaf", "point", "without", "support", "stem", "float", "air", "thus", "tracking", "plant", "growth", "-lrb-", "any", "growth", "larger", "context", "-rrb-", "require", "fundamentally", "different", "datum", "analysis", "algorithm", "synthesize", "live", "plant", "capture", "growth", "sequence", "detection", "new", "organ", "current", "frame", "forward", "analysis", "trigger", "backward", "analysis", "update", "leaf-stem", "classification", "well", "individual", "organ", "segmentation", "previous", "frame", "plant", "growth", "fundamentally", "different", "from", "animal", "growth" ],
+  "content" : "Thus, to the best of our knowledge, we present the first attempt focusing on event detection in raw point clouds, and analyzing growth patterns, both in geometry and changing topology across time, in the context of growing (and decaying) plants. The leaf-stem classification for this frame immediately identifies the new leaf. Starting from input 4D point cloud data that records development of a plant, our main goal is to track growth of the plant. Keywords: growth analysis, 4D point cloud, event detection However, unlike leaves that are largely isolated by the leaf-stem classification, the stems points are still tightly connected. The leaf-stem binary classification already takes the stem points S t away from P t , leaving the leaf points, without the support of stems, floating in the air. Thus, tracking plant growth (or any growth in a larger context) requires fundamentally different data analysis algorithms. Synthesizing live plants with captured growth sequence. Detection of new organs in the current frame of the forward analysis, triggers the backward analysis to update the leaf-stem classification, as well as individual organ segmentation of previous frames. Plant growth is fundamentally different from animal growth.",
+  "resources" : [ ]
+}

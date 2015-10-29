@@ -1,0 +1,30 @@
+{
+  "uri" : "sig2013-a34-bernstein_PROC.xml",
+  "url" : "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf/sig2013/a34-bernstein_PROC.xml",
+  "source" : {
+    "name" : "SIGGRAPH",
+    "uri" : "http://drinventor/SIGGRAPH",
+    "url" : "http://drinventor/SIGGRAPH",
+    "protocol" : "http"
+  },
+  "metainformation" : {
+    "title" : "Putting Holes in Holey Geometry: Topology Change for Arbitrary Surfaces",
+    "published" : "2013",
+    "format" : "pdf",
+    "language" : "en",
+    "rights" : "GPLv2",
+    "description" : "",
+    "creators" : [ {
+      "uri" : "http://drinventor/Gilbert Louis-Bernstein",
+      "name" : "Gilbert Louis",
+      "surname" : "Bernstein"
+    }, {
+      "uri" : "http://drinventor/Chris-Wojtan",
+      "name" : "Chris",
+      "surname" : "Wojtan"
+    } ]
+  },
+  "bagOfWords" : [ "closing", "we", "have", "provide", "method", "compute", "topological", "change", "triangle", "mesh", "subject", "typical", "restriction", "common", "among", "most", "geometric", "algorithm", "we", "method", "do", "require", "input", "mesh", "represent", "solid", "object", "so", "more", "widely", "applicable", "than", "most", "exist", "algorithm", "further", "improve", "method?s", "reliability", "we", "provide", "novel", "error", "correction", "mechanism", "both", "handle", "poor-quality", "mesh", "tolerate", "inaccuracy", "collision", "detection", "computation", "because", "we", "method", "error-tolerant", "applicable", "wide", "range", "potential", "input", "we", "believe", "can", "integrate", "nicely", "geometric", "modeling", "application", "future", "algorithm?s", "efficiency", "simplicity", "allow", "topology", "change", "happen", "naturally", "any", "deformation", "tool", "instead", "need", "explicitly", "effect", "through", "special", "tool", "consequence", "ease", "integration", "we", "believe", "we", "method", "have", "potential", "significantly", "improve", "standard", "work", "flow", "geometric", "modeler", "once", "user", "understand", "general", "idea", "behavior", "like", "topology", "change", "how", "different", "tool", "can", "use", "deform", "surface", "can", "discover", "new", "strategy", "through", "exploration", "continue", "use", "way", "comparison", "sketch-based", "modeling", "program", "must", "incorporate", "special", "new", "gesture", "type", "which", "user", "must", "learn", "how", "execute", "order", "introduce", "tunnel", "handle", "exist", "surface", "tool", "less", "likely", "lead", "user", "discover", "serendipitous", "use", "combination", "we", "see", "we", "method", "way", "easily", "incorporate", "topology", "change", "3d", "modeler", "similar", "way", "Harmon", "et", "al.", "-lsb-", "2011", "-rsb-", "incorporate", "collision", "detection", "response", "we", "suspect", "line", "thinking", "may", "lead", "further", "innovation", "3d", "modeling", "tool", "how", "can", "we", "incorporate", "more", "behavior", "-lrb-", "e.g.", "topology", "change", "collision", "response", "-rrb-", "natural", "otherwise", "compound", "effect", "we", "tool", "how", "few", "tool", "behavior", "can", "we", "use", "build", "parsimonious", "compelling", "flexible", "modeling", "system" ],
+  "content" : "In closing, we have provided a method for computing topological changes on triangle meshes that are not subject to the typical restrictions common among most geometric algorithms. Our method does not require the input meshes to represent solid objects, so it is more widely applicable than most existing algorithms. To further improve the method?s reliability, we provide a novel error correction mechanism that both handles poor-quality meshes and tolerates inaccuracies in collision detection computations. Because our method is error-tolerant and applicable to such a wide range of potential inputs, we believe that it can integrate nicely into geometric modeling applications of the future. The algorithm?s efficiency and simplicity allow topology change to happen naturally with any deformation tool, instead of needing to be explicitly effected through a special tool. As a consequence of this ease of integration, we believe our method has the potential to significantly improve the standard work flow of a geometric modeler. Once a user understands the general idea of a behavior like topology change and how their different tools can be used to deform a surface, they can discover new strategies through exploration and continued use. By way of comparison, sketch-based modeling programs must incorporate special new gesture types, which the user must then learn how to execute in order to  introduce tunnels or handles in an existing surface. These tools are less likely to lead the user to discover serendipitous uses or combinations. We see our method as a way to easily incorporate topology change into a 3d modeler, similar to the way Harmon et al. [2011] incorporate collision detection and response. We suspect that this line of thinking may lead to further innovations in 3d modeling tools. How can we incorporate more behaviors, (e.g. topology change, collision response) natural or otherwise, with compounding effects into our tools? How few tools and behaviors can we use to build a parsimonious, compelling and flexible modeling system?",
+  "resources" : [ ]
+}
