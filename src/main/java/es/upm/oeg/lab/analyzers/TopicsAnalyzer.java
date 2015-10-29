@@ -38,7 +38,7 @@ public class TopicsAnalyzer {
                 "topics"}));
 
         IntStream.
-                range(0, 50).
+                range(0, 100).
                 mapToObj(i -> modeler.learn(maxEval, maxIt)).
                 forEach(s -> helper.add(Arrays.asList(new String[]{
                         String.valueOf(maxEval),
