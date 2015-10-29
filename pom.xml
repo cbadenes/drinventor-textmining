@@ -296,7 +296,7 @@
             </snapshots>
         </repository>
         <repository>
-            <id>harvester-mvn-repo</id>
+            <id>ressist-mvn-repo</id>
             <url>https://raw.github.com/cbadenes/epnoi-ressist/mvn-repo/</url>
             <snapshots>
                 <enabled>true</enabled>
