@@ -3,63 +3,42 @@ package es.upm.oeg.lab.modelers;
 import es.upm.oeg.epnoi.harvester.domain.ResearchObject;
 import es.upm.oeg.epnoi.matching.metrics.domain.entity.ConceptualResource;
 import es.upm.oeg.epnoi.matching.metrics.domain.entity.RegularResource;
+import es.upm.oeg.epnoi.matching.metrics.domain.entity.Vocabulary;
 import es.upm.oeg.epnoi.matching.metrics.domain.space.ConceptsSpace;
 import es.upm.oeg.epnoi.matching.metrics.domain.space.TopicsSpace;
 import es.upm.oeg.epnoi.matching.metrics.topics.LDASettings;
 import es.upm.oeg.epnoi.matching.metrics.topics.search.LDASolution;
-import es.upm.oeg.epnoi.ressist.parser.CRParser;
-import es.upm.oeg.epnoi.ressist.parser.ROPair;
-import es.upm.oeg.epnoi.ressist.parser.ROParser;
-import es.upm.oeg.epnoi.ressist.parser.RRParser;
-import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaPairRDD;
+import es.upm.oeg.lab.data.TopicModel;
 import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.mllib.linalg.Vector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import scala.Tuple2;
+import scala.collection.JavaConversions;
+import scala.collection.JavaConverters;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
  * Created by cbadenes on 29/10/15.
  */
-public class TopicModeler {
+public class TopicModeler extends ROModeler{
 
     private static final Logger logger = LoggerFactory.getLogger(TopicModeler.class);
 
-    private static final ROParser roParser  = new ROParser();
-
-    private static final ROPair roPair      = new ROPair();
-
-    private static final RRParser rrParser  = new RRParser();
-
-    private static final CRParser crParser  = new CRParser();
-
-
     private final ConceptsSpace conceptsSpace;
+    private final String id;
 
-    public TopicModeler(String filesPattern){
-
-        // Initialize Spark Context
-        SparkConf conf = new SparkConf().
-                setMaster("local[*]").
-                setAppName("DrInventor").
-                set("spark.executor.memory", "12g").
-                set("spark.driver.maxResultSize","0");
-        JavaSparkContext sc = new JavaSparkContext(conf);
-
-        // Load directory as RDD of file (name,content)
-        JavaPairRDD<String, String> input = sc.wholeTextFiles(filesPattern);
-
-        // Convert files to Research Objects
-        JavaRDD<ResearchObject> researchObjects = input.flatMap(roParser);
-        logger.info("Number of Research Objects: " + researchObjects.count());
+    public TopicModeler(String id, JavaRDD<ResearchObject> ros){
+        this.id = id;
 
         // Map of uri/title
-        Map<String, String> roPairs = researchObjects.mapToPair(roPair).collectAsMap();
+        Map<String, String> roPairs = ros.mapToPair(roPair).collectAsMap();
 
         // Convert Research Objects to Regular Resources
-        JavaRDD<RegularResource> regularResources = researchObjects.map(rrParser);
+        JavaRDD<RegularResource> regularResources = ros.map(rrParser);
         logger.info("Number of Regular Resources: " + regularResources.count());
 
         // Convert Regular Resources to Conceptual Resources
@@ -76,12 +55,22 @@ public class TopicModeler {
         return LDASettings.learn(conceptsSpace.featureVectors(), maxEval, maxIt);
     }
 
-    public TopicsSpace build(Integer maxIt){
+    public TopicModel build(Integer maxIt){
         LDASettings.setMaxIterations(maxIt);
-        return new TopicsSpace(conceptsSpace);
+
+        TopicsSpace topicsSpace = new TopicsSpace(conceptsSpace);
+
+        Map<Object, String> words                 = JavaConverters.mapAsJavaMapConverter(conceptsSpace.vocabulary().wordsByKeyMap()).asJava();
+        Tuple2<int[], double[]>[] topics        = topicsSpace.model().ldaModel().describeTopics(200);
+        List<Tuple2<Object, Vector>> documents  = topicsSpace.model().ldaModel().topicDistributions().toJavaRDD().collect();
+        List<Tuple2<Object, ConceptualResource>> resources = conceptsSpace.conceptualResourcesMap().toJavaRDD().collect();
+
+        logger.info("Created topic model with " + documents.size() + " documents");
+
+        return new TopicModel(id,documents,words,topics,resources);
     }
 
-    public TopicsSpace build(Integer numTopics, Double alpha, Double beta, Integer maxIt){
+    public TopicModel build(Integer numTopics, Double alpha, Double beta, Integer maxIt){
         // Manual Configuration
         LDASettings.setTopics(numTopics);
         LDASettings.setAlpha(alpha);
