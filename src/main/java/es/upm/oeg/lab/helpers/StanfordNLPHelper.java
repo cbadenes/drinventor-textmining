@@ -19,7 +19,7 @@ import java.util.Properties;
  */
 public class StanfordNLPHelper {
 
-    //adding extra terms to standard lucene list
+    //adding extra terms to standard lucene listByExtension
     private static final String customStopWordList = "" +
             "a,also,an,and,any,are,as,at," +
             "be,become,both,bring,but,by," +
@@ -86,7 +86,7 @@ public class StanfordNLPHelper {
                 // this is the POS tag of the token
                 String pos = token.get(PartOfSpeechAnnotation.class);
                 // Retrieve and add the lemma for each word into the
-                // list of lemmas
+                // listByExtension of lemmas
                 String lemma = token.get(LemmaAnnotation.class);
 
                 Pair<Boolean, Boolean> stopword = token.get(StopwordAnnotator.class);

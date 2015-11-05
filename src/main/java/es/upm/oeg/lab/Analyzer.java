@@ -1,9 +1,8 @@
 package es.upm.oeg.lab;
 
 import es.upm.oeg.lab.builders.*;
-import es.upm.oeg.lab.comparators.ItemComparator;
+import es.upm.oeg.lab.comparators.StringComparator;
 import es.upm.oeg.lab.data.*;
-import es.upm.oeg.lab.helpers.SparkHelper;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.slf4j.Logger;
@@ -25,18 +24,28 @@ public class Analyzer {
      * Parameters
      ***********************************************************************************/
 
-    private static final int NUM_WORDS              = 20;
+    private static final String CONTENT_ANNOTATED_CORPUS    = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf";
 
-    private static final int W2V_DIMENSION          = 100;
+    private static final String CONTEXT_ANNOTATED_CORPUS    = "src/main/resources/siggraphpaperMetaFilenames.json";
 
-    private static final int LDA_MAX_ITERATIONS     = 100;
+    private static final int NUM_WORDS                      = 10;
+
+    private static final int W2V_DIMENSION                  = 100;
+
+    private static final int LDA_MAX_ITERATIONS             = 10;
 
     /***********************************************************************************
      ***********************************************************************************/
 
     private static final Logger logger = LoggerFactory.getLogger(Analyzer.class);
 
-    public void analyze() throws IOException {
+    public void analyze(String contentAnnotatedCorpus, String contextAnnotatedCorpus) throws IOException {
+
+        /***********************************************************************************
+         * Harvesting
+         ***********************************************************************************/
+        JavaRDD<Item> items = CorpusBuilder.harvest(contentAnnotatedCorpus,contextAnnotatedCorpus).cache();
+
 
         /***********************************************************************************
          * Corpus Analysis
@@ -44,18 +53,13 @@ public class Analyzer {
         logger.info("########### Corpus:");
 
         // Size of corpus
-        JavaRDD<Item> items     = SparkHelper.sc.parallelize(CorpusBuilder.load().getPapers()).map(p -> ItemBuilder.build(p)).cache();
         logger.info("Papers: " + items.count());
 
         JavaRDD<Item> annotatedPapers = items.filter(i -> i.isAnnotated()).cache();
         logger.info("Annotated papers: " + annotatedPapers.count());
 
-        // Missing Articles
-        JavaRDD<Item> nonAnnotatedPapers = items.filter(i -> !i.isAnnotated()).cache();
-        nonAnnotatedPapers.foreach(i -> logger.warn("Paper not annotated: " + i));
-
-        // Conflicting Articles
-        JavaRDD<Item> errorPapers = annotatedPapers.filter(i -> !ItemComparator.same(i.getRefPaper().getTitle(), i.getTitle())).cache();
+        // Error Articles
+        JavaRDD<Item> errorPapers = annotatedPapers.filter(i -> !StringComparator.same(i.getRefPaper().getTitle(), i.getTitle())).cache();
         logger.info("Error papers: " + errorPapers.count());
         errorPapers.foreach(i -> logger.warn("Paper error: [" + i.getRefPaper().getFilename() + "] has reference title: '" + i.getRefPaper().getTitle() + "' different from content title: '" + i.getTitle() + "'"));
 
@@ -69,7 +73,7 @@ public class Analyzer {
         // Categories in corpus
         logger.info("########### Categories:");
         JavaPairRDD<String, Integer> categoryFreq = corpusItems.mapToPair(i -> new Tuple2<String, Integer>(i.getRefPaper().getDomain(), 1)).reduceByKey((a, b) -> a + b).cache();
-        categoryFreq.foreach(t -> logger.info("Category: '" + t._1() + "' in " + t._2() + " articles"));
+        categoryFreq.foreach(t -> logger.info("Found Category: '" + t._1() + "' in " + t._2() + " articles"));
 
         // Statistics by document
         logger.info("########### Nlp Statistics:");
@@ -184,7 +188,7 @@ public class Analyzer {
     public static void main (String[] args){
         Analyzer analyzer = new Analyzer();
         try {
-            analyzer.analyze();
+            analyzer.analyze(CONTENT_ANNOTATED_CORPUS, CONTEXT_ANNOTATED_CORPUS);
         } catch (IOException e) {
             e.printStackTrace();
         }

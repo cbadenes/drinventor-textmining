@@ -37,7 +37,7 @@ public class CorpusAnalyzer extends ROAnalyzer {
 //        }
 //
 //        // Load UPF-processed corpus
-//        for (Path path: FileHelper.list("acm-siggraph-2006-2014-upf-ros", "abs")){
+//        for (Path path: FileHelper.listByExtension("acm-siggraph-2006-2014-upf-ros", "abs")){
 //            ResearchObject ro = ROBuilder.fromJson(path.toFile());
 //            String fileName = StringUtils.substringBefore(StringUtils.substringAfter(ro.getUri(), "-"), "_PROC.xml").toLowerCase();
 //            String title    = ro.getMetainformation().getTitle().trim().toLowerCase();

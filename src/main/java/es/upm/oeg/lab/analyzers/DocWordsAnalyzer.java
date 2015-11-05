@@ -29,7 +29,7 @@ public class DocWordsAnalyzer extends ROAnalyzer {
 //        Map<String,Map<String,String>> counter = new HashMap<>();
 //
 //
-//        for (Path path: FileHelper.list(RO_FOLDER, "*")){
+//        for (Path path: FileHelper.listByExtension(RO_FOLDER, "*")){
 //            System.out.println("Reading: " + path);
 //
 //            ResearchObject ro   = ROBuilder.fromJson(path.toFile());

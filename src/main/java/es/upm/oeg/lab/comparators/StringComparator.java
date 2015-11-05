@@ -7,7 +7,7 @@ import org.apache.commons.lang.StringUtils;
 /**
  * Created by cbadenes on 02/11/15.
  */
-public class ItemComparator {
+public class StringComparator {
 
     public static boolean sameFile(Paper p, AnnotatedDoc d){
         String a = StringUtils.substringBefore(p.getFilename(),".pdf");

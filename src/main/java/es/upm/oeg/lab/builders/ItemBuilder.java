@@ -29,44 +29,42 @@ public class ItemBuilder {
 
     public static Item build(Path path, Paper paper){
 
-        // Read annotated Doc
-        AnnotatedDoc doc = new AnnotatedDoc(path);
-        // Initialize Item
-        Item item = new Item();
-        // Ref Paper
-        item.setRefPaper(paper);
-        // Title
-        item.setTitle(doc.getTitle().trim());
-        // Authors
-        List<Creator> authors = doc.getAuthors().stream().map(a -> CreatorBuilder.newInstance().addName(a.getFirstName()).addSurname(a.getSurname()).build()).collect(Collectors.toList());
-        item.setAuthors(authors);
-        // Year
-        item.setDate(doc.getYear());
-        // Sections
-        Arrays.stream(Section.Type.values()).forEach(s -> item.add(new Section(nlpHelper.parse(doc.get(s)), s)));
-
-        // Save to DB
-        String key = paper.getFilename();
-        StorageHelper.save(DB_TYPE,key,item);
-
-        return item;
-    }
-
-    public static Item build(Paper paper){
-
         // Read from DB
         String key = paper.getFilename();
         Optional<Object> data = StorageHelper.read(DB_TYPE, key);
 
-        if (!data.isPresent()){
-            logger.error("Paper not harvested: " + paper);
-            Item item = new Item();
-            // Ref Paper
-            item.setRefPaper(paper);
-            return item;
+        if (data.isPresent()){
+            logger.info("Loading item: '" + key + "' from db");
+            return (Item) data.get();
         }
 
-        return (Item) data.get();
+        logger.info("Creating item from annotated document: '" + path.toString() + "'");
+
+        // Initialize Item
+        Item item = new Item();
+        // Ref Paper
+        item.setRefPaper(paper);
+
+        if (path.toFile().exists()){
+            // Read annotated Doc
+            AnnotatedDoc doc = new AnnotatedDoc(path);
+            // Title
+            item.setTitle(doc.getTitle().trim());
+            // Authors
+            List<Creator> authors = doc.getAuthors().stream().map(a -> CreatorBuilder.newInstance().addName(a.getFirstName()).addSurname(a.getSurname()).build()).collect(Collectors.toList());
+            item.setAuthors(authors);
+            // Year
+            item.setDate(doc.getYear());
+            // Sections
+            Arrays.stream(Section.Type.values()).forEach(s -> item.add(new Section(nlpHelper.parse(doc.get(s)), s)));
+        }else{
+            logger.error("Paper does not annotated: " + paper);
+        }
+
+        // Save to DB
+        StorageHelper.save(DB_TYPE,key,item);
+
+        return item;
     }
 
 }

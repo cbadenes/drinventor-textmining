@@ -46,11 +46,15 @@ public class FileHelper {
         return path;
     }
     
-    public static List<Path> list(String baseDir, String fileExtension) throws IOException {
+    public static List<Path> listByExtension(String baseDir, String fileExtension) throws IOException {
+        return listByName(baseDir,"."+fileExtension);
+    }
+
+    public static List<Path> listByName(String baseDir, String name) throws IOException {
         Path dir = new File(baseDir).getAbsoluteFile().toPath();
 
         List<Path> files                = new ArrayList<>();
-        PathMatcher matcher             = FileSystems.getDefault().getPathMatcher("glob:*."+ fileExtension );
+        PathMatcher matcher             = FileSystems.getDefault().getPathMatcher("glob:*"+ name );
         DirectoryStream<Path> stream    = Files.newDirectoryStream(dir);
 
         for (Path path: stream) {
@@ -59,7 +63,7 @@ public class FileHelper {
                 files.add(path);
             }
             if (path.toFile().isDirectory()){
-                files.addAll(list(path.toString(), fileExtension));
+                files.addAll(listByExtension(path.toString(), name));
             }
         }
 

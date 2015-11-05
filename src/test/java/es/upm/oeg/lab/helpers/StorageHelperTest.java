@@ -34,18 +34,18 @@ public class StorageHelperTest {
             DBMaker dbFile = DBMaker.newFileDB(dbPath.toFile());
             dbFile.closeOnJvmShutdown();
             db = dbFile.make();
-            logger.info("Creating list: " + dbPath.toString());
+            logger.info("Creating listByExtension: " + dbPath.toString());
             List<String> terms = Arrays.asList(new String[]{"one","two","three"});
             HTreeMap<Object, Object> map = db.createHashMap("test").make();
             map.put("terms",terms);
             db.commit();
-            logger.info("list created");
+            logger.info("listByExtension created");
         }
 
-        logger.info("reading list ..");
+        logger.info("reading listByExtension ..");
         HTreeMap<Object, Object> map = db.getHashMap("test");
         List<String> terms = (List<String>) map.get("terms");
-        logger.info("list read: " + terms);
+        logger.info("listByExtension read: " + terms);
         db.close();
     }
 

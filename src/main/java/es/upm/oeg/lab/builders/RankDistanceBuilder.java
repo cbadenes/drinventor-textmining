@@ -130,7 +130,7 @@ public class RankDistanceBuilder {
 
 
     /**
-     * Counts the number of some operations to transform one list to the other
+     * Counts the number of some operations to transform one listByExtension to the other
      * @return
      */
     public static double editDistance(int[]a, int[]b){
