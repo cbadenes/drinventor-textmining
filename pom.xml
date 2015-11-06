@@ -41,7 +41,8 @@
         <stanford.version>3.5.2</stanford.version>
         <surefire.junit.version>2.19</surefire.junit.version>
         <testutils.version>1.0.0</testutils.version>
-        <upf.version>1.0.4</upf.version>
+        <upf.version>1.0.5</upf.version>
+        <velocity.version>1.7</velocity.version>
     </properties>
 
     <build>
@@ -152,6 +153,7 @@
     <dependencies>
 
         <!-- UPF Dependencies -->
+
         <dependency>
             <groupId>edu.upf.taln.dri</groupId>
             <artifactId>lib</artifactId>
@@ -262,6 +264,12 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
+        </dependency>
+
 
         <!-- Storage Dependencies -->
         <dependency>

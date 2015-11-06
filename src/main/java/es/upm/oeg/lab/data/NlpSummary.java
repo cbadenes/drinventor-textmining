@@ -38,7 +38,9 @@ public class NlpSummary implements Serializable{
 
     };
 
-    String id;
+    String name;
+
+    String label;
 
     Long numSentences;
 
@@ -93,7 +95,7 @@ public class NlpSummary implements Serializable{
     private static void logVector(Section.Type section, String prefix, String[] labels, double[] values){
 
         for (int i=0;i < labels.length ; i++){
-            logger.info(DIMarkers.stats,prefix + " " + labels[i] +" for '"+section+"': " + values[0]);
+            logger.info(DIMarkers.stats,prefix + " " + labels[i] +" for '"+section+"': " + values[i]);
         }
     }
 }

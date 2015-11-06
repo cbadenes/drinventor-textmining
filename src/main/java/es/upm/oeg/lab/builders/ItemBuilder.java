@@ -43,7 +43,7 @@ public class ItemBuilder {
         // Ref Paper
         item.setRefPaper(paper);
 
-        if (path != null){
+        if (path.toFile().exists()){
             logger.info("Creating item from annotated document: '" + path.toString() + "'");
             // Read annotated Doc
             AnnotatedDoc doc = new AnnotatedDoc(path);

@@ -8,6 +8,8 @@ import org.slf4j.MarkerFactory;
  */
 public class DIMarkers {
 
+    public static final String DIRECTORY    = "logs";
+
     public static final Marker corpus       = MarkerFactory.getMarker("CORPUS");
 
     public static final Marker categories   = MarkerFactory.getMarker("CATEGORIES");

@@ -5,7 +5,6 @@ import es.upm.oeg.lab.data.Item;
 import es.upm.oeg.lab.data.Section;
 import es.upm.oeg.lab.data.W2VModel;
 import es.upm.oeg.lab.helpers.FileHelper;
-import es.upm.oeg.lab.helpers.ResultHelper;
 import es.upm.oeg.lab.helpers.StorageHelper;
 import es.upm.oeg.lab.log.DIMarkers;
 import es.upm.oeg.lab.modelers.Word2VecModeler;
@@ -15,7 +14,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.nio.file.Path;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 /**
  * Created by cbadenes on 03/11/15.
@@ -30,7 +32,7 @@ public class W2VBuilder {
 
     public static W2VModel build(JavaRDD<Item> items, Section.Type sectionType, int vectorSize){
 
-        Path modelPath = FileHelper.path(ResultHelper.DIRECTORY, "w2v."+ sectionType.id);
+        Path modelPath = FileHelper.path(StorageHelper.DIRECTORY, "w2v."+ sectionType.id);
 
         Word2VecModel model = null;
         if (modelPath.toFile().exists()){

@@ -50,13 +50,11 @@ public class CorpusBuilder {
 
 
         logger.info("Reading content annotations from: " + contentAnnotatedCorpus);
-        List<Path> xmls = FileHelper.list(contentAnnotatedCorpus, "xml");
-
-        Map<String,Path> filePaths = new HashMap<>();
-        xmls.stream().forEach(x -> filePaths.put(fileNameFromXml(x),x));
+        Map<String,String> filePaths = new HashMap<>();
+        FileHelper.list(contentAnnotatedCorpus, "xml").stream().forEach(x -> filePaths.put(fileNameFromXml(x), x.toString()));
 
         logger.info("Creating items");
-        return papers.stream().map(p -> ItemBuilder.build(filePaths.get(fileNameFromPdf(p.getFilename())), p));
+        return papers.stream().map(p -> ItemBuilder.build(Paths.get(filePaths.getOrDefault(fileNameFromPdf(p.getFilename()), "")), p));
 
     }
 
@@ -68,11 +66,11 @@ public class CorpusBuilder {
         JavaRDD<Paper> papersParallel = SparkHelper.sc.parallelize(papers);
 
         logger.info("Reading content annotations from: " + contentAnnotatedCorpus);
-        Map<String,Path> filePaths = new HashMap<>();
-        FileHelper.list(contentAnnotatedCorpus, "xml").stream().forEach(x -> filePaths.put(fileNameFromXml(x), x));
+        Map<String,String> filePaths = new HashMap<>();
+        FileHelper.list(contentAnnotatedCorpus, "xml").stream().forEach(x -> filePaths.put(fileNameFromXml(x), x.toString()));
 
         logger.info("Creating items");
-        return papersParallel.map(p -> ItemBuilder.build(filePaths.get(fileNameFromPdf(p.getFilename())), p));
+        return papersParallel.map(p -> ItemBuilder.build(Paths.get(filePaths.getOrDefault(fileNameFromPdf(p.getFilename()),"")), p));
 
     }
 

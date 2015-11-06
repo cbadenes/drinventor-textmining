@@ -2,6 +2,7 @@ package es.upm.oeg.lab.data;
 
 import es.upm.oeg.epnoi.harvester.domain.Creator;
 import lombok.Data;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,6 +41,10 @@ public class Item implements Serializable{
 
     public Section get(Section.Type sectionType){
         return sections.stream().filter(s -> s.isType(sectionType)).findFirst().get();
+    }
+
+    public String getName(){
+        return StringUtils.substringBefore(refPaper.getFilename(),".pdf");
     }
 
     @Override

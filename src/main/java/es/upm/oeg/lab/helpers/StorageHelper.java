@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import java.nio.file.Path;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by cbadenes on 03/11/15.
@@ -16,9 +17,11 @@ public class StorageHelper {
 
     private static final Logger logger = LoggerFactory.getLogger(StorageHelper.class);
 
-    private static Map<String,DB> dbs = new HashMap<>();
+    public static final String DIRECTORY    = "db";
 
-    public static Optional<Object> read(String type, String key){
+    private static ConcurrentHashMap<String,DB> dbs = new ConcurrentHashMap<>();
+
+    public synchronized  static Optional<Object> read(String type, String key){
         String dbName = dbName(type);
         DB db = getDB(dbName);
 
@@ -34,7 +37,7 @@ public class StorageHelper {
         return value;
     }
 
-    public static Optional<Set<Object>> list(String type){
+    public synchronized  static Optional<Set<Object>> list(String type){
         String dbName = dbName(type);
         DB db = getDB(dbName);
 
@@ -46,7 +49,7 @@ public class StorageHelper {
         return Optional.of(map.keySet());
     }
 
-    public static void save(String type, String key, Object value){
+    public synchronized static void save(String type, String key, Object value){
         String dbName = dbName(type);
         DB db = getDB(dbName);
 
@@ -60,7 +63,7 @@ public class StorageHelper {
         return type+".db";
     }
 
-    private static DB getDB(String dbId){
+    private synchronized static DB getDB(String dbId){
         if (!dbs.containsKey(dbId)){
             dbs.put(dbId,createDB(dbId));
         }
@@ -68,18 +71,18 @@ public class StorageHelper {
     }
 
     public static boolean exists(String dbName){
-        return FileHelper.path(ResultHelper.DIRECTORY, dbName).toFile().exists();
+        return FileHelper.path(DIRECTORY, dbName).toFile().exists();
     }
 
 
-    public static DB createDB(String dbId){
-        Path dbPath = FileHelper.path(ResultHelper.DIRECTORY, dbId);
+    public synchronized static DB createDB(String dbId){
+        Path dbPath = FileHelper.path(DIRECTORY, dbId);
         DB db;
         if (dbPath.toFile().exists()){
             logger.info("DB exists: " + dbPath.toString());
             db  = DBMaker.newFileDB(dbPath.toFile()).make();
         }else{
-            dbPath = FileHelper.create(ResultHelper.DIRECTORY, dbId);
+            dbPath = FileHelper.create(DIRECTORY, dbId);
             logger.info("DB does not exist: " + dbPath.toString());
             DBMaker dbFile = DBMaker.newFileDB(dbPath.toFile());
             dbFile.closeOnJvmShutdown();

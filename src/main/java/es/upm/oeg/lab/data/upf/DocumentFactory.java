@@ -3,11 +3,13 @@ package es.upm.oeg.lab.data.upf;
 import edu.upf.taln.dri.lib.Factory;
 import edu.upf.taln.dri.lib.exception.DRIexception;
 import edu.upf.taln.dri.lib.model.Document;
+import edu.upf.taln.dri.lib.model.DocumentImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.nio.file.Path;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by cbadenes on 23/10/15.
@@ -22,9 +24,7 @@ public class DocumentFactory {
 
     private static final Logger logger = LoggerFactory.getLogger(DocumentFactory.class);
 
-    private static final String DRI_RESOURCE_DIR_PATH = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/resources/upf/DRIresources-1.0.4";
-
-    private static final String BASE_DIR = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf";
+    private static AtomicInteger counter = new AtomicInteger(-1);
 
     static {
 
@@ -38,6 +38,10 @@ public class DocumentFactory {
 
     protected static Document parse(Path path) throws DRIexception {
         logger.info("Loading annotated doc from: " + path);
+        int count = counter.incrementAndGet();
+        if (count != 0){
+            try {Thread.sleep(30000);} catch (InterruptedException e) {e.printStackTrace();}
+        }
         return Factory.createNewDocument(path.toString());
     }
 

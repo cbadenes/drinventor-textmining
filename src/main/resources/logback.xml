@@ -4,30 +4,19 @@
     <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
 
     <!-- All log traces -->
-    <appender name="allFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/all-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/dri-analyzer-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="allFile" class="ch.qos.logback.core.FileAppender">
+        <!--<file>logs/all-${bySecond}.log</file>-->
+        <file>logs/all.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
     </appender>
 
     <!-- Only STATS log traces -->
-    <appender name="statsFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/stats-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/stats-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="statsFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/stats.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
@@ -41,15 +30,9 @@
     </appender>
 
     <!-- Only CORPUS log traces -->
-    <appender name="corpusFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/corpus-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/corpus-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="corpusFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/corpus.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
@@ -63,15 +46,9 @@
     </appender>
 
     <!-- Only CATEGORIES log traces -->
-    <appender name="categoriesFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/categories-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/categories-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="categoriesFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/categories.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
@@ -85,15 +62,9 @@
     </appender>
 
     <!-- Only EVAL log traces -->
-    <appender name="evalFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/eval-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/eval-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="evalFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/eval.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
@@ -107,15 +78,9 @@
     </appender>
 
     <!-- Only SIM log traces -->
-    <appender name="simFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/sim-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/sim-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="simFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/sim.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
@@ -129,15 +94,9 @@
     </appender>
 
     <!-- Only W2V log traces -->
-    <appender name="w2vFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/w2v-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/w2v-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="w2vFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/w2v.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
@@ -152,15 +111,9 @@
 
 
     <!-- Only TOPICS log traces -->
-    <appender name="topicsFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/topics-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/topics-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="topicsFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/topics.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
@@ -174,15 +127,9 @@
     </appender>
 
     <!-- Only ERROR or WARN log traces -->
-    <appender name="errorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${bySecond}/error-${bySecond}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>logs/${bySecond}/error-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>500MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
+    <appender name="errorFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/error.log</file>
+        <append>false</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%marker]-%logger{35} - %msg%n</pattern>
         </encoder>
@@ -193,7 +140,7 @@
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} %highlight(%-5level) [%marker]-%cyan(%logger{15}) - %msg %n</pattern>
+            <pattern>%d{HH:mm:ss.SSS} %highlight(%-5level) [%thread]: [%marker]-%cyan(%logger{15}) - %msg %n</pattern>
         </encoder>
     </appender>
 

@@ -5,22 +5,20 @@ import es.upm.oeg.lab.comparators.StringComparator;
 import es.upm.oeg.lab.data.*;
 import es.upm.oeg.lab.helpers.FileHelper;
 import es.upm.oeg.lab.helpers.SparkHelper;
+import es.upm.oeg.lab.helpers.ChartsHelper;
 import es.upm.oeg.lab.helpers.StorageHelper;
 import es.upm.oeg.lab.log.DIMarkers;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.mllib.stat.MultivariateStatisticalSummary;
-import org.apache.spark.mllib.stat.Statistics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import scala.Tuple2;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by cbadenes on 02/11/15.
@@ -31,7 +29,7 @@ public class Analyzer {
      * Parameters
      ***********************************************************************************/
 
-    private static final String CONTENT_ANNOTATED_CORPUS    = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf-sentAnalysis";
+    private static final String CONTENT_ANNOTATED_CORPUS    = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf";
 
     private static final String CONTEXT_ANNOTATED_CORPUS    = "src/main/resources/siggraphpaperMetaFilenames.json";
 
@@ -48,7 +46,8 @@ public class Analyzer {
 
     public void analyze(String contentAnnotatedCorpus, String contextAnnotatedCorpus) throws IOException {
 
-        FileHelper.create("logs");
+        Date time = new Date();
+        FileHelper.create(DIMarkers.DIRECTORY);
 
         logger.info(DIMarkers.eval,"Starting analysis with content-annotated-corpus='"+CONTENT_ANNOTATED_CORPUS
                 +"', context-annotated-corpus='"+CONTEXT_ANNOTATED_CORPUS +"', num-words='"+ NUM_WORDS +
@@ -66,7 +65,8 @@ public class Analyzer {
         /***********************************************************************************
          * Harvesting
          ***********************************************************************************/
-        JavaRDD<Item> items = CorpusBuilder.harvestParallel(contentAnnotatedCorpus, contextAnnotatedCorpus).cache();
+        Stream<Item> elements = CorpusBuilder.harvest(contentAnnotatedCorpus, contextAnnotatedCorpus);
+        JavaRDD<Item> items = SparkHelper.sc.parallelize(elements.collect(Collectors.toList()));
 
         /***********************************************************************************
          * Corpus Analysis
@@ -95,19 +95,33 @@ public class Analyzer {
         categoryFreq.foreach(t -> logger.info(DIMarkers.categories,"Category: '" + t._1() + "' in " + t._2() + " articles"));
 
         /***********************************************************************************
-         * Word Statistics
+         * Document and Token Statistics
          ***********************************************************************************/
 
         // Statistics by document
         JavaRDD<Summary> summaries = corpusItems.map(i -> SummaryBuilder.newInstance(i)).cache();
         summaries.foreach(s -> logger.info(DIMarkers.stats,s.toString()));
 
+        // Statistics by section
+        JavaRDD<NlpSummary> nlpSummaries = summaries.flatMap(s -> s.getSections()).cache();
 
-        for(Section.Type section: Section.Type.values()){
-            JavaRDD<NlpSummary> nlpSummaries = summaries.map(s -> s.getSections().stream().filter(p -> p.getId().equalsIgnoreCase(section.id)).findFirst().get()).cache();
-            MultivariateStatisticalSummary nlpStats = Statistics.colStats(nlpSummaries.map(s -> s.toVector()).rdd());
-            NlpSummary.log(nlpStats,section);
-        }
+        // Create boxplot json files
+        ChartsHelper.newBoxPlot("sentences", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumSentences())).collect());
+        ChartsHelper.newBoxPlot("tokens", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumTokens())).collect());
+        ChartsHelper.newBoxPlot("words", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumWords())).collect());
+        ChartsHelper.newBoxPlot("lemmas", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumLemmas())).collect());
+        ChartsHelper.newBoxPlot("in", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumIN())).collect());
+        ChartsHelper.newBoxPlot("jj", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumJJ())).collect());
+        ChartsHelper.newBoxPlot("nn", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumNN())).collect());
+        ChartsHelper.newBoxPlot("nnp", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNP())).collect());
+        ChartsHelper.newBoxPlot("nnps", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNPS())).collect());
+        ChartsHelper.newBoxPlot("rb", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumRB())).collect());
+        ChartsHelper.newBoxPlot("rp", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumRP())).collect());
+        ChartsHelper.newBoxPlot("vb", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumVB())).collect());
+        ChartsHelper.newBoxPlot("vbd", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBD())).collect());
+        ChartsHelper.newBoxPlot("vbn", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBN())).collect());
+        ChartsHelper.newBoxPlot("vbp", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBP())).collect());
+
 
         /***********************************************************************************
          * Models Creation
@@ -204,15 +218,30 @@ public class Analyzer {
                 try{precision = Double.valueOf(truePositives)  / Double.valueOf(truePositives + falsePositives);}catch (ArithmeticException e){}
                 try{recall = Double.valueOf(truePositives) / Double.valueOf(truePositives + falseNegatives);}catch (ArithmeticException e){}
                 logger.info(DIMarkers.eval,"Evaluation of section: '"+ sectionType+"' for category: '"+category+"': Precision="+precision + ", Recall="+recall + "[truePositives="+truePositives + ", falsePositive="+falsePositives + ", falseNegatives="+ falseNegatives+"]");
+
+
+
             }
         }
+
+        /***********************************************************************************
+         * Backup
+         ***********************************************************************************/
+        SimpleDateFormat dt = new SimpleDateFormat("yyyyMMdd-hhmmss");
+        String testId = "test-"+dt.format(time);
+        FileHelper.copyFolder(StorageHelper.DIRECTORY, testId);
+        FileHelper.copyFolder(DIMarkers.DIRECTORY, testId);
+        FileHelper.copyFolder(ChartsHelper.DIRECTORY, testId);
+        logger.info("Backup created in: " + testId);
+
     }
 
 
 
 
-    public static void main (String[] args){
+    public static void main (String[] args) throws IOException {
         Analyzer analyzer = new Analyzer();
+
         try {
             analyzer.analyze(CONTENT_ANNOTATED_CORPUS, CONTEXT_ANNOTATED_CORPUS);
         } catch (IOException e) {

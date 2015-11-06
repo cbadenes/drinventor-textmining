@@ -17,7 +17,8 @@ public class SummaryBuilder {
 
         for (Section section: item.getSections()){
             NlpSummary nlpSummary = measure(section.getText());
-            nlpSummary.setId(section.getType().id);
+            nlpSummary.setName(item.getName());
+            nlpSummary.setLabel(section.getType().id);
             summary.add(nlpSummary);
         }
 

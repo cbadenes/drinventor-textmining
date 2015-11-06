@@ -3,6 +3,7 @@ package es.upm.oeg.lab.helpers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import es.upm.oeg.epnoi.harvester.domain.ResearchObject;
+import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -69,6 +70,12 @@ public class FileHelper {
         }
 
         return files;
+    }
+
+    public static void copyFolder(String source, String target) throws IOException {
+        Path input  = Paths.get(source);
+        Path output = Paths.get(target);
+        FileUtils.copyDirectoryToDirectory(input.toFile(),output.toFile());
     }
 
     public  void write(Path path, String suffix, ResearchObject ro) throws IOException {

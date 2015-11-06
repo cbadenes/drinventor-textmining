@@ -1,7 +1,11 @@
 acm-siggraph-2006-2014-upf*
 .idea
 *.iml
+charts/
+db/
+logs/
 target/
+velocity.log
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
