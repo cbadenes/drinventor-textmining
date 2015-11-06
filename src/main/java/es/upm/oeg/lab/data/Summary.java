@@ -1,5 +1,6 @@
 package es.upm.oeg.lab.data;
 
+import es.upm.oeg.lab.builders.JsonBuilder;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -20,5 +21,11 @@ public class Summary implements Serializable {
 
     public void add(NlpSummary nlpSummary){
         sections.add(nlpSummary);
+    }
+
+
+    @Override
+    public String toString(){
+        return JsonBuilder.toJson(this);
     }
 }

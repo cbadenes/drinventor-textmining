@@ -25,7 +25,7 @@ public class ItemBuilder {
 
     private static final StanfordNLPHelper nlpHelper = new StanfordNLPHelper();
 
-    private static final String DB_TYPE = "items";
+    public static final String DB_TYPE = "items";
 
     public static Item build(Path path, Paper paper){
 
@@ -38,14 +38,13 @@ public class ItemBuilder {
             return (Item) data.get();
         }
 
-        logger.info("Creating item from annotated document: '" + path.toString() + "'");
-
         // Initialize Item
         Item item = new Item();
         // Ref Paper
         item.setRefPaper(paper);
 
-        if (path.toFile().exists()){
+        if (path != null){
+            logger.info("Creating item from annotated document: '" + path.toString() + "'");
             // Read annotated Doc
             AnnotatedDoc doc = new AnnotatedDoc(path);
             // Title

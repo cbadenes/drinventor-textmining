@@ -2,6 +2,7 @@ package es.upm.oeg.lab.data;
 
 import es.upm.oeg.epnoi.matching.metrics.domain.entity.ConceptualResource;
 import es.upm.oeg.lab.builders.ROBuilder;
+import es.upm.oeg.lab.log.DIMarkers;
 import org.apache.spark.mllib.linalg.Vector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -97,14 +98,14 @@ public class TopicModel implements Serializable{
         Optional<Tuple2<Object, Vector>> tupleOpt = documents.stream().filter(t -> t._1().equals(resId)).findFirst();
 
         if (!tupleOpt.isPresent()){
-            logger.error("Topics distribution not found for item: " + item  + " in documents: " + documents.size());
+            logger.error(DIMarkers.topic_model,"Topics distribution not found for item: " + item  + " in documents: " + documents.size());
             return new double[]{0.0};
         }
         Tuple2<Object, Vector> tuple = tupleOpt.get();
         logger.debug("Tuple: " + tuple);
 
         double[] dist = tuple._2().toArray();
-        logger.info("Topics Distribution of '"+item.getRefPaper().getFilename()+"' in '"+id+"': " + Arrays.toString(dist));
+        logger.info(DIMarkers.topic_model,"Topics Distribution of '"+item.getRefPaper().getFilename()+"' in '"+id+"': " + Arrays.toString(dist));
         return dist;
     }
 

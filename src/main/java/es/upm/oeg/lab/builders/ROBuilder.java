@@ -23,7 +23,7 @@ public class ROBuilder {
 
     private static final String DRI_URI = "drinventor/";
 
-    private static final String DB_TYPE = "ro";
+    public static final String DB_TYPE = "ro";
 
     public static ResearchObject newInstance(Item item, Section.Type sectionType){
 

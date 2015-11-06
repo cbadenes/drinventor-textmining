@@ -31,6 +31,11 @@ public class FileHelper {
         return Paths.get(directory,fileName);
     }
 
+    public static void create(String directory){
+        File baseDir = Paths.get(directory).toFile();
+        if (!baseDir.exists()) baseDir.mkdirs();
+    }
+
     public static Path create(String directory, String fileName){
         File baseDir = Paths.get(directory).toFile();
         if (!baseDir.exists()) baseDir.mkdirs();
@@ -46,15 +51,11 @@ public class FileHelper {
         return path;
     }
     
-    public static List<Path> listByExtension(String baseDir, String fileExtension) throws IOException {
-        return listByName(baseDir,"."+fileExtension);
-    }
-
-    public static List<Path> listByName(String baseDir, String name) throws IOException {
+    public static List<Path> list(String baseDir, String name) throws IOException {
         Path dir = new File(baseDir).getAbsoluteFile().toPath();
 
         List<Path> files                = new ArrayList<>();
-        PathMatcher matcher             = FileSystems.getDefault().getPathMatcher("glob:*"+ name );
+        PathMatcher matcher             = FileSystems.getDefault().getPathMatcher("glob:*."+ name );
         DirectoryStream<Path> stream    = Files.newDirectoryStream(dir);
 
         for (Path path: stream) {
@@ -63,7 +64,7 @@ public class FileHelper {
                 files.add(path);
             }
             if (path.toFile().isDirectory()){
-                files.addAll(listByExtension(path.toString(), name));
+                files.addAll(list(path.toString(), name));
             }
         }
 

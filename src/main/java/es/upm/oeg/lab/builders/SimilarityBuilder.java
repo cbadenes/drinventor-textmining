@@ -17,7 +17,7 @@ public class SimilarityBuilder {
 
     public static double similarity(double[] a, double[] b){
         double value = JensenShannonSimilarity.apply(a, b);
-        logger.info("similarity between: " + Arrays.toString(a) + " and " + Arrays.toString(b) + " is: " + value);
+        logger.debug("similarity between: " + Arrays.toString(a) + " and " + Arrays.toString(b) + " is: " + value);
         return value;
     }
 

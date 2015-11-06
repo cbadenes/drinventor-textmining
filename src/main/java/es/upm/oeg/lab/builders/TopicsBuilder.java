@@ -5,6 +5,7 @@ import es.upm.oeg.lab.data.Item;
 import es.upm.oeg.lab.data.Section;
 import es.upm.oeg.lab.data.TopicModel;
 import es.upm.oeg.lab.helpers.StorageHelper;
+import es.upm.oeg.lab.log.DIMarkers;
 import es.upm.oeg.lab.modelers.TopicModeler;
 import org.apache.spark.api.java.JavaRDD;
 import org.slf4j.Logger;
@@ -22,11 +23,9 @@ public class TopicsBuilder {
 
     private static final Logger logger = LoggerFactory.getLogger(TopicsBuilder.class);
 
-    private static final String DB_TYPE = "topics";
+    public static final String DB_TYPE = "topics";
 
     public static TopicModel build(JavaRDD<Item> items, Section.Type sectionType, int maxIterations){
-
-
 
         String key = sectionType.id;
 
@@ -63,7 +62,7 @@ public class TopicsBuilder {
             try {
                 model = build(items, sectionType, maxIterations);
             } catch (IllegalArgumentException e){
-                logger.error(e.getMessage());
+                logger.error(DIMarkers.topic_model,e.getMessage());
                 model = new TopicModel();
             }
 

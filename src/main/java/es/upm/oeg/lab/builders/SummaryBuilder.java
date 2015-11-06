@@ -17,7 +17,7 @@ public class SummaryBuilder {
 
         for (Section section: item.getSections()){
             NlpSummary nlpSummary = measure(section.getText());
-            nlpSummary.setId(section.toString());
+            nlpSummary.setId(section.getType().id);
             summary.add(nlpSummary);
         }
 
@@ -30,13 +30,10 @@ public class SummaryBuilder {
 
         NlpSummary summary = new NlpSummary();
 
-        summary.setNumDistLemmas(tokens.stream().map(t -> t.getLemma()).distinct().count());
-        summary.setNumTotalLemmas(tokens.stream().map(t -> t.getLemma()).count());
-
-        summary.setNumDistWords(tokens.stream().map(t -> t.getWord()).distinct().count());
-        summary.setNumTotalWords(tokens.stream().map(t -> t.getWord()).count());
-
         summary.setNumSentences(Long.valueOf(text.getNumSentences()));
+        summary.setNumTokens(tokens.stream().count());
+        summary.setNumWords(tokens.stream().map(t -> t.getWord()).distinct().count());
+        summary.setNumLemmas(tokens.stream().map(t -> t.getLemma()).distinct().count());
 
         summary.setNumIN(tokens.stream().filter(t -> t.getPos().equalsIgnoreCase(POS.IN.name())).count());
         summary.setNumJJ(tokens.stream().filter(t -> t.getPos().equalsIgnoreCase(POS.JJ.name())).count());

@@ -46,6 +46,7 @@ public class Item implements Serializable{
     public String toString(){
         StringBuilder description = new StringBuilder();
         description.append(refPaper);
+        description.append("annotated?").append(isAnnotated());
         description.append(authors);
         description.append(" with ").append(sections.size()).append(" sections");
         return description.toString();

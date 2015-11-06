@@ -16,7 +16,7 @@ public class ResultHelper {
 
     private static final Logger logger      = LoggerFactory.getLogger(ResultHelper.class);
 
-    public static final String DIRECTORY    = "acm-siggraph-2006-2014-upf-results";
+    public static final String DIRECTORY    = "db";
 
     private final CSVWriter writer;
     private final Path path;

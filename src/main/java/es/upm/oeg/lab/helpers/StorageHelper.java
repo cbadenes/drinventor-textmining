@@ -51,12 +51,12 @@ public class StorageHelper {
         DB db = getDB(dbName);
 
         logger.debug("saving to " + dbName + ": '" + key + "'");
-        HTreeMap<Object, Object> map = (db.exists(type))? db.getHashMap(type) : db.createHashMap(type).make();
+        HTreeMap<Object, Object> map = (exists(dbName))? db.getHashMap(type): db.createHashMap(type).make();
         map.put(key, value);
         db.commit();
     }
 
-    private static String dbName(String type){
+    public static String dbName(String type){
         return type+".db";
     }
 
@@ -67,8 +67,12 @@ public class StorageHelper {
         return dbs.get(dbId);
     }
 
+    public static boolean exists(String dbName){
+        return FileHelper.path(ResultHelper.DIRECTORY, dbName).toFile().exists();
+    }
 
-    private static DB createDB(String dbId){
+
+    public static DB createDB(String dbId){
         Path dbPath = FileHelper.path(ResultHelper.DIRECTORY, dbId);
         DB db;
         if (dbPath.toFile().exists()){

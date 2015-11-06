@@ -3,6 +3,7 @@ package es.upm.oeg.lab.modelers;
 import es.upm.oeg.epnoi.harvester.domain.ResearchObject;
 import es.upm.oeg.lab.helpers.FileHelper;
 import es.upm.oeg.lab.helpers.ResultHelper;
+import es.upm.oeg.lab.log.DIMarkers;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.mllib.feature.Word2Vec;
 import org.apache.spark.mllib.feature.Word2VecModel;
@@ -33,13 +34,10 @@ public class Word2VecModeler extends ROModeler {
 
         Word2Vec word2Vec = new Word2Vec();
         word2Vec.setVectorSize(vectorSize);
-        //TODO set vector size
 
-        try{
-            this.model = word2Vec.fit(input);
-        }catch (IllegalArgumentException e){
-            logger.warn("Vocabulary is empty.");
-        }
+
+        this.model = word2Vec.fit(input);
+
         return model;
     }
 

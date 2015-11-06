@@ -7,6 +7,7 @@ import es.upm.oeg.lab.data.W2VModel;
 import es.upm.oeg.lab.helpers.FileHelper;
 import es.upm.oeg.lab.helpers.ResultHelper;
 import es.upm.oeg.lab.helpers.StorageHelper;
+import es.upm.oeg.lab.log.DIMarkers;
 import es.upm.oeg.lab.modelers.Word2VecModeler;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.mllib.feature.Word2VecModel;
@@ -23,7 +24,7 @@ public class W2VBuilder {
 
     public static final Integer NUM_WORDS = 50;
 
-    private static final String DB_TYPE = "w2v";
+    public static final String DB_TYPE = "w2v";
 
     private static final Logger logger = LoggerFactory.getLogger(W2VBuilder.class);
 
@@ -31,7 +32,7 @@ public class W2VBuilder {
 
         Path modelPath = FileHelper.path(ResultHelper.DIRECTORY, "w2v."+ sectionType.id);
 
-        Word2VecModel model;
+        Word2VecModel model = null;
         if (modelPath.toFile().exists()){
             logger.info("Reading W2V Model from existing file:" + modelPath.toString());
             model = Word2VecModeler.load(modelPath.toString());
@@ -42,16 +43,21 @@ public class W2VBuilder {
             Optional<Object> data = StorageHelper.read(DB_TYPE, key);
 
             if (data.isPresent()){
-                logger.warn("Vocabulary is empty (readed from DB).");
+                logger.warn(DIMarkers.w2v_model,"Vocabulary is empty for section: '" + sectionType.id + "' (read from DB).");
                 return new W2VModel();
             }
 
             logger.info("Creating W2V Model for section: " + sectionType + " of items");
             JavaRDD<ResearchObject> ros = items.map(i -> ROBuilder.newInstance(i, sectionType)).cache();
-            model = new Word2VecModeler(ros).build(vectorSize);
-            // Save Model
-            if (model != null) Word2VecModeler.save(model,modelPath.toString());
-            else StorageHelper.save(DB_TYPE,key,true);
+            try{
+                model = new Word2VecModeler(ros).build(vectorSize);
+                // Save the model
+                Word2VecModeler.save(model,modelPath.toString());
+            }catch (IllegalArgumentException e){
+                logger.warn(DIMarkers.w2v_model,"Vocabulary is empty for section: '" + sectionType.id + "' (creation).");
+                StorageHelper.save(DB_TYPE,key,true);
+            }
+
         }
         return new W2VModel(model);
 

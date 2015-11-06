@@ -9,6 +9,8 @@ import es.upm.oeg.epnoi.matching.metrics.domain.space.TopicsSpace;
 import es.upm.oeg.epnoi.matching.metrics.topics.LDASettings;
 import es.upm.oeg.epnoi.matching.metrics.topics.search.LDASolution;
 import es.upm.oeg.lab.data.TopicModel;
+import es.upm.oeg.lab.helpers.StorageHelper;
+import es.upm.oeg.lab.log.DIMarkers;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.mllib.linalg.Vector;
 import org.slf4j.Logger;
@@ -39,25 +41,27 @@ public class TopicModeler extends ROModeler{
 
         // Convert Research Objects to Regular Resources
         JavaRDD<RegularResource> regularResources = ros.map(rrParser);
-        logger.info("Number of Regular Resources: " + regularResources.count());
+        logger.info(DIMarkers.topic_model,"Number of Regular Resources: " + regularResources.count() + " in domain: '" + id + "'");
 
         // Convert Regular Resources to Conceptual Resources
         JavaRDD<ConceptualResource> conceptualResources = regularResources.map(crParser);
-        logger.info("Number of Conceptual Resources: " + regularResources.count());
+        logger.info(DIMarkers.topic_model,"Number of Conceptual Resources: " + regularResources.count() + " in domain: '" + id + "'");
 
         // Create the Concepts Space
         this.conceptsSpace = new ConceptsSpace(conceptualResources.rdd());
     }
 
 
-    public LDASolution learn(Integer maxEval, Integer maxIt){
-        // LDA Optimization based on NSGA-III
-        return LDASettings.learn(conceptsSpace.featureVectors(), maxEval, maxIt);
-    }
-
     public TopicModel build(Integer maxIt){
         LDASettings.setMaxIterations(maxIt);
 
+        logger.info("Learning Topic Model for '" + id + "' maxIt: " + maxIt);
+
+        // Learn
+        LDASolution settings = LDASettings.learn(conceptsSpace.featureVectors(), maxIt, maxIt);
+        logger.info(DIMarkers.topic_model,"Topic Model for '" + id + "' learnt with: alpha=" + settings.getAlpha() + ", beta="+ settings.getBeta() + " and numTopics: " + settings.getTopics());
+
+        // Build model
         TopicsSpace topicsSpace = new TopicsSpace(conceptsSpace);
 
         Map<Object, String> words                 = JavaConverters.mapAsJavaMapConverter(conceptsSpace.vocabulary().wordsByKeyMap()).asJava();

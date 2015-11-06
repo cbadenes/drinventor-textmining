@@ -1,5 +1,7 @@
 package es.upm.oeg.lab.data;
 
+import es.upm.oeg.lab.helpers.StorageHelper;
+import es.upm.oeg.lab.log.DIMarkers;
 import org.apache.spark.mllib.feature.Word2VecModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,7 +44,7 @@ public class W2VModel {
 
 
             }
-            logger.info("W2V Distribution of term: '"+ term + "':" + Arrays.asList(wd.getWords()));
+            logger.info(DIMarkers.w2v_model,"W2V Distribution of term: '"+ term + "':" + Arrays.asList(wd.getWords()));
         }else{
             logger.info("Model is empty!");
         }
