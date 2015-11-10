@@ -220,24 +220,5 @@ public class RankDistanceBuilder {
         return accA + accB / 2;
     }
 
-
-    public static void main(String[] args){
-
-        WordDistribution wd1 = new WordDistribution();
-        wd1.setId("1");
-        wd1.add("a",0.8);
-        wd1.add("b",0.4);
-        wd1.add("c",0.9);
-
-        WordDistribution wd2 = new WordDistribution();
-        wd2.setId("2");
-        wd2.add("e",0.7);
-        wd2.add("f",0.4);
-        wd2.add("c",0.9);
-
-        System.out.println(vertexRanking(wd1, wd2));
-
-    }
-
 }
 

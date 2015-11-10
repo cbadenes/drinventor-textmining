@@ -2,12 +2,6 @@ package es.upm.oeg.lab.data;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.LongSummaryStatistics;
-import java.util.function.LongSupplier;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
-
 /**
  * Created by cbadenes on 05/11/15.
  */
@@ -16,10 +10,19 @@ public class SummaryTest {
     @Test
     public void statistics(){
 
-        LongSummaryStatistics statistics = LongStream.of(3l, 4l, 5l).summaryStatistics();
+        Double truePositives=0.0;
+        Double falsePositives=1.0;
+        Double falseNegatives=0.0;
 
-        System.out.println(statistics);
+        Double precision    = truePositives / (truePositives + falsePositives);
+        Double recall       = truePositives / (truePositives + falseNegatives);
+        Double fmeasure     = 2 * (precision*recall)/(precision+recall);
 
+        if (recall.isNaN()) recall = 0.0;
+
+        System.out.println("Precision="+ precision);
+        System.out.println("Recall="+ recall);
+        System.out.println("FMeasure="+ fmeasure);
 
     }
 }

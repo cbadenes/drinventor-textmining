@@ -1,15 +1,19 @@
 package es.upm.oeg.lab;
 
+import es.upm.oeg.epnoi.harvester.domain.ResearchObject;
 import es.upm.oeg.lab.builders.*;
+import es.upm.oeg.lab.comparators.SimilarityResultComparator;
 import es.upm.oeg.lab.comparators.StringComparator;
 import es.upm.oeg.lab.data.*;
+import es.upm.oeg.lab.function.ModelSimilarityPairFunction;
+import es.upm.oeg.lab.helpers.ChartsHelper;
 import es.upm.oeg.lab.helpers.FileHelper;
 import es.upm.oeg.lab.helpers.SparkHelper;
-import es.upm.oeg.lab.helpers.ChartsHelper;
 import es.upm.oeg.lab.helpers.StorageHelper;
 import es.upm.oeg.lab.log.DIMarkers;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.mllib.stat.Statistics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import scala.Tuple2;
@@ -29,203 +33,305 @@ public class Analyzer {
      * Parameters
      ***********************************************************************************/
 
-    private static final String CONTENT_ANNOTATED_CORPUS    = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf";
+    public static final String CONTENT_ANNOTATED_CORPUS    = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf";
 
-    private static final String CONTEXT_ANNOTATED_CORPUS    = "src/main/resources/siggraphpaperMetaFilenames.json";
+    public static final String CONTEXT_ANNOTATED_CORPUS    = "src/main/resources/siggraphpaperMetaFilenames.json";
 
-    private static final int NUM_WORDS                      = 20;
+    public static final int NUM_WORDS                      = 25;
 
-    private static final int W2V_DIMENSION                  = 100;
+    public static final int W2V_DIMENSION                  = 100;
 
-    private static final int LDA_MAX_ITERATIONS             = 50;
+    public static final int LDA_MAX_ITERATIONS             = 70;
 
     /***********************************************************************************
      ***********************************************************************************/
 
     private static final Logger logger = LoggerFactory.getLogger(Analyzer.class);
 
-    public void analyze(String contentAnnotatedCorpus, String contextAnnotatedCorpus) throws IOException {
+    public void analyze(String contentAnnotatedCorpus, String contextAnnotatedCorpus, Integer numWords, Integer w2vDim, Integer ldaMaxIterations ) throws IOException {
 
         Date time = new Date();
         FileHelper.create(DIMarkers.DIRECTORY);
 
-        logger.info(DIMarkers.eval,"Starting analysis with content-annotated-corpus='"+CONTENT_ANNOTATED_CORPUS
-                +"', context-annotated-corpus='"+CONTEXT_ANNOTATED_CORPUS +"', num-words='"+ NUM_WORDS +
-                "', w2v-dimension='"+W2V_DIMENSION+"' and lda-max-iterations='"+ LDA_MAX_ITERATIONS + "'");
+        logger.info(DIMarkers.eval,
+                "Starting analysis with: " +
+                        "content-annotated-corpus='"+contentAnnotatedCorpus +"', " +
+                        "context-annotated-corpus='"+contextAnnotatedCorpus +"', " +
+                        "num-words='"+ numWords + "', " +
+                        "w2v-dimension='"+w2vDim+"' and " +
+                        "lda-max-iterations='"+ ldaMaxIterations + "'");
 
         /***********************************************************************************
-         * Create internal storage
+         * Initializing Storage
          ***********************************************************************************/
         StorageHelper.createDB(StorageHelper.dbName(ItemBuilder.DB_TYPE));
         StorageHelper.createDB(StorageHelper.dbName(ROBuilder.DB_TYPE));
-        StorageHelper.createDB(StorageHelper.dbName(W2VBuilder.DB_TYPE));
-        StorageHelper.createDB(StorageHelper.dbName(TopicsBuilder.DB_TYPE));
+        StorageHelper.createDB(StorageHelper.dbName(W2VModelBuilder.DB_TYPE));
+        StorageHelper.createDB(StorageHelper.dbName(TopicModelBuilder.DB_TYPE));
 
 
         /***********************************************************************************
          * Harvesting
          ***********************************************************************************/
-        Stream<Item> elements = CorpusBuilder.harvest(contentAnnotatedCorpus, contextAnnotatedCorpus);
-        JavaRDD<Item> items = SparkHelper.sc.parallelize(elements.collect(Collectors.toList()));
+        Stream<Item> elements           = CorpusBuilder.harvest(contentAnnotatedCorpus, contextAnnotatedCorpus);
+        JavaRDD<Item> items             = SparkHelper.sc.parallelize(elements.collect(Collectors.toList())).cache();
+        JavaRDD<Section.Type> sections  = SparkHelper.sc.parallelize(Arrays.asList(Section.Type.values())).cache();
 
         /***********************************************************************************
-         * Corpus Analysis
+         * Corpus Statistics
          ***********************************************************************************/
 
         // Size of corpus
-        logger.info(DIMarkers.corpus,"Context Annotated: " + items.count());
+        long contextSize = items.count();
+        logger.info(DIMarkers.corpus,"Context Annotated: " + contextSize);
 
         JavaRDD<Item> annotatedPapers = items.filter(i -> i.isAnnotated()).cache();
-        logger.info(DIMarkers.corpus,"Content Annotated: " + annotatedPapers.count());
+        long contentSize = annotatedPapers.count();
+        logger.info(DIMarkers.corpus,"Content Annotated: " + contentSize);
 
         // Error Articles
         JavaRDD<Item> errorPapers = annotatedPapers.filter(i -> !StringComparator.same(i.getRefPaper().getTitle(), i.getTitle())).cache();
-        logger.info(DIMarkers.corpus,"With Error: " + errorPapers.count());
+        long errorSize = errorPapers.count();
+        logger.info(DIMarkers.corpus,"With Error: " + errorSize);
         errorPapers.foreach(i -> logger.warn(DIMarkers.corpus,"Paper error: '" + i.getRefPaper().getFilename() + "' has context title: '" + i.getRefPaper().getTitle() + "' different from content title: '" + i.getTitle() + "'"));
 
         // Valid Articles
-        JavaRDD<Item> corpusItems = annotatedPapers.subtract(errorPapers).cache();
-        logger.info(DIMarkers.corpus,"Used: " + corpusItems.count());
+        JavaRDD<Item> corpus = annotatedPapers.subtract(errorPapers).cache();
+        long validSize = corpus.count();
+        logger.info(DIMarkers.corpus,"Used: " + validSize);
+
+
+        // BarChart with number of annotations
+        List<ChartItem> sizeItems = Arrays.asList(new ChartItem[]{
+                ChartItemBuilder.build("context","documents",contextSize),
+                ChartItemBuilder.build("content","documents",contentSize),
+                ChartItemBuilder.build("error","documents",errorSize),
+                ChartItemBuilder.build("correct","documents",validSize)
+        });
+        ChartsHelper.newBarPlot("corpus","Number of annotated documents",sizeItems);
 
         /***********************************************************************************
-         * Category Analysis
+         * Context Statistics
          ***********************************************************************************/
         // Categories in corpus
-        JavaPairRDD<String, Integer> categoryFreq = corpusItems.mapToPair(i -> new Tuple2<String, Integer>(i.getRefPaper().getDomain(), 1)).reduceByKey((a, b) -> a + b).cache();
-        categoryFreq.foreach(t -> logger.info(DIMarkers.categories,"Category: '" + t._1() + "' in " + t._2() + " articles"));
+        JavaPairRDD<String, Integer> categories = corpus.mapToPair(i -> new Tuple2<String, Integer>(i.getRefPaper().getDomain(), 1)).reduceByKey((a, b) -> a + b).cache();
+        categories.foreach(t -> logger.info(DIMarkers.categories, "Category: '" + t._1() + "' in " + t._2() + " articles"));
+
+        // Pie Chart with Categories
+        List<ChartItem> categoryChartItems = categories.map(c -> ChartItemBuilder.build(c._1(), "", c._2())).collect();
+        ChartsHelper.newPieChart("categories-context","Classification of documents by categories according to context annotations", categoryChartItems);
+
 
         /***********************************************************************************
-         * Document and Token Statistics
+         * Content Statistics
          ***********************************************************************************/
 
         // Statistics by document
-        JavaRDD<Summary> summaries = corpusItems.map(i -> SummaryBuilder.newInstance(i)).cache();
-        summaries.foreach(s -> logger.info(DIMarkers.stats,s.toString()));
+        JavaRDD<Summary> summaries = corpus.map(i -> SummaryBuilder.newInstance(i)).cache();
+        summaries.foreach(s -> logger.info(DIMarkers.stats, s.toString()));
 
         // Statistics by section
         JavaRDD<NlpSummary> nlpSummaries = summaries.flatMap(s -> s.getSections()).cache();
 
-        // Create boxplot json files
-        ChartsHelper.newBoxPlot("sentences", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumSentences())).collect());
-        ChartsHelper.newBoxPlot("tokens", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumTokens())).collect());
-        ChartsHelper.newBoxPlot("words", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumWords())).collect());
-        ChartsHelper.newBoxPlot("lemmas", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumLemmas())).collect());
-        ChartsHelper.newBoxPlot("in", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumIN())).collect());
-        ChartsHelper.newBoxPlot("jj", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumJJ())).collect());
-        ChartsHelper.newBoxPlot("nn", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumNN())).collect());
-        ChartsHelper.newBoxPlot("nnp", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNP())).collect());
-        ChartsHelper.newBoxPlot("nnps", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNPS())).collect());
-        ChartsHelper.newBoxPlot("rb", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumRB())).collect());
-        ChartsHelper.newBoxPlot("rp", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumRP())).collect());
-        ChartsHelper.newBoxPlot("vb", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumVB())).collect());
-        ChartsHelper.newBoxPlot("vbd", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBD())).collect());
-        ChartsHelper.newBoxPlot("vbn", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBN())).collect());
-        ChartsHelper.newBoxPlot("vbp", nlpSummaries.map(s -> BoxplotItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBP())).collect());
 
+        // Correlation
+        List<Tuple2<Section.Type, Section.Type>> sectionsCombined = sections.cartesian(sections).collect();
 
-        /***********************************************************************************
-         * Models Creation
-         ***********************************************************************************/
+        for (Tuple2<Section.Type, Section.Type> combination: sectionsCombined){
+            String s1 = combination._1().id;
+            String s2 = combination._2().id;
 
-        // W2V Models
-        Map<Section.Type, W2VModel> w2vModels = W2VBuilder.build(corpusItems, Arrays.asList(Section.Type.values()),W2V_DIMENSION);
-
-        // Topic Models
-        Map<Section.Type, TopicModel> topicModels = TopicsBuilder.build(corpusItems, Arrays.asList(Section.Type.values()), LDA_MAX_ITERATIONS);
-
-
-        /***********************************************************************************
-         * Similarity Analysis
-         ***********************************************************************************/
-        List<String> categories = categoryFreq.map(t -> t._1()).collect();
-        // For each section:
-        for(Section.Type sectionType : Section.Type.values()){
-
-            // Get distances between categories's wordDistribution and topics for each section
-
-            logger.info(DIMarkers.sim,"Calculate similarities based on " + sectionType);
-
-            W2VModel w2vModel       = w2vModels.get(sectionType);
-            TopicModel topicModel   = topicModels.get(sectionType);
-
-            if (topicModel.isEmpty()){
-                logger.warn(DIMarkers.sim,"Topic Model empty for section: " + sectionType);
-                continue;
+            try{
+                // Sentences Level
+                JavaRDD<Double> sent1 = nlpSummaries.filter(s -> s.getLabel().equalsIgnoreCase(s1)).map(s -> Double.valueOf(s.getNumSentences())).cache();
+                JavaRDD<Double> sent2 = nlpSummaries.filter(s -> s.getLabel().equalsIgnoreCase(s2)).map(s -> Double.valueOf(s.getNumSentences())).cache();
+                logger.info(DIMarkers.stats,"Sentences Correlation btw '"+ s1+"' and '" + s2 + "' is: pearson="+ Statistics.corr(sent1, sent2, "pearson") +", spearman="+Statistics.corr(sent1, sent2, "spearman"));
+            } catch (Exception e){
+                logger.error("Error calculating correlation between sentences from "+ s1 + " and " + s2);
             }
 
-            // Topics
-            List<WordDistribution> topics = topicModel.getTopics(NUM_WORDS);
-            logger.info(DIMarkers.sim,"Topics distribution in section: '"+sectionType+"': " + topics);
-
-
-            Map<String,double[]> categoryDistr = new HashMap<>();
-            for (String category: categories){
-                // Get word distribution of category based on W2V model
-                WordDistribution categoryWordDist = w2vModel.find(category, NUM_WORDS);
-
-                if (categoryWordDist.isEmpty()){
-                    logger.warn(DIMarkers.categories,"Category '" + category + "' not found in the w2v model of section: '" + sectionType+"'");
-                    continue;
-                }
-
-                // Build a distribution of topics by category based on distances
-                double[] categoryTopicDist = new double[topics.size()];
-
-                for(int i = 0; i < topics.size() ; i++){
-                    // distance between category distribution and topic distribution
-                    double distance;
-                    try{
-                        distance = RankDistanceBuilder.distance(categoryWordDist, topics.get(i));
-                        categoryTopicDist[i] = distance;
-                    }catch (IllegalArgumentException e){
-                        logger.warn(e.getMessage());
-                        //TODO handle when category has not topic distribution
-                        categoryTopicDist[i] = Double.MAX_VALUE;
-                    }
-                }
-
-                // Normalize to Dirichlet distribution
-                categoryDistr.put(category, DirichletBuilder.normalize(categoryTopicDist));
-            }
-            
-            // Get similarities between documents and their category distributions
-            for (String category: categoryDistr.keySet()){
-                logger.info(DIMarkers.categories,"Category: '" + category + "' in section: '"+sectionType+"' distributed in topics: " + Arrays.toString(categoryDistr.get(category)));
+            try{
+                // Token Level
+                JavaRDD<Double> sent1 = nlpSummaries.filter(s -> s.getLabel().equalsIgnoreCase(s1)).map(s -> Double.valueOf(s.getNumTokens())).cache();
+                JavaRDD<Double> sent2 = nlpSummaries.filter(s -> s.getLabel().equalsIgnoreCase(s2)).map(s -> Double.valueOf(s.getNumTokens())).cache();
+                logger.info(DIMarkers.stats,"Token Correlation btw '"+ s1+"' and '" + s2 + "' is: pearson="+ Statistics.corr(sent1, sent2, "pearson") +", spearman="+Statistics.corr(sent1, sent2, "spearman"));
+            } catch (Exception e){
+                logger.error("Error calculating correlation between tokens from "+ s1 + " and " + s2);
             }
 
-            JavaRDD<SimilarityResult> similarityResults = corpusItems.map(i -> new SimilarityResult(sectionType,i, SimilarityBuilder.similarity(topicModel.getDistribution(i), categoryDistr))).cache();
-
-            //TODO: get similarities between documents
-
-            // Print results
-            similarityResults.foreach(s -> logger.info(DIMarkers.sim,s.toString()));
-
-            /***********************************************************************************
-             * Evaluation
-             ***********************************************************************************/
-            JavaRDD<Tuple2<String, String>> evalResults = similarityResults.map(r -> new Tuple2<String, String>(r.getItem().getRefPaper().getDomain(), r.getMostSimilar())).cache();
-
-
-            for (String category : categories){
-                // Precision
-                long truePositives  = evalResults.filter(t -> t._1().equalsIgnoreCase(category)).filter(t -> t._2().equalsIgnoreCase(category)).count();
-                long falsePositives = evalResults.filter(t -> !t._1().equalsIgnoreCase(category)).filter(t -> t._2().equalsIgnoreCase(category)).count();
-                long falseNegatives = evalResults.filter(t -> t._1().equalsIgnoreCase(category)).filter(t -> !t._2().equalsIgnoreCase(category)).count();
-
-                double precision    = 0.0;
-                double recall       = 0.0;
-
-                try{precision = Double.valueOf(truePositives)  / Double.valueOf(truePositives + falsePositives);}catch (ArithmeticException e){}
-                try{recall = Double.valueOf(truePositives) / Double.valueOf(truePositives + falseNegatives);}catch (ArithmeticException e){}
-                logger.info(DIMarkers.eval,"Evaluation of section: '"+ sectionType+"' for category: '"+category+"': Precision="+precision + ", Recall="+recall + "[truePositives="+truePositives + ", falsePositive="+falsePositives + ", falseNegatives="+ falseNegatives+"]");
-
-
-
+            try{
+                // Word Level
+                JavaRDD<Double> sent1 = nlpSummaries.filter(s -> s.getLabel().equalsIgnoreCase(s1)).map(s -> Double.valueOf(s.getNumWords())).cache();
+                JavaRDD<Double> sent2 = nlpSummaries.filter(s -> s.getLabel().equalsIgnoreCase(s2)).map(s -> Double.valueOf(s.getNumWords())).cache();
+                logger.info(DIMarkers.stats,"Word Correlation btw '"+ s1+"' and '" + s2 + "' is: pearson="+ Statistics.corr(sent1, sent2, "pearson") +", spearman="+Statistics.corr(sent1, sent2, "spearman"));
+            } catch (Exception e){
+                logger.error("Error calculating correlation between words from "+ s1 + " and " + s2);
             }
+
+            try{
+                // Lemma Level
+                JavaRDD<Double> sent1 = nlpSummaries.filter(s -> s.getLabel().equalsIgnoreCase(s1)).map(s -> Double.valueOf(s.getNumLemmas())).cache();
+                JavaRDD<Double> sent2 = nlpSummaries.filter(s -> s.getLabel().equalsIgnoreCase(s2)).map(s -> Double.valueOf(s.getNumLemmas())).cache();
+                logger.info(DIMarkers.stats,"Lemma Correlation btw '"+ s1+"' and '" + s2 + "' is: pearson="+ Statistics.corr(sent1, sent2, "pearson") +", spearman="+Statistics.corr(sent1, sent2, "spearman"));
+            } catch (Exception e){
+                logger.error("Error calculating correlation between lemmas from "+ s1 + " and " + s2);
+            }
+
         }
 
+        // Boxplot with NLP Statistics by text element
+        ChartsHelper.newBoxPlot("num-sentences", "Boxplot of number of sentences by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumSentences())).collect());
+        ChartsHelper.newBoxPlot("num-tokens", "Boxplot of number of tokens by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumTokens())).collect());
+        ChartsHelper.newBoxPlot("num-words", "Boxplot of number of words by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumWords())).collect());
+        ChartsHelper.newBoxPlot("num-lemmas", "Boxplot of number of lemmas by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumLemmas())).collect());
+        ChartsHelper.newBoxPlot("num-in", "Boxplot of number of IN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumIN())).collect());
+        ChartsHelper.newBoxPlot("num-jj", "Boxplot of number of JJ by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumJJ())).collect());
+        ChartsHelper.newBoxPlot("num-nn", "Boxplot of number of NN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNN())).collect());
+        ChartsHelper.newBoxPlot("num-nnp", "Boxplot of number of NNP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNP())).collect());
+        ChartsHelper.newBoxPlot("num-nnps", "Boxplot of number of NNPS by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNPS())).collect());
+        ChartsHelper.newBoxPlot("num-rb", "Boxplot of number of RB by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumRB())).collect());
+        ChartsHelper.newBoxPlot("num-rp", "Boxplot of number of RP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumRP())).collect());
+        ChartsHelper.newBoxPlot("num-vb", "Boxplot of number of VB by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVB())).collect());
+        ChartsHelper.newBoxPlot("num-vbd", "Boxplot of number of VBD by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBD())).collect());
+        ChartsHelper.newBoxPlot("num-vbn", "Boxplot of number of VBN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBN())).collect());
+        ChartsHelper.newBoxPlot("num-vbp", "Boxplot of number of VBP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBP())).collect());
+
+
         /***********************************************************************************
-         * Backup
+         * Representational Models
+         ***********************************************************************************/
+        // Research Objects
+        JavaRDD<ResearchObject> ros = corpus.flatMap(i -> ROBuilder.newInstances(i)).cache();
+
+        // Distributional Models
+        Map<String, W2VModel> w2vModels = new HashMap<>();
+        // Topic Models
+        Map<String, TopicModel> topicModels = new HashMap<>();
+
+        // -> for each section in a separated way
+        for (Section.Type section: Section.Type.values()){
+
+            JavaRDD<ResearchObject> subset = ros.filter(ro -> ro.getUrl().equalsIgnoreCase(section.id)).cache();
+
+            W2VModel w2vModel = W2VModelBuilder.newInstance(section.id,subset, numWords);
+            w2vModels.put(section.id,w2vModel);
+
+            TopicModel topicModel = TopicModelBuilder.build(subset, ldaMaxIterations);
+            topicModels.put(section.id, topicModel);
+
+            //Chart with this topic Model
+            List<ChartItem> topicItems = topicModel.getTopics(numWords).stream().flatMap(t -> t.getWords().stream().map(w -> ChartItemBuilder.build(w._1(), t.getId(), w._2()))).collect(Collectors.toList());
+            ChartsHelper.newBubbles("topics-"+section.id,"Distribution of topics based on the '" + section.id + "' content",topicItems);
+
+        }
+
+        // -> for all sections together
+        JavaRDD<ResearchObject> subset = ros.filter(ro -> !ro.getUrl().equalsIgnoreCase(Section.Type.FULL.id));
+        TopicModel topicModel = TopicModelBuilder.build(subset, ldaMaxIterations);
+        topicModels.put("all", topicModel);
+
+        //Chart with this topic Model
+        List<ChartItem> topicItems = topicModel.getTopics(numWords).stream().flatMap(t -> t.getWords().stream().map(w -> ChartItemBuilder.build(w._1(), t.getId(), w._2()))).collect(Collectors.toList());
+        ChartsHelper.newBubbles("topics-all","Distribution of topics considering all sections as corpus",topicItems);
+
+
+        // ResearchObjects as modeled item for these models
+        JavaRDD<ModeledItem> modeledROS = ros.
+                map(ro -> ModeledItemBuilder.build(
+                        ro.getSource().getUri(),
+                        ro.getUrl(),
+                        ro.getMetainformation().getDescription(),
+                        topicModels.get(ro.getUrl()).distributionOf(ro)
+                )).
+                cache();
+
+        /***********************************************************************************
+         * ANALYSIS 1 :: Distance between sections and the identified category for that document
+         ***********************************************************************************/
+
+        // One modeledItem for each categories and section
+        List<ModeledItem> modeledCategories = categories.
+                map(t -> t._1()).
+                cartesian(sections).
+                collect().
+                stream().
+                map(t -> ModeledItemBuilder.build(
+                        t._1(),
+                        t._2().id,
+                        t._1(),
+                        w2vModels.get(t._2().id).find(t._1(), numWords),
+                        topicModels.get(t._2().id).getTopics(numWords)
+                )).
+                collect(Collectors.toList());
+
+        // Charts with category distributional representation by section
+        modeledCategories.forEach(m -> ChartsHelper.newTreeMap("w2v-" + m.getId() + "-" + m.getLabel(), "Related words of '"+m.getId() + "' based on the W2V model built from the '" + m.getLabel() +"' content",m.getWordDistribution().getWords().stream().map(t -> ChartItemBuilder.build(t._1(), "", t._2())).collect(Collectors.toList())));
+
+
+        // Calculate similarities between ROs and Categories based on these models
+        JavaRDD<ModeledItem> modeledCategoriesRDD = SparkHelper.sc.parallelize(modeledCategories).cache();
+
+
+        JavaPairRDD<ModeledItem, SimilarityResult> similarities = modeledROS.cartesian(modeledCategoriesRDD).
+                filter(t -> t._1().getLabel().equalsIgnoreCase(t._2().getLabel())).
+                mapToPair(new ModelSimilarityPairFunction()).
+                cache();
+
+        JavaRDD<SimilarityResult> mostSimilar = similarities.
+                reduceByKey((a, b) -> SimilarityResultComparator.mostSimilar(a, b)).
+                map(t -> t._2()).
+                cache();
+
+        // Evaluate Results
+
+        for (String category: categories.map(t -> t._1()).collect()){
+
+            JavaRDD<SimilarityResult> inCategory = mostSimilar.
+                    filter(t -> t.getItem1().getCategory().equalsIgnoreCase(category) || t.getItem2().getId().equalsIgnoreCase(category)).
+                    cache();
+
+            List<ChartItem> listValues = new ArrayList<>();
+            for (Section.Type section: Section.Type.values()){
+
+                JavaRDD<SimilarityResult> inSection = inCategory.filter(t -> t.getItem1().getLabel().equalsIgnoreCase(section.id)).cache();
+
+
+                Double truePositives  = Double.valueOf(inSection.filter(s -> s.getItem1().getCategory().equalsIgnoreCase(s.getItem2().getCategory())).count());
+                Double falsePositives = Double.valueOf(inSection.filter(s -> s.getItem2().getCategory().equalsIgnoreCase(category)).filter(s -> !s.getItem1().getCategory().equalsIgnoreCase(category)).count());
+                Double falseNegatives = Double.valueOf(inSection.filter(s -> !s.getItem2().getCategory().equalsIgnoreCase(category)).filter(s -> s.getItem1().getCategory().equalsIgnoreCase(category)).count());
+
+
+                Double precision;
+                Double recall;
+                Double fmeasure;
+
+                try{precision   = truePositives  / (truePositives + falsePositives);}catch (ArithmeticException e){precision = 0.0;}
+                try{recall      = truePositives / (truePositives + falseNegatives);}catch (ArithmeticException e){recall = 0.0;}
+                try{fmeasure    = 2 * ((precision * recall) / (precision + recall));}catch (ArithmeticException e){ fmeasure = 0.0;}
+
+                if (precision.isNaN()) precision = 0.0;
+                if (recall.isNaN()) recall = 0.0;
+                if (fmeasure.isNaN()) fmeasure = 0.0;
+
+                logger.info(DIMarkers.eval,"Eval Results for Category='"+ category+"' in section='"+section.id+"' => " +
+                        "truePositives="+truePositives+", falsePositives="+falsePositives+", and falseNegatives="+falseNegatives + " => " +
+                        "precision="+precision+", recall="+recall + ", fmeasure="+fmeasure);
+
+                listValues.add(ChartItemBuilder.build("precision",section.id,precision));
+                listValues.add(ChartItemBuilder.build("recall",section.id,recall));
+                listValues.add(ChartItemBuilder.build("fmeasure",section.id,fmeasure));
+            }
+
+            // Chart with eval results
+            ChartsHelper.newStacked("eval-"+category,"Evaluation results for category '"+category+"'",listValues);
+
+        }
+
+        // Charts report
+        ChartsHelper.report();
+
+        /***********************************************************************************
+         * Backup Data
          ***********************************************************************************/
         SimpleDateFormat dt = new SimpleDateFormat("yyyyMMdd-hhmmss");
         String testId = "test-"+dt.format(time);
@@ -243,7 +349,12 @@ public class Analyzer {
         Analyzer analyzer = new Analyzer();
 
         try {
-            analyzer.analyze(CONTENT_ANNOTATED_CORPUS, CONTEXT_ANNOTATED_CORPUS);
+            analyzer.analyze(
+                    CONTENT_ANNOTATED_CORPUS,
+                    CONTEXT_ANNOTATED_CORPUS,
+                    NUM_WORDS,
+                    W2V_DIMENSION,
+                    LDA_MAX_ITERATIONS);
         } catch (IOException e) {
             e.printStackTrace();
         }

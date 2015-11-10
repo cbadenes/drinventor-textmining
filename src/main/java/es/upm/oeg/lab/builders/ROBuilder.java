@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -38,12 +39,12 @@ public class ROBuilder {
 
         logger.debug("Creating RO from item: " + item);
         ResearchObject ro = new ResearchObject();
-        ro.setUri(getUri(item));
-        ro.setUrl(item.getRefPaper().getFilename());
+        ro.setUri(key);
+        ro.setUrl(sectionType.id);
 
         ResearchSource source = new ResearchSource();
         source.setName("SigGraph");
-        source.setUri(DRI_URI+"SigGraph");
+        source.setUri(item.getRefPaper().getFilename());
         source.setUrl(DRI_URI+"SigGraph");
         source.setProtocol("http");
         ro.setSource(source);
@@ -52,7 +53,7 @@ public class ROBuilder {
 
         MetaInformation metaInformation = new MetaInformation();
         metaInformation.setCreators(item.getAuthors());
-        metaInformation.setDescription("");
+        metaInformation.setDescription(item.getRefPaper().getDomain());
         metaInformation.setFormat("pdf");
         metaInformation.setLanguage("en");
         metaInformation.setPublished(item.getDate());
@@ -69,14 +70,15 @@ public class ROBuilder {
         List<String> bagOfWords = section.getText().getTokens().stream().filter(t -> t.isValid()).map(t -> t.getLemma().toLowerCase()).collect(Collectors.toList());
         ro.setBagOfWords(bagOfWords);
 
-        logger.info("Saving ro of section: '"+sectionType.id + "' from: '" + item.getRefPaper().getFilename()+"'");
+        logger.info("Saving ro from section: '"+sectionType.id + "' from: '" + item.getRefPaper().getFilename()+"'");
         StorageHelper.save(DB_TYPE,key,ro);
 
         return ro;
     }
 
-    public static String getUri(Item item){
-        return item.getRefPaper().getFilename();
+    public static List<ResearchObject> newInstances(Item item){
+
+        return Arrays.stream(Section.Type.values()).map(s -> newInstance(item,s)).collect(Collectors.toList());
     }
 
 }

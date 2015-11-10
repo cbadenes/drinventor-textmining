@@ -9,7 +9,7 @@ import java.io.Serializable;
  */
 @Data
 public class ChartItem implements Serializable {
-    private String section;
-    private String file;
-    private Long value;
+    private String key;
+    private String label;
+    private Number value;
 }

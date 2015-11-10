@@ -15,6 +15,8 @@ public class WordDistribution implements Serializable {
 
     String id;
 
+    String label;
+
     List<Tuple2<String, Double>> words = new ArrayList<>();
 
     public boolean isEmpty(){

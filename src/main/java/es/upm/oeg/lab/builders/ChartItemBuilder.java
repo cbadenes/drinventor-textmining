@@ -5,13 +5,13 @@ import es.upm.oeg.lab.data.ChartItem;
 /**
  * Created by cbadenes on 06/11/15.
  */
-public class BoxplotItemBuilder {
+public class ChartItemBuilder {
 
-    public static ChartItem build(String file, String section, Long value){
+    public static ChartItem build(String key, String label, Number value){
 
         ChartItem item = new ChartItem();
-        item.setFile(file);
-        item.setSection(section);
+        item.setKey(key);
+        item.setLabel(label);
         item.setValue(value);
         return item;
     }

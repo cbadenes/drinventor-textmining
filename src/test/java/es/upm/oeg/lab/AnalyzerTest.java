@@ -13,10 +13,6 @@ import java.io.IOException;
 @Category(IntegrationTest.class)
 public class AnalyzerTest {
 
-    private static final String CONTENT_ANNOTATED_TEST_PATH = "src/test/resources/acm-siggraph-2006-2014-upf";
-
-    private static final String CONTEXT_ANNOTATED_TEST_PATH = "src/main/resources/siggraphpaperMetaFilenames.json";
-
     private Analyzer analyzer;
 
     @Before
@@ -26,6 +22,12 @@ public class AnalyzerTest {
 
     @Test
     public void testCorpus() throws IOException {
-        analyzer.analyze(CONTENT_ANNOTATED_TEST_PATH, CONTEXT_ANNOTATED_TEST_PATH);
+        analyzer.analyze(
+                "src/test/resources/acm-siggraph-2006-2014-upf",
+                "src/main/resources/siggraphpaperMetaFilenames.json",
+                10,
+                100,
+                10
+        );
     }
 }

@@ -1,7 +1,10 @@
 package es.upm.oeg.lab.data;
 
+import es.upm.oeg.epnoi.harvester.domain.ResearchObject;
 import es.upm.oeg.epnoi.matching.metrics.domain.entity.ConceptualResource;
+import es.upm.oeg.lab.builders.DirichletBuilder;
 import es.upm.oeg.lab.builders.ROBuilder;
+import es.upm.oeg.lab.builders.RankDistanceBuilder;
 import es.upm.oeg.lab.log.DIMarkers;
 import org.apache.spark.mllib.linalg.Vector;
 import org.slf4j.Logger;
@@ -24,7 +27,30 @@ public class TopicModel implements Serializable{
     private Map<Long, String> words;
     private List<Tuple2<Object, Vector>> documents;
 
-    public TopicModel(String id, List<Tuple2<Object, Vector>> documents, Map<Object, String> words,Tuple2<int[], double[]>[] topics, List<Tuple2<Object, ConceptualResource>> resources ){
+    public static class Configuration implements Serializable{
+
+        private final Double alpha;
+        private final Double beta;
+        private final Integer numIterations;
+        private final Integer maxEvaluations;
+        private final Integer numTopics;
+
+        public Configuration(Integer numTopics, Double alpha, Double beta, Integer numIterations, Integer maxEvaluations){
+            this.numTopics = numTopics;
+            this.alpha  = alpha;
+            this.beta   = beta;
+            this.numIterations = numIterations;
+            this.maxEvaluations = maxEvaluations;
+        }
+
+        public Double getAlpha(){return alpha;}
+        public Double getBeta(){return beta;}
+        public Integer getNumTopics(){return numTopics;}
+        public Integer getNumIterations(){return numIterations;}
+        public Integer getMaxEvaluations(){return maxEvaluations;}
+    }
+
+    public TopicModel(String id, Configuration configuration, List<Tuple2<Object, Vector>> documents, Map<Object, String> words,Tuple2<int[], double[]>[] topics, List<Tuple2<Object, ConceptualResource>> resources ){
 
         this.id = id;
         this.words = new HashMap<>();
@@ -51,7 +77,8 @@ public class TopicModel implements Serializable{
         }
     }
 
-    public TopicModel(){
+    public TopicModel(String id){
+        this.id = id;
     }
 
     public boolean isEmpty(){
@@ -60,13 +87,15 @@ public class TopicModel implements Serializable{
 
     public List<WordDistribution> getTopics(Integer numWords){
 
+        if (isEmpty()) return Arrays.asList(new WordDistribution[]{});
+
         List<WordDistribution> wds = new ArrayList<>();
 
         for (int i=0;i < topics.length; i++ ){
 
             WordDistribution wd = new WordDistribution();
             wd.setId("topic"+i);
-
+            wd.setLabel(id);
             Tuple2<int[], double[]> distr = topics[i];
 
             int[] wordIds = distr._1();
@@ -89,23 +118,36 @@ public class TopicModel implements Serializable{
     }
 
 
-    public double[] getDistribution(Item item){
 
-        logger.debug("Trying to get topic distribution of item: " + item);
-        String uri    = ROBuilder.getUri(item);
+
+    public double[] distributionOf(ResearchObject ro){
+
+
+        String uri    = ro.getUri();
         Long resId    = ids.get(uri);
 
-        Optional<Tuple2<Object, Vector>> tupleOpt = documents.stream().filter(t -> t._1().equals(resId)).findFirst();
+        if (isEmpty()){
+            logger.warn(DIMarkers.topic_model,"Topic Model for '" + id+ "' is empty. Then '" + uri + "' has no topic distribution");
+            return new double[]{0.0};
+        }
+
+        logger.debug("Trying to get topic distribution of item(uri): " + uri+" - "+ resId + " in model of '" + id + "'");
+        Optional<Tuple2<Object, Vector>> tupleOpt;
+        try {
+            tupleOpt = documents.stream().filter(t -> t._1().equals(resId)).findFirst();
+        }catch (NullPointerException e){
+            tupleOpt = Optional.empty();
+        }
 
         if (!tupleOpt.isPresent()){
-            logger.error(DIMarkers.topic_model,"Topics distribution not found for item: " + item  + " in documents: " + documents.size());
+            logger.error(DIMarkers.topic_model,"Topics distribution not found for item: " + uri  + " in documents: " + documents.size());
             return new double[]{0.0};
         }
         Tuple2<Object, Vector> tuple = tupleOpt.get();
         logger.debug("Tuple: " + tuple);
 
         double[] dist = tuple._2().toArray();
-        logger.info(DIMarkers.topic_model,"Topics Distribution of '"+item.getRefPaper().getFilename()+"' in '"+id+"': " + Arrays.toString(dist));
+        logger.info(DIMarkers.topic_model,"Topics Distribution of '"+uri+"' in '"+id+"': " + Arrays.toString(dist));
         return dist;
     }
 

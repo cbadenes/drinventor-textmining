@@ -17,12 +17,15 @@ public class W2VModel {
     private static final Logger logger = LoggerFactory.getLogger(W2VModel.class);
 
     private final Word2VecModel model;
+    private final String id;
 
-    public W2VModel(){
+    public W2VModel(String id){
+        this.id = id;
         this.model = null;
     }
 
-    public W2VModel(Word2VecModel model){
+    public W2VModel(String id,Word2VecModel model){
+        this.id = id;
         this.model = model;
     }
 
@@ -31,6 +34,7 @@ public class W2VModel {
         WordDistribution wd = new WordDistribution();
         if (model != null){
             wd.setId(term);
+            wd.setLabel(id);
             try{
                 Tuple2<String, Object>[] synonyms = model.findSynonyms(term, num);
                 for (Tuple2<String, Object> tuple: synonyms){
@@ -38,13 +42,11 @@ public class W2VModel {
                     Double weight = (Double) tuple._2();
                     wd.add(word,weight);
                 }
+                logger.info(DIMarkers.w2v_model,"W2V Distribution of term: '"+ term + "' in '"+id+"':" + Arrays.asList(wd.getWords()));
             }catch (Exception e){
-                logger.warn(e.getMessage());
+                logger.warn(e.getMessage() + " '" + id + "'");
                 //TODO try again using synonyms from WordNet
-
-
             }
-            logger.info(DIMarkers.w2v_model,"W2V Distribution of term: '"+ term + "':" + Arrays.asList(wd.getWords()));
         }else{
             logger.info("Model is empty!");
         }

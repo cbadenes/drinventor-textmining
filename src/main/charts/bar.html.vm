@@ -7,7 +7,7 @@
 <div id="viz"></div>
 
 <script>
-  var data = $data
+  var data = $data ;
 
   var visualization = d3plus.viz()
     .container("#viz")

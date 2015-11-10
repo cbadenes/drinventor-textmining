@@ -64,14 +64,14 @@ public class TopicModeler extends ROModeler{
         // Build model
         TopicsSpace topicsSpace = new TopicsSpace(conceptsSpace);
 
-        Map<Object, String> words                 = JavaConverters.mapAsJavaMapConverter(conceptsSpace.vocabulary().wordsByKeyMap()).asJava();
+        Map<Object, String> words               = JavaConverters.mapAsJavaMapConverter(conceptsSpace.vocabulary().wordsByKeyMap()).asJava();
         Tuple2<int[], double[]>[] topics        = topicsSpace.model().ldaModel().describeTopics(200);
         List<Tuple2<Object, Vector>> documents  = topicsSpace.model().ldaModel().topicDistributions().toJavaRDD().collect();
         List<Tuple2<Object, ConceptualResource>> resources = conceptsSpace.conceptualResourcesMap().toJavaRDD().collect();
 
         logger.info("Created topic model with " + documents.size() + " documents");
-
-        return new TopicModel(id,documents,words,topics,resources);
+        TopicModel.Configuration configuration = new TopicModel.Configuration(LDASettings.topics(),LDASettings.alpha(), LDASettings.beta(), LDASettings.maxEvals(), LDASettings.maxEvals());
+        return new TopicModel(id,configuration,documents,words,topics,resources);
     }
 
     public TopicModel build(Integer numTopics, Double alpha, Double beta, Integer maxIt){
