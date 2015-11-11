@@ -2,7 +2,7 @@ package es.upm.oeg.lab.builders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import es.upm.oeg.lab.data.Corpus;
-import es.upm.oeg.lab.data.Item;
+import es.upm.oeg.lab.data.Document;
 import es.upm.oeg.lab.data.Paper;
 import es.upm.oeg.lab.helpers.FileHelper;
 import es.upm.oeg.lab.helpers.SparkHelper;
@@ -43,7 +43,7 @@ public class CorpusBuilder {
 
     }
 
-    public static Stream<Item> harvest(String contentAnnotatedCorpus, String contextAnnotatedCorpus) throws IOException {
+    public static Stream<Document> harvest(String contentAnnotatedCorpus, String contextAnnotatedCorpus) throws IOException {
 
         logger.info("Reading context annotations from: " + contextAnnotatedCorpus);
         List<Paper> papers = CorpusBuilder.load(contextAnnotatedCorpus).getPapers();
@@ -54,11 +54,11 @@ public class CorpusBuilder {
         FileHelper.list(contentAnnotatedCorpus, "xml").stream().forEach(x -> filePaths.put(fileNameFromXml(x), x.toString()));
 
         logger.info("Creating items");
-        return papers.stream().map(p -> ItemBuilder.build(Paths.get(filePaths.getOrDefault(fileNameFromPdf(p.getFilename()), "")), p));
+        return papers.stream().map(p -> DocumentBuilder.build(Paths.get(filePaths.getOrDefault(fileNameFromPdf(p.getFilename()), "")), p));
 
     }
 
-    public static JavaRDD<Item> harvestParallel(String contentAnnotatedCorpus, String contextAnnotatedCorpus) throws IOException {
+    public static JavaRDD<Document> harvestParallel(String contentAnnotatedCorpus, String contextAnnotatedCorpus) throws IOException {
 
         logger.info("Reading context annotations from: " + contextAnnotatedCorpus);
         List<Paper> papers = CorpusBuilder.load(contextAnnotatedCorpus).getPapers();
@@ -70,7 +70,7 @@ public class CorpusBuilder {
         FileHelper.list(contentAnnotatedCorpus, "xml").stream().forEach(x -> filePaths.put(fileNameFromXml(x), x.toString()));
 
         logger.info("Creating items");
-        return papersParallel.map(p -> ItemBuilder.build(Paths.get(filePaths.getOrDefault(fileNameFromPdf(p.getFilename()),"")), p));
+        return papersParallel.map(p -> DocumentBuilder.build(Paths.get(filePaths.getOrDefault(fileNameFromPdf(p.getFilename()), "")), p));
 
     }
 

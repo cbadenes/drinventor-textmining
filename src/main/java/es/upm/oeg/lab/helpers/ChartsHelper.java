@@ -2,7 +2,9 @@ package es.upm.oeg.lab.helpers;
 
 import es.upm.oeg.lab.Analyzer;
 import es.upm.oeg.lab.data.ChartItem;
-import es.upm.oeg.lab.data.Section;
+import es.upm.oeg.lab.data.EdgeItem;
+import es.upm.oeg.lab.data.NodeItem;
+import es.upm.oeg.lab.data.Part;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.velocity.VelocityContext;
@@ -18,7 +20,6 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by cbadenes on 06/11/15.
@@ -77,6 +78,30 @@ public class ChartsHelper {
         newChart("stacked",name,description,values);
     }
 
+    public static void newNetwork(String name, String description, List<NodeItem> nodes, List<EdgeItem> edges){
+        try {
+            String edgesJson = mapper.writeValueAsString(edges);
+            String nodesJson = mapper.writeValueAsString(nodes);
+
+            VelocityContext context = new VelocityContext();
+            context.put("nodes",nodesJson);
+            context.put("edges",edgesJson);
+
+            StringWriter writer = new StringWriter();
+            velEngine.getTemplate("network.html.vm", "UTF-8").merge(context,writer);
+
+            // Write to file
+            File file = Paths.get(DIRECTORY,name+".html").toFile();
+            FileUtils.write(file,writer.toString(),false);
+
+            // Record
+            charts.put(StringUtils.substringBefore(file.getName(),".html"),description);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private static void newChart(String type,String name, String description, List<ChartItem> values){
         try {
 
@@ -122,7 +147,7 @@ public class ChartsHelper {
             context.put("settings",settings);
 
             // Legend
-            context.put("legends",Arrays.stream(Section.Type.values()).sorted().map(s -> new AbstractMap.SimpleEntry<>(s.id, s.name())).collect(Collectors.toList()));
+            context.put("legends",Arrays.stream(Part.Type.values()).sorted().map(s -> new AbstractMap.SimpleEntry<>(s.id, s.name())).collect(Collectors.toList()));
 
 
             StringWriter writer = new StringWriter();

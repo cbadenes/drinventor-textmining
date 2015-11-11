@@ -4,8 +4,8 @@ import edu.upf.taln.dri.lib.exception.DRIexception;
 import edu.upf.taln.dri.lib.exception.InternalProcessingException;
 import edu.upf.taln.dri.lib.model.Document;
 import edu.upf.taln.dri.lib.model.ext.*;
-import es.upm.oeg.lab.helpers.SectionHelper;
 import es.upm.oeg.lab.data.Section;
+import es.upm.oeg.lab.helpers.SectionHelper;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -89,7 +89,7 @@ public class AnnotatedDoc implements Serializable {
                 case CONCLUSION:
                     text = join(document.extractSections(false).stream().filter(s -> sectionHelper.isConclusion(s)).flatMap(s -> s.getSentences().stream()));
                     break;
-                case CSUMMARY:
+                case CENTROIDSUMM:
                     text = join(this.document.extractSummary(50, SummaryTypeENUM.CENTROID_SECT).stream());
                     break;
                 case FUTURE:
@@ -104,9 +104,11 @@ public class AnnotatedDoc implements Serializable {
                 case TERMS:
                     text = document.extractTerminology().stream().map(t->t.getText()).collect(Collectors.joining(", "));
                     break;
-                case TSUMMARY:
+                case TITLESUMM:
                     text = join(this.document.extractSummary(50, SummaryTypeENUM.TITILE_SIM).stream());
                     break;
+                default:
+                    throw new IllegalArgumentException("Section '" + sectionType.name() + "' not found in annotated document");
             }
             return text;
         } catch (DRIexception  e) {

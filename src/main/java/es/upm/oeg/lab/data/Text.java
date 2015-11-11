@@ -12,9 +12,9 @@ import java.util.List;
 @Data
 public class Text implements Serializable {
 
-    String content;
+    String content = "";
 
-    Integer numSentences;
+    Integer numSentences = 0;
 
     List<Token> tokens = new ArrayList<>();
 

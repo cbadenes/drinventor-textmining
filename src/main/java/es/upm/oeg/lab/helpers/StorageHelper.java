@@ -79,11 +79,11 @@ public class StorageHelper {
         Path dbPath = FileHelper.path(DIRECTORY, dbId);
         DB db;
         if (dbPath.toFile().exists()){
-            logger.info("DB exists: " + dbPath.toString());
+            logger.debug("DB exists: " + dbPath.toString());
             db  = DBMaker.newFileDB(dbPath.toFile()).make();
         }else{
             dbPath = FileHelper.create(DIRECTORY, dbId);
-            logger.info("DB does not exist: " + dbPath.toString());
+            logger.debug("DB does not exist: " + dbPath.toString());
             DBMaker dbFile = DBMaker.newFileDB(dbPath.toFile());
             dbFile.closeOnJvmShutdown();
             db = dbFile.make();

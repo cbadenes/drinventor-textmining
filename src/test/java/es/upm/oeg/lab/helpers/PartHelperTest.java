@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by cbadenes on 27/10/15.
  */
-public class SectionHelperTest {
+public class PartHelperTest {
 
     private List<String> introductionSections = Arrays.asList(new String[]{
             "1 Introduction",

@@ -3,8 +3,9 @@ package es.upm.oeg.lab.builders;
 import es.upm.oeg.epnoi.harvester.domain.MetaInformation;
 import es.upm.oeg.epnoi.harvester.domain.ResearchObject;
 import es.upm.oeg.epnoi.harvester.domain.ResearchSource;
+import es.upm.oeg.lab.data.Document;
 import es.upm.oeg.lab.data.Item;
-import es.upm.oeg.lab.data.Section;
+import es.upm.oeg.lab.data.Part;
 import es.upm.oeg.lab.helpers.StorageHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,10 +27,10 @@ public class ROBuilder {
 
     public static final String DB_TYPE = "ro";
 
-    public static ResearchObject newInstance(Item item, Section.Type sectionType){
+    public static ResearchObject newInstance(Item item){
 
         // Check in DB
-        String key = item.getRefPaper().getFilename() + "-" + sectionType.id;
+        String key = item.getRefPaper().getFilename() + "-" + item.getPart().getType().id;
         Optional<Object> data = StorageHelper.read(DB_TYPE, key);
 
         if (data.isPresent()){
@@ -40,7 +41,7 @@ public class ROBuilder {
         logger.debug("Creating RO from item: " + item);
         ResearchObject ro = new ResearchObject();
         ro.setUri(key);
-        ro.setUrl(sectionType.id);
+        ro.setUrl(item.getPart().getType().id);
 
         ResearchSource source = new ResearchSource();
         source.setName("SigGraph");
@@ -61,24 +62,24 @@ public class ROBuilder {
         metaInformation.setTitle(item.getTitle());
         ro.setMetainformation(metaInformation);
 
+
+        logger.debug("Reading part: " + item.getPart().getType() + " from item: " + item);
         // Content
-        logger.debug("Reading section: " + sectionType + " from item: " + item);
-        Section section = item.get(sectionType);
-        ro.setContent(section.getText().getContent());
+        ro.setContent(item.getPart().getText().getContent());
 
         // Bag-Of-Words
-        List<String> bagOfWords = section.getText().getTokens().stream().filter(t -> t.isValid()).map(t -> t.getLemma().toLowerCase()).collect(Collectors.toList());
+        List<String> bagOfWords = item.getPart().getText().getTokens().stream().filter(t -> t.isValid()).map(t -> t.getLemma().toLowerCase()).collect(Collectors.toList());
         ro.setBagOfWords(bagOfWords);
 
-        logger.info("Saving ro from section: '"+sectionType.id + "' from: '" + item.getRefPaper().getFilename()+"'");
+        logger.info("Saving ro from part: '"+item.getPart().getType().id + "' from: '" + item.getRefPaper().getFilename()+"'");
         StorageHelper.save(DB_TYPE,key,ro);
 
         return ro;
     }
 
-    public static List<ResearchObject> newInstances(Item item){
+    public static List<ResearchObject> newInstances(Document document){
 
-        return Arrays.stream(Section.Type.values()).map(s -> newInstance(item,s)).collect(Collectors.toList());
+        return Arrays.stream(Part.Type.values()).map(p -> ItemBuilder.build(document,p)).map(i -> ROBuilder.newInstance(i)).collect(Collectors.toList());
     }
 
 }

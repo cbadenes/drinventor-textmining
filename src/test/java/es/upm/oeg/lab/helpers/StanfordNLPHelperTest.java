@@ -7,7 +7,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Created by cbadenes on 05/11/15.
@@ -32,8 +31,8 @@ public class StanfordNLPHelperTest {
 
         Text text = helper.parse("cars and car");
 
-        Section section = new Section(text,Section.Type.ABSTRACT);
-        item.add(section);
+        Part part = new Part(text, Part.Type.ABSTRACT);
+        item.setPart(part);
 
 
         text.getTokens().stream().map(t -> t.getLemma()).distinct().forEach(l -> System.out.printf(l));

@@ -15,13 +15,10 @@ public class SummaryBuilder {
         summary.setDocTitle(item.getTitle());
         summary.setDocName(item.getRefPaper().getFilename());
 
-        for (Section section: item.getSections()){
-            NlpSummary nlpSummary = measure(section.getText());
-            nlpSummary.setName(item.getName());
-            nlpSummary.setLabel(section.getType().id);
-            summary.add(nlpSummary);
-        }
-
+        NlpSummary nlpSummary = measure(item.getPart().getText());
+        nlpSummary.setName(item.getRefPaper().getFilename());
+        nlpSummary.setLabel(item.getPart().getType().id);
+        summary.add(nlpSummary);
         return summary;
     }
 

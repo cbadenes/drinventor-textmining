@@ -5,6 +5,7 @@ import edu.upf.taln.dri.lib.model.ext.Sentence;
 import edu.upf.taln.dri.lib.model.ext.SentenceSelectorENUM;
 import es.cbadenes.lab.test.IntegrationTest;
 import es.upm.oeg.lab.builders.CorpusBuilder;
+import es.upm.oeg.lab.data.Part;
 import es.upm.oeg.lab.data.Section;
 import es.upm.oeg.lab.data.upf.AnnotatedDoc;
 import org.junit.Test;

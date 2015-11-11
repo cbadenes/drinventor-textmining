@@ -24,8 +24,8 @@ public class SummaryBuilderTest {
         text.setNumSentences(1);
         text.add(newToken("lemma1","word1"));
         text.add(newToken("lemma1","word2"));
-        Section section = new Section(text,Section.Type.ABSTRACT);
-        item.add(section);
+        Part part = new Part(text, Part.Type.ABSTRACT);
+        item.setPart(part);
 
 
         Summary summary = SummaryBuilder.newInstance(item);

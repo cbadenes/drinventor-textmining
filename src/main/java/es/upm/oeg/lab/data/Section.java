@@ -1,9 +1,12 @@
 package es.upm.oeg.lab.data;
 
 import lombok.Data;
-import lombok.Getter;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by cbadenes on 03/11/15.
@@ -21,17 +24,22 @@ public class Section implements Serializable{
         BACKGROUND("bkg"),
         CHALLENGE("chll"),
         CONCLUSION("con"),
-        CSUMMARY("csum"),
+        CENTROIDSUMM("csum"),
         FUTURE("fwork"),
         INTRODUCTION("intr"),
         OUTCOME("out"),
         TERMS("term"),
-        TSUMMARY("tsum");
+        TITLESUMM("tsum")
+        ;
 
         public final String id;
 
         Type(String id){
             this.id = id;
+        }
+
+        public static List<Type> units(){
+            return Arrays.stream(values()).filter(s -> !s.name().contains("_")).collect(Collectors.toList());
         }
     }
 

@@ -2,7 +2,6 @@ package es.upm.oeg.lab.data;
 
 import es.upm.oeg.lab.log.DIMarkers;
 import lombok.Data;
-import org.apache.spark.mllib.linalg.DenseVector;
 import org.apache.spark.mllib.linalg.Vector;
 import org.apache.spark.mllib.linalg.Vectors;
 import org.apache.spark.mllib.stat.MultivariateStatisticalSummary;
@@ -80,7 +79,7 @@ public class NlpSummary implements Serializable{
                 numVBP);
     }
 
-    public static void log(MultivariateStatisticalSummary statisticalSummary, Section.Type section){
+    public static void log(MultivariateStatisticalSummary statisticalSummary, Part.Type section){
         logger.info(DIMarkers.stats,"Count for '"+section+"': " + statisticalSummary.count());
 
         logVector(section,"min",labels,statisticalSummary.min().toArray());
@@ -92,7 +91,7 @@ public class NlpSummary implements Serializable{
         logVector(section,"normL2",labels,statisticalSummary.normL2().toArray());
     }
 
-    private static void logVector(Section.Type section, String prefix, String[] labels, double[] values){
+    private static void logVector(Part.Type section, String prefix, String[] labels, double[] values){
 
         for (int i=0;i < labels.length ; i++){
             logger.info(DIMarkers.stats,prefix + " " + labels[i] +" for '"+section+"': " + values[i]);
