@@ -139,8 +139,8 @@ public class ChartsHelper {
 
             // Settings
             List settings = new ArrayList<>();
-            settings.add(new AbstractMap.SimpleEntry<>("Annotated Content Directory", Analyzer.CONTENT_ANNOTATED_CORPUS));
-            settings.add(new AbstractMap.SimpleEntry<>("Annotated Context Directory", Analyzer.CONTEXT_ANNOTATED_CORPUS));
+            settings.add(new AbstractMap.SimpleEntry<>("Annotated Content Directory", Analyzer.CONTENT_CORPUS));
+            settings.add(new AbstractMap.SimpleEntry<>("Annotated Context Directory", Analyzer.CONTEXT_CORPUS));
             settings.add(new AbstractMap.SimpleEntry<>("Number of words used(for topics and w2v-synonyms)", String.valueOf(Analyzer.NUM_WORDS)));
             settings.add(new AbstractMap.SimpleEntry<>("Vector Dimension for W2V Model", String.valueOf(Analyzer.W2V_DIMENSION)));
             settings.add(new AbstractMap.SimpleEntry<>("Max Iterations for LDA algorithm", String.valueOf(Analyzer.LDA_MAX_ITERATIONS)));

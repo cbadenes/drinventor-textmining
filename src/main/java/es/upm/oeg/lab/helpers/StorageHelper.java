@@ -15,9 +15,9 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class StorageHelper {
 
-    private static final Logger logger = LoggerFactory.getLogger(StorageHelper.class);
+    private static final Logger logger  = LoggerFactory.getLogger(StorageHelper.class);
 
-    public static final String DIRECTORY    = "db";
+    public static String DIRECTORY      = "db";
 
     private static ConcurrentHashMap<String,DB> dbs = new ConcurrentHashMap<>();
 
@@ -71,18 +71,18 @@ public class StorageHelper {
     }
 
     public static boolean exists(String dbName){
-        return FileHelper.path(DIRECTORY, dbName).toFile().exists();
+        return FilesHelper.path(DIRECTORY, dbName).toFile().exists();
     }
 
 
     public synchronized static DB createDB(String dbId){
-        Path dbPath = FileHelper.path(DIRECTORY, dbId);
+        Path dbPath = FilesHelper.path(DIRECTORY, dbId);
         DB db;
         if (dbPath.toFile().exists()){
             logger.debug("DB exists: " + dbPath.toString());
             db  = DBMaker.newFileDB(dbPath.toFile()).make();
         }else{
-            dbPath = FileHelper.create(DIRECTORY, dbId);
+            dbPath = FilesHelper.create(DIRECTORY, dbId);
             logger.debug("DB does not exist: " + dbPath.toString());
             DBMaker dbFile = DBMaker.newFileDB(dbPath.toFile());
             dbFile.closeOnJvmShutdown();

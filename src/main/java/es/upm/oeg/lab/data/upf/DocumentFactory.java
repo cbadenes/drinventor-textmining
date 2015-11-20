@@ -4,6 +4,7 @@ import edu.upf.taln.dri.lib.Factory;
 import edu.upf.taln.dri.lib.exception.DRIexception;
 import edu.upf.taln.dri.lib.model.Document;
 import edu.upf.taln.dri.lib.model.DocumentImpl;
+import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,7 +43,19 @@ public class DocumentFactory {
         if (count != 0){
             try {Thread.sleep(30000);} catch (InterruptedException e) {e.printStackTrace();}
         }
-        return Factory.createNewDocument(path.toString());
+
+        String extension = FilenameUtils.getExtension(path.toString()).toLowerCase();
+        switch(extension){
+            case "xml":
+                logger.info("parsing annotated XML document: " + path);
+                return Factory.createNewDocument(path.toString());
+            case "pdf":
+                logger.info("parsing PDF document: " + path);
+                return Factory.getPDFloader().parsePDF(path.toFile());
+            default:
+                logger.info("parsing document: " + path);
+                return Factory.createNewDocument(path.toString());
+        }
     }
 
 }

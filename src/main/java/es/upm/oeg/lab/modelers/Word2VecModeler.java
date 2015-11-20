@@ -1,7 +1,7 @@
 package es.upm.oeg.lab.modelers;
 
 import es.upm.oeg.epnoi.harvester.domain.ResearchObject;
-import es.upm.oeg.lab.helpers.FileHelper;
+import es.upm.oeg.lab.helpers.FilesHelper;
 import es.upm.oeg.lab.helpers.StorageHelper;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.mllib.feature.Word2Vec;
@@ -41,7 +41,7 @@ public class Word2VecModeler extends ROModeler {
     }
 
     public static void save(Word2VecModel model, String name){
-        FileHelper.create(StorageHelper.DIRECTORY, name);
+        FilesHelper.create(StorageHelper.DIRECTORY, name);
         model.save(sc.sc(),name);
     }
 

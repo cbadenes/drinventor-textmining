@@ -1,0 +1,812 @@
+﻿{
+    "papers": [
+        {
+            "title": "Organizing heterogeneous scene collections through contextual focal points ",
+            "authors": "Kai Xu, Rui Ma, Hao Zhang, Chenyang Zhu, Ariel Shamir, Daniel Cohen-Or, Hui Huang",
+            "article": "Article No.: 35",
+            "filename": "a35-xu.pdf",
+            "doi": "DOI: 10.1145/2601097.2601109",
+            "domain": "modeling"
+        },
+        {
+            "title": "Estimating image depth using shape collections ",
+            "authors": "Hao Su, Qixing Huang, Niloy J. Mitra, Yangyan Li, Leonidas Guibas",
+            "article": "Article No.: 37",
+            "filename": "a37-su.pdf",
+            "doi": "DOI: 10.1145/2601097.2601159",
+            "domain": "modeling"
+        },
+        {
+            "title": "Online motion synthesis using sequential Monte Carlo ",
+            "authors": "Perttu Hämäläinen, Sebastian Eriksson, Esa Tanskanen, Ville Kyrki, Jaakko Lehtinen",
+            "article": "Article No.: 51",
+            "filename": "a51-hamalainen.pdf",
+            "doi": "DOI: 10.1145/2601097.2601218",
+            "domain": "animation"
+        },
+        {
+            "title": "Tangible and modular input device for character articulation ",
+            "authors": "Alec Jacobson, Daniele Panozzo, Oliver Glauser, Cédric Pradalier, Otmar Hilliges, Olga Sorkine-Hornung",
+            "article": "Article No.: 82",
+            "filename": "a82-jacobson.pdf",
+            "doi": "DOI: 10.1145/2601097.2601112",
+            "domain": "animation"
+        },
+        {
+            "title": "On-line learning of parametric mixture models for light transport simulation ",
+            "authors": "Jiří Vorba, Ondřej Karlík, Martin Šik, Tobias Ritschel, Jaroslav Křivánek",
+            "article": "Article No.: 101",
+            "filename": "a101-vorba.pdf",
+            "doi": "DOI: 10.1145/2601097.2601203",
+            "domain": "rendering"
+        },
+        {
+            "title": "Rendering glints on high-resolution normal-mapped specular surfaces ",
+            "authors": "Ling-Qi Yan, Miloš Hašan, Wenzel Jakob, Jason Lawrence, Steve Marschner, Ravi Ramamoorthi",
+            "article": "Article No.: 116",
+            "filename": "a116-yan.pdf",
+            "doi": "DOI: 10.1145/2601097.2601155",
+            "domain": "rendering"
+        },
+        {
+            "title": "Image completion using planar structure guidance ",
+            "authors": "Jia-Bin Huang, Sing Bing Kang, Narendra Ahuja, Johannes Kopf",
+            "article": "Article No.: 129",
+            "filename": "a129-huang.pdf",
+            "doi": "DOI: 10.1145/2601097.2601205",
+            "domain": "image"
+        },
+        {
+            "title": "Intrinsic images in the wild ",
+            "authors": "Sean Bell, Kavita Bala, Noah Snavely",
+            "article": "Article No.: 159",
+            "filename": "a159-bell.pdf",
+            "doi": "DOI: 10.1145/2601097.2601206",
+            "domain": "image"
+        },
+        {
+            "title": "Modeling and optimizing eye vergence response to stereoscopic cuts ",
+            "authors": "Krzysztof Templin, Piotr Didyk, Karol Myszkowski, Mohamed M. Hefeeda, Hans-Peter Seidel, Wojciech Matusik",
+            "article": "Article No.: 145",
+            "filename": "a145-templin.pdf",
+            "doi": "DOI: 10.1145/2601097.2601148",
+            "domain": "perception"
+        },
+        {
+            "title": "AMFS: adaptive multi-frequency shading for future graphics processors ",
+            "authors": "Petrik Clarberg, Robert Toth, Jon Hasselgren, Jim Nilsson, Tomas Akenine-Möller",
+            "article": "Article No.: 141",
+            "filename": "a141-clarberg.pdf",
+            "doi": "DOI: 10.1145/2601097.2601214",
+            "domain": "hardware"
+        },
+        {
+            "title": "A framework for transient rendering ",
+            "authors": "Adrian Jarabo, Julio Marco, Adolfo Muñoz, Raul Buisan, Wojciech Jarosz, Diego Gutierrez",
+            "article": "Article No.: 177",
+            "filename": "a177-jarabo.pdf",
+            "doi": "DOI: 10.1145/2661229.2661251",
+            "domain": "light"
+        },
+        {
+            "title": "Approximate pyramidal shape decomposition ",
+            "authors": "Ruizhen Hu, Honghua Li, Hao Zhang, Daniel Cohen-Or",
+            "article": "Article No.: 213",
+            "filename": "a213-hu.pdf",
+            "doi": "DOI: 10.1145/2661229.2661244",
+            "domain": "three-dimensional"
+        },
+        {
+            "title": "Fast burst images denoising ",
+            "authors": "Ziwei Liu, Lu Yuan, Xiaoou Tang, Matt Uyttendaele, Jian Sun",
+            "article": "Article No.: 232",
+            "filename": "a232-liu.pdf",
+            "doi": "DOI: 10.1145/2661229.2661277",
+            "domain": "image"
+        },
+        {
+            "title": "Real-time shading-based refinement for consumer depth cameras ",
+            "authors": "Chenglei Wu, Michael Zollhöfer, Matthias Nießner, Marc Stamminger, Shahram Izadi, Christian Theobalt",
+            "article": "Article No.: 200",
+            "filename": "a200-wu.pdf",
+            "doi": "DOI: 10.1145/2661229.2661232",
+            "domain": "modeling"
+        },
+        {
+            "title": "Toward BxDF display using multilayer diffraction ",
+            "authors": "Genzhi Ye, Sundeep Jolly, V. Michael Bove, Jr., Qionghai Dai, Ramesh Raskar, Gordon Wetzstein",
+            "article": "Article No.: 191",
+            "filename": "a191-ye.pdf",
+            "doi": "DOI: 10.1145/2661229.2661246",
+            "domain": "display"
+        },
+        {
+            "title": "Fast and exact continuous collision detection with Bernstein sign classification ",
+            "authors": "Min Tang, Ruofeng Tong, Zhendong Wang, Dinesh Manocha",
+            "article": "Article No.: 186",
+            "filename": "a186-tang.pdf",
+            "doi": "DOI: 10.1145/2661229.2661237",
+            "domain": "animation"
+        },
+        {
+            "title": "Putting holes in holey geometry: topology change for arbitrary surfaces ",
+            "authors": "Gilbert Louis Bernstein, Chris Wojtan",
+            "article": "Article No.: 34",
+            "filename": "a34-bernstein.pdf",
+            "doi": "DOI: 10.1145/2461912.2462027",
+            "domain": "modeling"
+        },
+        {
+            "title": "Realtime facial animation with on-the-fly correctives ",
+            "authors": "Hao Li, Jihun Yu, Yuting Ye, Chris Bregler",
+            "article": "Article No.: 42",
+            "filename": "a42-li.pdf",
+            "doi": "DOI: 10.1145/2461912.2462019",
+            "domain": "animation"
+        },
+        {
+            "title": "Low-budget transient imaging using photonic mixer devices ",
+            "authors": "Felix Heide, Matthias B. Hullin, James Gregson, Wolfgang Heidrich",
+            "article": "Article No.: 45",
+            "filename": "a45-heide.pdf",
+            "doi": "DOI: 10.1145/2461912.2461945",
+            "domain": "rendering"
+        },
+        {
+            "title": "Perception of perspective distortions in image-based rendering ",
+            "authors": "Peter Vangorp, Christian Richardt, Emily A. Cooper, Gaurav Chaurasia, Martin S. Banks, George Drettakis",
+            "article": "Article No.: 58",
+            "filename": "a58-vangorp.pdf",
+            "doi": "DOI: 10.1145/2461912.2461971",
+            "domain": "perception"
+        },
+        {
+            "title": "Bundled camera paths for video stabilization ",
+            "authors": "Shuaicheng Liu, Lu Yuan, Ping Tan, Jian Sun",
+            "article": "Article No.: 78",
+            "filename": "a78-liu.pdf",
+            "doi": "DOI: 10.1145/2461912.2461995",
+            "domain": "image"
+        },
+        {
+            "title": "Analyzing growing plants from 4D point cloud data ",
+            "authors": "Yangyan Li, Xiaochen Fan, Niloy J. Mitra, Daniel Chamovitz, Daniel Cohen-Or, Baoquan Chen",
+            "article": "Article No.: 157",
+            "filename": "a157-li.pdf",
+            "doi": "DOI: 10.1145/2508363.2508368",
+            "domain": "animation"
+        },
+        {
+            "title": "Versatile surface tension and adhesion for SPH fluids ",
+            "authors": "Nadir Akinci, Gizem Akinci, Matthias Teschner",
+            "article": "Article No.: 182",
+            "filename": "a182-akinci.pdf",
+            "doi": "DOI: 10.1145/2508363.2508395",
+            "domain": "animation"
+        },
+        {
+            "title": "Inverse volume rendering with material dictionaries ",
+            "authors": "Ioannis Gkioulekas, Shuang Zhao, Kavita Bala, Todd Zickler, Anat Levin",
+            "article": "Article No.: 162",
+            "filename": "a162-gkioulekas.pdf",
+            "doi": "DOI: 10.1145/2508363.2508377",
+            "domain": "rendering"
+        },
+        {
+            "title": "PiCam: an ultra-thin high performance monolithic camera array ",
+            "authors": "Kartik Venkataraman, Dan Lelescu, Jacques Duparré, Andrew McMahon, Gabriel Molina, Priyam Chatterjee, Robert Mullis, Shree Nayar",
+            "article": "Article No.: 166",
+            "filename": "a166-venkataraman.pdf",
+            "doi": "DOI: 10.1145/2508363.2508390",
+            "domain": "image"
+        },
+        {
+            "title": "Content-adaptive image downscaling ",
+            "authors": "Johannes Kopf, Ariel Shamir, Pieter Peers",
+            "article": "Article No.: 173",
+            "filename": "a173-kopf.pdf",
+            "doi": "DOI: 10.1145/2508363.2508370",
+            "domain": "image"
+        },
+        {
+            "title": "Inverse image editing: recovering a semantic editing history from a before-and-after image pair ",
+            "authors": "Shi-Min Hu, Kun Xu, Li-Qian Ma, Bin Liu, Bi-Ye Jiang, Jue Wang",
+            "article": "Article No.: 194",
+            "filename": "a194-hu.pdf",
+            "doi": "DOI: 10.1145/2508363.2508371",
+            "domain": "image"
+        },
+        {
+            "title": "Real-time 3D reconstruction at scale using voxel hashing ",
+            "authors": "Matthias Nießner, Michael Zollhöfer, Shahram Izadi, Marc Stamminger",
+            "article": "Article No.: 169",
+            "filename": "a169-neissner.pdf",
+            "doi": "DOI: 10.1145/2508363.2508374",
+            "domain": "modeling"
+        },
+        {
+            "title": "Cost-effective printing of 3D objects with skin-frame structures ",
+            "authors": "Weiming Wang, Tuanfeng Y. Wang, Zhouwang Yang, Ligang Liu, Xin Tong, Weihua Tong, Jiansong Deng, Falai Chen, Xiuping Liu",
+            "article": "Article No.: 177",
+            "filename": "a177-wang.pdf",
+            "doi": "DOI: 10.1145/2508363.2508382",
+            "domain": "modeling"
+        },
+        {
+            "title": "Soft body locomotion ",
+            "authors": "Jie Tan, Greg Turk, C. Karen Liu",
+            "article": "Article No.: 26",
+            "filename": "a26-tan.pdf",
+            "doi": "DOI: 10.1145/2185520.2185522",
+            "domain": "animation"
+        },
+        {
+            "title": "Interactive spacetime control of deformable objects ",
+            "authors": "Klaus Hildebrandt, Christian Schulz, Christoph von Tycowicz, Konrad Polthier",
+            "article": "Article No.: 71",
+            "filename": "a71-hildebrandt.pdf",
+            "doi": "DOI: 10.1145/2185520.2185567",
+            "domain": "animation"
+        },
+        {
+            "title": "Schelling points on 3D surface meshes ",
+            "authors": "Xiaobai Chen, Abulhair Saparov, Bill Pang, Thomas Funkhouser",
+            "article": "Article No.: 29",
+            "filename": "a29-chen.pdf",
+            "doi": "DOI: 10.1145/2185520.2185525",
+            "domain": "modeling"
+        },
+        {
+            "title": "A probabilistic model for component-based shape synthesis ",
+            "authors": "Evangelos Kalogerakis, Siddhartha Chaudhuri, Daphne Koller, Vladlen Koltun",
+            "article": "Article No.: 55",
+            "filename": "a55-kalogerakis.pdf",
+            "doi": "DOI: 10.1145/2185520.2185551",
+            "domain": "modeling"
+        },
+        {
+            "title": "Reconstructing the indirect light field for global illumination ",
+            "authors": "Jaakko Lehtinen, Timo Aila, Samuli Laine, Frédo Durand",
+            "article": "Article No.: 51",
+            "filename": "a51-lehtinen.pdf",
+            "doi": "DOI: 10.1145/2185520.2185547",
+            "domain": "rendering"
+        },
+        {
+            "title": "HelpingHand: example-based stroke stylization ",
+            "authors": "Jingwan Lu, Fisher Yu, Adam Finkelstein, Stephen DiVerdi",
+            "article": "Article No.: 46",
+            "filename": "a46-lu.pdf",
+            "doi": "DOI: 10.1145/2185520.2185542",
+            "domain": "rendering"
+        },
+        {
+            "title": "Videoscapes: exploring sparse, unstructured video collections ",
+            "authors": "James Tompkin, Kwang In Kim, Jan Kautz, Christian Theobalt",
+            "article": "Article No.: 68",
+            "filename": "a68-tompkin.pdf",
+            "doi": "DOI: 10.1145/2185520.2185564",
+            "domain": "image"
+        },
+        {
+            "title": "Understanding and improving the realism of image composites ",
+            "authors": "Su Xue, Aseem Agarwala, Julie Dorsey, Holly Rushmeier",
+            "article": "Article No.: 84",
+            "filename": "a84-xue.pdf",
+            "doi": "DOI: 10.1145/2185520.2185580",
+            "domain": "image"
+        },
+        {
+            "title": "Sculpting by numbers ",
+            "authors": "Alec Rivers, Andrew Adams, Frédo Durand",
+            "article": "Article No.: 157",
+            "filename": "a157-rivers.pdf",
+            "doi": "DOI: 10.1145/2366145.2366176",
+            "domain": "modeling"
+        },
+        {
+            "title": "Staggered meshless solid-fluid coupling ",
+            "authors": "Xiaowei He, Ning Liu, Guoping Wang, Fengjun Zhang, Sheng Li, Songdong Shao, Hongan Wang",
+            "article": "Article No.: 149",
+            "filename": "a149-he.pdf",
+            "doi": "DOI: 10.1145/2366145.2366168",
+            "domain": "animation"
+        },
+        {
+            "title": "Quality prediction for image completion ",
+            "authors": "Johannes Kopf, Wolf Kienzle, Steven Drucker, Sing Bing Kang",
+            "article": "Article No.: 131",
+            "filename": "a131-kopf.pdf",
+            "doi": "DOI: 10.1145/2366145.2366150",
+            "domain": "image"
+        },
+        {
+            "title": "Depth-presorted triangle lists ",
+            "authors": "Ge Chen, Pedro V. Sander, Diego Nehab, Lei Yang, Liang Hu",
+            "article": "Article No.: 160",
+            "filename": "a160-chen.pdf",
+            "doi": "DOI: 10.1145/2366145.2366179",
+            "domain": "rendering"
+        },
+        {
+            "title": "3D-printing of non-assembly, articulated models ",
+            "authors": "Jacques Calì, Dan A. Calian, Cristina Amati, Rebecca Kleinberger, Anthony Steed, Jan Kautz, Tim Weyrich",
+            "article": "Article No.: 130",
+            "filename": "a130-cali.pdf",
+            "doi": "DOI: 10.1145/2366145.2366149",
+            "domain": "3dprinting"
+        },
+        {
+            "title": "ShadowDraw: real-time user guidance for freehand drawing ",
+            "authors": "Yong Jae Lee, C. Lawrence Zitnick, Michael F. Cohen",
+            "article": "Article No.: 27",
+            "filename": "a27-lee.pdf",
+            "doi": "DOI: 10.1145/2010324.1964922",
+            "domain": "rendering"
+        },
+        {
+            "title": "Motion capture from body-mounted cameras ",
+            "authors": "Takaaki Shiratori, Hyun Soo Park, Leonid Sigal, Yaser Sheikh, Jessica K. Hodgins",
+            "article": "Article No.: 31",
+            "filename": "a31-shiratori.pdf",
+            "doi": "DOI: 10.1145/2010324.1964926",
+            "domain": "animation"
+        },
+        {
+            "title": "Data-driven elastic models for cloth: modeling and measurement ",
+            "authors": "Huamin Wang, James F. O'Brien, Ravi Ramamoorthi",
+            "article": "Article No.: 71",
+            "filename": "p71-wang-fixed",
+            "doi": "DOI: 10.1145/2010324.1964966",
+            "domain": "animation"
+        },
+        {
+            "title": "Exploration of continuous variability in collections of 3D shapes ",
+            "authors": "Maks Ovsjanikov, Wilmot Li, Leonidas Guibas, Niloy J. Mitra",
+            "article": "Article No.: 33",
+            "filename": "a33-ovsjanikov.pdf",
+            "doi": "DOI: 10.1145/2010324.1964928",
+            "domain": "modeling"
+        },
+        {
+            "title": "GlobFit: consistently fitting primitives by discovering global relations ",
+            "authors": "Yangyan Li, Xiaokun Wu, Yiorgos Chrysathou, Andrei Sharf, Daniel Cohen-Or, Niloy J. Mitra",
+            "article": "Article No.: 52",
+            "filename": "a52-li.pdf",
+            "doi": "DOI: 10.1145/2010324.1964947",
+            "domain": "modeling"
+        },
+        {
+            "title": "A versatile HDR video production system ",
+            "authors": "Michael D. Tocci, Chris Kiser, Nora Tocci, Pradeep Sen",
+            "article": "Article No.: 41",
+            "filename": "a41-tocci.pdf",
+            "doi": "DOI: 10.1145/2010324.1964936",
+            "domain": "image"
+        },
+        {
+            "title": "Domain transform for edge-aware image and video processing ",
+            "authors": "Eduardo S. L. Gastal, Manuel M. Oliveira",
+            "article": "Article No.: 69",
+            "filename": "a69-gastal.pdf",
+            "doi": "DOI: 10.1145/2010324.1964964",
+            "domain": "image"
+        },
+        {
+            "title": "Nonlinear revision control for images ",
+            "authors": "Hsiang-Ting Chen, Li-Yi Wei, Chun-Fa Chang",
+            "article": "Article No.: 105",
+            "filename": "a105-chen.pdf",
+            "doi": "DOI: 10.1145/2010324.1965000",
+            "domain": "image"
+        },
+        {
+            "title": "Computational stereo camera system with programmable control loop ",
+            "authors": "Simon Heinzle, Pierre Greisen, David Gallup, Christine Chen, Daniel Saner, Aljoscha Smolic, Andreas Burg, Wojciech Matusik, Markus Gross",
+            "article": "Article No.: 94",
+            "filename": "a94-heinzle.pdf",
+            "doi": "DOI: 10.1145/2010324.1964989",
+            "domain": "stereo"
+        },
+        {
+            "title": "Pattern-aware shape deformation using sliding dockers ",
+            "authors": "Martin Bokeloh, Michael Wand, Vladlen Koltun, Hans-Peter Seidel",
+            "article": "Article No.: 123",
+            "filename": "a123-bokeloh.pdf",
+            "doi": "DOI: 10.1145/2070781.2024157",
+            "domain": "modeling"
+        },
+        {
+            "title": "Video face replacement ",
+            "authors": "Kevin Dale, Kalyan Sunkavalli, Micah K. Johnson, Daniel Vlasic, Wojciech Matusik, Hanspeter Pfister",
+            "article": "Article No.: 130",
+            "filename": "a130-dale.pdf",
+            "doi": "DOI: 10.1145/2070781.2024164",
+            "domain": "image"
+        },
+        {
+            "title": "A rendering framework for multiscale views of 3D models ",
+            "authors": "Wei-Hsien Hsu, Kwan-Liu Ma, Carlos Correa",
+            "article": "Article No.: 131",
+            "filename": "a131-hsu.pdf",
+            "doi": "DOI: 10.1145/2070781.2024165",
+            "domain": "rendering"
+        },
+        {
+            "title": "Artist friendly facial animation retargeting ",
+            "authors": "Yeongho Seol, Jaewoo Seo, Paul Hyunjin Kim, J. P. Lewis, Junyong Noh",
+            "article": "Article No.: 162",
+            "filename": "a162-seol.pdf",
+            "doi": "DOI: 10.1145/2070781.2024196",
+            "domain": "animation"
+        },
+        {
+            "title": "Interactive hybrid simulation of large-scale traffic ",
+            "authors": "Jason Sewall, David Wilkie, Ming C. Lin",
+            "article": "Article No.: 135",
+            "filename": "a135-sewall.pdf",
+            "doi": "DOI: 10.1145/2070781.2024169",
+            "domain": "game"
+        },
+        {
+            "title": "Image deblurring using inertial measurement sensors ",
+            "authors": "Neel Joshi, Sing Bing Kang, C. Lawrence Zitnick, Richard Szeliski",
+            "article": "Article No.: 30",
+            "filename": "a30-joshi.pdf",
+            "doi": "DOI: 10.1145/1778765.1778767",
+            "domain": "image"
+        },
+        {
+            "title": "Spatial relationship preserving character motion adaptation ",
+            "authors": "Edmond S. L. Ho, Taku Komura, Chiew-Lan Tai",
+            "article": "Article No.: 33",
+            "filename": "a33-ho.pdf",
+            "doi": "DOI: 10.1145/1778765.1778770",
+            "domain": "animation"
+        },
+        {
+            "title": "Toward evaluating material design interface paradigms for novice users ",
+            "authors": "William B. Kerr, Fabio Pellacini",
+            "article": "Article No.: 35",
+            "filename": "a35-kerr.pdf",
+            "doi": "DOI: 10.1145/1778765.1778772",
+            "domain": "rendering"
+        },
+        {
+            "title": "Unified simulation of elastic rods, shells, and solids ",
+            "authors": "Sebastian Martin, Peter Kaufmann, Mario Botsch, Eitan Grinspun, Markus Gross",
+            "article": "Article No.: 39",
+            "filename": "a39-martin.pdf",
+            "doi": "DOI: 10.1145/1778765.1778776",
+            "domain": "modeling"
+        },
+        {
+            "title": "Motion fields for interactive character locomotion ",
+            "authors": "Yongjoon Lee, Kevin Wampler, Gilbert Bernstein, Jovan Popović, Zoran Popović",
+            "article": "Article No.: 138",
+            "filename": "a138-lee.pdf",
+            "doi": "DOI: 10.1145/1882261.1866160",
+            "domain": "animation"
+        },
+        {
+            "title": "Free-flowing granular materials with two-way solid coupling ",
+            "authors": "Rahul Narain, Abhinav Golas, Ming C. Lin",
+            "article": "Article No.: 173",
+            "filename": "a173-narain.pdf",
+            "doi": "DOI: 10.1145/1882261.1866195",
+            "domain": "animation"
+        },
+        {
+            "title": "A practical appearance model for dynamic facial color ",
+            "authors": "Jorge Jimenez, Timothy Scully, Nuno Barbosa, Craig Donner, Xenxo Alvarez, Teresa Vieira, Paul Matts,Verónica Orvalho, Diego Gutierrez, Tim Weyrich",
+            "article": "Article No.: 141",
+            "filename": "a141-jimenez.pdf",
+            "doi": "DOI: 10.1145/1882261.1866167",
+            "domain": "rendering"
+        },
+        {
+            "title": "A progressive error estimation framework for photon density estimation ",
+            "authors": "Toshiya Hachisuka, Wojciech Jarosz, Henrik Wann Jensen",
+            "article": "Article No.: 144",
+            "filename": "a144-hachisuka.pdf",
+            "doi": "DOI: 10.1145/1882261.1866170",
+            "domain": "rendering"
+        },
+        {
+            "title": "Diffusion maps for edge-aware image editing ",
+            "authors": "Zeev Farbman, Raanan Fattal, Dani Lischinski",
+            "article": "Article No.: 145",
+            "filename": "a145-farbman.pdf",
+            "doi": "DOI: 10.1145/1882261.1866171",
+            "domain": "image"
+        },
+        {
+            "title": "A comparative study of image retargeting ",
+            "authors": "Michael Rubinstein, Diego Gutierrez, Olga Sorkine, Ariel Shamir",
+            "article": "Article No.: 160",
+            "filename": "a160-rubinstein.pdf",
+            "doi": "DOI: 10.1145/1882261.1866186",
+            "domain": "image"
+        },
+        {
+            "title": "Cone carving for surface reconstruction ",
+            "authors": "Shy Shalom, Ariel Shamir, Hao Zhang, Daniel Cohen-Or",
+            "article": "Article No.: 150",
+            "filename": "a150-shalom.pdf",
+            "doi": "DOI: 10.1145/1882261.1866176",
+            "domain": "modeling"
+        },
+        {
+            "title": "Data-driven suggestions for creativity support in 3D modeling ",
+            "authors": "Siddhartha Chaudhuri, Vladlen Koltun",
+            "article": "Article No.: 183",
+            "filename": "a183-chaudhuri.pdf",
+            "doi": "DOI: 10.1145/1882261.1866205",
+            "domain": "modeling"
+        },
+        {
+            "title": "Gaussian KD-trees for fast high-dimensional filtering ",
+            "authors": "Andrew Adams, Natasha Gelfand, Jennifer Dolson, Marc Levoy",
+            "article": "Article No.: 21",
+            "filename": "a21-adams.pdf",
+            "doi": "DOI: 10.1145/1531326.1531327",
+            "domain": "image"
+        },
+        {
+            "title": "Moving gradients: a path-based method for plausible image interpolation ",
+            "authors": "Dhruv Mahajan, Fu-Chung Huang, Wojciech Matusik, Ravi Ramamoorthi, Peter Belhumeur",
+            "article": "Article No.: 42",
+            "filename": "a42-mahajan.pdf",
+            "doi": "DOI: 10.1145/1531326.1531348",
+            "domain": "image"
+        },
+        {
+            "title": "Kernel Nystr?m method for light transport ",
+            "authors": "Jiaping Wang, Yue Dong, Xin Tong, Zhouchen Lin, Baining Guo",
+            "article": "Article No.: 29",
+            "filename": "a29-wang.pdf",
+            "doi": "DOI: 10.1145/1531326.1531335",
+            "domain": "rendering"
+        },
+        {
+            "title": "An efficient GPU-based approach for interactive global illumination ",
+            "authors": "Rui Wang, Rui Wang, Kun Zhou, Minghao Pan, Hujun Bao",
+            "article": "Article No.: 91",
+            "filename": "a91-wang.pdf",
+            "doi": "DOI: 10.1145/1531326.1531397",
+            "domain": "rendering"
+        },
+        {
+            "title": "iWIRES: an analyze-and-edit approach to shape manipulation ",
+            "authors": "Ran Gal, Olga Sorkine, Niloy J. Mitra, Daniel Cohen-Or",
+            "article": "Article No.: 33",
+            "filename": "a33-gal.pdf",
+            "doi": "DOI: 10.1145/1531326.1531339",
+            "domain": "modeling"
+        },
+        {
+            "title": "NURBS with extraordinary points: high-degree, non-uniform, rational subdivision schemes ",
+            "authors": "Thomas J. Cashman, Ursula H. Augsdörfer, Neil A. Dodgson, Malcolm A. Sabin",
+            "article": "Article No.: 46",
+            "filename": "a46-cashman.pdf",
+            "doi": "DOI: 10.1145/1531326.1531352",
+            "domain": "modeling"
+        },
+        {
+            "title": "Harmonic fluids ",
+            "authors": "Changxi Zheng, Doug L. James",
+            "article": "Article No.: 37",
+            "filename": "a37-zheng.pdf",
+            "doi": "DOI: 10.1145/1531326.1531343",
+            "domain": "animation"
+        },
+        {
+            "title": "Dextrous manipulation from a grasping pose ",
+            "authors": "C. Karen Liu",
+            "article": "Article No.: 59",
+            "filename": "a59-liu.pdf",
+            "doi": "DOI: 10.1145/1531326.1531365",
+            "domain": "animation"
+        },
+        {
+            "title": "Light warping for enhanced surface depiction ",
+            "authors": "Romain Vergne, Romain Pacanowski, Pascal Barla, Xavier Granier, Christophe Schlick",
+            "article": "Article No.: 25",
+            "filename": "a25-vergne.pdf",
+            "doi": "DOI: 10.1145/1531326.1531331",
+            "domain": "perception"
+        },
+        {
+            "title": "Layered shape synthesis: automatic generation of control maps for non-stationary textures ",
+            "authors": "Amir Rosenberger, Daniel Cohen-Or, Dani Lischinski",
+            "article": "Article No.: 107",
+            "filename": "a107-rosenberger.pdf",
+            "doi": "DOI: 10.1145/1618452.1618453",
+            "domain": "image"
+        },
+        {
+            "title": "Interactive design of urban spaces using geometrical and behavioral modeling ",
+            "authors": "Carlos A. Vanegas, Daniel G. Aliaga, Bedřich Beneš, Paul A. Waddell",
+            "article": "Article No.: 111",
+            "filename": "a111-vanegas.pdf",
+            "doi": "DOI: 10.1145/1618452.1618457",
+            "domain": "modeling"
+        },
+        {
+            "title": "Harmonic shells: a practical nonlinear sound model for near-rigid thin shells ",
+            "authors": "Jeffrey N. Chadwick, Steven S. An, Doug L. James",
+            "article": "Article No.: 119",
+            "filename": "a119-chadwick.pdf",
+            "doi": "DOI: 10.1145/1618452.1618465",
+            "domain": "animation"
+        },
+        {
+            "title": "Printing spatially-varying reflectance ",
+            "authors": "Wojciech Matusik, Boris Ajdin, Jinwei Gu, Jason Lawrence, Hendrik P. A. Lensch, Fabio Pellacini,Szymon Rusinkiewicz",
+            "article": "Article No.: 128",
+            "filename": "a128-matusik.pdf",
+            "doi": "DOI: 10.1145/1618452.1618474",
+            "domain": "rendering"
+        },
+        {
+            "title": "Factoring repeated content within and among images ",
+            "authors": "Huamin Wang, Yonatan Wexler, Eyal Ofek, Hugues Hoppe",
+            "article": "Article No.: 14",
+            "filename": "a14-wang.pdf",
+            "doi": "DOI: 10.1145/1360612.1360613",
+            "domain": "image"
+        },
+        {
+            "title": "Clone attack! Perception of crowd variety ",
+            "authors": "Rachel McDonnell, Michéal Larkin, Simon Dobbyn, Steven Collins, Carol O'Sullivan",
+            "article": "Article No.: 26",
+            "filename": "a26-kerr.pdf",
+            "doi": "DOI: 10.1145/1360612.1360625",
+            "domain": "animation"
+        },
+        {
+            "title": "Real-time, all-frequency shadows in dynamic scenes ",
+            "authors": "Thomas Annen, Zhao Dong, Tom Mertens, Philippe Bekaert, Hans-Peter Seidel, Jan Kautz",
+            "article": "Article No.: 34",
+            "filename": "a34-ben-chen.pdf",
+            "doi": "DOI: 10.1145/1360612.1360633",
+            "domain": "rendering"
+        },
+        {
+            "title": "Upright orientation of man-made objects ",
+            "authors": "Hongbo Fu, Daniel Cohen-Or, Gideon Dror, Alla Sheffer",
+            "article": "Article No.: 42",
+            "filename": "a42-mahajan.pdf",
+            "doi": "DOI: 10.1145/1360612.1360641",
+            "domain": "modeling"
+        },
+        {
+            "title": "Single image tree modeling ",
+            "authors": "Ping Tan, Tian Fang, Jianxiong Xiao, Peng Zhao, Long Quan",
+            "article": "Article No.: 108",
+            "filename": "a108-tan.pdf",
+            "doi": "DOI: 10.1145/1409060.1409061",
+            "domain": "modeling"
+        },
+        {
+            "title": "Efficient traversal of mesh edges using adjacency primitives ",
+            "authors": "Pedro V. Sander, Diego Nehab, Eden Chlamtac, Hugues Hoppe",
+            "article": "Article No.: 144",
+            "filename": "a144-sander.pdf",
+            "doi": "DOI: 10.1145/1409060.1409097",
+            "domain": "modeling"
+        },
+        {
+            "title": "Animating responsive characters with dynamic constraints in near-unactuated coordinates ",
+            "authors": "Yuting Ye, C. Karen Liu",
+            "article": "Article No.: 112",
+            "filename": "a112-ye.pdf",
+            "doi": "DOI: 10.1145/1409060.1409065",
+            "domain": "animation"
+        },
+        {
+            "title": "Magnets in motion ",
+            "authors": "Bernhard Thomaszewski, Andreas Gumann, Simon Pabst, Wolfgang Straßer",
+            "article": "Article No.: 162",
+            "filename": "a162-thomaszewski.pdf",
+            "doi": "DOI: 10.1145/1409060.1409115",
+            "domain": "animation"
+        },
+        {
+            "title": "Deep photo: model-based photograph enhancement and viewing ",
+            "authors": "Johannes Kopf, Boris Neubert, Billy Chen, Michael Cohen, Daniel Cohen-Or, Oliver Deussen, Matt Uyttendaele, Dani Lischinski",
+            "article": "Article No.: 116",
+            "filename": "a116-kopf.pdf",
+            "doi": "DOI: 10.1145/1409060.1409069",
+            "domain": "image"
+        },
+        {
+            "title": "Superimposing dynamic range ",
+            "authors": "Oliver Bimber, Daisuke Iwai",
+            "article": "Article No.: 150",
+            "filename": "a150-bimber.pdf",
+            "doi": "DOI: 10.1145/1409060.1409103",
+            "domain": "image"
+        },
+        {
+            "title": "Real-time KD-tree construction on graphics hardware ",
+            "authors": "Kun Zhou, Qiming Hou, Rui Wang, Baining Guo",
+            "article": "Article No.: 126",
+            "filename": "a126-zhou.pdf",
+            "doi": "DOI: 10.1145/1409060.1409079",
+            "domain": "rendering"
+        },
+        {
+            "title": "Practical modeling and acquisition of layered facial reflectance ",
+            "authors": "Abhijeet Ghosh, Tim Hawkins, Pieter Peers, Sune Frederiksen, Paul Debevec",
+            "article": "Article No.: 139",
+            "filename": "a139-ghosh.pdf",
+            "doi": "DOI: 10.1145/1409060.1409092",
+            "domain": "rendering"
+        },
+        {
+            "title": "Image deblurring with blurred/noisy image pairs ",
+            "authors": "Lu Yuan, Jian Sun, Long Quan, Heung-Yeung Shum",
+            "article": "Article No.: 1",
+            "filename": "a1-yuan.pdf",
+            "doi": "DOI: 10.1145/1276377.1276379",
+            "domain": "image"
+        },
+        {
+            "title": "Active learning for real-time motion controllers ",
+            "authors": "Seth Cooper, Aaron Hertzmann, Zoran Popović",
+            "article": "Article No.: 5",
+            "filename": "a5-cooper.pdf",
+            "doi": "DOI: 10.1145/1276377.1276384",
+            "domain": "animation"
+        },
+        {
+            "title": "Locally controllable stylized shading ",
+            "authors": "Hideki Todo, Ken-ichi Anjyo, William Baxter, Takeo Igarashi",
+            "article": "Article No.: 17",
+            "filename": "a17-todo.pdf",
+            "doi": "DOI: 10.1145/1276377.1276399",
+            "domain": "modeling"
+        },
+        {
+            "title": "The lightspeed automatic interactive lighting preview system ",
+            "authors": "Jonathan Ragan-Kelley, Charlie Kilpatrick, Brian W. Smith, Doug Epps, Paul Green, Christophe Hery,Frédo Durand",
+            "article": "Article No.: 25",
+            "filename": "a25-ragan-kelley.pdf",
+            "doi": "DOI: 10.1145/1276377.1276409",
+            "domain": "rendering"
+        },
+        {
+            "title": "Fast median and bilateral filtering ",
+            "authors": "Ben Weiss",
+            "article": "Pages: 519-526",
+            "filename": "p519-weiss.pdf",
+            "doi": "DOI: 10.1145/1141911.1141918",
+            "domain": "image"
+        },
+        {
+            "title": "Guided visibility sampling ",
+            "authors": "Peter Wonka, Michael Wimmer, Kaichi Zhou, Stefan Maierhofer, Gerd Hesina, Alexander Reshetov",
+            "article": "Pages: 494-502",
+            "filename": "p494-wonka.pdf",
+            "doi": "DOI: 10.1145/1141911.1141914",
+            "domain": "rendering"
+        },
+        {
+            "title": "A planar-reflective symmetry transform for 3D shapes ",
+            "authors": "Joshua Podolak, Philip Shilane, Aleksey Golovinskiy, Szymon Rusinkiewicz, Thomas Funkhouser",
+            "article": "Pages: 549-559",
+            "filename": "p549-podolak.pdf",
+            "doi": "DOI: 10.1145/1141911.1141923",
+            "domain": "modeling"
+        },
+        {
+            "title": "Efficient simulation of large bodies of water by coupling two and three dimensional techniques ",
+            "authors": "Geoffrey Irving, Eran Guendelman, Frank Losasso, Ronald Fedkiw",
+            "article": "Pages: 805-811",
+            "filename": "p805-irving.pdf",
+            "doi": "DOI: 10.1145/1141911.1141959",
+            "domain": "animation"
+        }
+    ]
+}

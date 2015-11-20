@@ -10,7 +10,7 @@ import es.upm.oeg.lab.function.CombinationFunction;
 import es.upm.oeg.lab.function.ModelSimilarityPairFunction;
 import es.upm.oeg.lab.function.TuplePairFunction;
 import es.upm.oeg.lab.helpers.ChartsHelper;
-import es.upm.oeg.lab.helpers.FileHelper;
+import es.upm.oeg.lab.helpers.FilesHelper;
 import es.upm.oeg.lab.helpers.SparkHelper;
 import es.upm.oeg.lab.helpers.StorageHelper;
 import es.upm.oeg.lab.log.DIMarkers;
@@ -36,30 +36,34 @@ public class Analyzer {
      * Parameters
      ***********************************************************************************/
 
-    public static final String CONTENT_ANNOTATED_CORPUS    = "/Users/cbadenes/Documents/OEG/Projects/DrInventor/datasets/acm-siggraph-2006-2014-upf";
+    public static final String DOMAIN                       = "siggraph"; //intech | siggraph
 
-    public static final String CONTEXT_ANNOTATED_CORPUS    = "src/main/resources/siggraphpaperMetaFilenames.json";
+    public static final String CORPUS                       = "corpus-"+DOMAIN;
 
-    public static final int NUM_WORDS                      = 25;
+    public static final String CONTENT_CORPUS               = CORPUS+"/papers";
 
-    public static final int W2V_DIMENSION                  = 100;
+    public static final String CONTEXT_CORPUS               = CORPUS+"/ref/corpus.json";
 
-    public static final int LDA_MAX_ITERATIONS             = 70;
+    public static final int NUM_WORDS                       = 25;
+
+    public static final int W2V_DIMENSION                   = 100;
+
+    public static final int LDA_MAX_ITERATIONS              = 70;
 
     /***********************************************************************************
      ***********************************************************************************/
 
     private static final Logger logger = LoggerFactory.getLogger(Analyzer.class);
 
-    public void analyze(String contentAnnotatedCorpus, String contextAnnotatedCorpus, Integer numWords, Integer w2vDim, Integer ldaMaxIterations ) throws IOException {
+    public void analyze(String contentCorpus, String contextCorpus, Integer numWords, Integer w2vDim, Integer ldaMaxIterations ) throws IOException {
 
         Date time = new Date();
-        FileHelper.create(DIMarkers.DIRECTORY);
+        FilesHelper.create(DIMarkers.DIRECTORY);
 
         logger.info(DIMarkers.eval,
                 "Starting analysis with: " +
-                        "content-annotated-corpus='"+contentAnnotatedCorpus +"', " +
-                        "context-annotated-corpus='"+contextAnnotatedCorpus +"', " +
+                        "content-corpus='"+contentCorpus +"', " +
+                        "context-corpus='"+contextCorpus +"', " +
                         "num-words='"+ numWords + "', " +
                         "w2v-dimension='"+w2vDim+"' and " +
                         "lda-max-iterations='"+ ldaMaxIterations + "'");
@@ -67,6 +71,7 @@ public class Analyzer {
         /***********************************************************************************
          * Initializing Storage
          ***********************************************************************************/
+        StorageHelper.DIRECTORY = CORPUS + "/db";
         StorageHelper.createDB(StorageHelper.dbName(DocumentBuilder.DB_TYPE));
         StorageHelper.createDB(StorageHelper.dbName(ItemBuilder.DB_TYPE));
         StorageHelper.createDB(StorageHelper.dbName(ROBuilder.DB_TYPE));
@@ -77,7 +82,7 @@ public class Analyzer {
         /***********************************************************************************
          * Harvesting
          ***********************************************************************************/
-        Stream<Document> data       = CorpusBuilder.harvest(contentAnnotatedCorpus, contextAnnotatedCorpus);
+        Stream<Document> data       = CorpusBuilder.harvest(contentCorpus, contextCorpus);
         JavaRDD<Document> documents = SparkHelper.sc.parallelize(data.collect(Collectors.toList())).cache();
         JavaRDD<Part.Type> parts    = SparkHelper.sc.parallelize(Arrays.asList(Part.Type.values())).cache();
 
@@ -190,24 +195,39 @@ public class Analyzer {
 
         }
 
-        // Boxplot with NLP Statistics by text element
-        ChartsHelper.newBoxPlot("num-sentences", "Boxplot of number of sentences by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumSentences())).collect());
-        ChartsHelper.newBoxPlot("num-tokens", "Boxplot of number of tokens by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumTokens())).collect());
-        ChartsHelper.newBoxPlot("num-words", "Boxplot of number of words by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumWords())).collect());
-        ChartsHelper.newBoxPlot("num-lemmas", "Boxplot of number of lemmas by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumLemmas())).collect());
-        ChartsHelper.newBoxPlot("num-in", "Boxplot of number of IN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumIN())).collect());
-        ChartsHelper.newBoxPlot("num-jj", "Boxplot of number of JJ by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumJJ())).collect());
-        ChartsHelper.newBoxPlot("num-nn", "Boxplot of number of NN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNN())).collect());
-        ChartsHelper.newBoxPlot("num-nnp", "Boxplot of number of NNP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNP())).collect());
-        ChartsHelper.newBoxPlot("num-nnps", "Boxplot of number of NNPS by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNPS())).collect());
-        ChartsHelper.newBoxPlot("num-rb", "Boxplot of number of RB by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumRB())).collect());
-        ChartsHelper.newBoxPlot("num-rp", "Boxplot of number of RP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumRP())).collect());
-        ChartsHelper.newBoxPlot("num-vb", "Boxplot of number of VB by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVB())).collect());
-        ChartsHelper.newBoxPlot("num-vbd", "Boxplot of number of VBD by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBD())).collect());
-        ChartsHelper.newBoxPlot("num-vbn", "Boxplot of number of VBN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBN())).collect());
-        ChartsHelper.newBoxPlot("num-vbp", "Boxplot of number of VBP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBP())).collect());
+        // Boxplot with NLP Statistics of Parts of Text
+        ChartsHelper.newBoxPlot("num-sentences-box", "Boxplot of number of sentences by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumSentences())).collect());
+        ChartsHelper.newBoxPlot("num-tokens-box", "Boxplot of number of tokens by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumTokens())).collect());
+        ChartsHelper.newBoxPlot("num-words-box", "Boxplot of number of words by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumWords())).collect());
+        ChartsHelper.newBoxPlot("num-lemmas-box", "Boxplot of number of lemmas by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumLemmas())).collect());
+        ChartsHelper.newBoxPlot("num-in-box", "Boxplot of number of IN by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumIN())).collect());
+        ChartsHelper.newBoxPlot("num-jj-box", "Boxplot of number of JJ by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumJJ())).collect());
+        ChartsHelper.newBoxPlot("num-nn-box", "Boxplot of number of NN by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNN())).collect());
+        ChartsHelper.newBoxPlot("num-nnp-box", "Boxplot of number of NNP by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNP())).collect());
+        ChartsHelper.newBoxPlot("num-nnps-box", "Boxplot of number of NNPS by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumNNPS())).collect());
+        ChartsHelper.newBoxPlot("num-rb-box", "Boxplot of number of RB by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumRB())).collect());
+        ChartsHelper.newBoxPlot("num-rp-box", "Boxplot of number of RP by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumRP())).collect());
+        ChartsHelper.newBoxPlot("num-vb-box", "Boxplot of number of VB by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVB())).collect());
+        ChartsHelper.newBoxPlot("num-vbd-box", "Boxplot of number of VBD by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBD())).collect());
+        ChartsHelper.newBoxPlot("num-vbn-box", "Boxplot of number of VBN by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBN())).collect());
+        ChartsHelper.newBoxPlot("num-vbp-box", "Boxplot of number of VBP by parts of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getName(), s.getLabel(), s.getNumVBP())).collect());
 
-
+        // LinePlot with NLP Statistics of Sections
+        ChartsHelper.newLinePlot("num-sentences-line", "LinePlot of number of sentences by sections of a document", nlpSummaries.filter(s -> Section.Type.contains(s.getLabel())).map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumSentences())).collect());
+        ChartsHelper.newBoxPlot("num-tokens-line", "LinePlot of number of tokens by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumTokens())).collect());
+        ChartsHelper.newBoxPlot("num-words-line", "LinePlot of number of words by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumWords())).collect());
+        ChartsHelper.newBoxPlot("num-lemmas-line", "LinePlot of number of lemmas by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumLemmas())).collect());
+        ChartsHelper.newBoxPlot("num-in-line", "LinePlot of number of IN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumIN())).collect());
+        ChartsHelper.newBoxPlot("num-jj-line", "LinePlot of number of JJ by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumJJ())).collect());
+        ChartsHelper.newBoxPlot("num-nn-line", "LinePlot of number of NN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumNN())).collect());
+        ChartsHelper.newBoxPlot("num-nnp-line", "LinePlot of number of NNP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumNNP())).collect());
+        ChartsHelper.newBoxPlot("num-nnps-line", "LinePlot of number of NNPS by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumNNPS())).collect());
+        ChartsHelper.newBoxPlot("num-rb-line", "LinePlot of number of RB by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumRB())).collect());
+        ChartsHelper.newBoxPlot("num-rp-line", "LinePlot of number of RP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumRP())).collect());
+        ChartsHelper.newBoxPlot("num-vb-line", "LinePlot of number of VB by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumVB())).collect());
+        ChartsHelper.newBoxPlot("num-vbd-line", "LinePlot of number of VBD by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumVBD())).collect());
+        ChartsHelper.newBoxPlot("num-vbn-line", "LinePlot of number of VBN by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumVBN())).collect());
+        ChartsHelper.newBoxPlot("num-vbp-line", "LinePlot of number of VBP by sections of a document", nlpSummaries.map(s -> ChartItemBuilder.build(s.getLabel(), s.getName(), s.getNumVBP())).collect());
         /***********************************************************************************
          * Representational Models
          ***********************************************************************************/
@@ -332,7 +352,10 @@ public class Analyzer {
             }
 
             // Chart with eval results
-            ChartsHelper.newStacked("eval-"+category,"Evaluation results for category '"+category+"'",listValues);
+            ChartsHelper.newStacked("eval-stacked-"+category,"Evaluation results for category '"+category+"' in stacked plot",listValues);
+
+            List<ChartItem> nofMeasureValues = listValues.stream().filter(i -> !i.getLabel().equalsIgnoreCase("fmeasure")).collect(Collectors.toList());
+            ChartsHelper.newBarPlot("eval-bar-"+category,"Evaluation results for category '"+category+"' in barplot",nofMeasureValues);
 
         }
 
@@ -373,10 +396,10 @@ public class Analyzer {
          * Backup Data
          ***********************************************************************************/
         SimpleDateFormat dt = new SimpleDateFormat("yyyyMMdd-hhmmss");
-        String testId = "test-"+dt.format(time);
-        FileHelper.copyFolder(StorageHelper.DIRECTORY, testId);
-        FileHelper.copyFolder(DIMarkers.DIRECTORY, testId);
-        FileHelper.copyFolder(ChartsHelper.DIRECTORY, testId);
+        String testId = "test-"+DOMAIN+"-"+dt.format(time);
+        FilesHelper.copyFolder(StorageHelper.DIRECTORY, testId);
+        FilesHelper.copyFolder(DIMarkers.DIRECTORY, testId);
+        FilesHelper.copyFolder(ChartsHelper.DIRECTORY, testId);
         logger.info("Backup created in: " + testId);
 
     }
@@ -389,8 +412,8 @@ public class Analyzer {
 
         try {
             analyzer.analyze(
-                    CONTENT_ANNOTATED_CORPUS,
-                    CONTEXT_ANNOTATED_CORPUS,
+                    CONTENT_CORPUS,
+                    CONTEXT_CORPUS,
                     NUM_WORDS,
                     W2V_DIMENSION,
                     LDA_MAX_ITERATIONS);

@@ -35,17 +35,6 @@ public class NLPTest {
         this.openHelper.destroy();
     }
 
-    @Test
-    public void lemmasInOpenNLP(){
-
-        String outputText   = this.openHelper.parse(inputText).stream().collect(Collectors.joining(" "));
-
-        System.out.println("Input TEXT:\t" + inputText);
-        System.out.println("Target TEXT:\t" + targetText);
-        System.out.println("Output TEXT:\t" + outputText);
-
-        Assert.assertEquals(targetText,outputText);
-    }
 
     /**
      * +/Users/cbadenes/Projects/drinventor-textmining/alternateLocation/seg-1.0.jar

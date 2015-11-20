@@ -41,6 +41,10 @@ public class Section implements Serializable{
         public static List<Type> units(){
             return Arrays.stream(values()).filter(s -> !s.name().contains("_")).collect(Collectors.toList());
         }
+
+        public static boolean contains(String value){
+            return Arrays.stream(Type.values()).filter(t -> t.id.equalsIgnoreCase(value)).count() > 0;
+        }
     }
 
     public Section(Text text, Section.Type type){

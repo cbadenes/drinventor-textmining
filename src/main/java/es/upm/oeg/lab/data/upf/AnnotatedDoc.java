@@ -1,11 +1,14 @@
 package es.upm.oeg.lab.data.upf;
 
+import edu.upf.taln.dri.lib.Factory;
 import edu.upf.taln.dri.lib.exception.DRIexception;
 import edu.upf.taln.dri.lib.exception.InternalProcessingException;
+import edu.upf.taln.dri.lib.loader.PDFloader;
 import edu.upf.taln.dri.lib.model.Document;
 import edu.upf.taln.dri.lib.model.ext.*;
 import es.upm.oeg.lab.data.Section;
 import es.upm.oeg.lab.helpers.SectionHelper;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -65,6 +68,7 @@ public class AnnotatedDoc implements Serializable {
             throw new RuntimeException(e);
         }
     }
+
 
     public String get(Section.Type sectionType){
         logger.debug("reading " + sectionType +" from: " + path);

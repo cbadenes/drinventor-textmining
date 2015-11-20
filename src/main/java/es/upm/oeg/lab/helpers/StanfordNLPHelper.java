@@ -2,6 +2,7 @@ package es.upm.oeg.lab.helpers;
 
 import edu.stanford.nlp.ling.CoreAnnotations.*;
 import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
@@ -18,6 +19,48 @@ import java.util.Properties;
  * Created by cbadenes on 27/10/15.
  */
 public class StanfordNLPHelper {
+    /**
+     *
+
+     CC Coordinating conjunction
+     CD Cardinal number
+     DT Determiner
+     EX Existential there
+     FW Foreign word
+     IN Preposition or subordinating conjunction
+     JJ Adjective
+     JJR Adjective, comparative
+     JJS Adjective, superlative
+     LS List item marker
+     MD Modal
+     NN Noun, singular or mass
+     NNS Noun, plural
+     NNP Proper noun, singular
+     NNPS Proper noun, plural
+     PDT Predeterminer
+     POS Possessive ending
+     PRP Personal pronoun
+     PRP$ Possessive pronoun
+     RB Adverb
+     RBR Adverb, comparative
+     RBS Adverb, superlative
+     RP Particle
+     SYM Symbol
+     TO to
+     UH Interjection
+     VB Verb, base form
+     VBD Verb, past tense
+     VBG Verb, gerund or present participle
+     VBN Verb, past participle
+     VBP Verb, non­3rd person singular present
+     VBZ Verb, 3rd person singular present
+     WDT Whdeterminer
+     WP Whpronoun
+     WP$ Possessive whpronoun
+     WRB Whadverb
+
+
+     */
 
     //adding extra terms to standard lucene listByExtension
     private static final String customStopWordList = "" +
@@ -60,6 +103,7 @@ public class StanfordNLPHelper {
         props.setProperty(StopwordAnnotator.STOPWORDS_LIST, customStopWordList);
 
         this.pipeline = new StanfordCoreNLP(props);
+
     }
 
     public List<String> lemmatize(String documentText)

@@ -23,13 +23,13 @@ public class StorageHelperTest {
     @Test
     public void saveAndReadFromScratch(){
         String directory = "target/dbs";
-        Path dbPath = FileHelper.path(directory, "harvest.docs");
+        Path dbPath = FilesHelper.path(directory, "harvest.docs");
         DB db;
         if (dbPath.toFile().exists()){
             logger.info("DB exists: " + dbPath.toString());
             db = DBMaker.newFileDB(dbPath.toFile()).make();
         }else{
-            dbPath = FileHelper.create(directory, "harvest.docs");
+            dbPath = FilesHelper.create(directory, "harvest.docs");
             logger.info("DB does not exist: " + dbPath.toString());
             DBMaker dbFile = DBMaker.newFileDB(dbPath.toFile());
             dbFile.closeOnJvmShutdown();

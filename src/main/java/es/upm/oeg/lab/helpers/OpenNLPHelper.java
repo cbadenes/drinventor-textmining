@@ -2,9 +2,13 @@ package es.upm.oeg.lab.helpers;
 
 import opennlp.tools.chunker.ChunkerME;
 import opennlp.tools.chunker.ChunkerModel;
-import opennlp.tools.lemmatizer.SimpleLemmatizer;
+import opennlp.tools.cmdline.parser.ParserTool;
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
+import opennlp.tools.parser.Parse;
+import opennlp.tools.parser.Parser;
+import opennlp.tools.parser.ParserFactory;
+import opennlp.tools.parser.ParserModel;
 import opennlp.tools.postag.POSModel;
 import opennlp.tools.postag.POSTaggerME;
 import opennlp.tools.sentdetect.SentenceDetectorME;
@@ -31,24 +35,26 @@ public class OpenNLPHelper {
     private final InputStream namesDictionary;
     private final InputStream chunkerDictionary;
     private final InputStream lemmaDictionary;
+    private final InputStream parserDictionary;
 
     private final SentenceDetectorME sentenceDetector;
     private final TokenizerME tokenizer;
     private final NameFinderME nameFinder;
     private final POSTaggerME tagger;
-    private final SimpleLemmatizer lemmatizer;
     private final ChunkerME chunker;
+    private final Parser parser;
 
     public OpenNLPHelper() throws IOException {
 
         // Dictionaries
 //        this.sentenceDictionary = new FileInputStream("classpath:models/en-sent.bin");
-        this.sentenceDictionary = new FileInputStream("models/en-sent.bin");
-        this.tokenDictionary    = new FileInputStream("models/en-token.bin");
-        this.namesDictionary    = new FileInputStream("models/en-ner-person.bin");
-        this.posTagDictionary   = new FileInputStream("models/en-pos-maxent.bin");
-        this.lemmaDictionary    = new FileInputStream("models/en-pos-perceptron.bin");
-        this.chunkerDictionary  = new FileInputStream("models/en-chunker.bin");
+        this.sentenceDictionary = new FileInputStream("src/main/opennlp-models/en-sent.bin");
+        this.tokenDictionary    = new FileInputStream("src/main/opennlp-models/en-token.bin");
+        this.namesDictionary    = new FileInputStream("src/main/opennlp-models/en-ner-person.bin");
+        this.posTagDictionary   = new FileInputStream("src/main/opennlp-models/en-pos-maxent.bin");
+        this.lemmaDictionary    = new FileInputStream("src/main/opennlp-models/en-pos-perceptron.bin");
+        this.chunkerDictionary  = new FileInputStream("src/main/opennlp-models/en-chunker.bin");
+        this.parserDictionary   = new FileInputStream("src/main/opennlp-models/en-parser-chunking.bin");
 
         // Analyzers
         this.sentenceDetector   = new SentenceDetectorME(new SentenceModel(sentenceDictionary));
@@ -56,8 +62,7 @@ public class OpenNLPHelper {
         this.nameFinder         = new NameFinderME(new TokenNameFinderModel(namesDictionary));
         this.tagger             = new POSTaggerME(new POSModel(lemmaDictionary));
         this.chunker            = new ChunkerME(new ChunkerModel(chunkerDictionary));
-
-        this.lemmatizer         = new SimpleLemmatizer(this.lemmaDictionary);
+        this.parser             = ParserFactory.create(new ParserModel(parserDictionary));
 
 
     }
@@ -87,24 +92,8 @@ public class OpenNLPHelper {
         return tagger.tag(tokenizedSentence);
     }
 
-
-    public String lemma(String word, String postag){
-        return this.lemmatizer.lemmatize(word,postag);
-    }
-
-    public List<String> parse(String text){
-
-        String[] tokens = tokens(text);
-        String[] tags   = tags(tokens);
-
-
-        return IntStream.range(0,tokens.length).mapToObj( i -> lemma(tokens[i],tags[i])).collect(Collectors.toList());
-
-
-//        return Arrays.asList(this.chunker.chunk(tokens, tags));
-
-//        return sentences(text).stream().flatMap(s -> Arrays.asList(tags(tokens(s))).stream()).collect(Collectors.toList());
-
+    public Parse parseLine(String sentence){
+        return ParserTool.parseLine(sentence, parser, 1)[0];
     }
 
 }

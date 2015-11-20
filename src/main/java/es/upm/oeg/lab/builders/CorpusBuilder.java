@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import es.upm.oeg.lab.data.Corpus;
 import es.upm.oeg.lab.data.Document;
 import es.upm.oeg.lab.data.Paper;
-import es.upm.oeg.lab.helpers.FileHelper;
+import es.upm.oeg.lab.helpers.FilesHelper;
 import es.upm.oeg.lab.helpers.SparkHelper;
 import org.apache.commons.lang.StringUtils;
 import org.apache.spark.api.java.JavaRDD;
@@ -45,16 +45,16 @@ public class CorpusBuilder {
 
     public static Stream<Document> harvest(String contentAnnotatedCorpus, String contextAnnotatedCorpus) throws IOException {
 
-        logger.info("Reading context annotations from: " + contextAnnotatedCorpus);
+        logger.info("Reading annotations from: " + contextAnnotatedCorpus);
         List<Paper> papers = CorpusBuilder.load(contextAnnotatedCorpus).getPapers();
 
 
-        logger.info("Reading content annotations from: " + contentAnnotatedCorpus);
+        logger.info("Reading papers from: " + contentAnnotatedCorpus);
         Map<String,String> filePaths = new HashMap<>();
-        FileHelper.list(contentAnnotatedCorpus, "xml").stream().forEach(x -> filePaths.put(fileNameFromXml(x), x.toString()));
+        FilesHelper.list(contentAnnotatedCorpus, "*").stream().forEach(x -> filePaths.put(x.getFileName().toString(), x.toString()));
 
         logger.info("Creating items");
-        return papers.stream().map(p -> DocumentBuilder.build(Paths.get(filePaths.getOrDefault(fileNameFromPdf(p.getFilename()), "")), p));
+        return papers.stream().map(p -> DocumentBuilder.build(Paths.get(filePaths.getOrDefault(p.getFilename(), "")), p));
 
     }
 
@@ -67,20 +67,11 @@ public class CorpusBuilder {
 
         logger.info("Reading content annotations from: " + contentAnnotatedCorpus);
         Map<String,String> filePaths = new HashMap<>();
-        FileHelper.list(contentAnnotatedCorpus, "xml").stream().forEach(x -> filePaths.put(fileNameFromXml(x), x.toString()));
+        FilesHelper.list(contentAnnotatedCorpus, "xml").stream().forEach(x -> filePaths.put(x.getFileName().toString(), x.toString()));
 
         logger.info("Creating items");
-        return papersParallel.map(p -> DocumentBuilder.build(Paths.get(filePaths.getOrDefault(fileNameFromPdf(p.getFilename()), "")), p));
+        return papersParallel.map(p -> DocumentBuilder.build(Paths.get(filePaths.getOrDefault(p.getFilename(), "")), p));
 
-    }
-
-    private static String fileNameFromXml(Path path){
-        String fileName = path.getFileName().toString();
-        return StringUtils.substringBefore(fileName,"_PROC.xml");
-    }
-
-    private static String fileNameFromPdf(String fileName){
-        return StringUtils.substringBefore(fileName,".pdf");
     }
 
 }

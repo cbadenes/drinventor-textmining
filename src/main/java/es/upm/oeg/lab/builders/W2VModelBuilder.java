@@ -2,7 +2,7 @@ package es.upm.oeg.lab.builders;
 
 import es.upm.oeg.epnoi.harvester.domain.ResearchObject;
 import es.upm.oeg.lab.data.W2VModel;
-import es.upm.oeg.lab.helpers.FileHelper;
+import es.upm.oeg.lab.helpers.FilesHelper;
 import es.upm.oeg.lab.helpers.StorageHelper;
 import es.upm.oeg.lab.log.DIMarkers;
 import es.upm.oeg.lab.modelers.Word2VecModeler;
@@ -28,7 +28,7 @@ public class W2VModelBuilder {
         String modelId = ros.first().getUrl();
 
         // Check if stored in DB
-        Path modelPath = FileHelper.path(StorageHelper.DIRECTORY, "w2v."+ modelId);
+        Path modelPath = FilesHelper.path(StorageHelper.DIRECTORY, "w2v." + modelId);
 
         Word2VecModel model = null;
         if (modelPath.toFile().exists()){

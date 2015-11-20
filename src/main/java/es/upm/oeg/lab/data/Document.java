@@ -34,7 +34,7 @@ public class Document implements Serializable{
     }
 
     public Document add(Section section){
-        logger.info("Adding new section: " + section);
+        logger.info("Adding new section: " + section + " from Paper: " + refPaper);
         sections.add(section);
         return this;
     }
